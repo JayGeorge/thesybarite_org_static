@@ -1098,8 +1098,15 @@ body > div > header > nav > ul > li:nth-child(1) > a {
 /*     max-width: var(--max-width-2); */
 }
 
+.image-with-text svg {
+    position: fixed;
+    font-size: var(--font-size-l-2);
+    left: calc(var(--spacing-l) - 0.06em);
+    bottom: var(--spacing-m);
+    color: var(--colour-accent);
+}
+
 .image-with-text__text span {
-    position: relative;
     position: absolute;
     left: 96px;
     bottom: 300px;
@@ -1160,7 +1167,7 @@ body > div > header > nav > ul > li:nth-child(1) > a {
     width: 100%;
 /*     background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%); */
 /*     background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%); */
-    background: linear-gradient(15deg, hsl(0deg 10% 8% / 30%) 0%, transparent 60%);
+    background: linear-gradient(15deg, hsl(0deg 10% 8% / 40%) 0%, transparent 60%);
 }
 
 .image-with-text__text :is(h1, h2, h3, p) {
