@@ -891,7 +891,7 @@ button.btn--2,
     padding-block-start: var(--spacing-s-1);
 }
 
-.site-header__cta {
+.site-header__cta .btn {
     padding: var(--button-spacing);
 }
 
@@ -900,14 +900,14 @@ button.btn--2,
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
-.site-header__cta {
+.site-header__cta .btn {
     font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
     border-radius: 50px;
     backdrop-filter: blur(10px);
 }
 
-.site-header--light-background .site-header__cta {
+.site-header--light-background .site-header__cta .btn {
     background: var(--colour-white-transparent);
 }
 
