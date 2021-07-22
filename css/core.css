@@ -1100,8 +1100,8 @@ button.btn--2,
 .image-with-text__text span {
     position: relative;
     position: absolute;
-    left: 3em;
-    bottom: 17.5em;
+    left: 6em;
+    bottom: 16.75em;
     font-family: var(--font-family-main);
     font-size: 0.236em;
     font-size: 0.146em;
@@ -1178,11 +1178,6 @@ button.btn--2,
 
 body {
     background: var(--colour-accent);
-}
-
-#main > div > div > h1 > em:nth-child(5) {
-    position: relative;
-    left: 93px;
 }
 
 .image-with-text__button a {

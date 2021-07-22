@@ -30,7 +30,7 @@
     <main tabindex="-1" id="main">
         <div class="image-with-text">
             <div class="image-with-text__text">
-                <h1><span>the</span> <br/><em>champagne</em> <br/><em>club</em></h1>
+                <h1><span>the</span> <br/>champagne <br/>club</h1>
             </div>
             <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
         </div>
