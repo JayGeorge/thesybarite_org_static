@@ -6,7 +6,8 @@
     Skip to footer navigation
 </a>
 
-<header class="site-header">
+<div class="site-header-wrapper">
+<header class="site-header site-header--light-background">
     <div class="site-header__logo">
         <a href="/" class="site-logo">
             <div>The</div>
@@ -35,7 +36,12 @@
     </nav>
 
     <div class="site-header__cta">
-
+        <div class="btn">
+            <a href="">
+                Login
+            </a>
+        </div>
     </div>
 
 </header>
+</div>

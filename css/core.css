@@ -45,8 +45,8 @@
     --spacing-vh-s: 12vh;
     --spacing-vh-m: 25vh;
 
-    --button-spacing-horizontal: 17px;
-    --button-spacing: var(--button-spacing-horizontal) 24px;
+    --button-spacing-horizontal: 9px;
+    --button-spacing: var(--button-spacing-horizontal) 21px;
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
@@ -54,11 +54,13 @@
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
     --max-width-1: 75rem;
-    --max-width-2: 85rem;
+    --max-width-2: 88rem;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     /* Dark to light */
     --colour-black: black;
+    --colour-black-transparent: hsl(0deg 0% 0% / 40%);
+    --colour-white-transparent: hsl(0deg 0% 100% / 40%);
     --colour-grey-light: hsl(0deg 0% 82%);
     --colour-accent: #fdeada;
     /* Jo malone */
@@ -133,6 +135,8 @@
     --font-size-l-1: 4.236em;
 
     --font-size-l-2: 6.854em;
+
+    --font-size-l-3: 11.089rem;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
     =================================================== */
     --letter-spacing-s: 2px;
@@ -570,7 +574,7 @@ a > svg:last-child:not(:first-child) {
 /* Default */
 a {
     text-decoration-skip-ink: auto;
-    color: #444;
+    color: inherit;
 }
 
 /* .u-link-style-1 a, */
@@ -692,8 +696,6 @@ a:hover {
 should be...
 */
 .btn a,
-/* For when you add a button with JS and it doesn't have an anchor */
-.js--btn,
 /* Components > Framework > Nav */
 button,
 /* Override form background default */
@@ -710,6 +712,9 @@ button,
     cursor: pointer;
     /* =JFG. Hover states with a slight delay, but focus without any because keyboard users want quick feedback. Do not use 'all' because it resizes slowly when resizing the browser window */
     transition: background-color 0.2s ease 0s;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-s);
+    font-weight: var(--font-family-main-weight-strong);
 }
 
 /* Not .btn + .btn in case a button is next to a different tag such as <p/> */
@@ -802,6 +807,10 @@ button.btn--2,
 
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / LAYOUT
 =================================================== */
+/* a*/
+.site-logo {
+    display: block;
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / SPACING
 =================================================== */
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / DECORATION
@@ -833,12 +842,30 @@ button.btn--2,
         .site-header__cta
 
 */
+/* Modifiers...
+
+    .site-header--light-background <-- Used when there is a light image beneath e.g. a sky.
+        This will change thigns like the CTA button lightness
+
+*/
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
+.site-header-wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
 .site-header {
     max-width: var(--max-width-2);
     margin: auto;
     display: flex;
+    gap: var(--spacing-l-2);
+}
+
+.site-header__logo {
+    display: flex;
+    align-items: flex-end;
 }
 
 .site-header__nav {
@@ -859,10 +886,28 @@ button.btn--2,
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
 =================================================== */
 .site-header {
-    padding-block-start: var(--spacing-m);
+    padding-block-start: var(--spacing-s-1);
+}
+
+.site-header__cta {
+    padding: var(--button-spacing);
+}
+
+.site-header__cta .btn {
+    margin-block-end: 0;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
+.site-header__cta {
+    font-size: var(--font-size-s-x);
+    background: var(--colour-black-transparent);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.site-header--light-background .site-header__cta {
+    background: var(--colour-white-transparent);
+}
 
 
 
@@ -973,6 +1018,155 @@ button.btn--2,
 /* .s-entry-content figure {
     
 } */
+
+
+
+
+/* GROUP COMPONENTS / IMAGE WITH TEXT
+=================================================== */
+/* Notes...
+
+	- Image with text overlaid on top
+	   - Optionally art direct or change the image orientation using the picture element
+	   - Add loading="lazy" if the image is further down the page
+
+*/
+/* HTML Example...
+
+    <div class="image-with-text">
+        <div class="image-with-text__text">
+            <h2>Headline</h2>
+            <p>Or paragraph</p>
+        </div>
+        <div class="image-with-text__button">
+            <a href="">
+                Button Text
+            </a>
+        </div>
+        <picture>
+            <source srcset="
+                https://picsum.photos/750/500.webp 750w,
+                https://picsum.photos/500/333.webp 1000w,
+                https://picsum.photos/768/512.webp 1536w,
+                https://picsum.photos/1024/683.webp 2048w,
+                https://picsum.photos/1440/960.webp 2880w,
+                https://picsum.photos/1680/1120.webp 3360w"
+
+                type="image/webp" sizes="100vw"
+            >
+
+            <source srcset="
+                https://picsum.photos/750/500 750w,
+                https://picsum.photos/500/333 1000w,
+                https://picsum.photos/768/512 1536w,
+                https://picsum.photos/1024/683 2048w,
+                https://picsum.photos/1440/960 2880w,
+                https://picsum.photos/1680/1120 3360w"
+
+                type="image/jpeg" sizes="100vw"
+            >
+
+            <img src="/" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+        </picture>
+    </div>
+
+*/
+/* Modifiers...
+
+    .image-with-text--centered
+
+*/
+/* GROUP COMPONENTS / IMAGE WITH TEXT / LAYOUT
+=================================================== */
+.image-with-text__image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.image-with-text__text {
+    position: absolute;
+    top: 50%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+/*     max-width: var(--max-width-2); */
+}
+
+.image-with-text__text span {
+    position: relative;
+    top: 5em;
+    font-family: var(--font-family-main);
+    font-size: 0.236em;
+    font-size: 0.146em;
+    font-size: 0.09em;
+    text-transform: uppercase;
+}
+
+/* .image-with-text__text :is(h1, h2) {
+    max-width: var(--max-width-title);
+} */
+
+.image-with-text__button {
+    position: absolute;
+    bottom: var(--spacing-l-1);
+    right: var(--spacing-l-1);
+}
+
+.image-with-text--centered {
+    text-align: center;
+}
+
+/* Landscape devices */
+@media (min-aspect-ratio: 1680/990) {
+    .image-with-text__image {
+        height: 100vh;
+    }
+}
+/* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
+=================================================== */
+.image-with-text__text {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+}
+
+/* Make sure default padding doesn't affect centering */
+.image-with-text__text > *:first-child {
+    padding-block-start: 0;
+}
+
+.image-with-text__text > *:first-child {
+    padding-block-end: 0;
+}
+/* GROUP COMPONENTS / IMAGE WITH TEXT / DECORATION
+=================================================== */
+.image-with-text {
+    position: relative;
+}
+
+.image-with-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%);
+    background: linear-gradient(15deg, hsl(0deg 0% 0% / 50%) 0%, transparent 50%);
+}
+
+.image-with-text__text :is(h1, h2, h3, p) {
+    color: white;
+    font-size: var(--font-size-l-3);
+    line-height: var(--font-size-l-3-line-height);
+    line-height: 0.95;
+}
+
+.image-with-text__button a {
+    color: white;
+    font-size: var(--font-size-s-1);
+}
 
 
 

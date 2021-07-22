@@ -28,7 +28,12 @@
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main">
-        <!-- Add your site or application content here -->
+        <div class="image-with-text">
+            <div class="image-with-text__text">
+                <h1><span>the</span> <br/><em>champagne</em> club</h1>
+            </div>
+            <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+        </div>
     </main>
 
     <?php include '_inc/footer.php'; ?>
