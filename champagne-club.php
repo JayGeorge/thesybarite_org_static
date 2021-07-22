@@ -34,6 +34,10 @@
             </div>
             <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
         </div>
+        <div class="question-box">
+            <h3>What is the Champagne Club?</h3>
+            <p>Let us start with the Champagnes of Philippe Brugnon, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims</p>
+        </div>
     </main>
 
     <?php include '_inc/footer.php'; ?>

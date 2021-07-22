@@ -1100,12 +1100,12 @@ button.btn--2,
 .image-with-text__text span {
     position: relative;
     position: absolute;
-    left: 6em;
-    bottom: 16.75em;
-    font-family: var(--font-family-main);
+    left: 96px;
+    bottom: 300px;
+    /* font-family: var(--font-family-main); */
     font-size: 0.236em;
     font-size: 0.146em;
-    font-size: 0.09em;
+    /* font-size: 0.09em; */
     text-transform: uppercase;
     text-shadow: 1px 1px 10px hsl(60deg 5% 8%);
 }
@@ -1188,7 +1188,13 @@ body {
 }
 
 
-
+.question-box {
+    position: absolute;
+    top: 11em;
+    right: 0;
+    width: 10%;
+    display: none;
+}
 
 /* GROUP UTILITIES / FRAMEWORK
 =================================================== */
