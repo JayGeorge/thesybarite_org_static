@@ -64,7 +64,8 @@
     --colour-grey-light: hsl(0deg 0% 82%);
     --colour-accent: #fdeada;
     /* Jo malone */
-    /* --colour-accent: #fbf9ee; */
+    --colour-accent: hsl(51deg 62% 96%);
+    --colour-accent-hsl: 51deg 62% 96%;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME -- GRADIENTS
     =================================================== */
     --colour-gradient-orange: radial-gradient(ellipse at bottom right, hsl(41, 100%, 69%) 0%,hsl(25, 100%, 50%) 100%);
@@ -907,6 +908,7 @@ button.btn--2,
 
 .site-header--light-background .site-header__cta {
     background: var(--colour-white-transparent);
+    background: hsl(var(--colour-accent-hsl) / 40%);
 }
 
 
@@ -1155,14 +1157,14 @@ button.btn--2,
     height: 100%;
     width: 100%;
     background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%);
-    background: linear-gradient(15deg, hsl(0deg 0% 0% / 50%) 0%, transparent 50%);
+    background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%);
 }
 
 .image-with-text__text :is(h1, h2, h3, p) {
-    color: white;
+    color: var(--colour-accent);
     font-size: var(--font-size-l-3);
     line-height: var(--font-size-l-3-line-height);
-    line-height: 0.9;
+        line-height: 0.9;
 }
 
 .image-with-text__text::before {
@@ -1172,6 +1174,10 @@ button.btn--2,
     width: 9.5%;
     left: 55px;
     border-bottom: 1px solid white;
+}
+
+body {
+    background: var(--colour-accent);
 }
 
 #main > div > div > h1 > em:nth-child(5) {
