@@ -66,7 +66,6 @@
 /* GROUP BUTTONS / DECORATION
 =================================================== */
 .elementor-button {
-    letter-spacing: var(--letter-spacing-m);
     letter-spacing: var(--letter-spacing-s);
     text-transform: uppercase!important;
     font-family: var(--font-family-main)!important;
