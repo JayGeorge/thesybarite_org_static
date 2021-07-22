@@ -60,7 +60,7 @@
     /* Dark to light */
     --colour-black: black;
     --colour-black-transparent: hsl(0deg 0% 0% / 40%);
-    --colour-white-transparent: hsl(0deg 0% 100% / 40%);
+    --colour-white-transparent: hsl(var(--colour-accent-hsl) / 50%);
     --colour-grey-light: hsl(0deg 0% 82%);
     --colour-accent: #fdeada;
     /* Jo malone */
@@ -822,6 +822,7 @@ button.btn--2,
     font-size: var(--font-size-l);
     line-height: 0.9;
     text-decoration: none;
+/*     color: #8e5b1c; */
 }
 
 .site-logo div {
@@ -908,15 +909,15 @@ button.btn--2,
 
 .site-header--light-background .site-header__cta {
     background: var(--colour-white-transparent);
-    background: hsl(var(--colour-accent-hsl) / 40%);
 }
 
 
 
 /* GROUP COMPONENTS / FRAMEWORK / NAV / CURRENT PAGE
 =================================================== */
-.current-menu-item > a span {
-    color: var(--colour-turquoise);
+.current-menu-item > a span,
+body > div > header > nav > ul > li:nth-child(1) > a {
+    opacity: 0.5;
 }
 
 
@@ -1089,7 +1090,7 @@ button.btn--2,
     position: fixed;
     position: absolute;
     top: 50%;
-    top: 63%;
+    top: 66%;
     left: 58.5%;
     transform: translate(-50%, -50%);
 
@@ -1107,7 +1108,7 @@ button.btn--2,
     font-size: 0.146em;
     /* font-size: 0.09em; */
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px hsl(60deg 5% 8%);
+/*     text-shadow: 1px 1px 10px hsl(60deg 5% 8%); */
 }
 
 /* .image-with-text__text :is(h1, h2) {
@@ -1157,16 +1158,16 @@ button.btn--2,
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%);
-    background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%);
-    background: linear-gradient(15deg, hsl(60deg 5% 8% / 30%) 0%, transparent 50%);
+/*     background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%); */
+/*     background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%); */
+    background: linear-gradient(15deg, hsl(0deg 10% 8% / 30%) 0%, transparent 60%);
 }
 
 .image-with-text__text :is(h1, h2, h3, p) {
     color: var(--colour-accent);
     font-size: var(--font-size-l-3);
     line-height: var(--font-size-l-3-line-height);
-        line-height: 0.9;
+    line-height: 0.9;
 }
 
 .image-with-text__text::before {

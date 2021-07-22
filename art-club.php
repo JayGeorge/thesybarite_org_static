@@ -30,9 +30,9 @@
     <main tabindex="-1" id="main">
         <div class="image-with-text">
             <div class="image-with-text__text">
-                <h1><span>the</span> champagne <br/>club</h1>
+                <h1><span>the</span>art <br/>club</h1>
             </div>
-            <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+            <img src="/img/2.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
         </div>
         <div class="question-box">
             <h3>What is the Champagne Club?</h3>
