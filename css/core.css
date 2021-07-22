@@ -1172,6 +1172,15 @@ button.btn--2,
     line-height: 0.95;
 }
 
+.image-with-text__text::before {
+    content: "";
+    position: absolute;
+    bottom: 7.5em;
+    width: 9.5%;
+    left: 55px;
+    border-bottom: 1px solid white;
+}
+
 .image-with-text__button a {
     color: white;
     font-size: var(--font-size-s-1);
