@@ -1087,26 +1087,19 @@ button.btn--2,
     position: fixed;
     position: absolute;
     top: 50%;
-    top: 68%;
-    left: 50%;
-    text-align: center;
+    top: 63%;
+    left: 58.5%;
     transform: translate(-50%, -50%);
 
     width: 100%;
 /*     max-width: var(--max-width-2); */
 }
 
-.image-with-text__text h1 {
-    position: relative;
-    text-align: center;
-    display: inline-block;
-}
-
 .image-with-text__text span {
     position: relative;
     position: absolute;
-    left: 0;
-    bottom: 7em;
+    left: 3em;
+    bottom: 17.5em;
     font-family: var(--font-family-main);
     font-size: 0.236em;
     font-size: 0.146em;
@@ -1169,16 +1162,21 @@ button.btn--2,
     color: white;
     font-size: var(--font-size-l-3);
     line-height: var(--font-size-l-3-line-height);
-    line-height: 0.95;
+    line-height: 0.9;
 }
 
 .image-with-text__text::before {
-    content: "";
+/*     content: ""; */
     position: absolute;
     bottom: 7.5em;
     width: 9.5%;
     left: 55px;
     border-bottom: 1px solid white;
+}
+
+#main > div > div > h1 > em:nth-child(5) {
+    position: relative;
+    left: 93px;
 }
 
 .image-with-text__button a {
