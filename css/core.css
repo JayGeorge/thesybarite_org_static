@@ -911,7 +911,6 @@ button.btn--2,
 
 
 
-
 /* GROUP COMPONENTS / FRAMEWORK / NAV / CURRENT PAGE
 =================================================== */
 .current-menu-item > a span {
@@ -1085,19 +1084,29 @@ button.btn--2,
 }
 
 .image-with-text__text {
+    position: fixed;
     position: absolute;
     top: 50%;
-    top: 60%;
+    top: 68%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 
     width: 100%;
 /*     max-width: var(--max-width-2); */
 }
 
+.image-with-text__text h1 {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
 .image-with-text__text span {
     position: relative;
-    top: 5em;
+    position: absolute;
+    left: 0;
+    bottom: 7em;
     font-family: var(--font-family-main);
     font-size: 0.236em;
     font-size: 0.146em;
