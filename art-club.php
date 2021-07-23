@@ -28,7 +28,7 @@
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main">
-        <div class="image-with-text">
+        <header class="image-with-text">
             <div class="image-with-text__text">
                 <h1><span>the</span>art <br/>club</h1>
             </div>
@@ -36,10 +36,10 @@
             <button class="image-with-text__arrow">
                 <?php include 'img/svg/down-arrow.php'; ?>
             </button>
-        </div>
-        <div class="question-box">
-            <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
-        </div>
+            <div class="image-with-text__question-box">
+                <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
+            </div>
+        </header>
     </main>
 
     <?php include '_inc/footer.php'; ?>
