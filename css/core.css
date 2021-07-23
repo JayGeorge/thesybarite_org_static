@@ -1232,15 +1232,13 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .image-with-text__text {
+    left: 50%;
     position: fixed;
     position: absolute;
-    top: 50%;
     top: 66%;
-    left: 58.5%;
-    transform: translate(-50%, -50%);
-
     width: 100%;
-/*     max-width: var(--max-width-2); */
+    transform: translate(-50%, -50%);
+    max-width: var(--max-width-1);
 }
 
 .image-with-text__arrow {
