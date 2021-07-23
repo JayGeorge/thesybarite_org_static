@@ -104,6 +104,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <h2 class="medium-title">Choose a club</h2>
             </article>
         </div>
     </main>

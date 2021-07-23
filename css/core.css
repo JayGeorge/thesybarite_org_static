@@ -1039,8 +1039,9 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 
 
-/* GROUP COMPONENTS / LARGE TITLE
+/* GROUP COMPONENTS / TITLES
 =================================================== */
+.medium-title,
 .large-title {
     max-width: var(--max-width-1);
     margin: auto;
@@ -1049,6 +1050,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     padding-block-start: var(--spacing-m);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
+}
+
+.medium-title {
+    font-size: var(--font-size-l-1);
+    line-height: var(--font-size-l-1-line-height);
 }
 
 
@@ -1085,12 +1091,16 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 /* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
 =================================================== */
 .feature-columns {
+    padding-block-end: var(--spacing-m);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 }
 
-.feature-columns__stats,
 .feature-columns__list {
+    padding-block-end: var(--spacing-m);
+}
+
+.feature-columns__stats {
     padding-block-end: var(--spacing-m);
 }
 
