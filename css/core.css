@@ -53,7 +53,7 @@
     --max-width-reading-short: 22rem;
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
-    --max-width-1: 75rem;
+    --max-width-1: 77rem;
     --max-width-2: 88rem;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
@@ -280,6 +280,10 @@ figure {
 figure img {
     /* Push the caption away from the image */
     margin-block-end: var(--spacing-s);
+}
+
+figcaption {
+    font-size: var(--font-size-s-x);
 }
 
 ul {
@@ -1257,19 +1261,9 @@ img:not([alt]) {
     width: auto;
     height: auto;
 }
-/* GROUP UTILITIES / FRAMEWORK / STATAMIC
+/* GROUP UTILITIES
 =================================================== */
-/* if ( window.location !== window.parent.location ) {
-    // The page is in an iFrame and very likely being called by Statamic's Live Preview mode.
-    // Use this class to selectively disable some animations since the page will be rapidly loaded on every keystroke
-    document.querySelector('html').classList.add('js--live-preview');
-} */
-/* purgecss start ignore */
-.js--live-preview *,
-.js--live-preview *::before,
-.js--live-preview *::after {
-    animation-duration: 0s!important;
-    animation-delay: 0s!important;
-    /* Stop AOS tripping things up in case it does not get initialised */
-    opacity: 1!important;
+.u-above-ctas {
+    position: relative;
+    background: var(--colour-accent);
 }
