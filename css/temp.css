@@ -8,3 +8,33 @@
     - Only edit filename.css, then process with Codekit to output into prod/
 
 */
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.question-box {
+    position: fixed;
+    top: 11em;
+    right: 0;
+    width: 18%;
+    color: var(--colour-accent);
+    background: black;
+    padding: var(--spacing-m)!important;
+    font-size: var(--font-size-s);
+
+    animation: 1.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+    animation-delay: 1.2s;
+}
+
+.question-box p {
+    line-height: 1.4;
+    padding-block-end: 0;
+    padding-inline-start: var(--spacing-s-x);
+    padding-block-end: 0.1em;
+}

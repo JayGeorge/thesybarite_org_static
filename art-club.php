@@ -33,11 +33,12 @@
                 <h1><span>the</span>art <br/>club</h1>
             </div>
             <img src="/img/2.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
-            <?php include 'img/svg/down-arrow.php'; ?>
+            <button class="image-with-text__arrow">
+                <?php include 'img/svg/down-arrow.php'; ?>
+            </button>
         </div>
         <div class="question-box">
-            <h3>What is the Champagne Club?</h3>
-            <p>Let us start with the Champagnes of Philippe Brugnon, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims</p>
+            <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
         </div>
     </main>
 

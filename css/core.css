@@ -698,7 +698,7 @@ should be...
 */
 .btn a,
 /* Components > Framework > Nav */
-button,
+.button,
 /* Override form background default */
 /* e.g. Components > Framework > Comments */
 [type="submit"] {
@@ -916,8 +916,11 @@ button.btn--2,
 /* GROUP COMPONENTS / FRAMEWORK / NAV / CURRENT PAGE
 =================================================== */
 .current-menu-item > a span,
-body > div > header > nav > ul > li:nth-child(1) > a {
-    opacity: 0.5;
+body > div > header > nav > ul > li:nth-child(3) > a {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 1px;
 }
 
 
@@ -1040,11 +1043,9 @@ body > div > header > nav > ul > li:nth-child(1) > a {
             <h2>Headline</h2>
             <p>Or paragraph</p>
         </div>
-        <div class="image-with-text__button">
-            <a href="">
-                Button Text
-            </a>
-        </div>
+        <button class="image-with-text__arrow">
+            <svg>
+        </button>
         <picture>
             <source srcset="
                 https://picsum.photos/750/500.webp 750w,
@@ -1098,12 +1099,11 @@ body > div > header > nav > ul > li:nth-child(1) > a {
 /*     max-width: var(--max-width-2); */
 }
 
-.image-with-text svg {
+.image-with-text__arrow {
     position: fixed;
-    font-size: var(--font-size-l-2);
-    left: calc(var(--spacing-l) - 0.06em);
+    left: calc(var(--spacing-l) - 0.8em);
     bottom: var(--spacing-m);
-    color: var(--colour-accent);
+    transform: translateY(200%);
 }
 
 .image-with-text__text span {
@@ -1121,12 +1121,6 @@ body > div > header > nav > ul > li:nth-child(1) > a {
 /* .image-with-text__text :is(h1, h2) {
     max-width: var(--max-width-title);
 } */
-
-.image-with-text__button {
-    position: absolute;
-    bottom: var(--spacing-l-1);
-    right: var(--spacing-l-1);
-}
 
 .image-with-text--centered {
     text-align: center;
@@ -1186,23 +1180,37 @@ body > div > header > nav > ul > li:nth-child(1) > a {
     border-bottom: 1px solid white;
 }
 
+.image-with-text__arrow svg {
+    font-size: var(--font-size-l-2);
+    color: var(--colour-accent);
+}
+
 body {
     background: var(--colour-accent);
 }
+/* GROUP COMPONENTS / IMAGE WITH TEXT / ANIMATIONS
+=================================================== */
+@keyframes slide-in-up {
+    0% {
+        /* Changed from Dan Eden. Does not use translate3D */
+        transform: translateY(200%);
+        visibility: visible;
+    }
 
-.image-with-text__button a {
-    color: white;
-    font-size: var(--font-size-s-1);
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.image-with-text__arrow {
+    animation-name: slide-in-up;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 
-.question-box {
-    position: absolute;
-    top: 11em;
-    right: 0;
-    width: 10%;
-    display: none;
-}
+
 
 /* GROUP UTILITIES / FRAMEWORK
 =================================================== */

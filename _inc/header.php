@@ -30,7 +30,7 @@
                 $nav_name = 'Experiences'; include '_inc/nav-links.php';
                 $nav_name = 'Magazine'; include '_inc/nav-links.php';
                 // $nav_name = 'Africa'; include '_inc/nav-links.php';
-                $nav_name = 'Club'; include '_inc/nav-links.php';
+                $nav_name = 'Clubs'; include '_inc/nav-links.php';
             ?>
         </ul>
     </nav>
