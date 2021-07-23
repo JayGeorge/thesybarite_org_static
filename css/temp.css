@@ -10,12 +10,12 @@
 */
 
 @keyframes wipe-in-left {
-  from {
-    clip-path: inset(0 0 0 100%);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .image-with-text__question-box {
@@ -37,4 +37,45 @@
     padding-block-end: 0;
     padding-inline-start: var(--spacing-s-x);
     padding-block-end: 0.1em;
+}
+
+
+
+
+.article {
+    display: grid;
+    grid-template-columns: 26em;
+    position: relative;
+    background: var(--colour-accent);
+}
+
+.article {
+    padding-block-start: var(--spacing-l-3);
+    padding-inline-start: 11em;
+    padding-block-end: 20em;
+    color: hsl(168deg 100% 5%);
+}
+
+.article h2 {
+    font-size: var(--font-size-l-1);
+    line-height: var(--font-size-l-1-line-height);
+/*     text-indent: 4rem; */
+}
+
+.article p {
+    /* font-size: var(--font-size-s-x); */
+}
+
+#main > article > img {
+    position: absolute;
+    left: 44em;
+    top: 73em;
+    width: 25%;
+}
+
+.caption {
+    position: absolute;
+    left: 44rem;
+    top: 97rem;
+    font-size: var(--font-size-s-x);
 }
