@@ -64,6 +64,11 @@
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
                         <p class="feature-columns__description">A Champagne of intense fruits of apples and raisins on the nose. In the mouth this Champagne is refreshingly dry with great body and length. Philippe has the patience in his Champagne making not to use malolactic fermentation and this Brut is beautifully aged.</p>
+                        <h4 class="feature-columns__sub-title">Goes well with</h4>
+                        <ul class="feature-columns__list">
+                            <li>Receptions with canapes</li>
+                            <li>grilled chicken</li>
+                        </ul>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Pinot Noir from Rilly-la-Montagne</li>
                             <li><strong>30%</strong> Chardonnay from Eceuil</li>
@@ -72,6 +77,13 @@
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Rose</em></h3>
                         <p class="feature-columns__description">An explosion of red fruits on the nose, one almost has to wait to savour the fruits. In the mouth on the palate this produces a long dry satisfying finish. This rose is dry and fresh and does not leave the ‘dirty mouth’ sensation associated with other more industrial roses.</p>
+                        <h4 class="feature-columns__sub-title">Goes well with</h4>
+                        <ul class="feature-columns__list">
+                            <li>Smoked salmon and dill</li>
+                            <li>salmon en croute</li>
+                            <li>dressed crab</li>
+                            <li>grilled lobster & chips</li>
+                        </ul>
                         <ul class="feature-columns__stats">
                             <li><strong>100%</strong> pinot noir from Rilly-la-Montagne</li>
                         </ul>
@@ -79,6 +91,13 @@
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>2011</em></h3>
                         <p class="feature-columns__description">This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a golden Champagne rich in flavour.</p>
+                        <h4 class="feature-columns__sub-title">Goes well with</h4>
+                        <ul class="feature-columns__list">
+                            <li>Wedding cake</li>
+                            <li>grilled chicken</li>
+                            <li>raspberries and cream</li>
+                            <li>almost anything sweet</li>
+                        </ul>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Chardonnay from Eceuil</li>
                             <li><strong>30%</strong> Pinot Noir from Rilly-la-Montagne</li>

@@ -14,7 +14,7 @@
     - Layout snippets inspired by https://smolcss.dev/
     - Where CSS groups include framework names such as WordPress or Genesis it means HTML/CSS in this group is based on these solid frameworks
 
-    For more information open `readme.css`
+    For more information see `readme.css`
 
 */
 :root {
@@ -435,7 +435,8 @@ h5,
 .h5,
 h6,
 .h6 {
-    padding-block-end: var(--spacing-s-x-x);
+    /* e.g. >> /champagne-club h4 */
+    padding-block-end: var(--spacing-s);
 }
 
 * + h3,
@@ -1077,6 +1078,10 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     max-width: var(--max-width-1);
     margin: auto;
 }
+
+.feature-columns__list li {
+    display: inline-block;
+}
 /* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
 =================================================== */
 .feature-columns {
@@ -1084,8 +1089,13 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     padding-inline-end: var(--spacing-l);
 }
 
-.feature-columns__stats {
-    padding-block-end: var(--spacing-l);
+.feature-columns__stats,
+.feature-columns__list {
+    padding-block-end: var(--spacing-m);
+}
+
+.feature-columns li {
+    padding-block-end: 0;
 }
 
 .feature-columns__stats strong {
@@ -1098,27 +1108,33 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     line-height: var(--font-size-l-line-height);
 }
 
+.feature-columns__sub-title {
+    font-size: var(--font-size-m);
+    line-height: var(--font-size-m-line-height);
+}
+
 .feature-columns__description {
     font-size: var(--font-size-s-x);
 }
 
-/* ul*/
-.feature-columns__stats {
-    position: relative;
+.feature-columns__list {
+    display: inline-block;
+}
+
+.feature-columns__list li:not(:last-child)::after {
+    content: " /";
+    opacity: 0.5;
 }
 
 /* ul*/
-.feature-columns__stats {
+.feature-columns__stats,
+.feature-columns__list {
     list-style: none;
 }
 
-.feature-columns__stats::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 10%;
-    border-block-end: 1px solid black;
-    opacity: 0.75;
+.feature-columns__list,
+.feature-columns__stats {
+    font-size: var(--font-size-s-x);
 }
 
 
