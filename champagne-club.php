@@ -104,22 +104,22 @@
                         </ul>
                     </div>
                 </div>
-
+                <div><img src="/img/grapes-2.jpg" alt="wine" /></div>
                 <h2 class="large-title">Clubs</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Luxe</h3>
-                        <p class="feature-columns__description"><strong>£1000</strong> paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <h3 class="feature-columns__title">Luxe <span class="feature-columns__title-motif">£1000</span></h3>
+                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
                         <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Deluxe</h3>
-                        <p class="feature-columns__description"><strong>£1850</strong> paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <h3 class="feature-columns__title">Deluxe <span class="feature-columns__title-motif">£1850</span></h3>
+                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
                         <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Bespoke</h3>
-                        <p class="feature-columns__description">Corporate bespoke packages – on request</p>
+                        <h3 class="feature-columns__title">Bespoke <span class="feature-columns__title-motif">from £3500</span></h3>
+                        <p class="feature-columns__description"><strong>Corporate bespoke collection</strong>. <a href="">Get in touch</a> with us for more details.</p>
                         <!-- <div class="btn btn--1"><a href="">Enquire</a></div> -->
                     </div>
                 </div>

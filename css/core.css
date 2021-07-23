@@ -62,7 +62,6 @@
     --colour-black-transparent: hsl(0deg 0% 0% / 40%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     --colour-grey-light: hsl(0deg 0% 82%);
-    --colour-pale: #fdeada;
     /* Jo malone */
     --colour-pale: hsl(51deg 62% 96%);
     --colour-pale-hsl: 51deg 62% 96%;
@@ -124,6 +123,7 @@
     --font-size-l-2-entry-line-height: 1.1;
 
     /* Golden Ratio */
+    --font-size-s-x-x-x: 0.382em;
     --font-size-s-x-x: 0.618em;
     --font-size-s-x-x-rem: 0.618rem;
 
@@ -1098,7 +1098,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 /* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
 =================================================== */
 .feature-columns {
-    padding-block-end: var(--spacing-l);
+    padding-block-end: var(--spacing-l-1);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 }
@@ -1127,6 +1127,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .feature-columns__title {
     font-size: var(--font-size-l);
     line-height: var(--font-size-l-line-height);
+}
+
+.feature-columns__title-motif {
+    padding-inline-start: var(--spacing-s-x-x);
+    font-size: var(--font-size-s-x-x-x);
 }
 
 .feature-columns__sub-title {

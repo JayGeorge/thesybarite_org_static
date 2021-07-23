@@ -73,3 +73,29 @@
 article {
     color: var(--colour-accent, var(--colour-black));
 }
+
+#main > article > div > div:nth-child(4) {
+    max-width: var(--max-width-1);
+    margin: auto;
+    margin-block-end: var(--spacing-m);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+/*     border: 3px solid red!important; */
+/*     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom; */
+    position: relative;
+}
+
+#main > article > div > div:nth-child(4)::before,
+#main > article > div > div:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: url(/img/svg/ripped-paper.svg) bottom;
+}
+
+#main > article > div > div:nth-child(4)::after {
+    bottom: -5px;
+    transform: rotate(180deg);
+}
