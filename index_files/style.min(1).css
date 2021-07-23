@@ -27,9 +27,9 @@
     /* Dark to light */
     --colour-black: black;
     --colour-grey-light: hsl(0deg 0% 82%);
-    --colour-accent: #fdeada;
+    --colour-pale: #fdeada;
     /* Jo malone */
-    /* --colour-accent: #fbf9ee; */
+    /* --colour-pale: #fbf9ee; */
 
     /* Golden Ratio */
     --font-size-s-x: 0.618rem!important;
@@ -127,7 +127,7 @@ h1 {
 
 .elementor-button {
 	padding: 22px 40px!important;
-	background: var(--colour-accent)!important;
+	background: var(--colour-pale)!important;
 	border-radius: 50px!important;
 	font-weight: var(--font-family-main-weight-strong)!important;
 }

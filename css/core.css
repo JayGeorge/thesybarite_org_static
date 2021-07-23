@@ -60,12 +60,12 @@
     /* Dark to light */
     --colour-black: black;
     --colour-black-transparent: hsl(0deg 0% 0% / 40%);
-    --colour-white-transparent: hsl(var(--colour-accent-hsl) / 50%);
+    --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     --colour-grey-light: hsl(0deg 0% 82%);
-    --colour-accent: #fdeada;
+    --colour-pale: #fdeada;
     /* Jo malone */
-    --colour-accent: hsl(51deg 62% 96%);
-    --colour-accent-hsl: 51deg 62% 96%;
+    --colour-pale: hsl(51deg 62% 96%);
+    --colour-pale-hsl: 51deg 62% 96%;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME -- GRADIENTS
     =================================================== */
     --colour-gradient-orange: radial-gradient(ellipse at bottom right, hsl(41, 100%, 69%) 0%,hsl(25, 100%, 50%) 100%);
@@ -82,7 +82,7 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     --font-family-main-weight-normal: 400;
-    --font-family-main-weight-strong: 500;
+    --font-family-main-weight-strong: 600;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES
     =================================================== */
     /* Optimise line-height for reading */
@@ -130,6 +130,7 @@
     --font-size-s-x: 0.8em;
 
     --font-size-m: 1.618em;
+    --font-size-m-line-height: 1.3;
 
     --font-size-l: 2.618em;
 
@@ -137,6 +138,7 @@
     --font-size-l-1-line-height: 1;
 
     --font-size-l-2: 6.854em;
+    --font-size-l-2-line-height: 1;
 
     --font-size-l-3: 11.089em;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
@@ -158,6 +160,9 @@
     :root {
         /* GROUP VARIABLES -- SPACING
         ===================================================  */
+        /* e.g. >> /champagne-club */
+        --spacing-s-2: 1.5rem;
+        --spacing-m: 2.3rem;
         --spacing-l: 3rem;
         --spacing-l-1: 3.5rem;
     }
@@ -420,7 +425,8 @@ article + article {
 =================================================== */
 h3,
 .h3 {
-    padding-block-end: var(--spacing-s-x);
+    /* e.g. >> /champagne-club */
+    padding-block-end: var(--spacing-m);
 }
 
 h4,
@@ -1032,6 +1038,93 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 
 
+/* GROUP COMPONENTS / LARGE TITLE
+=================================================== */
+.large-title {
+    max-width: var(--max-width-1);
+    margin: auto;
+    font-size: var(--font-size-l-2);
+    line-height: var(--font-size-l-2-line-height);
+    padding-block-start: var(--spacing-m);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+}
+
+
+
+
+/* GROUP COMPONENTS / FEATURE COLUMNS
+=================================================== */
+/* Notes...
+
+	- 
+
+*/
+/* HTML Example...
+
+
+*/
+/* Modifiers...
+
+*/
+/* GROUP COMPONENTS / FEATURE COLUMNS / LAYOUT
+=================================================== */
+.feature-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-l-1);
+
+    max-width: var(--max-width-1);
+    margin: auto;
+}
+/* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
+=================================================== */
+.feature-columns {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+}
+
+.feature-columns__stats {
+    padding-block-end: var(--spacing-l);
+}
+
+.feature-columns__stats strong {
+    padding-inline-end: var(--spacing-s-x-x);
+}
+/* GROUP COMPONENTS / FEATURE COLUMNS / DECORATION
+=================================================== */
+.feature-columns__title {
+    font-size: var(--font-size-l);
+    line-height: var(--font-size-l-line-height);
+}
+
+.feature-columns__description {
+    font-size: var(--font-size-s-x);
+}
+
+/* ul*/
+.feature-columns__stats {
+    position: relative;
+}
+
+/* ul*/
+.feature-columns__stats {
+    list-style: none;
+}
+
+.feature-columns__stats::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    border-block-end: 1px solid black;
+    opacity: 0.75;
+}
+
+
+
+
+
 /* GROUP COMPONENTS / IMAGE WITH TEXT
 =================================================== */
 /* Notes...
@@ -1107,7 +1200,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .image-with-text__arrow {
     position: fixed;
     left: calc(var(--spacing-l) - 0.8em);
-    bottom: var(--spacing-m);
+    bottom: var(--spacing-s-2);
 }
 
 .image-with-text__text span {
@@ -1169,7 +1262,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .image-with-text__text :is(h1, h2, h3, p) {
-    color: var(--colour-accent);
+    color: var(--colour-pale);
     font-size: var(--font-size-l-3);
     line-height: var(--font-size-l-3-line-height);
     line-height: 0.9;
@@ -1186,11 +1279,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .image-with-text__arrow svg {
     font-size: var(--font-size-l-2);
-    color: var(--colour-accent);
+    color: var(--colour-pale);
 }
 
 body {
-    background: var(--colour-accent);
+    background: var(--colour-pale);
 }
 /* GROUP COMPONENTS / IMAGE WITH TEXT / ANIMATIONS
 =================================================== */
@@ -1265,5 +1358,5 @@ img:not([alt]) {
 =================================================== */
 .u-above-ctas {
     position: relative;
-    background: var(--colour-accent);
+    background: var(--colour-pale);
 }
