@@ -71,5 +71,5 @@
 }
 
 article {
-    color: var(--accent-colour, var(--colour-black));
+    color: var(--colour-accent, var(--colour-black));
 }

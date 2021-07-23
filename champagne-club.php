@@ -28,7 +28,7 @@
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main">
-        <article style="--accent-colour: hsl(168deg 100% 5%);">
+        <article style="--colour-accent: hsl(168deg 100% 5%);">
             <header class="image-with-text">
                 <div class="image-with-text__text">
                     <h1><span>the</span> champagne <br/>club</h1>
@@ -105,7 +105,24 @@
                     </div>
                 </div>
 
-                <h2 class="medium-title">Choose a club</h2>
+                <h2 class="large-title">Clubs</h2>
+                <div class="feature-columns feature-columns--l">
+                    <div class="feature-columns__column">
+                        <h3 class="feature-columns__title">Luxe</h3>
+                        <p class="feature-columns__description"><strong>£1000</strong> paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                    </div>
+                    <div class="feature-columns__column">
+                        <h3 class="feature-columns__title">Deluxe</h3>
+                        <p class="feature-columns__description"><strong>£1850</strong> paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                    </div>
+                    <div class="feature-columns__column">
+                        <h3 class="feature-columns__title">Bespoke</h3>
+                        <p class="feature-columns__description">Corporate bespoke packages – on request</p>
+                        <!-- <div class="btn btn--1"><a href="">Enquire</a></div> -->
+                    </div>
+                </div>
             </article>
         </div>
     </main>
