@@ -1135,7 +1135,9 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .feature-columns__sub-title {
-    font-size: var(--font-size-m);
+    font-family: var(--font-family-main);
+    font-weight: var(--font-family-main-weight-strong);
+    font-size: var(--font-size-s-x);
     line-height: var(--font-size-m-line-height);
 }
 

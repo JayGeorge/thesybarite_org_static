@@ -68,6 +68,8 @@
                         <ul class="feature-columns__list">
                             <li>Receptions with canapes</li>
                             <li>grilled chicken</li>
+                            <li>dressed crab</li>
+                            <li>grilled lobster & chips</li>
                         </ul>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Pinot Noir from Rilly-la-Montagne</li>
