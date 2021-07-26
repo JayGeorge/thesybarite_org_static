@@ -86,8 +86,8 @@ body [type="checkbox"] {
 =================================================== */
 /* HTML Example...
 
-    <form class="c-form">
-        <div class="c-form__notes">
+    <form class="form">
+        <div class="form__notes">
             Your email address will not be published
         </div>
 
@@ -100,7 +100,7 @@ body [type="checkbox"] {
     </form>
 
 */
-.c-form {
+.form {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
     max-width: 50rem;
@@ -112,17 +112,17 @@ body [type="checkbox"] {
     ------------------------------------- */
 }
 
-input + .c-form__notes {
+input + .form__notes {
     /* e.g. 'Login' button followed by 'Forgotten your password?' */
     padding-block-end: 0;
     padding-block-start: var(--spacing-l);
 }
 
-.c-form__notes p {
+.form__notes p {
     color: var(--colour-grey-reading);
 }
 
-.c-form legend {
+.form legend {
     /* START SCREEN READER TEXT
     --------------------------- */
     clip: rect(1px, 1px, 1px, 1px);
@@ -136,39 +136,39 @@ input + .c-form__notes {
 }
 
 /* We use a class of fieldset since the `fieldset` element is not always present */
-.c-form__fieldset {
+.form__fieldset {
     padding: 0 var(--spacing-l);
     border: 0;
 }
 
 /* Exceptions */
-.c-form [type="checkbox"],
-.c-form [type="radio"] {
+.form [type="checkbox"],
+.form [type="radio"] {
     margin-bottom: 0;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (MODIFIERS)
 =================================================== */
-.c-form--wide {
+.form--wide {
     max-width: 80rem;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / PERCH EXAMPLE
 =================================================== */
 /* HTML Example...
 
-    <form id="form1_comment" class="c-form" action="/blog/serving-adaptive-images-to-visitors" method="post">
-        <div class="c-form__notes">
+    <form id="form1_comment" class="form" action="/blog/serving-adaptive-images-to-visitors" method="post">
+        <div class="form__notes">
             <h2>Leave a comment</h2>
             <p>Your email address will not be published</p>
         </div>
 
-        <fieldset class="c-form__fieldset">
+        <fieldset class="form__fieldset">
             <legend>Leave a comment</legend>
-            <div class="c-form-cols c-form-cols--2">
-                <div class="c-form-cols__col">
+            <div class="form-cols form-cols--2">
+                <div class="form-cols__col">
                     <label for="form1_commentName">Name</label>
                     <input id="form1_commentName" name="commentName" type="text" required="required">
                 </div>
-                <div class="c-form-cols__col">
+                <div class="form-cols__col">
                     <label for="form1_commentEmail">Email</label>
                     <input id="form1_commentEmail" name="commentEmail" type="email" required="required">
                 </div>
@@ -194,13 +194,13 @@ input + .c-form__notes {
 =================================================== */
 /* HTML Example...
 
-    <div class="c-form-wrapper"> <-- (Optional). Used to adding padding on smaller MQs
+    <div class="form-wrapper"> <-- (Optional). Used to adding padding on smaller MQs
         <form>
-            <div class="c-form-cols c-form-cols--2">
-                <div class="c-form-cols__col">
+            <div class="form-cols form-cols--2">
+                <div class="form-cols__col">
                     <input/>
                 </div>
-                <div class="c-form-cols__col">
+                <div class="form-cols__col">
                     <input/>
                 </div>
             </div>
@@ -209,39 +209,39 @@ input + .c-form__notes {
 
 */
 
-.c-form-cols {
+.form-cols {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 1em;
 }
 
-.c-form-cols--1 {
+.form-cols--1 {
     grid-template-columns: 1fr;
 }
 
 /* Custom */
 @media (min-width: 500px) {
-    .c-form-cols__col input {
+    .form-cols__col input {
         /* e.g. if we have a shorter form field like a password */
         width: 100%;
         max-width: none;
     }
 
     /* Exceptions */
-    .c-form-cols__col [type="checkbox"],
-    .c-form-cols__col [type="radio"] {
+    .form-cols__col [type="checkbox"],
+    .form-cols__col [type="radio"] {
         width: initial;
     }
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / SPACING
 =================================================== */
 /* (Optional). Used to adding padding on smaller MQs */
-.c-form-wrapper {
+.form-wrapper {
     padding-inline-start: var(--spacing-s);
     padding-inline-end: var(--spacing-s);
 }
 
-.c-form__notes {
+.form__notes {
     padding-inline-start: var(--spacing-l);
     padding-block-end: var(--spacing-m);
     padding-inline-end: var(--spacing-l);
@@ -308,7 +308,7 @@ input + .c-form__notes {
 /* Need to disable because selector group includes a plugin selector */
 .s-forms-block label,
 /* Organisms > Comments > Perch */
-.c-form label {
+.form label {
     display: block;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / MOBILE (INLINE)
@@ -339,7 +339,7 @@ input + .c-form__notes {
 }*/
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
 =================================================== */
-.c-form-error {
+.form-error {
     display: inline-block;
     padding-block-end: var(--spacing-s-x);
     margin-bottom: var(--spacing-s-1);
@@ -489,30 +489,30 @@ textarea {
 
 /* Javascript needed...
 
-    Array.from(document.querySelectorAll('.js__c-form--hide-labels-until-focused input:not([type="submit"]), .js__c-form--hide-labels-until-focused textarea') || []).forEach(element => {
+    Array.from(document.querySelectorAll('.js__form--hide-labels-until-focused input:not([type="submit"]), .js__form--hide-labels-until-focused textarea') || []).forEach(element => {
         element.addEventListener('focus', (event) => {
             // The label is targetted as a descendent of the parent with CSS to hide/unhide it
-            event.target.parentElement.classList.add('js__c-form--hide-labels-until-focused__label-unhidden');
+            event.target.parentElement.classList.add('js__form--hide-labels-until-focused__label-unhidden');
         });
         element.addEventListener('blur', (event) => {
-            event.target.parentElement.classList.remove('js__c-form--hide-labels-until-focused__label-unhidden');
+            event.target.parentElement.classList.remove('js__form--hide-labels-until-focused__label-unhidden');
         });
     });
 
 */
 
-.js .js__c-form--hide-labels-until-focused label {
+.js .js__form--hide-labels-until-focused label {
     /* Fast out, Slow in */
     transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     opacity: 0;
 }
 
-.js .js__c-form--hide-labels-until-focused__label-unhidden label {
+.js .js__form--hide-labels-until-focused__label-unhidden label {
     opacity: 1;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / LABELS HIDDEN UNTIL FOCUSED / SPACING
 =================================================== */
-.js .js__c-form--hide-labels-until-focused input {
+.js .js__form--hide-labels-until-focused input {
     /* Decrease */
     margin-bottom: var(--spacing-s);
 }

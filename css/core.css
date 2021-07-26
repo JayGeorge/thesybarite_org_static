@@ -477,10 +477,6 @@ main:focus {
     outline: none;
 }
 
-main {
-    margin-bottom: var(--spacing-l-1);
-}
-
 main > *:last-child {
     padding-block-end: 0;
 }
@@ -1106,7 +1102,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .feature-columns--l .feature-columns__description {
-    padding-block-end: var(--spacing-m);
+    padding-block-end: var(--spacing-s-2);
 }
 
 .feature-columns li {
@@ -1381,4 +1377,10 @@ img:not([alt]) {
 .u-above-ctas {
     position: relative;
     background: var(--colour-pale);
+    /* e.g. >> /champagne-club */
+    padding-block-end: var(--spacing-l-4);
+}
+
+.u-above-ctas > *:last-child {
+    padding-block-end: 0;
 }
