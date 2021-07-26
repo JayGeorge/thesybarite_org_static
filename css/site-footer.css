@@ -1,0 +1,64 @@
+/*! Notes...
+
+    Author: Jay George
+    Author URI: https://jaygeorge.co.uk
+
+    ABOUT THIS CSS
+    ===================================================
+    - Only edit filename.css, then process with Codekit to output into prod/
+
+*/
+
+/* GROUP SITE FOOTER
+=================================================== */
+/* HTML Example...
+
+    <footer class="site-footer">
+        <nav>
+            <ul>
+                <li class="site-footer__heading">Explore the Sybarite</li>
+
+*/
+/* GROUP SITE FOOTER / LAYOUT
+=================================================== */
+.site-footer {
+    /* Above CTA */
+    position: relative;
+}
+
+.site-footer nav {
+    display: flex;
+    gap: var(--spacing-l-4);
+    max-width: var(--max-width-1);
+    margin: auto;
+    justify-content: space-between;
+}
+
+.site-footer nav ul {
+    gap: var(--spacing-s-x);
+}
+
+.site-footer__heading {
+    font-family: var(--font-family-headline);
+    text-transform: initial;
+    letter-spacing: 0;
+    font-size: var(--font-size-l);
+    padding-block-end: var(--spacing-s-1);
+}
+/* GROUP SITE FOOTER / SPACING
+=================================================== */
+.site-footer {
+    padding: var(--spacing-l);
+}
+
+.site-footer nav {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+/*     opacity: 0.8; */
+}
+/* GROUP SITE FOOTER / DECORATION
+=================================================== */
+.site-footer {
+    background: var(--colour-black);
+    color: var(--colour-pale);
+}

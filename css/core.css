@@ -1088,7 +1088,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .feature-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-l-1);
+    gap: var(--spacing-l-2);
 
     max-width: var(--max-width-1);
     margin: auto;
