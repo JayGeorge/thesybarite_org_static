@@ -37,7 +37,7 @@
                 <button class="image-with-text__arrow">
                     <?php include 'img/svg/down-arrow.php'; ?>
                 </button>
-                <div class="image-with-text__question-box" style="background: hsl(168deg 100% 5%);">
+                <div class="image-with-text__question-box">
                     <p>Access unique bottles from exclusive vineyards—delivered to your door every month.</p>
                 </div>
             </header>
