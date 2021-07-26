@@ -88,7 +88,7 @@
                         </ul>
                     </div>
                 </div>
-                <div><img src="/img/grapes-2.jpg" alt="wine" /></div>
+                <div><img src="/img/grapes-3.jpg" alt="wine" /></div>
                 <h2 class="large-title">Clubs</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">
