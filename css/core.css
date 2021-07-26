@@ -63,7 +63,9 @@
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     --colour-grey-light: hsl(0deg 0% 82%);
     /* Jo malone */
-    --colour-pale: hsl(51deg 62% 96%);
+    /* --colour-pale: hsl(51deg 62% 96%); */
+    /* Tweaked */
+    --colour-pale: hsl(51deg 20% 96%);
     --colour-pale-hsl: 51deg 62% 96%;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME -- GRADIENTS
     =================================================== */
