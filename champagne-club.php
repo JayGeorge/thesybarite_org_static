@@ -107,8 +107,8 @@
                         <!-- <div class="btn btn--1"><a href="">Enquire</a></div> -->
                     </div>
                 </div>
-            </article>
-        </div>
+            </div>
+        </article>
     </main>
 
     <?php include '_inc/footer.php'; ?>
