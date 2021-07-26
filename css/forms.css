@@ -50,7 +50,6 @@ textarea {
 
 label {
     /* Fixed */
-    /* e.g. >> /flooring-catalogue filter */
     font-size: 16px;
     font-weight: var(--font-family-main-weight-strong);
     /* Override line-height set on body */
@@ -74,14 +73,6 @@ body [type="checkbox"] {
     width: 100%;
     max-width: 275px;
 }
-
-/* Exceptions */
-/* =JFG. Need high specificity e.g. "Preferred Appointment Time" xx HH, xx MM */
-[type="text"] + label {
-    position: relative;
-    /* =JFG. Counter margin-bottom */
-    top: -0.25rem;
-}
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (CROSS POLLINATED)
 =================================================== */
 /* HTML Example...
@@ -104,35 +95,7 @@ body [type="checkbox"] {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
     max-width: 50rem;
-    /* START CENTER HORIZONTALLY - METHOD 2
-    --------------------------------------- */
-    margin-left: auto;
-    margin-right: auto;
-    /* END CENTER HORIZONTALLY - METHOD 2
-    ------------------------------------- */
-}
-
-input + .form__notes {
-    /* e.g. 'Login' button followed by 'Forgotten your password?' */
-    padding-block-end: 0;
-    padding-block-start: var(--spacing-l);
-}
-
-.form__notes p {
-    color: var(--colour-grey-reading);
-}
-
-.form legend {
-    /* START SCREEN READER TEXT
-    --------------------------- */
-    clip: rect(1px, 1px, 1px, 1px);
-
-    position: absolute!important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    /* END SCREEN READER TEXT
-    ------------------------- */
+    margin: auto;
 }
 
 /* We use a class of fieldset since the `fieldset` element is not always present */
@@ -145,11 +108,6 @@ input + .form__notes {
 .form [type="checkbox"],
 .form [type="radio"] {
     margin-bottom: 0;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (MODIFIERS)
-=================================================== */
-.form--wide {
-    max-width: 80rem;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / PERCH EXAMPLE
 =================================================== */
@@ -241,13 +199,8 @@ input + .form__notes {
     padding-inline-end: var(--spacing-s);
 }
 
-.form__notes {
-    padding-inline-start: var(--spacing-l);
-    padding-block-end: var(--spacing-m);
-    padding-inline-end: var(--spacing-l);
-}
-
-/* form */ label {
+/* form */
+label {
     /* Make padding effective */
     display: inline-block;
     padding-block-end: 0.2em;
@@ -289,42 +242,9 @@ input + .form__notes {
     /* Remove user agent style */
     background: transparent;
 }
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
-=================================================== */
-/* Notes...
 
-    Where we want labels to always be on a separate line e.g. Comment forms
-
-*/
-
-/* HTML Example...
-
-    <div class="s-forms-block">
-        <form/>
-    </div>
-
-*/
-
-/* Need to disable because selector group includes a plugin selector */
-.s-forms-block label,
-/* Organisms > Comments > Perch */
 .form label {
     display: block;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / MOBILE (INLINE)
-=================================================== */
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / ALERTS
-=================================================== */
-.c-alert {
-    padding-block-end: var(--spacing-l);
-    padding-block-start: var(--spacing-l);
-    padding-inline-start: var(--spacing-l-1);
-    padding-inline-end: var(--spacing-l-1);
-}
-
-.c-alert--success {
-    background: #ebf5eb;
-    background: #00cd8f;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
 =================================================== */
@@ -332,18 +252,6 @@ input + .form__notes {
 ::-webkit-input-placeholder {
     color: inherit;
     opacity: 0.54;
-}
-/* Optional override of normalize button reset */
-/*button {
-    @apply --t-text-style-1;
-}*/
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
-=================================================== */
-.form-error {
-    display: inline-block;
-    padding-block-end: var(--spacing-s-x);
-    margin-bottom: var(--spacing-s-1);
-    border-bottom: 2px solid red;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
@@ -390,129 +298,4 @@ textarea {
 =================================================== */
 [type="search"] {
     border-radius: 5px;
-}
-
-
-
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION
-=================================================== */
-textarea {
-    border: 1px solid #bbb;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 1
-=================================================== */
-[role="search"] input {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    box-shadow: 0 0 5px #ddd inset; 
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 1
-=================================================== */
-.s-input-style--1 input {
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 2
-=================================================== */
-.s-input-style--2 {
-    background-color: #f3f3f3;
-}
-
-.s-input-style--2 input {
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 3
-=================================================== */
-/* =JFG. https://dribbble.com/shots/267632-Personal-Info?list=searches&tag=form_input&offset=6 */
-.s-input-style--3 input {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow:
-        4px 4px 0 #f6f6f6,
-        4px -4px 0 #f6f6f6,
-        -4px -4px 0 #f6f6f6,
-        -4px 4px 0 #f6f6f6;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 4
-=================================================== */
-/* =JFG. https://dribbble.com/shots/267632-Personal-Info?list=searches&tag=form_input&offset=6 */
-.s-input-style--4 input {
-    border-radius: 30px;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 5
-=================================================== */
-.s-input-style--5 input {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow:
-        inset 4px 4px 0 #f2f2f2,
-        inset 4px -4px 0 #f2f2f2,
-        inset -4px -4px 0 #f2f2f2,
-        inset -4px 4px 0 #f2f2f2;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 6
-=================================================== */
-.s-input-style--6 input {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 5px rgba(0,0,0,0.1);
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION / STYLE 7
-=================================================== */
-.s-input-style--7 input {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    box-shadow: 0 0 1px #ddd inset; 
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / WORDPRESS
-=================================================== */
-/* e.g. do not affect hubspot comment, which is the last field. We do not want to create a big gap between the Hubspot comment and the submit button */
-/* c-*/.comment-form-comment textarea {
-    margin-bottom: 2.4rem;
-}
-
-
-
-
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / LABELS HIDDEN UNTIL FOCUSED
-=================================================== */
-/* Notes...
-
-    - Used to provide a more compact experience
-    - Still accessible since labels appear when you start typing
-    - Requires JS becuase we're traversing _up_ the DOM tree
-
-*/
-
-/* Javascript needed...
-
-    Array.from(document.querySelectorAll('.js__form--hide-labels-until-focused input:not([type="submit"]), .js__form--hide-labels-until-focused textarea') || []).forEach(element => {
-        element.addEventListener('focus', (event) => {
-            // The label is targetted as a descendent of the parent with CSS to hide/unhide it
-            event.target.parentElement.classList.add('js__form--hide-labels-until-focused__label-unhidden');
-        });
-        element.addEventListener('blur', (event) => {
-            event.target.parentElement.classList.remove('js__form--hide-labels-until-focused__label-unhidden');
-        });
-    });
-
-*/
-
-.js .js__form--hide-labels-until-focused label {
-    /* Fast out, Slow in */
-    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    opacity: 0;
-}
-
-.js .js__form--hide-labels-until-focused__label-unhidden label {
-    opacity: 1;
-}
-/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / LABELS HIDDEN UNTIL FOCUSED / SPACING
-=================================================== */
-.js .js__form--hide-labels-until-focused input {
-    /* Decrease */
-    margin-bottom: var(--spacing-s);
 }
