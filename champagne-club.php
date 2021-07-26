@@ -28,7 +28,7 @@
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main">
-        <article style="--colour-accent: hsl(168deg 100% 5%);">
+        <article>
             <header class="image-with-text">
                 <div class="image-with-text__text">
                     <h1><span>the</span> champagne <br/>club</h1>

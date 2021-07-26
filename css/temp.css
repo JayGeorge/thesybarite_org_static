@@ -71,7 +71,7 @@
 }
 
 article {
-    color: var(--colour-accent, var(--colour-black));
+    color: var(--colour-black);
 }
 
 #main > article > div > div:nth-child(4) {
