@@ -984,8 +984,12 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .s-entry-content {
     max-width: var(--max-width-reading);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+}
+
+.s-entry-content--columns {
     max-width: var(--max-width-title);
-    padding-inline: var(--spacing-l);
     column-count: 2;
     column-gap: var(--spacing-l);
     column-width: 16rem;
@@ -994,7 +998,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 [class*="u-width-max"] .s-entry-content:last-child,
 .s-entry-content {
     /* e.g. >> /champagne-club */
-    padding-block-end: var(--spacing-s-2);
+    padding-block-end: var(--spacing-l-3);
 }
 
 .s-entry-content ul,
@@ -1103,7 +1107,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     margin: auto;
     font-size: var(--font-size-l-2);
     line-height: var(--font-size-l-2-line-height);
-    padding-block-start: var(--spacing-m);
+    padding-block-start: 0;
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 }
@@ -1445,7 +1449,7 @@ body {
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: calc(0% - var(--spacing-l-1));
+    bottom: 0;
     width: var(--cta-box-width);
 }
 /* GROUP COMPONENTS / SIDE IMAGE / SPACING

@@ -46,14 +46,14 @@
                     <p class="entry-lead">
                         Welcome to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
-                    <div class="s-entry-content">
+                    <div class="s-entry-content s-entry-content--columns">
                         <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
 
                         <p>Customise your quarterly champagne delivery according to how many bottles and which types of champagne you are looking for. The champagnes we source are continuously expanding as part of our passion for supporting small producers, all of whom produce under 100,000 bottles a year and are difficult to source in the UK and US.</p>
 
                         <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1475378902367-dc8f9eae83e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2726&q=80" alt="test" class="side-image" />
+                    <img src="/img/purple-grapes.jpg" alt="test" class="side-image" />
                 </div>
                 <div class="article">
                     <div class="article__text">
@@ -71,37 +71,24 @@
                         </figure>
                     </div>
                 </div>
+                
+                <h2 class="large-title">How the Champagne Club works</h2>
+                <div class="u-width-max-1">
+                    <div class="s-entry-content s-entry-content--columns">
+                        <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
 
-                <h2 class="large-title">Champagnes</h2>
-                <div class="feature-columns">
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
-                        <p class="feature-columns__description">A Champagne of intense fruits of apples and raisins on the nose. In the mouth this Champagne is refreshingly dry with great body and length. Philippe has the patience in his Champagne making not to use malolactic fermentation and this Brut is beautifully aged.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Receptions with canapes, grilled chicken, dressed crab, grilled lobster & chips</p>
-                        <ul class="feature-columns__stats">
-                            <li><strong>70%</strong> Pinot Noir from Rilly-la-Montagne</li>
-                            <li><strong>30%</strong> Chardonnay from Eceuil</li>
-                        </ul>
-                    </div>
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Brugnon <em>Rose</em></h3>
-                        <p class="feature-columns__description">An explosion of red fruits on the nose, one almost has to wait to savour the fruits. In the mouth on the palate this produces a long dry satisfying finish. This rose is dry and fresh and does not leave the ‘dirty mouth’ sensation associated with other more industrial roses.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Smoked salmon and dill, salmon en croute, dressed crab, grilled lobster & chips</p>
-                        <ul class="feature-columns__stats">
-                            <li><strong>100%</strong> pinot noir from Rilly-la-Montagne</li>
-                        </ul>
-                    </div>
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Brugnon <em>2011</em></h3>
-                        <p class="feature-columns__description">This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a rich golden Champagne.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Wedding cake, grilled chicken, raspberries and cream, almost anything sweet</p>
-                        <ul class="feature-columns__stats">
-                            <li><strong>70%</strong> Chardonnay from Eceuil</li>
-                            <li><strong>30%</strong> Pinot Noir from Rilly-la-Montagne</li>
-                        </ul>
+                        <p><strong>Learn more about the grapes that have gone into your bottles</strong>, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</p>
+
+                        <p><strong>You can customize your champagne profile quarterly</strong>, which allows you to taste and order  accordingly, depending on which bubbles you want when.</p>
+
+                        <p><strong>keep your favourites or try something entirely new</strong>, from your first champagne order to your next. Have a specific request? We have bespoke packages available for whatever your champagne needs may be.</p>
                     </div>
                 </div>
-                <div class="feature-image"><img src="/img/grapes-3.jpg" alt="wine" /></div>
+
+                <div class="feature-image">
+                <img src="/img/vineyard-with-people.jpg" alt="test" />
+                </div>
+
                 <h2 class="large-title">Memberships</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">

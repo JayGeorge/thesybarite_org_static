@@ -30,8 +30,9 @@
 }
 
 .article {
-    padding: var(--spacing-l-3) var(--spacing-l);
-    padding-block-end: var(--spacing-l-4);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    padding-block-end: calc(var(--spacing-l-4) + var(--spacing-l-1));
 }
 
 .article h2 {
@@ -55,8 +56,8 @@ article {
     position: relative;
 }
 
-.feature-image::before,
-.feature-image::after {
+.feature-image--ripped::before,
+.feature-image--ripped::after {
     content: "";
     position: absolute;
     left: 0;
