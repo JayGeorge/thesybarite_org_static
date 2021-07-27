@@ -108,8 +108,8 @@
                 <div class="feature-columns">
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
-                        <p class="feature-columns__description">A Champagne of intense fruits of apples and raisins on the nose. In the mouth this Champagne is refreshingly dry with great body and length. Philippe has the patience in his Champagne making not to use malolactic fermentation and this Brut is beautifully aged.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Receptions with canapes, grilled chicken, dressed crab, grilled lobster & chips</p>
+                        <p class="feature-columns__description"><strong>Flavour –</strong> A Champagne of intense fruits of apples and raisins on the nose. In the mouth this Champagne is refreshingly dry with great body and length. Philippe has the patience in his Champagne making not to use malolactic fermentation and this Brut is beautifully aged.</p>
+                        <p class="feature-columns__description"><strong>Food pairings –</strong> The versatility of the Brut allows it to shine at receptions with canapes, but is best served with grilled chicken, try wild mushroom risotto, rosti, tuna tartare.</p>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Pinot Noir from Rilly-la-Montagne</li>
                             <li><strong>30%</strong> Chardonnay from Eceuil</li>
@@ -117,16 +117,16 @@
                     </div>
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Rose</em></h3>
-                        <p class="feature-columns__description">An explosion of red fruits on the nose, one almost has to wait to savour the fruits. In the mouth on the palate this produces a long dry satisfying finish. This rose is dry and fresh and does not leave the ‘dirty mouth’ sensation associated with other more industrial roses.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Smoked salmon and dill, salmon en croute, dressed crab, grilled lobster & chips</p>
+                        <p class="feature-columns__description"><strong>Flavour –</strong> An explosion of red fruits on the nose, one almost has to wait to savour the fruits. In the mouth on the palate this produces a long dry satisfying finish. This rose is dry and fresh and does not leave the ‘dirty mouth’ sensation associated with other more industrial roses.</p>
+                        <p class="feature-columns__description"><strong>Food pairings –</strong> Serve the Rose with smoked salmon and dill, salmon en croute, dressed crab, grilled lobster & chips</p>
                         <ul class="feature-columns__stats">
                             <li><strong>100%</strong> pinot noir from Rilly-la-Montagne</li>
                         </ul>
                     </div>
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>2011</em></h3>
-                        <p class="feature-columns__description">This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a rich golden Champagne.</p>
-                        <p class="feature-columns__description"><strong>Goes well with –</strong> Wedding cake, grilled chicken, raspberries and cream, almost anything sweet</p>
+                        <p class="feature-columns__description"><strong>Flavour –</strong> This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a rich golden Champagne.</p>
+                        <p class="feature-columns__description"><strong>Food pairings –</strong> Great with wedding cake!! Raspberries and cream a glass of the 2011 will complement almost anything fruity and sweet.</p>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Chardonnay from Eceuil</li>
                             <li><strong>30%</strong> Pinot Noir from Rilly-la-Montagne</li>

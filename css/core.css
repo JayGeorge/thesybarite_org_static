@@ -130,7 +130,8 @@
     --font-size-s-x-x-custom: 0.75em;
     --font-size-s-x-x-rem: 0.618rem;
 
-    --font-size-s-x: 0.8em;
+    /* Custom, 0.8rem is too small */
+    --font-size-s-x: 0.85em;
     --font-size-s-x-rem: 0.8rem;
 
     --font-size-m: 1.618em;
@@ -1121,6 +1122,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .large-title {
     max-width: var(--max-width-1);
     margin: auto;
+    font-family: var(--font-family-headline);
     font-size: var(--font-size-l-2);
     line-height: var(--font-size-l-2-line-height);
     padding-block-start: 0;
@@ -1171,10 +1173,6 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     padding-block-end: var(--spacing-l-1);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
-}
-
-.feature-columns__stats {
-    padding-block-end: var(--spacing-s-2);
 }
 
 .feature-columns--l .feature-columns__description {
