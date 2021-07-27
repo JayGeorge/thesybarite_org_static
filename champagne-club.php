@@ -51,7 +51,7 @@
 
                         <p>Customise your quarterly champagne delivery according to how many bottles and which types of champagne you are looking for. The champagnes we source are continuously expanding as part of our passion for supporting small producers, all of whom produce under 100,000 bottles a year and are difficult to source in the UK and US.</p>
 
-                        <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you.. We’ll do the rest.<p>
+                        <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
                 </div>
                 <div class="article">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <h2 class="large-title">The Wines</h2>
+                <h2 class="large-title">Champagnes</h2>
                 <div class="feature-columns">
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
