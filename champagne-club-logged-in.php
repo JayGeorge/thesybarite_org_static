@@ -80,8 +80,8 @@
                     <div class="feature-image">
                         <img src="/img/vineyard-with-people.jpg" alt="test">
                     </div>
-                    <div class="s-entry-content s-entry-content--columns">
-                        <p>Let us start with the Champagnes of Philippe Brugnon, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
+                    <div class="s-entry-content s-entry-content--columns s-entry-content--compressed">
+                        <p>Let us start with the <strong>Champagnes of Philippe Brugnon</strong>, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
 
                         <p>The Pinot Noir tends to produce a wine with notes of red fruits, has great body and tends to be ready to drink earlier than the Chardonnay which requires much more bottle age for the acidity to turn to fruit. This is why I tend to order Blanc de Blancs Champagne (100% Chardonnay) only when it is Vintage and has a minimum of 9 years age from the year of harvest.</p>
 
@@ -91,7 +91,7 @@
 
                 <div class="u-width-max-1">
                     <details>
-                        <summary class="button btn--2">How the Champagne Club works</summary>
+                        <summary>How the Champagne Club works</summary>
                         <div class="s-entry-content s-entry-content--columns">
                             <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
 
@@ -139,7 +139,7 @@
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>
                         <p class="feature-columns__description">Paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <div class="btn btn--1"><a href="">Subscribed ✔</a></div>
+                        <div class="btn btn--1"><a href="">Subscribed <span>✔</span></a></div>
                     </div>
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Le Connoisseur <span class="feature-columns__title-motif">£1850</span></h3>

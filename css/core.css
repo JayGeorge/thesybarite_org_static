@@ -763,6 +763,7 @@ button {
 .btn a {
     /* e.g. icons in buttons */
     display: flex;
+    gap: var(--spacing-s);
     align-items: center;
     text-align: left;
 }
@@ -987,6 +988,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     - Based on WordPress Genesis Entry Content but tailored for neutral frameworks
 
 */
+/* Modifiers...
+
+    .s-entry-content--compressed <-- smaller bottom padding
+
+*/
 
 .s-entry-content {
     max-width: var(--max-width-reading);
@@ -1005,6 +1011,10 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .s-entry-content {
     /* e.g. >> /champagne-club */
     padding-block-end: var(--spacing-l-3);
+}
+
+.s-entry-content--compressed {
+    padding-block-end: var(--spacing-l)!important;
 }
 
 .s-entry-content ul,
@@ -1180,9 +1190,14 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 /* GROUP COMPONENTS / FEATURE COLUMNS / DECORATION
 =================================================== */
-.feature-columns__title {
-    font-size: var(--font-size-m-custom);
+.feature-columns .feature-columns__title {
+    font-size: var(--font-size-l);
     line-height: var(--font-size-l-line-height);
+}
+
+.feature-columns--l .feature-columns__title {
+    font-size: var(--font-size-m-custom);
+    line-height: var(--font-size-m-line-height);
 }
 
 .feature-columns__title-motif {
@@ -1478,15 +1493,16 @@ body {
 */
 /* GROUP COMPONENTS / SUMMARY DETAIL / LAYOUT
 =================================================== */
-summary {
-    display: inline-block;
-}
 /* GROUP COMPONENTS / SUMMARY DETAIL / SPACING
 =================================================== */
 details {
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
-    margin-block-end: var(--spacing-l-4);
+    margin-block-end: var(--spacing-l-3);
+}
+
+summary {
+    padding-block-end: var(--spacing-s-2);
 }
 
 summary + * {
@@ -1503,6 +1519,33 @@ summary + .s-entry-content {
 }
 /* GROUP COMPONENTS / SUMMARY DETAIL / DECORATION
 =================================================== */
+summary {
+    font-family: var(--font-family-headline);
+    font-size: var(--font-size-s);
+}
+
+summary {
+    cursor: pointer;
+}
+
+details[open] summary {
+    border-block-end: 1px solid var(--colour-black);
+}
+/* GROUP COMPONENTS / SUMMARY DETAIL / DECORATION / CHANGE MARKER
+=================================================== */
+summary {
+    list-style: none;
+}
+
+summary::before {
+    width: 1.5em;
+    content: "+";
+    float: left;
+}
+
+details[open] summary::before {
+    content: "—";
+}
 
 
 
