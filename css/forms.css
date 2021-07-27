@@ -193,7 +193,7 @@ label {
 }
 
 .form__notes {
-    padding-block-end: var(--spacing-s-2);
+    padding-block-end: var(--spacing-m);
 }
 
 [type="checkbox"],
@@ -312,7 +312,7 @@ textarea {
     display: grid;
     grid-template-columns: 75fr 25fr;
 
-    gap: var(--spacing-l);
+    gap: var(--spacing-l-2);
 }
 
 /* .form-with-agreement__agreement p {
