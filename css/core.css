@@ -131,6 +131,7 @@
     --font-size-s-x-x-rem: 0.618rem;
 
     --font-size-s-x: 0.8em;
+    --font-size-s-x-rem: 0.8rem;
 
     --font-size-m: 1.618em;
     --font-size-m-rem: 1.618rem;
@@ -599,7 +600,6 @@ a {
 /* .u-link-style-1 a, */
 /* Components > Framework > Entry > Entry Content */
 .s-entry-content a {
-    text-decoration: none;
     color: var(--colour-turquoise);
 }
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
@@ -732,6 +732,7 @@ should be...
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-s);
     font-weight: var(--font-family-main-weight-strong);
+    font-size: var(--font-size-s-x);
 }
 
 /* Not .btn + .btn in case a button is next to a different tag such as <p/> */
@@ -778,19 +779,15 @@ button svg {
 =================================================== */
 /* 1 */
 .btn--1 a {
-    border: 2px solid var(--colour-accent);
-    border-radius: 50px;
-    font-size: var(--font-size-s-x);
+    border: none;
+    background: var(--colour-black);
+    color: var(--colour-pale);
 }
 
 /* 2 */
-.btn--2 a,
-button.btn--2,
-/* e.g. Components > Framework > Forms > Layout */
-.c-form [type="submit"] {
-    background: var(--colour-turquoise);
-    color: white;
-    border-radius: var(--border-radius-s);
+.btn--2 a {
+    border: 2px solid black;
+    font-size: var(--font-size-s-x);
 }
 
 
@@ -1162,7 +1159,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .feature-columns--l .feature-columns__description {
-    padding-block-end: var(--spacing-s-2);
+    padding-block-end: var(--spacing-l);
 }
 
 .feature-columns li {
@@ -1175,13 +1172,17 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 /* GROUP COMPONENTS / FEATURE COLUMNS / DECORATION
 =================================================== */
 .feature-columns__title {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m-custom);
     line-height: var(--font-size-l-line-height);
 }
 
 .feature-columns__title-motif {
     padding-inline-start: var(--spacing-s-x-x);
-    font-size: var(--font-size-s-x-x-x);
+    font-size: var(--font-size-s-x-rem);
+}
+
+.feature-columns__title-motif::before {
+    content: "— ";
 }
 
 .feature-columns__description {

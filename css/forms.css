@@ -61,7 +61,7 @@ input::placeholder {
 
 label {
     /* Fixed */
-    /* font-size: 16px; */
+    font-size: 16px;
     /* Override line-height set on body */
     /* e.g. >> footer privacy policy checkbox */
     line-height: 1.1;
@@ -222,11 +222,6 @@ label {
 [type="submit"] {
     /* Always on a separate line */
     display: block!important;
-    /* Organisms > Forms > Plugins > Mailchimp */
-    /* =JFG. e.g. Subscribe button for Mailchimp. This needs to be rem
-    because sometimes the form gets embedded in .s-entry-content which could be 1.1em.
-    We don't want the button size getting too big. */
-    font-size: 0.85rem;
     /* Same as HTML, overriding the default of 1 in the reset */
     line-height: 1.5;
     background: var(--colour-pale);

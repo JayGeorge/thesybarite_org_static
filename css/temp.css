@@ -48,7 +48,7 @@ article {
 .feature-image {
     max-width: var(--max-width-1);
     margin: auto;
-    margin-block-end: var(--spacing-m);
+    margin-block-end: var(--spacing-l-3);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
     /* border: 3px solid red!important; */

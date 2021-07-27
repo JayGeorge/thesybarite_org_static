@@ -51,7 +51,7 @@
 
                         <p>Customise your quarterly champagne delivery according to how many bottles and which types of champagne you are looking for. The champagnes we source are continuously expanding as part of our passion for supporting small producers, all of whom produce under 100,000 bottles a year and are difficult to source in the UK and US.</p>
 
-                        <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
+                        <p>Discover the unique offering of the Champagne region like never before. <a href="">Join our exclusive champagne community</a>, where you’ll learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
                     <img src="/img/purple-grapes.jpg" alt="test" class="side-image" />
                 </div>
@@ -89,22 +89,22 @@
                 <img src="/img/vineyard-with-people.jpg" alt="test" />
                 </div>
 
-                <h2 class="large-title">Memberships</h2>
+                <h2 class="medium-title">Choose a Membership</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Luxe <span class="feature-columns__title-motif">£1000</span></h3>
-                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                        <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>
+                        <p class="feature-columns__description">Paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <div class="btn btn--2"><a href="">Subscribe</a></div>
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Deluxe <span class="feature-columns__title-motif">£1850</span></h3>
-                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                        <h3 class="feature-columns__title">Le Connoisseur <span class="feature-columns__title-motif">£1850</span></h3>
+                        <p class="feature-columns__description">Paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <div class="btn btn--2"><a href="">Subscribe</a></div>
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Bespoke <span class="feature-columns__title-motif">from £3500</span></h3>
-                        <p class="feature-columns__description"><strong>Corporate bespoke collection</strong>. <a href="">Get in touch</a> with us for more details.</p>
-                        <!-- <div class="btn btn--1"><a href="">Enquire</a></div> -->
+                        <h3 class="feature-columns__title">La Suprême <span class="feature-columns__title-motif">on request</span></h3>
+                        <p class="feature-columns__description">Corporate bespoke collection. <a href="">Get in touch</a> with us for more details.</p>
+                        <div class="btn btn--2"><a href="">Enquire</a></div>
                     </div>
                 </div>
             </div>
