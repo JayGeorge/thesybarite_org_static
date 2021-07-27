@@ -42,6 +42,18 @@
                 </div>
             </header>
             <div class="u-above-ctas">
+                <div class="u-width-max-1">
+                    <p class="entry-lead">
+                        Welcome to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
+                    </p>
+                    <div class="s-entry-content">
+                        <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
+
+                        <p>Customise your quarterly champagne delivery according to how many bottles and which types of champagne you are looking for. The champagnes we source are continuously expanding as part of our passion for supporting small producers, all of whom produce under 100,000 bottles a year and are difficult to source in the UK and US.</p>
+
+                        <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you.. We’ll do the rest.<p>
+                    </div>
+                </div>
                 <div class="article">
                     <div class="article__text">
                         <h2>Meet Edward, your bespoke wine curator</h2>
@@ -88,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div><img src="/img/grapes-3.jpg" alt="wine" /></div>
+                <div class="feature-image"><img src="/img/grapes-3.jpg" alt="wine" /></div>
                 <h2 class="large-title">Clubs</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">

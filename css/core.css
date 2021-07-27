@@ -126,14 +126,18 @@
 
     /* Golden Ratio */
     --font-size-s-x-x-x: 0.382em;
-    --font-size-s-x-x: 0.618em;
+    /* Custom e.g. >> /champagne-club > .feature-columns__stats */
+    --font-size-s-x-x-custom: 0.75em;
     --font-size-s-x-x-rem: 0.618rem;
 
     --font-size-s-x: 0.8em;
 
     --font-size-m: 1.618em;
     --font-size-m-rem: 1.618rem;
-    --font-size-m-line-height: 1.3;
+    /* e.g. >> /champagne-club. */
+    /* Increase */
+    --font-size-m-custom: 1.7em;
+    --font-size-m-line-height: 1.4;
 
     --font-size-l: 2.618em;
 
@@ -967,6 +971,45 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 
 
+/* GROUP ENTRY LEAD
+=================================================== */
+/* Notes...
+
+	- Used to introduce the content e.g. /champagne-club
+
+*/
+/* HTML Example...
+
+    .entry-lead
+        p
+
+*/
+/* Modifiers...
+
+*/
+/* GROUP ENTRY LEAD / LAYOUT
+=================================================== */
+.entry-lead {
+    max-width: var(--max-width-title);
+}
+/* GROUP ENTRY LEAD / SPACING
+=================================================== */
+.entry-lead {
+    padding-block-end: var(--spacing-l-1);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+}
+/* GROUP ENTRY LEAD / DECORATION
+=================================================== */
+.entry-lead {
+    font-size: var(--font-size-m-custom);
+    line-height: var(--font-size-m-line-height);
+    font-family: var(--font-family-headline);
+}
+
+
+
+
 /* GROUP COMPONENTS / FRAMEWORK / ENTRY / ENTRY CONTENT
 =================================================== */
 /* Notes...
@@ -977,8 +1020,12 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .s-entry-content {
     max-width: var(--max-width-reading);
+    max-width: var(--max-width-title);
     padding-inline: var(--spacing-l);
     padding-block-end: var(--spacing-l);
+    column-count: 2;
+    column-gap: var(--spacing-l);
+    column-width: 16rem;
 }
 
 .s-entry-content ul,
@@ -1135,7 +1182,9 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 .feature-columns__stats {
-    font-size: var(--font-size-s-x);
+    font-size: var(--font-size-s-x-x-custom);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
 }
 
 .feature-columns--l .feature-columns__description {
@@ -1373,6 +1422,27 @@ img:not([alt]) {
     width: auto;
     height: auto;
 }
+/* GROUP UTILITIES / FRAMEWORK / LAYOUT / CONSTRAINTS / MAX
+=================================================== */
+.u-width-max-reading,
+.u-width-max-1,
+.u-width-max-2 {
+    max-width: var(--max-width-reading);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.u-width-max-1 {
+    max-width: var(--max-width-1);
+}
+
+.u-width-max-2 {
+    max-width: var(--max-width-2);
+}
+
+/* .u-width-max--uncentered {
+    margin-left: 0;
+} */
 /* GROUP UTILITIES
 =================================================== */
 .u-above-ctas {
@@ -1380,6 +1450,7 @@ img:not([alt]) {
     background: var(--colour-pale);
     /* e.g. >> /champagne-club */
     padding-block-end: var(--spacing-l-4);
+    padding-block-start: var(--spacing-l-4);
 }
 
 .u-above-ctas > *:last-child {

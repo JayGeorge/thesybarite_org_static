@@ -61,7 +61,7 @@
 }
 
 .article {
-    padding: var(--spacing-l-4) var(--spacing-l);
+    padding: var(--spacing-l-3) var(--spacing-l);
     padding-block-end: var(--spacing-l-4);
 }
 
@@ -75,7 +75,7 @@ article {
     color: var(--colour-black);
 }
 
-#main > article > div > div:nth-child(4) {
+.feature-image {
     max-width: var(--max-width-1);
     margin: auto;
     margin-block-end: var(--spacing-m);
@@ -86,8 +86,8 @@ article {
     position: relative;
 }
 
-#main > article > div > div:nth-child(4)::before,
-#main > article > div > div:nth-child(4)::after {
+.feature-image::before,
+.feature-image::after {
     content: "";
     position: absolute;
     left: 0;
@@ -96,7 +96,7 @@ article {
     background: url(/img/svg/ripped-paper.svg) bottom;
 }
 
-#main > article > div > div:nth-child(4)::after {
+.feature-image::after {
     bottom: -5px;
     transform: rotate(180deg);
 }
