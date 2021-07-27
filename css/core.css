@@ -392,8 +392,8 @@ h2,
 
 h3,
 .h3 {
-    font-size: var(--font-size-s-2);
-    line-height: var(--font-size-s-2-line-height);
+    font-size: var(--font-size-m);
+    line-height: var(--font-size-m-line-height);
 }
 
 h4,
@@ -732,7 +732,15 @@ should be...
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-s);
     font-weight: var(--font-family-main-weight-strong);
-    font-size: var(--font-size-s-x);
+    font-size: var(--font-size-s-x-rem);
+}
+
+.site-header__cta--fixed {
+    position: fixed;
+    top: var(--spacing-s-1);
+    right: var(--spacing-l-1);
+    z-index: 9999;
+    background: red;
 }
 
 /* Not .btn + .btn in case a button is next to a different tag such as <p/> */
@@ -785,6 +793,7 @@ button svg {
 }
 
 /* 2 */
+summary.btn--2,
 .btn--2 a {
     border: 2px solid black;
     font-size: var(--font-size-s-x);
@@ -1453,10 +1462,48 @@ body {
     bottom: 0;
     width: var(--cta-box-width);
 }
-/* GROUP COMPONENTS / SIDE IMAGE / SPACING
+
+
+
+
+/* GROUP COMPONENTS / SUMMARY DETAIL
 =================================================== */
-/* GROUP COMPONENTS / SIDE IMAGE / DECORATION
+/* Notes...
+
+	- 
+
+*/
+/* HTML Example...
+
+*/
+/* GROUP COMPONENTS / SUMMARY DETAIL / LAYOUT
 =================================================== */
+summary {
+    display: inline-block;
+}
+/* GROUP COMPONENTS / SUMMARY DETAIL / SPACING
+=================================================== */
+details {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    margin-block-end: var(--spacing-l-4);
+}
+
+summary + * {
+    padding-block-start: var(--spacing-l);
+}
+
+summary + .s-entry-content:last-child {
+    padding-block-end: 0!important;
+}
+
+summary + .s-entry-content {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+/* GROUP COMPONENTS / SUMMARY DETAIL / DECORATION
+=================================================== */
+
 
 
 
@@ -1515,6 +1562,12 @@ img:not([alt]) {
     max-width: var(--max-width-reading);
     margin-inline-start: auto;
     margin-inline-end: auto;
+}
+
+/* e.g. >> /champagne-club-logged-in */
+[class*="u-width-max"] > h3 {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
 }
 
 .u-width-max-1 {

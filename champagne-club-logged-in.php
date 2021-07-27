@@ -72,21 +72,36 @@
                     </div>
                 </div>
                 
-                <h2 class="large-title">How the Champagne Club works</h2>
+                <h2 class="large-title">A Year in Champagne</h2>
                 <div class="u-width-max-1">
+                    <p class="entry-lead">Start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
+
+                    <h3>Our Vineyard: Philippe Brugnon</h3>
+                    <div class="feature-image">
+                        <img src="/img/vineyard-with-people.jpg" alt="test">
+                    </div>
                     <div class="s-entry-content s-entry-content--columns">
-                        <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
+                        <p>Let us start with the Champagnes of Philippe Brugnon, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
 
-                        <p><strong>Learn more about the grapes that have gone into your bottles</strong>, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</p>
+                        <p>The Pinot Noir tends to produce a wine with notes of red fruits, has great body and tends to be ready to drink earlier than the Chardonnay which requires much more bottle age for the acidity to turn to fruit. This is why I tend to order Blanc de Blancs Champagne (100% Chardonnay) only when it is Vintage and has a minimum of 9 years age from the year of harvest.</p>
 
-                        <p><strong>You can customize your champagne profile quarterly</strong>, which allows you to taste and order  accordingly, depending on which bubbles you want when.</p>
-
-                        <p><strong>keep your favourites or try something entirely new</strong>, from your first champagne order to your next. Have a specific request? We have bespoke packages available for whatever your champagne needs may be.</p>
+                        <p>The picture of the statue of Bacchus (the Roman god of wine) on the label is a give away that Rilly-la-Montagne is a place for good wines!</p>
                     </div>
                 </div>
 
-                <div class="feature-image">
-                <img src="/img/vineyard-with-people.jpg" alt="test" />
+                <div class="u-width-max-1">
+                    <details>
+                        <summary class="button btn--2">How the Champagne Club works</summary>
+                        <div class="s-entry-content s-entry-content--columns">
+                            <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
+
+                            <p><strong>Learn more about the grapes that have gone into your bottles</strong>, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</p>
+
+                            <p><strong>You can customize your champagne profile quarterly</strong>, which allows you to taste and order  accordingly, depending on which bubbles you want when.</p>
+
+                            <p><strong>keep your favourites or try something entirely new</strong>, from your first champagne order to your next. Have a specific request? We have bespoke packages available for whatever your champagne needs may be.</p>
+                        </div>
+                    </details>
                 </div>
 
                 <h2 class="large-title">Champagnes</h2>
@@ -119,22 +134,22 @@
                     </div>
                 </div>
                 <div class="feature-image feature-image--ripped"><img src="/img/grapes-3.jpg" alt="wine" /></div>
-                <h2 class="large-title">Memberships</h2>
+                <h2 class="medium-title">Choose a Membership</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Luxe <span class="feature-columns__title-motif">£1000</span></h3>
-                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                        <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>
+                        <p class="feature-columns__description">Paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <div class="btn btn--1"><a href="">Subscribed ✔</a></div>
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Deluxe <span class="feature-columns__title-motif">£1850</span></h3>
-                        <p class="feature-columns__description"><strong>Paid quarterly</strong> for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <!-- <div class="btn btn--1"><a href="">Subscribe</a></div> -->
+                        <h3 class="feature-columns__title">Le Connoisseur <span class="feature-columns__title-motif">£1850</span></h3>
+                        <p class="feature-columns__description">Paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
+                        <div class="btn btn--2"><a href="">Upgrade</a></div>
                     </div>
                     <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Bespoke <span class="feature-columns__title-motif">from £3500</span></h3>
-                        <p class="feature-columns__description"><strong>Corporate bespoke collection</strong>. <a href="">Get in touch</a> with us for more details.</p>
-                        <!-- <div class="btn btn--1"><a href="">Enquire</a></div> -->
+                        <h3 class="feature-columns__title">La Suprême <span class="feature-columns__title-motif">on request</span></h3>
+                        <p class="feature-columns__description">Corporate bespoke collection. <a href="">Get in touch</a> with us for more details.</p>
+                        <div class="btn btn--2"><a href="">Enquire</a></div>
                     </div>
                 </div>
             </div>
