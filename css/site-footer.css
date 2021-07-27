@@ -14,9 +14,14 @@
 /* HTML Example...
 
     <footer class="site-footer">
-        <nav>
-            <ul>
-                <li class="site-footer__heading">Explore the Sybarite</li>
+        <div class="site-footer__columns">
+            <nav>
+                <ul>
+                    <li class="site-footer__heading">Explore the Sybarite</li>
+            <nav>
+                <ul>
+                    <li class="site-footer__heading">Explore the Sybarite</li>
+            <form>
 
 */
 /* GROUP SITE FOOTER / LAYOUT
@@ -26,12 +31,20 @@
     position: relative;
 }
 
-.site-footer nav {
+.site-footer__columns {
     display: flex;
-    gap: var(--spacing-l-4);
+    /* gap: var(--spacing-s); */
     max-width: var(--max-width-1);
     margin: auto;
     justify-content: space-between;
+}
+
+.site-footer__columns nav {
+    flex-basis: 20%;
+}
+
+.site-footer__columns form {
+    flex-basis: 75%;
 }
 
 .site-footer nav ul {
@@ -42,19 +55,29 @@
     font-family: var(--font-family-headline);
     text-transform: initial;
     letter-spacing: 0;
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m-rem);
     padding-block-end: var(--spacing-s-1);
+}
+
+.site-footer [type="submit"] {
+    width: 100%;
 }
 /* GROUP SITE FOOTER / SPACING
 =================================================== */
 .site-footer {
-    padding: var(--spacing-l);
+    padding-block-start: var(--spacing-l-3);
+    padding-block-end: var(--spacing-l-3);
 }
 
-.site-footer nav {
+.site-footer__columns {
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 /*     opacity: 0.8; */
+}
+
+.site-footer [type="submit"] {
+    /* Decrease */
+    margin-block-start: var(--spacing-s-x);
 }
 /* GROUP SITE FOOTER / DECORATION
 =================================================== */

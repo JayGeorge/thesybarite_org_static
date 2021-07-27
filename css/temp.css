@@ -86,7 +86,8 @@ article {
     position: relative;
 }
 
-#main > article > div > div:nth-child(4)::before {
+#main > article > div > div:nth-child(4)::before,
+#main > article > div > div:nth-child(4)::after {
     content: "";
     position: absolute;
     left: 0;

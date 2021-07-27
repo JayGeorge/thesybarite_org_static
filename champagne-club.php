@@ -80,7 +80,7 @@
                     </div>
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>2011</em></h3>
-                        <p class="feature-columns__description">This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a golden Champagne rich in flavour.</p>
+                        <p class="feature-columns__description">This is a tremendous vintage Champagne absolutely at its’ peak. The Chardonnay is fully developed and it gives off that distinctly ‘pruny’ taste which demonstrates that it is at its’ best. The paleness of the Chardonnay has given way to a rich golden Champagne.</p>
                         <p class="feature-columns__description"><strong>Goes well with –</strong> Wedding cake, grilled chicken, raspberries and cream, almost anything sweet</p>
                         <ul class="feature-columns__stats">
                             <li><strong>70%</strong> Chardonnay from Eceuil</li>
