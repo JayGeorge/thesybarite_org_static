@@ -86,6 +86,7 @@
                         <p>The Pinot Noir tends to produce a wine with notes of red fruits, has great body and tends to be ready to drink earlier than the Chardonnay which requires much more bottle age for the acidity to turn to fruit. This is why I tend to order Blanc de Blancs Champagne (100% Chardonnay) only when it is Vintage and has a minimum of 9 years age from the year of harvest.</p>
 
                         <p>The picture of the statue of Bacchus (the Roman god of wine) on the label is a give away that Rilly-la-Montagne is a place for good wines!</p>
+                        <!-- <p>We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p> -->
                     </div>
                 </div>
 
@@ -105,9 +106,9 @@
                 </div>
 
                 <h2 class="large-title">Champagnes</h2>
-                <div class="u-width-max-1">
+                <!-- <div class="u-width-max-1">
                     <p class="entry-lead">We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p>
-                </div>
+                </div> -->
                 <div class="feature-columns">
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
