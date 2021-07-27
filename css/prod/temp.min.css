@@ -1,0 +1,80 @@
+ /*! Notes...
+
+    Author: Jay George
+    Author URI: https://jaygeorge.co.uk
+
+    ABOUT THIS CSS
+    ===================================================
+    - Only edit filename.css, then process with Codekit to output into prod/
+
+*/
+
+
+
+
+.article {
+    display: grid;
+    grid-template-columns: 26em 23em;
+    gap: var(--spacing-l-4);
+    position: relative;
+    background: var(--colour-pale);
+    max-width: var(--max-width-1);
+    margin: auto;
+}
+
+.article__image {
+    position: relative;
+    top: var(--spacing-l-1);
+    display: grid;
+    -webkit-align-items: end;
+    align-items: end;
+}
+
+.article {
+    -webkit-padding-start: var(--spacing-l);
+    padding-inline-start: var(--spacing-l);
+    -webkit-padding-end: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    -webkit-padding-after: calc(var(--spacing-l-4) + var(--spacing-l-1));
+    padding-block-end: calc(var(--spacing-l-4) + var(--spacing-l-1));
+}
+
+.article h2 {
+    font-size: var(--font-size-l-1);
+    line-height: var(--font-size-l-1-line-height);
+/*     text-indent: 4rem; */
+}
+
+article {
+    color: var(--colour-black);
+}
+
+.feature-image {
+    max-width: var(--max-width-1);
+    margin: auto;
+    -webkit-margin-after: var(--spacing-l-3);
+    margin-block-end: var(--spacing-l-3);
+    -webkit-padding-start: var(--spacing-l);
+    padding-inline-start: var(--spacing-l);
+    -webkit-padding-end: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    /* border: 3px solid red!important; */
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom; */
+    position: relative;
+}
+
+.feature-image--ripped::before,
+.feature-image--ripped::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: url(/img/svg/ripped-paper.svg) bottom;
+}
+
+.feature-image::after {
+    bottom: -5px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

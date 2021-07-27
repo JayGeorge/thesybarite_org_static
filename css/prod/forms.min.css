@@ -1,0 +1,338 @@
+/*! Notes...
+
+    Author: Jay George
+    Author URI: https://jaygeorge.co.uk
+
+    ABOUT THIS CSS
+    ===================================================
+    - Only edit filename.css, then process with Codekit to output into prod/
+
+*/
+
+
+
+
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / (CROSS POLLINATED)
+=================================================== */
+/* Notes...
+
+    - You should consider increasing specificity depending on the environment e.g. add .site-container to
+    the selector for WordPress so rules do not affect wp-admin bar
+
+*/
+
+/* Modifiers...
+    
+    .form--hidden-labels <-- labels hidden with screen reader text except labels with .form-label-show
+
+*/
+[type="text"],
+[type="email"],
+[type="tel"],
+[type="password"],
+[type="url"],
+[type="tel"],
+[type="search"],
+textarea {
+    vertical-align: top;
+    /* box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1); */
+    /* =JFG. e.g. search box >> blog or newsletter signup email address */
+    padding: 12px;
+    margin-bottom: 2rem;
+    /* e.g. fields next to each other */
+    margin-right: 0.5rem;
+    /* =JFG. Need line height; IE9 bug. Source http://stackoverflow.com/questions/7797103/text-indent-for-a-text-box-in-ie */
+    line-height: 1.45;
+    border: none;
+    -webkit-border-after: 1px solid #fafafa;
+    border-block-end: 1px solid #fafafa;
+    background: transparent;
+}
+
+input::-webkit-input-placeholder {
+    /* =JFG. "search this website". This needs to be rem
+    because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
+    We don't want the placeholder font size getting too big. */
+    font-size: 0.85rem;
+    color: white;
+    opacity: 1;
+}
+
+[placeholder],
+::-webkit-input-placeholder,
+input::placeholder {
+    /* =JFG. "search this website". This needs to be rem
+    because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
+    We don't want the placeholder font size getting too big. */
+    font-size: 0.85rem;
+    color: white;
+    opacity: 1;
+}
+
+label {
+    /* Fixed */
+    font-size: 16px;
+    /* Override line-height set on body */
+    /* e.g. >> footer privacy policy checkbox */
+    line-height: 1.1;
+}
+
+textarea {
+    width: 100%;
+    /* e.g. something like Hubspot might be a bit short */
+    min-height: 200px;
+}
+
+body [type="checkbox"] {
+    /* Override any input styles */
+    box-shadow: none;
+}
+
+[type="email"],
+[type="text"],
+[type="url"] {
+    width: 100%;
+    max-width: 275px;
+}
+
+.form--hidden-labels label:not(.form-label-show) {
+    /* START SCREEN READER TEXT
+    --------------------------- */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    position: absolute!important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    /* END SCREEN READER TEXT
+    ------------------------- */
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (CROSS POLLINATED)
+=================================================== */
+/* HTML Example...
+
+    <form class="form">
+        <div class="form__notes">
+            Your email address will not be published
+        </div>
+
+        <fieldset>
+            <legend>Leave a comment</legend>
+            <div>
+
+            </div>
+        </fieldset>
+    </form>
+
+*/
+.form {
+    /* From lowest to highest value */
+    max-width: var(--max-width-reading);
+    max-width: 50rem;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto;
+    -webkit-margin-start: auto;
+    margin-inline-start: auto;
+}
+
+/* We use a class of fieldset since the `fieldset` element is not always present */
+.form__fieldset {
+    padding: 0 var(--spacing-l);
+    border: 0;
+}
+
+/* Exceptions */
+.form [type="checkbox"],
+.form [type="radio"] {
+    margin-bottom: 0;
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / COLUMNS
+=================================================== */
+/* HTML Example...
+
+    <div class="form-wrapper"> <-- (Optional). Used to adding padding on smaller MQs
+        <form>
+            <div class="form-cols form-cols--2">
+                <div class="form-cols__col">
+                    <input/>
+                </div>
+                <div class="form-cols__col">
+                    <input/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+*/
+
+.form-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column-gap: 1em;
+}
+
+.form-cols--1 {
+    grid-template-columns: 1fr;
+}
+
+/* Custom */
+@media (min-width: 500px) {
+    .form-cols__col input {
+        /* e.g. if we have a shorter form field like a password */
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Exceptions */
+    .form-cols__col [type="checkbox"],
+    .form-cols__col [type="radio"] {
+        width: initial;
+    }
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / SPACING
+=================================================== */
+/* (Optional). Used to adding padding on smaller MQs */
+.form-wrapper {
+    -webkit-padding-start: var(--spacing-s);
+    padding-inline-start: var(--spacing-s);
+    -webkit-padding-end: var(--spacing-s);
+    padding-inline-end: var(--spacing-s);
+}
+
+/* form */
+label {
+    /* Make padding effective */
+    display: inline-block;
+    -webkit-padding-after: 0.2em;
+    padding-block-end: 0.2em;
+}
+
+.form__notes {
+    -webkit-padding-after: var(--spacing-m);
+    padding-block-end: var(--spacing-m);
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-right: var(--spacing-s);
+}
+
+/* Checkbox and Radio labels */
+[type="checkbox"] + label,
+[type="radio"] + label {
+    -webkit-padding-after: var(--spacing-s-2);
+    padding-block-end: var(--spacing-s-2);
+}
+
+[type="submit"] {
+    /* e.g. >> /blog/readability-test/ */
+    margin-top: var(--spacing-s);
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / BUTTONS
+=================================================== */
+/* Notes...
+
+    - You should consider increasing specificity depending on the environment e.g. add .site-container to
+    the selector for WordPress so rules do not affect wp-admin bar
+
+*/
+[type="submit"] {
+    /* Always on a separate line */
+    display: block!important; 
+    /* Same as HTML, overriding the default of 1 in the reset */
+    line-height: 1.5;
+    background: var(--colour-pale);
+}
+
+.form label {
+    display: block;
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
+=================================================== */
+/* Override normalize */
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+.form__notes {
+    font-family: var(--font-family-headline);
+    font-size: var(--font-size-m-rem);
+    line-height: var(--font-size-m-line-height);
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
+=================================================== */
+/* There are some hacks here because of bad selector specificity from the plugin maker so we have to go outside the linting rules */
+/* input:not([type="submit"]) { */
+    /* border-radius: 4px; */
+/* } */
+
+[type="text"],
+[type="email"],
+[type="password"],
+[type="tel"],
+[type="number"],
+[type="date"],
+textarea {
+    /* =JFG. Cancel default button appearance */
+    -webkit-appearance: none;
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / INPUT TYPES
+=================================================== */
+[type="checkbox"] {
+    -webkit-appearance: checkbox;
+}
+
+[type="radio"] {
+    -webkit-appearance: radio;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    /* =JFG. So they always line up */
+    float: left;
+}
+
+[type="radio"],
+[type="checkbox"] {
+    /* e.g. >> footer privacy policy checkbox */
+    margin: 0.15rem 0 0;
+    -webkit-margin-end: 0.6rem;
+    margin-inline-end: 0.6rem;
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / INPUT TYPES / DECORATION
+=================================================== */
+[type="search"] {
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-with-agreement {
+    display: grid;
+    grid-template-columns: 75fr 25fr;
+
+    gap: var(--spacing-l-2);
+}
+
+/* .form-with-agreement__agreement p {
+    font-size: var(--font-size-s-x);
+} */
+
+.form-with-agreement__form > :last-child input {
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+}
