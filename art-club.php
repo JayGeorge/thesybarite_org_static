@@ -36,7 +36,7 @@
             <button class="image-with-text__arrow">
                 <?php include 'img/svg/down-arrow.php'; ?>
             </button>
-            <div class="image-with-text__question-box">
+            <div class="image-with-text__cta-box">
                 <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
             </div>
         </header>

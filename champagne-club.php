@@ -37,7 +37,7 @@
                 <button class="image-with-text__arrow">
                     <?php include 'img/svg/down-arrow.php'; ?>
                 </button>
-                <div class="image-with-text__question-box">
+                <div class="image-with-text__cta-box">
                     <p>Access unique bottles from exclusive vineyards—delivered to your door every month.</p>
                 </div>
             </header>
@@ -53,6 +53,7 @@
 
                         <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
+                    <img src="https://images.unsplash.com/photo-1475378902367-dc8f9eae83e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2726&q=80" alt="test" class="side-image" />
                 </div>
                 <div class="article">
                     <div class="article__text">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
                 <div class="feature-image"><img src="/img/grapes-3.jpg" alt="wine" /></div>
-                <h2 class="large-title">Clubs</h2>
+                <h2 class="large-title">Memberships</h2>
                 <div class="feature-columns feature-columns--l">
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Luxe <span class="feature-columns__title-motif">£1000</span></h3>
