@@ -1622,6 +1622,24 @@ img:not([alt]) {
 /* .u-width-max--uncentered {
     margin-left: 0;
 } */
+/* GROUP UTILITIES / DECORATION
+=================================================== */
+.u-separator-t {
+    position: relative;
+    margin-block-start: var(--spacing-l-2);
+}
+
+.u-separator-t::after {
+    content: "";
+    position: absolute;
+    left: var(--spacing-l);
+    top: calc(0% - var(--spacing-l));
+    width: 2em;
+    border-top: 1px solid var(--colour-black);
+    opacity: 0.2;
+    padding-block-start: var(--spacing-m);
+    padding-inline-start: var(--spacing-l);
+}
 /* GROUP UTILITIES
 =================================================== */
 .u-above-ctas {

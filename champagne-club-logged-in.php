@@ -105,6 +105,9 @@
                 </div>
 
                 <h2 class="large-title">Champagnes</h2>
+                <div class="u-width-max-1">
+                    <p class="entry-lead">We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p>
+                </div>
                 <div class="feature-columns">
                     <div class="feature-columns__column">
                         <h3 class="feature-columns__title">Brugnon <em>Brut</em></h3>
