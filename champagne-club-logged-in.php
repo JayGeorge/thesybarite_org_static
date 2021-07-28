@@ -44,7 +44,7 @@
             <div class="u-above-ctas">
                 <div class="u-width-max-1">
                     <p class="entry-lead">
-                        Welcome to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
+                        Welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
                     <div class="s-entry-content s-entry-content--columns">
                         <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
@@ -74,7 +74,7 @@
                 
                 <h2 class="large-title">A Year in Champagne</h2>
                 <div class="u-width-max-1">
-                    <p class="entry-lead">Start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
+                    <p class="entry-lead"><strong>Florentine</strong>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
 
                     <h3>Our Vineyard: Philippe Brugnon</h3>
                     <div class="feature-image">

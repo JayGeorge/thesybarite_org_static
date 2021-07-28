@@ -37,7 +37,7 @@
 
     <div class="site-header__cta">
         <div class="btn">
-            <a href="">
+            <a href="/champagne-club-logged-in.php">
                 Login
             </a>
         </div>

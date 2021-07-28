@@ -1660,6 +1660,7 @@ summary::before {
     width: 1.5em;
     content: "+";
     float: left;
+    font-weight: var(--font-family-main-weight-strong);
 }
 
 details[open] summary::before {
@@ -1714,7 +1715,7 @@ img:not([alt]) {
 
     width: auto;
     height: auto;
-} 
+}
 /* GROUP UTILITIES / FRAMEWORK / LAYOUT / CONSTRAINTS / MAX
 =================================================== */
 .u-width-max-reading,

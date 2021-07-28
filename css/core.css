@@ -1539,6 +1539,7 @@ summary::before {
     width: 1.5em;
     content: "+";
     float: left;
+    font-weight: var(--font-family-main-weight-strong);
 }
 
 details[open] summary::before {
