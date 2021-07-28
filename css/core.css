@@ -1340,11 +1340,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 /* Landscape devices */
-@media (min-aspect-ratio: 1680/990) {
+/* @media (min-aspect-ratio: 1680/990) { */
     .image-with-text__image {
         height: 100vh;
     }
-}
+/* } */
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
 .image-with-text__text {
