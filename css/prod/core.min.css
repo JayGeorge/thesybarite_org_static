@@ -479,6 +479,12 @@ h6,
     -webkit-padding-before: var(--spacing-s);
     padding-block-start: var(--spacing-s);
 }
+
+/* Exceptions */
+.feature-image + h3 {
+    -webkit-padding-before: 0;
+    padding-block-start: 0;
+}
 /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / EXCEPTIONS / VERTICAL SPACING
 =================================================== */
 ul + h2,

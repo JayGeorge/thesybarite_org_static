@@ -44,7 +44,7 @@
             <div class="u-above-ctas">
                 <div class="u-width-max-1">
                     <p class="entry-lead">
-                        Welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
+                        <strong>Florentine</strong>, welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
                     <div class="s-entry-content s-entry-content--columns">
                         <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
@@ -76,10 +76,10 @@
                 <div class="u-width-max-1">
                     <p class="entry-lead"><strong>Florentine</strong>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
 
-                    <h3>Our Vineyard: Philippe Brugnon</h3>
                     <div class="feature-image">
                         <img src="/img/vineyard-with-people.jpg" alt="test">
                     </div>
+                    <h3>Our Vineyard: Philippe Brugnon</h3>
                     <div class="s-entry-content s-entry-content--columns s-entry-content--compressed">
                         <p>Let us start with the <strong>Champagnes of Philippe Brugnon</strong>, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
 

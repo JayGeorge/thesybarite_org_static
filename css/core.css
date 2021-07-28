@@ -463,6 +463,12 @@ h6,
 * > .h4 {
     padding-block-start: var(--spacing-s);
 }
+
+/* Exceptions */
+.feature-image + h3 {
+    /* e.g. >> /champagne-club-logged-in */
+    padding-block-start: 0;
+}
 /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / EXCEPTIONS / VERTICAL SPACING
 =================================================== */
 ul + h2,
