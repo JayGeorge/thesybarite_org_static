@@ -1249,6 +1249,10 @@ body > div > header > nav > ul > li:nth-child(3) > a {
     max-width: var(--max-width-1);
     margin: auto;
 }
+
+.feature-columns__description {
+    min-height: 5.8em;
+}
 /* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
 =================================================== */
 .feature-columns {
