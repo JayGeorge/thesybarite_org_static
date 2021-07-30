@@ -38,13 +38,13 @@
                     <?php include 'img/svg/down-arrow.php'; ?>
                 </button>
                 <div class="image-with-text__cta-box">
-                    <p>Access unique bottles from exclusive vineyards—delivered to your door every month.</p>
+                    <p>Access unique bottles from exclusive vineyards—delivered to your door every quarter.</p>
                 </div>
             </header>
             <div class="u-above-ctas">
                 <div class="u-width-max-1">
                     <p class="entry-lead">
-                        Welcome to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
+                        <a href="#form">Sign up</a> to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
                     <div class="s-entry-content s-entry-content--columns">
                         <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
@@ -72,9 +72,9 @@
                     </div>
                 </div>
                 
-                <h2 class="large-title">How the Champagne Club works</h2>
+                <h2 class="large-title">How it works</h2>
                 <div class="u-width-max-1">
-                    <div class="s-entry-content s-entry-content--columns">
+                    <div class="s-entry-content s-entry-content--compressed s-entry-content--columns">
                         <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
 
                         <p><strong>Learn more about the grapes that have gone into your bottles</strong>, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</p>
@@ -85,27 +85,13 @@
                     </div>
                 </div>
 
-                <div class="feature-image">
+                <!-- <div class="feature-image">
                 <img src="/img/vineyard-with-people.jpg" alt="test" />
-                </div>
+                </div> -->
 
-                <h2 class="medium-title">Choose a Membership</h2>
-                <div class="feature-columns feature-columns--l">
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>
-                        <p class="feature-columns__description">Paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <div class="btn btn--2"><a href="">Subscribe</a></div>
-                    </div>
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">Le Connoisseur <span class="feature-columns__title-motif">£1850</span></h3>
-                        <p class="feature-columns__description">Paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                        <div class="btn btn--2"><a href="">Subscribe</a></div>
-                    </div>
-                    <div class="feature-columns__column">
-                        <h3 class="feature-columns__title">La Suprême <span class="feature-columns__title-motif">on request</span></h3>
-                        <p class="feature-columns__description">Corporate bespoke collection. <a href="">Get in touch</a> with us for more details.</p>
-                        <div class="btn btn--2"><a href="">Enquire</a></div>
-                    </div>
+                <h2 class="medium-title">Sign up for Free</h2>
+                <div id="form" class="u-width-max-1">
+                    <p class="entry-lead">@Cedric form goes here</p>
                 </div>
             </div>
         </article>

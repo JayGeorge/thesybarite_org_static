@@ -38,7 +38,7 @@
                     <?php include 'img/svg/down-arrow.php'; ?>
                 </button>
                 <div class="image-with-text__cta-box">
-                    <p>Access unique bottles from exclusive vineyards—delivered to your door every month.</p>
+                    <p>Access unique bottles from exclusive vineyards—delivered to your door every quarter.</p>
                 </div>
             </header>
             <div class="u-above-ctas">

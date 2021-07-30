@@ -18,6 +18,11 @@
             <nav>
                 <ul>
                     <li class="site-footer__heading">Explore the Sybarite</li>
+                    <li class="site-footer__cards">
+                        <ul>
+                            <li>svg</li>
+                            <li>svg</li>
+                            <li>svg</li>
             <nav>
                 <ul>
                     <li class="site-footer__heading">Explore the Sybarite</li>
@@ -62,6 +67,13 @@
 .site-footer [type="submit"] {
     width: 100%;
 }
+
+body .site-footer__cards ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-s-1);
+}
 /* GROUP SITE FOOTER / SPACING
 =================================================== */
 .site-footer {
@@ -78,10 +90,31 @@
 .site-footer [type="submit"] {
     /* Decrease */
     margin-block-start: var(--spacing-s-x);
+    /* Increase */
+    margin-block-end: var(--spacing-s-1);
+}
+
+.site-footer__cards {
+    /* Increase */
+    padding-block-start: var(--spacing-s-x);
+}
+
+.site-footer__cards li {
+    /* Remove default */
+    padding-block-end: 0;
 }
 /* GROUP SITE FOOTER / DECORATION
 =================================================== */
 .site-footer {
     background: var(--colour-black);
     color: var(--colour-pale);
+}
+
+.site-footer__cards svg {
+    font-size: 2.5em;
+}
+
+.site-footer__cards img {
+    width: 2.5em;
+    position: relative;
 }

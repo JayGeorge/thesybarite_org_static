@@ -11,6 +11,13 @@
                 <?php $nav_name = 'Magazine'; include '_inc/nav-links.php'; ?>
                 <?php $nav_name = 'Africa'; include '_inc/nav-links.php'; ?>
                 <?php $nav_name = 'Clubs'; include '_inc/nav-links.php'; ?>
+                <li class="site-footer__cards">
+                    <ul>
+                        <li><?php include 'img/svg/visa.php'; ?></li>
+                        <li><?php include 'img/svg/mastercard.php'; ?></li>
+                        <li><img src="/img/payment-processing/pts.png" alt="PTS logo" style="width: 2em;" /></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <nav>

@@ -614,13 +614,24 @@ a > svg:last-child:not(:first-child) {
 a {
     -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* .u-link-style-1 a, */
+.entry-lead a,
 /* Components > Framework > Entry > Entry Content */
 .s-entry-content a {
-    color: var(--colour-turquoise);
+    text-underline-offset: 0.05em;
+    text-decoration-thickness: 0.1rem;
+}
+
+.entry-lead a {
+    text-underline-offset: 0.08em;
 }
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
 =================================================== */
@@ -853,6 +864,86 @@ summary.btn--2,
 /* .btn--2 a:hover {
     
 } */
+
+
+
+
+/* GROUP OBJECTS / FRAMEWORK / (NON CORE) / HERO BUTTONS { / BUTTON HERO}
+=================================================== */
+/* Notes...
+
+    - Used to separate buttons in a blocked space
+
+*/
+
+/* Modifiers...
+
+    .o-hero-buttons--left <- align left e.g. you might use this for hero buttons below a map
+
+*/
+
+/* HTML Example...
+
+    <div class="o-hero-buttons">
+        <div class="btn">
+            <a href="">
+                Some button
+            </a>
+        </div>
+    </div>
+
+*/
+/* Ideally, once gap is supported */
+.o-hero-buttons {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-column-gap: var(--spacing-l-2);
+    -moz-column-gap: var(--spacing-l-2);
+    column-gap: var(--spacing-l-2);
+    max-width: var(--max-width-1);
+    margin: auto;
+}
+
+.o-hero-buttons {
+    -webkit-padding-after: var(--spacing-l-4);
+    padding-block-end: var(--spacing-l-4);
+    -webkit-padding-start: var(--spacing-l);
+    padding-inline-start: var(--spacing-l);
+    -webkit-padding-end: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    text-align: center;
+}
+
+/* --mq-max-width-reading-before */
+@media (max-width: 37em) {
+    .o-hero-buttons {
+        text-align: left;
+        -webkit-padding-start: var(--spacing-l);
+        padding-inline-start: var(--spacing-l);
+    }
+}
+/* GROUP OBJECTS / FRAMEWORK / (NON CORE) / HERO BUTTONS { / BUTTON HERO} / SPACING MODIFICATIONS
+=================================================== */
+.o-slide .o-hero-buttons {
+    padding-inline: 0;
+}
+
+.s-entry-content + .o-hero-buttons {
+    -webkit-padding-before: 0;
+    padding-block-start: 0;
+}
+
+.o-hero-buttons + h2 {
+    -webkit-padding-before: var(--spacing-s);
+    padding-block-start: var(--spacing-s);
+}
+
+h2 + .o-hero-buttons {
+    -webkit-padding-before: var(--spacing-s-1);
+    padding-block-start: var(--spacing-s-1);
+}
 
 
 

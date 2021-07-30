@@ -28,11 +28,11 @@
             </div>
         </div>
         <div class="form-with-agreement__agreement">
-            <input type="checkbox" checked name="form_fields[field_5d5d369]" id="form-field-field_5d5d369">
-            <label class="form-label-show" for="form-field-field_5d5d369">I agree to The Sybarite’s <a href="https://thesybarite.org/privacy-policy/">privacy policy</a></label>
             <button type="submit">
                 Sign up
             </button>
+            <input type="checkbox" checked name="form_fields[field_5d5d369]" id="form-field-field_5d5d369">
+            <label class="form-label-show" for="form-field-field_5d5d369">I agree to The Sybarite’s <a href="https://thesybarite.org/privacy-policy/">privacy policy</a></label>
         </div>
     </div>
 </form>

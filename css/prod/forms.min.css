@@ -144,7 +144,8 @@ body [type="checkbox"] {
 /* Exceptions */
 .form [type="checkbox"],
 .form [type="radio"] {
-    margin-bottom: 0;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / COLUMNS
 =================================================== */
@@ -238,7 +239,7 @@ label {
 */
 [type="submit"] {
     /* Always on a separate line */
-    display: block!important; 
+    display: block!important;
     /* Same as HTML, overriding the default of 1 in the reset */
     line-height: 1.5;
     background: var(--colour-pale);
