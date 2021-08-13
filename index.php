@@ -41,7 +41,6 @@
                     <p>Access unique bottles from exclusive vineyards—delivered to your door every quarter.</p>
                 </div>
             </header>
-            <div class="u-above-ctas">
                 <div class="u-width-max-1">
                     <p class="entry-lead">
                         <a href="#form">Sign up</a> to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
@@ -53,7 +52,6 @@
 
                         <p>Discover the unique offering of the Champagne region like never before. <a href="">Join our exclusive champagne community</a>, where you’ll learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
-                    <div class="side-image">Sign up for free and join our exclusive community</div>
                 </div>
                 <div class="article">
                     <div class="article__text">
@@ -93,7 +91,6 @@
                 <div id="form" class="u-width-max-1">
                     <p class="entry-lead">@Cedric form goes here</p>
                 </div>
-            </div>
         </article>
     </main>
 

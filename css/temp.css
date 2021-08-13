@@ -13,8 +13,6 @@
 
 
 .article {
-    position: relative;
-    background: var(--colour-pale);
     max-width: var(--max-width-1);
     margin: auto;
 }

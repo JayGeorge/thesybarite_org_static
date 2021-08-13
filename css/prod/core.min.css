@@ -1251,6 +1251,8 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 /* GROUP COMPONENTS / ENTRY LEAD / SPACING
 =================================================== */
 .entry-lead {
+    -webkit-padding-before: var(--spacing-l-4);
+    padding-block-start: var(--spacing-l-4);
     -webkit-padding-after: var(--spacing-l-1);
     padding-block-end: var(--spacing-l-1);
     -webkit-padding-start: var(--spacing-l);
