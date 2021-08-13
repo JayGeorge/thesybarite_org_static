@@ -129,10 +129,6 @@ body [type="checkbox"] {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
     max-width: 50rem;
-    -webkit-margin-end: auto;
-    margin-inline-end: auto;
-    -webkit-margin-start: auto;
-    margin-inline-start: auto;
 }
 
 /* We use a class of fieldset since the `fieldset` element is not always present */
@@ -305,35 +301,4 @@ textarea {
 =================================================== */
 [type="search"] {
     border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.form-with-agreement {
-    display: grid;
-    grid-template-columns: 75fr 25fr;
-
-    gap: var(--spacing-l-2);
-}
-
-/* .form-with-agreement__agreement p {
-    font-size: var(--font-size-s-x);
-} */
-
-.form-with-agreement__form > :last-child input {
-    -webkit-margin-after: 0;
-    margin-block-end: 0;
 }

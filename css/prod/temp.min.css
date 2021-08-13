@@ -1,4 +1,4 @@
- /*! Notes...
+/*! Notes...
 
     Author: Jay George
     Author URI: https://jaygeorge.co.uk
@@ -77,4 +77,13 @@ article {
     bottom: -5px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+
+/* Custom */
+@media (max-width: 1023px) {
+    .c-site-header__nav,
+    .c-site-header__cta {
+        display: none;
+    }
 }

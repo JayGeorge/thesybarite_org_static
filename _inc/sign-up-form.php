@@ -1,6 +1,6 @@
 <form class="form form--hidden-labels" method="post" name="Sign up">
-    <div class="form-with-agreement">
-        <div class="form-with-agreement__form">
+    <div class="c-site-footer__form-with-agreement">
+        <div class="c-site-footer__form-with-agreement__form">
             <p class="form__notes">
                 Sign up to enjoy exclusive member benefits
             </p>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-with-agreement__agreement">
+        <div class="c-site-footer__form-with-agreement__agreement">
             <button type="submit">
                 Sign up
             </button>

@@ -70,3 +70,12 @@ article {
     bottom: -5px;
     transform: rotate(180deg);
 }
+
+
+/* Custom */
+@media (max-width: 1023px) {
+    .c-site-header__nav,
+    .c-site-header__cta {
+        display: none;
+    }
+}
