@@ -6,9 +6,9 @@
     Skip to footer navigation
 </a>
 
-<div class="site-header-wrapper">
-<header class="site-header site-header--light-background">
-    <div class="site-header__logo">
+<div class="c-site-header-wrapper">
+<header class="c-site-header c-site-header--light-background">
+    <div class="c-site-header__logo">
         <a href="/" class="site-logo">
             <div>The</div>
             Sybarite
@@ -19,7 +19,7 @@
             // include 'img/svg/nav.php'; <-- you can find this in my framework
     </button> */ ?>
 
-    <nav aria-label="Main navigation" class="site-header__nav">
+    <nav aria-label="Main navigation" class="c-site-header__nav">
         <ul>
             <?php /* 
                 Here you can add the class current-menu-item by the calling the header with a variable like this:
@@ -35,7 +35,7 @@
         </ul>
     </nav>
 
-    <div class="site-header__cta">
+    <div class="c-site-header__cta">
         <div class="btn">
             <a href="/champagne-club-logged-in.php">
                 Login

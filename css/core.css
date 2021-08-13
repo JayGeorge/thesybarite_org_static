@@ -743,7 +743,7 @@ should be...
     font-size: 0.8rem;
 }
 
-.site-header__cta--fixed {
+.c-site-header__cta--fixed {
     position: fixed;
     top: var(--spacing-s-1);
     right: var(--spacing-l-1);
@@ -942,78 +942,78 @@ h2 + .o-hero-buttons {
 =================================================== */
 /* HTML Example...
 
-    .site-header
-        .site-header__logo
-        .site-header__nav
-        .site-header__cta
+    .c-site-header
+        .c-site-header__logo
+        .c-site-header__nav
+        .c-site-header__cta
 
 */
 /* Modifiers...
 
-    .site-header--light-background <-- Used when there is a light image beneath e.g. a sky.
+    .c-site-header--light-background <-- Used when there is a light image beneath e.g. a sky.
         This will change thigns like the CTA button lightness
 
 */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
-.site-header-wrapper {
+.c-site-header-wrapper {
     position: absolute;
     z-index: 1;
     width: 100%;
 }
 
-.site-header {
+.c-site-header {
     max-width: var(--max-width-2);
     margin: auto;
     display: flex;
     gap: var(--spacing-l-2);
 }
 
-.site-header__logo {
+.c-site-header__logo {
     display: flex;
     align-items: flex-end;
 }
 
-.site-header__nav {
+.c-site-header__nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.site-header__nav ul {
+.c-site-header__nav ul {
     flex-direction: row;
     justify-content: flex-end;
     gap: var(--spacing-l);
 }
 
-.site-header__nav li {
+.c-site-header__nav li {
     padding-block-end: 0;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
 =================================================== */
-.site-header {
+.c-site-header {
     padding-block-start: var(--spacing-s-1);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 }
 
-.site-header__cta .btn a {
+.c-site-header__cta .btn a {
     padding: var(--button-spacing);
 }
 
-.site-header__cta .btn {
+.c-site-header__cta .btn {
     margin-block-end: 0;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
-.site-header__cta .btn {
+.c-site-header__cta .btn {
     font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
 }
 
-.site-header--light-background .site-header__cta .btn {
+.c-site-header--light-background .c-site-header__cta .btn {
     background: var(--colour-white-transparent);
 }
 
