@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    text-align: center;
+    text-align: center; 
 }
 
 .thank-you {
@@ -40,6 +40,7 @@ table {
     content: "";
     position: absolute;
     bottom: -5px;
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     left: 0;
     width: 100%;
@@ -61,9 +62,13 @@ table {
 =================================================== */
 main {
     padding: var(--spacing-m) var(--spacing-l);
+    -webkit-padding-before: var(--spacing-s);
     padding-block-start: var(--spacing-s);
+    -webkit-padding-after: var(--spacing-l-3);
     padding-block-end: var(--spacing-l-3);
+    -webkit-margin-before: var(--spacing-l-1);
     margin-block-start: var(--spacing-l-1);
+    -webkit-margin-after: var(--spacing-l);
     margin-block-end: var(--spacing-l);
 }
 /* GROUP MAIN / DECORATION
@@ -79,6 +84,7 @@ main {
 =================================================== */
 .email-header {
     text-align: center;
+    -webkit-padding-after: var(--spacing-s);
     padding-block-end: var(--spacing-s);
 }
 
@@ -88,6 +94,7 @@ main {
 /* GROUP THANK YOU
 =================================================== */
 .thank-you {
+    -webkit-margin-after: var(--spacing-s-x);
     margin-block-end: var(--spacing-s-x);
 }
 
@@ -102,6 +109,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 13px;
+    -webkit-margin-before: var(--spacing-l);
     margin-block-start: var(--spacing-l);
 }
 
