@@ -1,0 +1,173 @@
+/*! Notes...
+
+    Author: Jay George
+    Author URI: https://jaygeorge.co.uk
+
+    ABOUT THIS CSS
+    ===================================================
+    - Only edit filename.css, then process with Codekit to output into prod/
+
+*/
+
+
+body {
+    max-width: 34rem;
+    margin: auto;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    color: hsl(0deg 0% 0% / 70%);
+    font-size: 14px;
+}
+
+p {
+    text-align: center;
+}
+
+.thank-you {
+    font-size: 18px;
+}
+
+.thank-you,
+table {
+    color: black;
+}
+
+
+/* GROUP MAIN / SPACING
+=================================================== */
+main {
+    padding: var(--spacing-m) var(--spacing-l);
+    padding-block-start: var(--spacing-s);
+    padding-block-end: var(--spacing-l-3);
+    margin-block-start: var(--spacing-l-1);
+    margin-block-end: var(--spacing-l);
+}
+/* GROUP MAIN / DECORATION
+=================================================== */
+main {
+    background: white;
+}
+
+.email-header {
+    text-align: center;
+    padding-block-end: var(--spacing-s);
+}
+
+
+
+
+/* GROUP THANK YOU
+=================================================== */
+.thank-you {
+    margin-block-end: var(--spacing-s-x);
+}
+
+
+
+
+
+
+
+
+
+
+/* GROUP ELEMENTS / TABLES
+=================================================== */
+table + h2 {
+    padding-block-start: var(--spacing-s-1);
+}
+
+.js--table-wrapper {
+    margin-bottom: var(--spacing-m-2);
+}
+/* GROUP PLUGIN / BOOTSTRAP / TABLES
+=================================================== */
+/*!
+* Bootstrap v3.1.1 (http://getbootstrap.com)
+* Copyright 2011-2014 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+    padding: 11px;
+    /* -- */
+    line-height: 1.5;
+    vertical-align: top;
+    border-top: 1px solid hsl(51 5% 85% / 1);
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+    border: 1px solid hsl(51 5% 85% / 1);
+}
+
+table > thead > tr > th,
+table > thead > tr > td {
+    border-bottom-width: 2px;
+}
+/* GROUP PLUGIN / BOOTSTRAP / TABLES / (MODIFICATIONS) / BORDERED
+=================================================== */
+table {
+    border: 1px solid #eee;
+}
+/* GROUP PLUGIN / BOOTSTRAP / TABLES / (JAY ADDED) / (CROSS POLLINATED)
+=================================================== */
+/* =JFG. Fix it so tabular info is easier to digest */
+table {
+    font-size: 13px;
+    margin-block-start: var(--spacing-l);
+}
+
+
+
+
+
+
+
+
+.ripped {
+    position: relative;
+}
+
+.ripped::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    transform: rotate(180deg);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: url(/img/svg/ripped-paper.svg) bottom;
+}
+
+
+
+.signature {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-s);
+    font-size: var(--font-size-s-x-x);
+}
