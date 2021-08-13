@@ -53,7 +53,7 @@
 
                         <p>Discover the unique offering of the Champagne region like never before. <a href="">Join our exclusive champagne community</a>, where you’ll learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
-                    <img src="/img/purple-grapes.jpg" alt="test" class="side-image" />
+                    <div class="side-image">Sign up for free and join our exclusive community</div>
                 </div>
                 <div class="article">
                     <div class="article__text">

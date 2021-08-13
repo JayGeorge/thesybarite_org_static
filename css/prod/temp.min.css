@@ -13,9 +13,6 @@
 
 
 .article {
-    display: grid;
-    grid-template-columns: 26em 23em;
-    gap: var(--spacing-l-4);
     position: relative;
     background: var(--colour-pale);
     max-width: var(--max-width-1);
@@ -77,6 +74,15 @@ article {
     bottom: -5px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+/* --mq-article-breakpoint-1 */
+@media (min-width: 1024px) {
+    .article {
+        display: grid;
+        grid-template-columns: 26em 23em;
+        gap: var(--spacing-l-4);
+    }
 }
 
 
