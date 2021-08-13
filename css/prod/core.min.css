@@ -140,7 +140,7 @@
     --font-size-l-2: 6.854em;
     --font-size-l-2-line-height: 1;
 
-    --font-size-l-3: 11.089em;
+    --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
     =================================================== */
     --letter-spacing-s: 2px;
@@ -615,8 +615,9 @@ a > svg:last-child:not(:first-child) {
 a {
     -webkit-text-decoration-skip: ink;
     text-decoration-skip-ink: auto;
-    text-decoration-skip-ink: auto;
     color: inherit;
+    -webkit-text-decoration-color: hsl(0deg 0% 0% / 40%);
+    text-decoration-color: hsl(0deg 0% 0% / 40%);
 }
 
 html {
@@ -1462,9 +1463,11 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 =================================================== */
 .image-with-text__image {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
 }
 
 .image-with-text__text {
@@ -1481,7 +1484,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .image-with-text__arrow {
     position: fixed;
     left: calc(var(--spacing-l) - 0.8em);
-    bottom: var(--spacing-s-2);
+    bottom: var(--spacing-l-3);
 }
 
 .image-with-text__text span {
@@ -1506,17 +1509,18 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .image-with-text__cta-box {
     position: fixed;
+    z-index: 1;
     top: 11em;
     right: 0;
     width: var(--cta-box-width);
 }
 
 /* Landscape devices */
-/* @media (min-aspect-ratio: 1680/990) { */
+@media (min-aspect-ratio: 1680/990) {
     .image-with-text__image {
         height: 100vh;
     }
-/* } */
+}
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
 .image-with-text__text {
@@ -1666,7 +1670,6 @@ body {
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
 }
-
 
 
 
