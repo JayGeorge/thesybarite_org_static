@@ -54,7 +54,7 @@
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
     --max-width-1: 77rem;
-    --max-width-2: 88rem;
+    --max-width-2: 93rem;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     /* Dark to light */
@@ -993,6 +993,8 @@ h2 + .o-hero-buttons {
 =================================================== */
 .site-header {
     padding-block-start: var(--spacing-s-1);
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
 }
 
 .site-header__cta .btn a {
