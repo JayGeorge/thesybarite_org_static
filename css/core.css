@@ -50,9 +50,12 @@
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
+    /* e.g. Champagne Club > .c-article__grid__image */
     --max-width-reading-short: 22rem;
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
+    /* e.g. >> Champagne Club > columns */
+    --max-width-columns: 56rem;
     --max-width-1: 77rem;
     --max-width-2: 93rem;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
@@ -134,13 +137,15 @@
 
     --font-size-l: 2.618em;
 
-    --font-size-l-1: 4.236em;
+    --font-size-l-1: clamp(calc(4.236em * 0.6), 12vw, 4.236em);
     --font-size-l-1-line-height: 1;
 
-    --font-size-l-2: 6.854em;
-    --font-size-l-2-line-height: 1;
+    /* --font-size-l-2: 6.854em; */
+    /* Custom */
+    --font-size-l-2: clamp(calc(6.8em * 0.7), 13.5vw, 6.8em);;
+    --font-size-l-2-line-height: 0.99;
 
-    --font-size-l-3: clamp(calc(11.089em * 0.4), 16vw, 11.089em);
+    --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
     =================================================== */
     --letter-spacing-s: 2px;
@@ -305,7 +310,7 @@ ul {
 }
 
 li {
-    padding-block-end: var(--spacing-s-x);
+    padding-block-end: var(--spacing-s-1);
 }
 
 dl,
@@ -999,7 +1004,7 @@ h2 + .o-hero-buttons {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
 =================================================== */
 .c-site-header {
-    padding-block-start: var(--spacing-s-1);
+    padding-block-start: var(--spacing-s-2);
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
 }
@@ -1021,7 +1026,7 @@ h2 + .o-hero-buttons {
 }
 
 .c-site-header--light-background .c-site-header__cta .btn {
-    background: var(--colour-white-transparent);
+    background: white;
 }
 
 
@@ -1128,7 +1133,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .s-entry-content li {
     /* e.g. ul li */
-    padding-inline-start: var(--spacing-s-x-x);
+    padding-inline-start: var(--spacing-s);
 }
 
 /* Bard wraps <li> text in a <p> tag */
@@ -1389,11 +1394,10 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .image-with-text__text {
     left: 50%;
-    position: fixed;
     position: absolute;
-    top: 66%;
+    bottom: min(15%, 10vw);
     width: 100%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     max-width: var(--max-width-1);
 }
 

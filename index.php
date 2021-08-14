@@ -53,33 +53,37 @@
                         <p>Discover the unique offering of the Champagne region like never before. <a href="">Join our exclusive champagne community</a>, where you’ll learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                     </div>
                 </div>
-                <div class="article">
-                    <div class="article__text">
-                        <h2>Meet Edward, your bespoke wine curator</h2>
-                        <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
-        
-                        <p>What had started as a twice yearly run to Champagne for his city friends morphed into a business importing and distributing Champagne in the UK Europe the USA and Asia.</p>
-        
-                        <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
-                    </div>
-                    <div class="article__image">
-                        <figure>
-                            <img src="/img/edward.jpg" alt="Edward" />
-                            <figcaption>Edward, our expert wine curator</figcaption>
-                        </figure>
+                <div class="c-article">
+                    <div class="c-article__grid">
+                        <div class="c-article__grid__text">
+                            <h2>Meet Edward, your bespoke wine curator</h2>
+                            <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
+            
+                            <p>What had started as a twice yearly run to Champagne for his city friends morphed into a business importing and distributing Champagne in the UK Europe the USA and Asia.</p>
+            
+                            <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
+                        </div>
+                        <div class="c-article__grid__image">
+                            <figure>
+                                <img src="/img/edward.jpg" alt="Edward" />
+                                <figcaption>Edward, our expert wine curator</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
                 
                 <h2 class="large-title">How it works</h2>
                 <div class="u-width-max-1">
-                    <div class="s-entry-content s-entry-content--compressed s-entry-content--columns">
-                        <p><strong>We work exclusively with smaller producers in the Champagne region</strong>. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</p>
+                    <div class="s-entry-content s-entry-content--columns">
+                        <ol>
+                        <li>We work exclusively with smaller producers in the Champagne region. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</li>
 
-                        <p><strong>Learn more about the grapes that have gone into your bottles</strong>, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</p>
+                        <li>Learn more about the grapes that have gone into your bottles, from distinct flavours to the occasions they are best suited to, to food pairings and fun facts about the vineyards. Our curator provides detailed information on each champagne that we stock.</li>
 
-                        <p><strong>You can customize your champagne profile quarterly</strong>, which allows you to taste and order  accordingly, depending on which bubbles you want when.</p>
+                        <li>You can customize your champagne profile quarterly, which allows you to taste and order  accordingly, depending on which bubbles you want when.</li>
 
-                        <p><strong>keep your favourites or try something entirely new</strong>, from your first champagne order to your next. Have a specific request? We have bespoke packages available for whatever your champagne needs may be.</p>
+                        <li>keep your favourites or try something entirely new, from your first champagne order to your next. Have a specific request? We have bespoke packages available for whatever your champagne needs may be.</li>
+                        </ol>
                     </div>
                 </div>
 
