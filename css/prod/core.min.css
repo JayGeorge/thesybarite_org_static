@@ -1263,8 +1263,6 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 /* GROUP COMPONENTS / ENTRY LEAD / SPACING
 =================================================== */
 .entry-lead {
-    -webkit-padding-before: var(--spacing-l-4);
-    padding-block-start: var(--spacing-l-4);
     -webkit-padding-after: var(--spacing-l-1);
     padding-block-end: var(--spacing-l-1);
     -webkit-padding-start: var(--spacing-l);
@@ -1591,6 +1589,8 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 =================================================== */
 .image-with-text {
     position: relative;
+    -webkit-margin-after: var(--spacing-l-4);
+    margin-block-end: var(--spacing-l-4);
 }
 
 .image-with-text::before {
@@ -1913,20 +1913,4 @@ img:not([alt]) {
     padding-block-start: var(--spacing-m);
     -webkit-padding-start: var(--spacing-l);
     padding-inline-start: var(--spacing-l);
-}
-/* GROUP UTILITIES
-=================================================== */
-.u-above-ctas {
-    position: relative;
-    background: var(--colour-pale);
-    /* e.g. >> /champagne-club */
-    -webkit-padding-after: var(--spacing-l-4);
-    padding-block-end: var(--spacing-l-4);
-    -webkit-padding-before: var(--spacing-l-4);
-    padding-block-start: var(--spacing-l-4);
-}
-
-.u-above-ctas > *:last-child {
-    -webkit-padding-after: 0;
-    padding-block-end: 0;
 }
