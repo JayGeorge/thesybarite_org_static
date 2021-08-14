@@ -1451,6 +1451,13 @@ body > div > header > nav > ul > li:nth-child(3) > a {
         display: initial;
     }
 }
+
+/* Another tweak for Landscape-ish devices e.g. iPad landscape */
+@media (min-width: 1024px) and (max-height: 930px) {
+    .image-with-text__text {
+        --font-size-l-3: 9.5em;
+    }
+}
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
 .image-with-text__text {
