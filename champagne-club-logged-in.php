@@ -43,7 +43,7 @@
             </header>
             <div class="u-width-max-1">
                 <p class="entry-lead">
-                    <strong>Florentine</strong>, welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
+                    <em>Florentine</em>, welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                 </p>
                 <div class="s-entry-content s-entry-content--columns">
                     <p>Access to the Champagne Club opens a sparkling world of undiscovered, boutique vineyards, sourced by our in-house champagne curator, whose 25+ years knowledge of the region is unrivalled.</p>
@@ -52,35 +52,36 @@
 
                     <p>Discover the unique offering of the Champagne region like never before. Join our exclusive champagne community, learn more about the vineyards we work with and select which champagne package works best for you. We’ll do the rest.<p>
                 </div>
-                <img src="/img/purple-grapes.jpg" alt="test" class="side-image" />
             </div>
             <div class="c-article">
-                <div class="c-article__grid__text">
-                    <h2>Meet Edward, your bespoke wine curator</h2>
-                    <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
-    
-                    <p>What had started as a twice yearly run to Champagne for his city friends morphed into a business importing and distributing Champagne in the UK Europe the USA and Asia.</p>
-    
-                    <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
-                </div>
-                <div class="c-article__grid__image">
-                    <figure>
-                        <img src="/img/edward.jpg" alt="Edward" />
-                        <figcaption>Edward, our expert wine curator</figcaption>
-                    </figure>
+                <div class="c-article__grid">
+                    <div class="c-article__grid__text">
+                        <h2>Meet Edward, your bespoke wine curator</h2>
+                        <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
+
+                        <p>What had started as a twice yearly run to Champagne for his city friends morphed into a business importing and distributing Champagne in the UK Europe the USA and Asia.</p>
+        
+                        <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
+                    </div>
+                    <div class="c-article__grid__image">
+                        <figure>
+                            <img src="/img/edward.jpg" alt="Edward" />
+                            <figcaption>Edward, our expert wine curator</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-                
-            <h2 class="large-title">A Year in Champagne</h2>
+
             <div class="u-width-max-1">
-                <p class="entry-lead"><strong>Florentine</strong>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
+                <h2 class="large-title">A Year in Champagne</h2>
+                <p class="entry-lead"><em>Florentine</em>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
 
                 <div class="feature-image">
                     <img src="/img/vineyard-with-people.jpg" alt="test">
                 </div>
                 <h3>Our Vineyard: Philippe Brugnon</h3>
                 <div class="s-entry-content s-entry-content--columns s-entry-content--compressed">
-                    <p>Let us start with the <strong>Champagnes of Philippe Brugnon</strong>, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
+                    <p>Let us start with the <em>Champagnes of Philippe Brugnon</em>, a fourth generation grower from Rilly-la-Montagne on the Montagne de Reims. Rilly-la-Montagne is 1er Cru and is also the home of Champagne Cattier, the producer of Armand de Brignac. Philippe's land in Rilly la Montagne is given over mainly to the Pinot Noir grape where it thrives and is noticeable in his cuvees.</p>
 
                     <p>The Pinot Noir tends to produce a wine with notes of red fruits, has great body and tends to be ready to drink earlier than the Chardonnay which requires much more bottle age for the acidity to turn to fruit. This is why I tend to order Blanc de Blancs Champagne (100% Chardonnay) only when it is Vintage and has a minimum of 9 years age from the year of harvest.</p>
 
@@ -104,7 +105,9 @@
                 </details>
             </div>
 
-            <h2 class="large-title">Champagnes</h2>
+            <div class="u-width-max-1">
+                <h2 class="large-title">Champagnes</h2>
+            </div>
             <!-- <div class="u-width-max-1">
                 <p class="entry-lead">We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p>
             </div> -->
@@ -137,7 +140,9 @@
                 </div>
             </div>
             <div class="feature-image feature-image--ripped"><img src="/img/grapes-3.jpg" alt="wine" /></div>
-            <h2 class="medium-title">Choose a Membership</h2>
+            <div class="u-width-max-1">
+                <h2 class="medium-title">Choose a Membership</h2>
+            </div>
             <div class="feature-columns feature-columns--l">
                 <div class="feature-columns__column">
                     <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>

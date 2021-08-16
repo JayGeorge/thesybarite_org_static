@@ -132,7 +132,7 @@
     --font-size-m-rem: 1.618rem;
     /* e.g. >> /champagne-club. */
     /* Increase */
-    --font-size-m-custom: 1.78em;
+    --font-size-m-custom: clamp(calc(1.9em * 0.85), 6.9vw, 1.9em);
     --font-size-m-line-height: 1.4;
 
     --font-size-l: 2.618em;
@@ -143,7 +143,7 @@
     /* --font-size-l-2: 6.854em; */
     /* Custom */
     --font-size-l-2: clamp(calc(6.8em * 0.7), 13.5vw, 6.8em);;
-    --font-size-l-2-line-height: 0.99;
+    --font-size-l-2-line-height: 0.95;
 
     --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
@@ -491,11 +491,16 @@ hr + * {
 
 /* GROUP ELEMENTS / FRAMEWORK / MAIN
 =================================================== */
+main {
+    padding-block-end: var(--spacing-l-4);
+}
+
 main:focus {
     outline: none;
 }
 
 main > *:last-child {
+    /* e.g. >> /champagne-club-logged-in */
     padding-block-end: 0;
 }
 
@@ -1212,7 +1217,6 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .medium-title,
 .large-title {
     max-width: var(--max-width-1);
-    margin: auto;
     font-family: var(--font-family-headline);
     font-size: var(--font-size-l-2);
     line-height: var(--font-size-l-2-line-height);
@@ -1224,6 +1228,7 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 .large-title {
     /* Increase */
     padding-block-end: var(--spacing-l-1);
+    max-width: var(--max-width-title);
 }
 
 .medium-title {

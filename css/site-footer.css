@@ -117,7 +117,6 @@ body .site-footer__cards ul {
 .site-footer__columns {
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
-/*     opacity: 0.8; */
 }
 
 .site-footer [type="submit"] {
@@ -125,6 +124,10 @@ body .site-footer__cards ul {
     margin-block-start: var(--spacing-s-x);
     /* Increase */
     margin-block-end: var(--spacing-s-1);
+}
+
+.site-footer li {
+    padding-block-end: var(--spacing-s);
 }
 
 .site-footer__cards {
@@ -135,13 +138,6 @@ body .site-footer__cards ul {
 .site-footer__cards li {
     /* Remove default */
     padding-block-end: 0;
-}
-
-/* --mq-site-footer-breakpoint-1-before */
-@media (max-width: 1199px) {
-    li {
-        padding-block-end: var(--spacing-s);
-    }
 }
 
 /* --mq-site-footer-breakpoint-1-before */

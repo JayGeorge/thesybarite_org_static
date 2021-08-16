@@ -132,7 +132,6 @@ body .site-footer__cards ul {
     padding-inline-start: var(--spacing-l);
     -webkit-padding-end: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
-/*     opacity: 0.8; */
 }
 
 .site-footer [type="submit"] {
@@ -142,6 +141,11 @@ body .site-footer__cards ul {
     /* Increase */
     -webkit-margin-after: var(--spacing-s-1);
     margin-block-end: var(--spacing-s-1);
+}
+
+.site-footer li {
+    -webkit-padding-after: var(--spacing-s);
+    padding-block-end: var(--spacing-s);
 }
 
 .site-footer__cards {
@@ -154,14 +158,6 @@ body .site-footer__cards ul {
     /* Remove default */
     -webkit-padding-after: 0;
     padding-block-end: 0;
-}
-
-/* --mq-site-footer-breakpoint-1-before */
-@media (max-width: 1199px) {
-    li {
-        -webkit-padding-after: var(--spacing-s);
-        padding-block-end: var(--spacing-s);
-    }
 }
 
 /* --mq-site-footer-breakpoint-1-before */

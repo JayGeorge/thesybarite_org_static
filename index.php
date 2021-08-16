@@ -72,8 +72,8 @@
                     </div>
                 </div>
                 
-                <h2 class="large-title">How it works</h2>
                 <div class="u-width-max-1">
+                    <h2 class="large-title">How it works</h2>
                     <div class="s-entry-content s-entry-content--columns">
                         <ol>
                         <li>We work exclusively with smaller producers in the Champagne region. We believe their product reflects the terroir of their land—something which is often lost by the larger producer who might be looking for product consistency across various tracts of land in different parts of the Champagne region.</li>
@@ -91,8 +91,8 @@
                 <img src="/img/vineyard-with-people.jpg" alt="test" />
                 </div> -->
 
-                <h2 class="medium-title">Sign up for Free</h2>
                 <div id="form" class="u-width-max-1">
+                    <h2 class="medium-title">Sign up for Free</h2>
                     <p class="entry-lead">@Cedric form goes here</p>
                 </div>
         </article>
