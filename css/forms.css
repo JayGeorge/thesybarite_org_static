@@ -46,6 +46,7 @@ textarea {
     border: none;
     border-block-end: 1px solid #fafafa;
     background: transparent;
+    border-radius: 0;
 }
 
 [placeholder],
