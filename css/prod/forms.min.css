@@ -48,7 +48,7 @@ textarea {
     -webkit-border-after: 1px solid #fafafa;
     border-block-end: 1px solid #fafafa;
     background: transparent;
-    border-radius: 0;
+    border-radius: 0!important;
 }
 /* purgecss end ignore */
 
