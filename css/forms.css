@@ -118,6 +118,8 @@ body [type="checkbox"] {
 .form {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
+    /* e.g. footer form at lower MQs */
+    width: 100%;
     max-width: 50rem;
 }
 
@@ -203,6 +205,7 @@ label {
 [type="checkbox"] + label,
 [type="radio"] + label {
     padding-block-end: var(--spacing-s-2);
+    font-size: var(--font-size-s-x);
 }
 
 [type="submit"] {
