@@ -132,7 +132,7 @@
     --font-size-m-rem: 1.618rem;
     /* e.g. >> /champagne-club. */
     /* Increase */
-    --font-size-m-custom: clamp(calc(1.9em * 0.6), 5.5vw, 1.9em);
+    --font-size-m-custom: clamp(calc(1.9em * 0.6), 6.25vw, 1.9em);
     --font-size-m-line-height: 1.4;
 
     --font-size-l: 2.618em;
