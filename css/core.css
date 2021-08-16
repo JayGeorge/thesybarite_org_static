@@ -1262,7 +1262,6 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 =================================================== */
 .feature-columns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-l-2);
 
     max-width: var(--max-width-1);
@@ -1271,6 +1270,13 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 
 .feature-columns__description {
     min-height: 5.8em;
+}
+
+/* Custom */
+@media (min-width: 1024px) {
+    .feature-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /* GROUP COMPONENTS / FEATURE COLUMNS / SPACING
 =================================================== */
