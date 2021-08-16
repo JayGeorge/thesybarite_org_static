@@ -1692,6 +1692,11 @@ details[open] summary::before {
     content: "—";
 }
 
+details summary::-webkit-details-marker {
+    /* Hide marker in Safari */
+    display: none;
+}
+
 
 
 
