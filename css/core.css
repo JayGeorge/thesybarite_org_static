@@ -1692,10 +1692,12 @@ details[open] summary::before {
     content: "—";
 }
 
+/* purgecss start ignore */
 details summary::-webkit-details-marker {
     /* Hide marker in Safari */
     display: none;
 }
+/* purgecss end ignore */
 
 
 
