@@ -26,6 +26,7 @@
     .form--hidden-labels <-- labels hidden with screen reader text except labels with .form-label-show
 
 */
+/* purgecss start ignore */
 [type="text"],
 [type="email"],
 [type="tel"],
@@ -49,6 +50,7 @@ textarea {
     background: transparent;
     border-radius: 0;
 }
+/* purgecss end ignore */
 
 input::-webkit-input-placeholder {
     /* =JFG. "search this website". This needs to be rem
