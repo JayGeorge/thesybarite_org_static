@@ -516,7 +516,7 @@ nav {
     width: 100%;
     letter-spacing: var(--letter-spacing-s);
     text-transform: uppercase;
-    font-size: var(--font-size-s-x);
+    font-size: var(--font-size-s-x-x-custom);
 }
 
 nav ul {
@@ -1034,12 +1034,20 @@ h2 + .o-hero-buttons {
     background: white;
 }
 
+.c-site-header nav svg {
+    position: relative;
+    top: 0.11em;
+    /* Increase */
+    /* font-size: 1.4em; */
+    font-size: 18px;
+}
+
 
 
 /* GROUP COMPONENTS / FRAMEWORK / NAV / CURRENT PAGE
 =================================================== */
 .current-menu-item > a span,
-body > div > header > nav > ul > li:nth-child(3) > a {
+body > div > header > nav > ul > li:nth-child(1) > a {
     text-decoration: underline;
     text-underline-position: under;
     text-underline-offset: 0.3em;
@@ -1452,7 +1460,8 @@ body > div > header > nav > ul > li:nth-child(3) > a {
 }
 
 /* Landscape devices */
-@media (min-aspect-ratio: 1680/990) {
+/* @media (min-aspect-ratio: 1680/990) { */
+@media (min-aspect-ratio: 1680/1230) {
     .image-with-text__image {
         height: 100vh;
     }
