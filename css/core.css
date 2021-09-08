@@ -527,10 +527,6 @@ nav ul {
     padding-inline: 0;
 }
 
-nav li {
-    position: relative;
-}
-
 nav a {
     text-decoration: none;
 }
@@ -1000,7 +996,7 @@ h2 + .o-hero-buttons {
 .c-site-header__nav ul {
     flex-direction: row;
     justify-content: flex-end;
-    gap: var(--spacing-l);
+    gap: 2.1em;
 }
 
 .c-site-header__nav li {
@@ -1021,6 +1017,10 @@ h2 + .o-hero-buttons {
 .c-site-header__cta .btn {
     margin-block-end: 0;
 }
+
+.c-site-header__nav a {
+    padding: var(--spacing-s);
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
 .c-site-header__cta .btn {
@@ -1036,11 +1036,48 @@ h2 + .o-hero-buttons {
 
 .c-site-header nav svg {
     position: relative;
-    top: 0.11em;
+    top: 0.1em;
     /* Increase */
     /* font-size: 1.4em; */
     font-size: 18px;
+    margin-inline-start: var(--spacing-s);
 }
+
+
+
+
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT
+=================================================== */
+/* Mega Menu */
+.c-site-header__nav ul ul:not(.js--megaMenuActive) {
+    display: none;
+}
+
+.c-site-header__nav ul ul {
+    position: absolute;
+    top: 0;
+    left: 38.2%;
+    width: 61.8%;
+    height: 100vh;
+}
+
+.c-site-header__nav a {
+    position: relative;
+    z-index: 1;
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
+=================================================== */
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION
+=================================================== */
+.c-site-header__nav ul ul {
+    background: white;
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / ANIMATIONS
+=================================================== */
+.c-mega-menu {
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
 
 
 
@@ -1449,7 +1486,8 @@ body > div > header > nav > ul > li:nth-child(1) > a {
 
 .image-with-text__cta-box {
     position: fixed;
-    z-index: 1;
+    /* Don't pull above the mega menu */
+    /* z-index: 1; */
     top: 11em;
     right: 0;
     width: var(--cta-box-width);
@@ -1580,15 +1618,6 @@ body {
 
     100% {
         transform: translateY(0%);
-    }
-}
-
-@keyframes wipe-in-left {
-    from {
-        clip-path: inset(0 0 0 100%);
-    }
-    to {
-        clip-path: inset(0 0 0 0);
     }
 }
 

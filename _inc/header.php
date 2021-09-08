@@ -26,8 +26,17 @@
                 $current_nav = 'catalogue';
                 include '_inc/header.php';
             */ ?>
-            <?php 
-                $nav_name = 'Experiences'; include '_inc/nav-links.php';
+            <?php $nav_name = 'Experiences'; ?>
+            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+                <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
+                <ul class="c-mega-menu">
+                    <!-- <li>
+                        <a href="">hello</a>
+                    </li> -->
+                </ul>
+            </li>
+
+            <?php
                 $nav_name = 'Magazine'; include '_inc/nav-links.php';
                 $nav_name = 'International'; include '_inc/nav-links.php';
                 // $nav_name = 'Africa'; include '_inc/nav-links.php';

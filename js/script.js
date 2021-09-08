@@ -24,16 +24,39 @@
 =================================================== */
 /* Need this locally in case we're running on NGINX instead of Apache */
 // https://stackoverflow.com/questions/6964503/using-javascript-to-highlight-current-page-in-navbar
-var url = window.location.href.split("/");
-var nav_links = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
-var i=0;
-var current_page = url[url.length - 1];
-for(i;i < nav_links.length; i++){
-    var lb = nav_links[i].href.split("/");
-    if(lb[lb.length-1] == current_page) {
-        nav_links[i].className = "current-menu-item";
-    }
-}
+// var url = window.location.href.split("/");
+// var nav_links = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
+// var i=0;
+// var current_page = url[url.length - 1];
+// for(i;i < nav_links.length; i++){
+//     var lb = nav_links[i].href.split("/");
+//     if(lb[lb.length-1] == current_page) {
+//         nav_links[i].className = "current-menu-item";
+//     }
+// }
+
+
+
+
+/* GROUP NAV / MEGA MENU
+=================================================== */
+/* Notes...
+
+*/
+/* HTML Example...
+
+*/
+// If there is a click in the on a mega menu link
+Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
+    element.addEventListener('click', function(event) {
+        // Prevent the click
+        event.preventDefault();
+        // add a class to the ul
+        element.nextElementSibling.classList.toggle('js--megaMenuActive');
+    });
+});
+
+
 
 
 
