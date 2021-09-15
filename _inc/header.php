@@ -29,11 +29,13 @@
             <?php $nav_name = 'Experiences'; ?>
             <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                <ul class="c-mega-menu">
-                    <li>
-                        <a href="">hello</a>
-                    </li>
-                </ul>
+                <div class="c-mega-menu">
+                    <ul>
+                        <li>
+                            <a href="">hello</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
             <?php
