@@ -1023,10 +1023,12 @@ h2 + .o-hero-buttons {
 
 .c-site-header .btn {
     margin-block-end: 0;
+    margin-inline-start: var(--spacing-m);
 }
 
 /* Not the mega nav */
 .c-site-header__nav > ul:first-child {
+    padding-block-start: var(--spacing-s-2);
     padding-inline-end: var(--spacing-l);
 }
 
