@@ -979,6 +979,8 @@ h2 + .o-hero-buttons {
     margin: auto;
     display: flex;
     gap: var(--spacing-l-2);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .c-site-header__logo {
@@ -989,7 +991,9 @@ h2 + .o-hero-buttons {
 .c-site-header__nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+
+    width: initial;
 }
 
 .c-site-header__nav ul {
