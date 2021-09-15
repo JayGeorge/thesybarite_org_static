@@ -32,29 +32,54 @@
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
                         <ul>
-                            <li><a href="">hello</a></li>
-                            <li><a href="">hello</a></li>
-                            <li><a href="">hello</a></li>
+                            <li><a href="">Arts & Culture</a></li>
+                            <li><a href="">Beauty & Wellbeing</a></li>
+                            <li><a href="">Best of Britain</a></li>
+                            <li><a href="">Create Your Own</a></li>
+                            <li><a href="">Fashion & Style</a></li>
+                            <li><a href="">Food & Drink</a></li>
+                            <li><a href="">Lifestyle & Adventure</a></li>
+                            <li><a href="">Parties & Events</a></li>
+                            <li><a href="">Private Stays</a></li>
+                            <li><a href="">Property</a></li>
+                            <li><a href="">Sport</a></li>
+                            <li><a href="">Technology</a></li>
+                            <li><a href="">Travel</a></li>
+                            <li><a href="">Virtual</a></li>
+                            <li><a href="">Yachts, Cars & Jets</a></li>
                         </ul>
                         <ul>
-                            <li><a href="">Goodbye</a></li>
-                            <li><a href="">Goodbye</a></li>
-                            <li><a href="">Goodbye</a></li>
-                            <li><a href="">Goodbye</a></li>
-                            <li><a href="">Goodbye</a></li>
+                            <li><a href="">Editors Picks</a></li>
                         </ul>
+                    </div>
+                </div>
+            </li>
+
+            <?php $nav_name = 'Magazine'; ?>
+            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+                <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
+                <div class="c-mega-menu-container">
+                    <div class="c-mega-menu">
                         <ul>
-                            <li><a href="">Evening</a></li>
-                            <li><a href="">Evening</a></li>
-                            <li><a href="">Evening</a></li>
-                            <li><a href="">Evening</a></li>
+                            <li><a href="">Arts & Culture</a></li>
+                            <li><a href="">Beauty & Wellbeing</a></li>
+                            <li><a href="">Fashion & Style</a></li>
+                            <li><a href="">Food & Drink</a></li>
+                            <li><a href="">Lifestyle & Adventure</a></li>
+                            <li><a href="">Parties & Events</a></li>
+                            <li><a href="">Review</a></li>
+                            <li><a href="">Sport</a></li>
+                            <li><a href="">Technology</a></li>
+                            <li><a href="">Travel</a></li>
+                            <li><a href="">Virtual</a></li>
+                            <li><a href="">Yachts, Cars & Jets</a></li>
+                            <li><a href="">Africa</a></li>
                         </ul>
                     </div>
                 </div>
             </li>
 
             <?php
-                $nav_name = 'Magazine'; include '_inc/nav-links.php';
                 $nav_name = 'International'; include '_inc/nav-links.php';
                 // $nav_name = 'Africa'; include '_inc/nav-links.php';
                 $nav_name = 'Clubs'; include '_inc/nav-links.php';

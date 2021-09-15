@@ -49,6 +49,10 @@
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
+        Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
+            element.classList.remove('js--megaMenuActive');
+        });
+
         // Prevent the click
         event.preventDefault();
         // add a class to the ul
