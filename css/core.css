@@ -1049,13 +1049,13 @@ h2 + .o-hero-buttons {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT
 =================================================== */
 /* Mega Menu */
-.c-site-header__nav ul ul:not(.js--megaMenuActive) {
+.c-site-header__nav ul ul:not(.js--megaMenuActive),
+.c-mega-menu-container:not(.js--megaMenuActive) {
     display: none;
-    border: 3px solid red!important;
 }
 
 /* ul*/
-.c-site-header__nav .c-mega-menu {
+.c-site-header__nav .c-mega-menu-container {
     position: absolute;
     top: 0;
     left: 38.2%;
@@ -1063,7 +1063,7 @@ h2 + .o-hero-buttons {
     height: 100vh;
 }
 
-.c-mega-menu ul {
+.c-mega-menu-container * {
     height: 100%;
 }
 
@@ -1073,14 +1073,18 @@ h2 + .o-hero-buttons {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
 =================================================== */
+.c-mega-menu {
+    border: 3px solid red!important;
+    padding-block-start: var(--spacing-l-4);
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION
 =================================================== */
-.c-site-header__nav ul ul {
+.c-mega-menu-container {
     background: white;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / ANIMATIONS
 =================================================== */
-.c-mega-menu ul {
+.c-mega-menu-container {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
 

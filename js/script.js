@@ -52,6 +52,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         // Prevent the click
         event.preventDefault();
         // add a class to the ul
+        element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.nextElementSibling.querySelector('ul').classList.toggle('js--megaMenuActive');
     });
 });
