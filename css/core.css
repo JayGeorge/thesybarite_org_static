@@ -979,7 +979,6 @@ h2 + .o-hero-buttons {
     margin: auto;
     display: flex;
     gap: var(--spacing-l-2);
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -1009,9 +1008,13 @@ h2 + .o-hero-buttons {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
 =================================================== */
 .c-site-header {
-    padding-block-start: var(--spacing-s-2);
+    /* padding-block-start: var(--spacing-s-2); */
     padding-inline-start: var(--spacing-l);
     /* padding-inline-end: var(--spacing-l); */
+}
+
+.c-site-header__logo {
+    padding-block-start: var(--spacing-s-2);
 }
 
 .c-site-header .btn a {
@@ -1066,8 +1069,8 @@ h2 + .o-hero-buttons {
 .c-site-header__nav .c-mega-menu-container {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: calc(0% - var(--spacing-m));
+    width: calc(100% + var(--spacing-m));
     height: 100vh;
 }
 
@@ -1092,9 +1095,13 @@ body > div > header > nav {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
 =================================================== */
+.c-mega-menu-container {
+    
+}
+
 .c-mega-menu {
-    padding-inline-start: var(--spacing-l);
     padding-block-start: var(--spacing-l-4);
+    padding-inline-start: var(--spacing-m);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION
 =================================================== */
