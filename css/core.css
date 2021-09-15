@@ -1053,12 +1053,15 @@ h2 + .o-hero-buttons {
     display: none;
 }
 
-.c-site-header__nav ul ul {
+/* ul*/
+.c-site-header__nav .c-mega-menu {
     position: absolute;
     top: 0;
     left: 38.2%;
     width: 61.8%;
     height: 100vh;
+
+    flex-direction: column;
 }
 
 .c-site-header__nav a {

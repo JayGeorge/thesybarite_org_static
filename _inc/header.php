@@ -30,9 +30,9 @@
             <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <ul class="c-mega-menu">
-                    <!-- <li>
+                    <li>
                         <a href="">hello</a>
-                    </li> -->
+                    </li>
                 </ul>
             </li>
 
@@ -42,8 +42,8 @@
                 // $nav_name = 'Africa'; include '_inc/nav-links.php';
                 $nav_name = 'Clubs'; include '_inc/nav-links.php';
                 $nav_name = 'Shop'; include '_inc/nav-links.php';
-                include 'img/svg/search.php';
             ?>
+            <li><?php include 'img/svg/search.php'; ?></li>
         </ul>
     </nav>
 
