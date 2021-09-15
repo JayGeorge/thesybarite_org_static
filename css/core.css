@@ -1062,17 +1062,13 @@ h2 + .o-hero-buttons {
     height: 100vh;
 }
 
-.c-mega-menu-container * {
-    height: 100%;
-}
-
 .c-mega-menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
 }
 
 .c-mega-menu ul {
-
+    display: initial;
 }
 
 /* --- */
@@ -1081,9 +1077,14 @@ nav a {
     position: relative;
     z-index: 1;
 }
+
+/* body > div > header > nav > ul > li:nth-child(1) {
+    position: relative;
+} */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
 =================================================== */
 .c-mega-menu {
+    padding-inline-start: var(--spacing-l);
     padding-block-start: var(--spacing-l-4);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION
