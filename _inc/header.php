@@ -61,16 +61,13 @@
                 $nav_name = 'Shop'; include '_inc/nav-links.php';
             ?>
             <li><?php include 'img/svg/search.php'; ?></li>
+
+            <div class="btn">
+                <a href="/champagne-club-logged-in.php">
+                    Login
+                </a>
+            </div>
         </ul>
     </nav>
-
-    <div class="c-site-header__cta">
-        <div class="btn">
-            <a href="/champagne-club-logged-in.php">
-                Login
-            </a>
-        </div>
-    </div>
-
 </header>
 </div>

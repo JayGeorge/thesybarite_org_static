@@ -958,7 +958,6 @@ h2 + .o-hero-buttons {
     .c-site-header
         .c-site-header__logo
         .c-site-header__nav
-        .c-site-header__cta
 
 */
 /* Modifiers...
@@ -976,7 +975,7 @@ h2 + .o-hero-buttons {
 }
 
 .c-site-header {
-    max-width: var(--max-width-2);
+    /* max-width: var(--max-width-2); */
     margin: auto;
     display: flex;
     gap: var(--spacing-l-2);
@@ -996,6 +995,7 @@ h2 + .o-hero-buttons {
 .c-site-header__nav ul {
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     gap: 2.1em;
 }
 
@@ -1007,15 +1007,20 @@ h2 + .o-hero-buttons {
 .c-site-header {
     padding-block-start: var(--spacing-s-2);
     padding-inline-start: var(--spacing-l);
-    padding-inline-end: var(--spacing-l);
+    /* padding-inline-end: var(--spacing-l); */
 }
 
-.c-site-header__cta .btn a {
+.c-site-header .btn a {
     padding: var(--button-spacing);
 }
 
-.c-site-header__cta .btn {
+.c-site-header .btn {
     margin-block-end: 0;
+}
+
+/* Not the mega nav */
+.c-site-header__nav > ul:first-child {
+    padding-inline-end: var(--spacing-l);
 }
 
 .c-site-header__nav a {
@@ -1023,14 +1028,14 @@ h2 + .o-hero-buttons {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
-.c-site-header__cta .btn {
+.c-site-header .btn {
     font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
 }
 
-.c-site-header--light-background .c-site-header__cta .btn {
+.c-site-header--light-background .btn {
     background: white;
 }
 
