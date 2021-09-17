@@ -36,11 +36,11 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" />
-                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/england.php'; ?></span> Formula 1 Luxury Stay At Silverstone</a></strong>
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/england.php'; ?></span> Formula 1 Luxury Stay At Silverstone</a>
                                 </li>
                                 <li>
                                     <img src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" />
-                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/spain.php'; ?></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a></strong>
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/spain.php'; ?></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                 </li>
                             </ul>
                             <ul>
@@ -80,11 +80,11 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" />
-                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span><a href="">Interview with Artist Ajarb Bernard Ategwa</a></strong>
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span><a href="">Interview with Artist Ajarb Bernard Ategwa</a>
                                 </li>
                                 <li>
                                     <img src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" />
-                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/uk.php'; ?></span> Review of London’s New Restaurant, Magenta</a></strong>
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/uk.php'; ?></span> Review of London’s New Restaurant, Magenta</a>
                                 </li>
                             </ul>
                             <ul>
