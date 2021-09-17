@@ -1030,8 +1030,18 @@ h2 + .o-hero-buttons {
     gap: 2.1em;
 }
 
-.c-site-header__nav > ul::before {
-    /* White background in case of mega menu scroll */
+@keyframes background-fade-in {
+    0% {
+        background: transparent;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+/* White background behind the main nav in case of mega menu overflow scroll */
+.js--megaMenuActive.c-site-header__nav > ul::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1039,7 +1049,8 @@ h2 + .o-hero-buttons {
     width: 100%;
     content: "";
     z-index: 1;
-    background: white;
+    animation: 0.5s ease background-fade-in both;
+    animation-delay: 1.2s;
 }
 
 .c-site-header__nav li {
@@ -1152,7 +1163,11 @@ h2 + .o-hero-buttons {
 
 /* --- */
 
-nav a {
+nav a,
+/* Login button */
+nav .btn,
+/* Search icon */
+nav svg {
     position: relative;
     z-index: 1;
 }

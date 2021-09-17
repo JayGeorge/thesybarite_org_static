@@ -60,6 +60,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         event.preventDefault();
         // add a class to the ul
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
+        element.closest('nav').classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
     });
 });
