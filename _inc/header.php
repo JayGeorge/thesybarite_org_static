@@ -36,11 +36,11 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/england.php'; ?></span> Formula 1 Luxury Stay At Silverstone</a>
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/england.svg" alt="South Africa Flag" /></span> Formula 1 Luxury Stay At Silverstone</a>
                                 </li>
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/spain.php'; ?></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/spain.svg" alt="South Africa Flag" /></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                 </li>
                             </ul>
                             <ul>
@@ -80,11 +80,11 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" loading="lazy" width="800" height="448" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span> Interview with Artist Ajarb Bernard Ategwa</a>
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/cameroon.svg" alt="South Africa Flag" /></span> Interview with Artist Ajarb Bernard Ategwa</a>
                                 </li>
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" loading="lazy" width="800" height="448" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/uk.php'; ?></span> Review of London’s New Restaurant, Magenta</a>
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="South Africa Flag" /></span> Review of London’s New Restaurant, Magenta</a>
                                 </li>
                             </ul>
                             <ul>
@@ -122,7 +122,7 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/south-africa.php'; ?></span> Reconnect at Tswalu Private Reserve</a>
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Reconnect at Tswalu Private Reserve</a>
                                 </li>
                                 <li>
                                     <img class="c-mega-menu__feature-image" src="/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" />
