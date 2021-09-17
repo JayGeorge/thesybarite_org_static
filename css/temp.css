@@ -79,12 +79,3 @@
         grid-template-columns: 55fr 45fr;
     }
 }
-
-
-/* Custom */
-@media (max-width: 1023px) {
-    .c-site-header__nav,
-    .c-site-header__cta {
-        display: none;
-    }
-}
