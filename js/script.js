@@ -85,6 +85,20 @@ document.addEventListener('keydown', (event) => {
         megaMenuClose();
     }
 });
+/* GROUP NAV / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
+=================================================== */
+// e.g. Give clicking outside as an option to exit too
+// Based on https://gomakethings.com/detecting-clicks-outside-of-an-element-with-vanilla-javascript/
+// Listen for all clicks on the document
+document.addEventListener('click', function (event) {
+
+    // If the click happened inside the the container, bail
+    if (event.target.closest('.c-site-header__nav')) return;
+
+    // Otherwise, run our code...
+    megaMenuClose();
+
+}, false);
 
 
 
