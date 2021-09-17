@@ -46,28 +46,44 @@
 /* HTML Example...
 
 */
+function megaMenuClose() {
+    // Remove any active states
+    Array.from(document.querySelectorAll('nav') || []).forEach(element => {
+        element.classList.remove('js--megaMenuActive');
+    });
+    Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
+        element.classList.remove('js--megaMenuActive');
+    });
+    Array.from(document.querySelectorAll('.js--megaMenuActiveCurrentMenu') || []).forEach(element => {
+        element.classList.remove('js--megaMenuActiveCurrentMenu');
+    });
+}
+
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
-        element.closest('nav').classList.remove('js--megaMenuActive');
-
-        Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
-            element.classList.remove('js--megaMenuActive');
-        });
-        Array.from(document.querySelectorAll('.js--megaMenuActiveCurrentMenu') || []).forEach(element => {
-            element.classList.remove('js--megaMenuActiveCurrentMenu');
-        });
-
-        // Prevent the click
+        // [1] Prevent the click
         event.preventDefault();
-        // add a class to the ul
+
+        // [2] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
+        megaMenuClose();
+
+        // [3] Add active states
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
-
+        // Reactivate the nav class after a short time so the animation has a chance to reset
         setTimeout(function() {
             element.closest('nav').classList.add('js--megaMenuActive');
         }, 50);
     });
+});
+/* GROUP NAV / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON ESCAPE
+=================================================== */
+// e.g. Give the Escape Key as an option to exit too
+document.addEventListener('keydown', (event) => {
+    if (!event.repeat && event.key === 'Escape') {
+        megaMenuClose();
+    }
 });
 
 
