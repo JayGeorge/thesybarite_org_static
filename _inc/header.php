@@ -80,7 +80,7 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" />
-                                    <strong><a href="">Interview with Artist Ajarb Bernard Ategwa</a></strong>
+                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span><a href="">Interview with Artist Ajarb Bernard Ategwa</a></strong>
                                 </li>
                                 <li>
                                     <img src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" />
