@@ -29,6 +29,8 @@
     --spacing-m: 1.5rem;
 
     --spacing-l: 1.8rem;
+    /* Smaller value for mobile */
+    --spacing-l-horizontal: var(--spacing-m);
     --spacing-l-static: 1.8rem;
 
     --spacing-l-1: 2.5rem;
@@ -194,6 +196,7 @@
 @media (min-width: 730px) {
     :root {
         --spacing-l-3-horizontal: var(--spacing-l-3);
+        --spacing-l-horizontal: var(--spacing-l);
     }
 }
 /* --mq-text-bump-reduce-for-lower-resolution-displays */
@@ -549,67 +552,6 @@ nav a {
 
 
 
-/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV
-=================================================== */
-/*
-
-    Setup and Dependencies...
-
-    [] 1. Decide whether you'd like to use any modifier classes/groups shown below. Remove any MODIFIER groups that are not needed.
-        Modifier groups include choosing "when the grid breaks into further columns" (I suggest at 600px)
-    [] 2. Add the JS found in script-non-core.js.
-    [] 3. Remember how to comment out the nav template in header.php for Perch, and check the nav element there for further instructions
-
-*/
-
-/* HTML Example...
-
-    The nav is flexible and derivative so it's best to view various examples rather than a specific
-    markup example here.
-    See one of the various demos in the CSS Framework
-
-*/
-/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MODIFIER CLASSES
-=================================================== */
-/* Notes...
-
-    Examples of nav modifier classes
-    ------------
-    .nav--centered
-    The nav will be centered once it is horizontal
-
-    .js__collapsedUntilNavOpened
-    You almost always want this. If we have JS then the nav is hidden until toggled open.
-    The menu appears on larger screens
-
-*/
-/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / SPACING
-=================================================== */
-.js--navIsOpen .c-nav-mobile-button {
-    margin-bottom: 0;
-}
-
-/* e.g. Components > Framework > Nav > Header > Closed */
-nav {
-    padding-block-start: var(--spacing-s-1);
-}
-
-.c-nav-mobile-button,
-/* e.g. Components > Framework > Nav > Header > Closed */
-nav {
-    margin-block-end: var(--spacing-l);
-}
-/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / CURRENT PAGE
-=================================================== */
-/* Ancestors and Parents of Current Page */
-/* nav */
-.current-menu-ancestor > a span {
-    color: rgba(var(--colour-turquoise-rgb),0.5);
-}
-
-
-
-
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / (CROSS POLLINATED)
 =================================================== */
 /* HTML Example...
@@ -626,32 +568,21 @@ nav {
 =================================================== */
 /* button*/
 .c-nav-mobile-button {
-    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* Custom to align with the bottom of the Sybarite logo */
+    top: 2.2rem;
+    right: var(--spacing-l-horizontal);
+
+    /* width: 100%; */
     
     /* =JFG. Cancel any default button value */
     margin-inline-end: 0;
 
-    font-size: 1.7em;
+    font-size: 1.5em;
     /* Make sure it's dead center */
     line-height: 0;
-}
-
-/* Optional, if you want to include both an icon and text */
-/* HTML Example...
-
-    <button class="c-nav-mobile-button u-js-only">
-        <span class="c-nav-mobile-button__inner"> <-- this gets wrapped around the text and icon
-            <span class="c-nav-icon">Menu</span>
-            <svg class="c-jg-icon c-jg-icon--menu c-nav-icon"><use xlink:href="#c-jg-icon--menu"></use></svg>
-            <svg class="c-jg-icon c-jg-icon--close c-nav-icon-closed"><use xlink:href="#c-jg-icon--close"></use></svg>
-        </span>
-    </button>
-
-*/
-.c-nav-mobile-button__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center
+    padding: 0;
 }
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / CLOSED STATE
 =================================================== */
@@ -675,7 +606,7 @@ nav {
 /* Since we're initially setting an opacity we should make sure animation is supported before doing this */
 @supports (animation-name: fade-in) {
     /* --mq-nav-opens-before */
-    @media (max-width: 1299px) {
+    @media (max-width: 1199px) {
         .c-site-header__nav li {
             opacity: 0;
         }
@@ -707,6 +638,13 @@ nav {
 
 .js--navIsOpen .js__collapsedUntilNavOpened {
     display: block;
+}
+
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .js .js__collapsedUntilNavOpened {
+        display: flex;
+    }
 }
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / OPEN STATE / SVG ANIMATIONS
 =================================================== */
@@ -1254,7 +1192,7 @@ h2 + .o-hero-buttons {
 =================================================== */
 .c-site-header {
     /* padding-block-start: var(--spacing-s-2); */
-    padding-inline-start: var(--spacing-l);
+    padding-inline-start: var(--spacing-l-horizontal);
     /* padding-inline-end: var(--spacing-l); */
 }
 
@@ -1338,7 +1276,7 @@ h2 + .o-hero-buttons {
 /* Override */
 .c-mega-menu__grid .c-mega-menu__full-width {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
     gap: var(--spacing-l-1) var(--spacing-s-2);
 }
 
@@ -1860,8 +1798,8 @@ nav {
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
 .image-with-text__text {
-    padding-inline-start: var(--spacing-l);
-    padding-inline-end: var(--spacing-l);
+    padding-inline-start: var(--spacing-l-horizontal);
+    padding-inline-end: var(--spacing-l-horizontal);
 }
 
 /* Make sure default padding doesn't affect centering */

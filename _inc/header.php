@@ -19,7 +19,7 @@
         <?php include 'img/svg/nav.php'; ?>
     </button>
 
-    <nav aria-label="Main navigation" class="c-site-header__nav">
+    <nav aria-label="Main navigation" class="c-site-header__nav js__collapsedUntilNavOpened">
         <ul>
             <?php /* 
                 Here you can add the class current-menu-item by the calling the header with a variable like this:
