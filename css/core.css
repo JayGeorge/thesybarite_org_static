@@ -50,6 +50,7 @@
     /* GROUP VARIABLES -- SPACING -- ICONS
     =================================================== */
     --spacing-icon-s: 0.2rem;
+    --spacing-icon-m: 0.5rem;
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
@@ -67,8 +68,9 @@
     --colour-black: black;
     --colour-black-transparent: hsl(0deg 0% 0% / 40%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
+    --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
-    --colour-grey-light: hsl(0deg 0% 85%);
+    --colour-grey-light-2: hsl(0deg 0% 85%);
     /* Jo malone */
     /* --colour-pale: hsl(51deg 62% 96%); */
     /* Tweaked */
@@ -642,6 +644,15 @@ body > div > header > nav > ul > li:nth-child(1) > a {
     text-decoration-thickness: 1px;
 }
 
+/* a*/
+.js--megaMenuActiveCurrentMenu {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--colour-grey-light-1);
+}
+
 .entry-lead a {
     text-underline-offset: 0.08em;
 }
@@ -841,13 +852,6 @@ summary.btn--2,
 .btn--2 a {
     border: 2px solid black;
     font-size: var(--font-size-s-x);
-}
-
-
-/* 3 */
-.btn--3 a {
-    background: var(--colour-grey-light-4);
-    border-radius: var(--border-radius-s);
 }
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / ACCESSIBILITY / HOVER
 =================================================== */
@@ -1121,6 +1125,7 @@ h2 + .o-hero-buttons {
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    align-items: start;
 }
 
 /* --- */
@@ -1187,7 +1192,7 @@ body > div > header > nav {
     position: absolute;
     height: 100%;
     left: calc(0% - var(--spacing-s-2));
-    border-left: 1px solid var(--colour-grey-light);
+    border-left: 1px solid var(--colour-grey-light-2);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / ANIMATIONS
 =================================================== */
@@ -1921,9 +1926,14 @@ img:not([alt]) {
 /* GROUP UTILTIES / FRAMEWORK / (NON CORE) / ICONS / SIZING
 =================================================== */
 /* These is explicit, so override any automatic rules above with !important */
-.u-icon-left-x-x svg {
+.u-icon-left-s svg {
     margin-inline-start: 0!important;
     margin-inline-end: var(--spacing-icon-s)!important;
+}
+
+.u-icon-left-m svg {
+    margin-inline-start: 0!important;
+    margin-inline-end: var(--spacing-icon-m)!important;
 }
 /* GROUP UTILITIES / DECORATION
 =================================================== */

@@ -52,11 +52,15 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
             element.classList.remove('js--megaMenuActive');
         });
+        Array.from(document.querySelectorAll('.js--megaMenuActiveCurrentMenu') || []).forEach(element => {
+            element.classList.remove('js--megaMenuActiveCurrentMenu');
+        });
 
         // Prevent the click
         event.preventDefault();
         // add a class to the ul
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
+        element.classList.toggle('js--megaMenuActiveCurrentMenu');
     });
 });
 

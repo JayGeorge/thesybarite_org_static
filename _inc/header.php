@@ -36,11 +36,11 @@
                             <ul class="c-mega-menu__full-width">
                                 <li>
                                     <img src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" />
-                                    <strong><a href="">Formula 1 Luxury Stay At Silverstone</a></strong>
+                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/england.php'; ?></span> Formula 1 Luxury Stay At Silverstone</a></strong>
                                 </li>
                                 <li>
                                     <img src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" />
-                                    <strong><a href="">Europe’s Hottest New Hotel — Six Senses Ibiza</a></strong>
+                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/spain.php'; ?></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a></strong>
                                 </li>
                             </ul>
                             <ul>
@@ -75,21 +75,39 @@
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
-                        <ul>
-                            <li><a href="">Arts & Culture</a></li>
-                            <li><a href="">Beauty & Wellbeing</a></li>
-                            <li><a href="">Fashion & Style</a></li>
-                            <li><a href="">Food & Drink</a></li>
-                            <li><a href="">Lifestyle & Adventure</a></li>
-                            <li><a href="">Parties & Events</a></li>
-                            <li><a href="">Review</a></li>
-                            <li><a href="">Sport</a></li>
-                            <li><a href="">Technology</a></li>
-                            <li><a href="">Travel</a></li>
-                            <li><a href="">Virtual</a></li>
-                            <li><a href="">Yachts, Cars & Jets</a></li>
-                            <li><a href="">Africa</a></li>
-                        </ul>
+                        <h3>The Sybarite Life</h3>
+                        <div class="c-mega-menu__grid">
+                            <ul class="c-mega-menu__full-width">
+                                <li>
+                                    <img src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" />
+                                    <strong><a href="">Interview with Artist Ajarb Bernard Ategwa</a></strong>
+                                </li>
+                                <li>
+                                    <img src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" />
+                                    <strong><a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/uk.php'; ?></span> Review of London’s New Restaurant, Magenta</a></strong>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Arts & Culture</a></li>
+                                <li><a href="">Beauty & Wellbeing</a></li>
+                                <li><a href="">Fashion & Style</a></li>
+                                <li><a href="">Food & Drink</a></li>
+                                <li><a href="">Lifestyle & Adventure</a></li>
+                                <li><a href="">Parties & Events</a></li>
+                                <li><a href="">Review</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Sport</a></li>
+                                <li><a href="">Technology</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Virtual</a></li>
+                                <li><a href="">Yachts, Cars & Jets</a></li>
+                                <li><a href="">Africa</a></li>
+                            </ul>
+                            <ul class="c-mega-menu__full-width">
+                                <li><a href="">View All Magazine Articles <?php include 'img/svg/arrow-right.php'; ?></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </li>
