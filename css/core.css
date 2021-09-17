@@ -1159,10 +1159,6 @@ body > div > header > nav {
     padding-block-end: 0;
 }
 
-.c-mega-menu h2 {
-    padding-block-end: var(--spacing-m);
-}
-
 .c-mega-menu h3 {
     padding-block-end: var(--spacing-s);
 }
