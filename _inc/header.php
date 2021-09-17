@@ -35,11 +35,11 @@
                         <div class="c-mega-menu__grid">
                             <ul class="c-mega-menu__full-width">
                                 <li>
-                                    <img src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" />
+                                    <img class="c-mega-menu__feature-image" src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
                                     <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/england.php'; ?></span> Formula 1 Luxury Stay At Silverstone</a>
                                 </li>
                                 <li>
-                                    <img src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" />
+                                    <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
                                     <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/spain.php'; ?></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                 </li>
                             </ul>
@@ -79,11 +79,11 @@
                         <div class="c-mega-menu__grid">
                             <ul class="c-mega-menu__full-width">
                                 <li>
-                                    <img src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" />
-                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span><a href="">Interview with Artist Ajarb Bernard Ategwa</a>
+                                    <img class="c-mega-menu__feature-image" src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" loading="lazy" width="800" height="448" />
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/cameroon.php'; ?></span> Interview with Artist Ajarb Bernard Ategwa</a>
                                 </li>
                                 <li>
-                                    <img src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" />
+                                    <img class="c-mega-menu__feature-image" src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" loading="lazy" width="800" height="448" />
                                     <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/uk.php'; ?></span> Review of London’s New Restaurant, Magenta</a>
                                 </li>
                             </ul>
@@ -112,8 +112,32 @@
                 </div>
             </li>
 
+            <?php $nav_name = 'International'; ?>
+            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+                <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
+                <div class="c-mega-menu-container">
+                    <div class="c-mega-menu">
+                        <h3>The Best of Africa</h3>
+                        <div class="c-mega-menu__grid">
+                            <ul class="c-mega-menu__full-width">
+                                <li>
+                                    <img class="c-mega-menu__feature-image" src="/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" />
+                                    <a href=""><span class="u-icon-left-m"><?php include 'img/svg/flags/south-africa.php'; ?></span> Reconnect at Tswalu Private Reserve</a>
+                                </li>
+                                <li>
+                                    <img class="c-mega-menu__feature-image" src="/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" />
+                                    <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Experience South Africa Aboard the Blue Train</a>
+                                </li>
+                            </ul>
+                            <ul class="c-mega-menu__full-width">
+                                <li><a href="">View All African Adventures <?php include 'img/svg/arrow-right.php'; ?></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
             <?php
-                $nav_name = 'International'; include '_inc/nav-links.php';
                 // $nav_name = 'Africa'; include '_inc/nav-links.php';
                 $nav_name = 'Clubs'; include '_inc/nav-links.php';
                 $nav_name = 'Shop'; include '_inc/nav-links.php';
