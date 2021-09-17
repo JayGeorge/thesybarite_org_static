@@ -1050,7 +1050,7 @@ h2 + .o-hero-buttons {
     content: "";
     z-index: 1;
     animation: 0.5s ease background-fade-in both;
-    animation-delay: 1.2s;
+    animation-delay: 0.5s;
 }
 
 .c-site-header__nav li {

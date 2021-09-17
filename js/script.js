@@ -49,6 +49,8 @@
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
+        element.closest('nav').classList.remove('js--megaMenuActive');
+
         Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
             element.classList.remove('js--megaMenuActive');
         });
@@ -60,8 +62,11 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         event.preventDefault();
         // add a class to the ul
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
-        element.closest('nav').classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
+
+        setTimeout(function() {
+            element.closest('nav').classList.add('js--megaMenuActive');
+        }, 50);
     });
 });
 
