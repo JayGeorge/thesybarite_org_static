@@ -549,6 +549,200 @@ nav a {
 
 
 
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV
+=================================================== */
+/*
+
+    Setup and Dependencies...
+
+    [] 1. Decide whether you'd like to use any modifier classes/groups shown below. Remove any MODIFIER groups that are not needed.
+        Modifier groups include choosing "when the grid breaks into further columns" (I suggest at 600px)
+    [] 2. Add the JS found in script-non-core.js.
+    [] 3. Remember how to comment out the nav template in header.php for Perch, and check the nav element there for further instructions
+
+*/
+
+/* HTML Example...
+
+    The nav is flexible and derivative so it's best to view various examples rather than a specific
+    markup example here.
+    See one of the various demos in the CSS Framework
+
+*/
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MODIFIER CLASSES
+=================================================== */
+/* Notes...
+
+    Examples of nav modifier classes
+    ------------
+    .nav--centered
+    The nav will be centered once it is horizontal
+
+    .js__collapsedUntilNavOpened
+    You almost always want this. If we have JS then the nav is hidden until toggled open.
+    The menu appears on larger screens
+
+*/
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / SPACING
+=================================================== */
+.js--navIsOpen .c-nav-mobile-button {
+    margin-bottom: 0;
+}
+
+/* e.g. Components > Framework > Nav > Header > Closed */
+nav {
+    padding-block-start: var(--spacing-s-1);
+}
+
+.c-nav-mobile-button,
+/* e.g. Components > Framework > Nav > Header > Closed */
+nav {
+    margin-block-end: var(--spacing-l);
+}
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / CURRENT PAGE
+=================================================== */
+/* Ancestors and Parents of Current Page */
+/* nav */
+.current-menu-ancestor > a span {
+    color: rgba(var(--colour-turquoise-rgb),0.5);
+}
+
+
+
+
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / (CROSS POLLINATED)
+=================================================== */
+/* HTML Example...
+
+    <button class="c-nav-mobile-button u-js-only">
+        <span class="c-nav-icon">
+            <!-- Animate this when closed -->
+            include 'img/svg/nav.php';
+        </span>
+    </button>
+
+*/
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON
+=================================================== */
+/* button*/
+.c-nav-mobile-button {
+    width: 100%;
+    
+    /* =JFG. Cancel any default button value */
+    margin-inline-end: 0;
+
+    font-size: 1.7em;
+    /* Make sure it's dead center */
+    line-height: 0;
+}
+
+/* Optional, if you want to include both an icon and text */
+/* HTML Example...
+
+    <button class="c-nav-mobile-button u-js-only">
+        <span class="c-nav-mobile-button__inner"> <-- this gets wrapped around the text and icon
+            <span class="c-nav-icon">Menu</span>
+            <svg class="c-jg-icon c-jg-icon--menu c-nav-icon"><use xlink:href="#c-jg-icon--menu"></use></svg>
+            <svg class="c-jg-icon c-jg-icon--close c-nav-icon-closed"><use xlink:href="#c-jg-icon--close"></use></svg>
+        </span>
+    </button>
+
+*/
+.c-nav-mobile-button__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / CLOSED STATE
+=================================================== */
+/* If we have JS then this is hidden until toggled open. The menu appears on larger screens */
+/* for nav.js__collapsedUntilNavOpened */
+.js .js__collapsedUntilNavOpened {
+    display: none;
+}
+/* Using animation rather than transitions means we're not affected by the parent element going from display: none; to display: block; (transitions are affected by this though) */
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / OPEN STATE
+=================================================== */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Since we're initially setting an opacity we should make sure animation is supported before doing this */
+@supports (animation-name: fade-in) {
+    /* --mq-nav-opens-before */
+    @media (max-width: 1299px) {
+        .c-site-header__nav li {
+            opacity: 0;
+        }
+
+        .js--navIsOpen .c-site-header__nav li {
+            animation-name: fade-in;
+            animation-duration: 0.9s;
+            animation-fill-mode: forwards;
+        }
+        /* Staggered animation */
+        .c-site-header__nav li {
+            /* Default i.e. after 4th */
+            animation-delay: calc(0.025s * 8);
+        }
+        .c-site-header__nav li:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .c-site-header__nav li:nth-child(2) {
+            animation-delay: calc(0.025s * 2);
+        }
+        .c-site-header__nav li:nth-child(3) {
+            animation-delay: calc(0.025s * 4);
+        }
+        .c-site-header__nav li:nth-child(4) {
+            animation-delay: calc(0.025s * 6);
+        }
+    }
+}
+
+.js--navIsOpen .js__collapsedUntilNavOpened {
+    display: block;
+}
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / OPEN STATE / SVG ANIMATIONS
+=================================================== */
+.c-nav-line {
+    transition: 0.25s ease-in-out;
+    transform-origin: center;
+}
+
+.js--navIsOpen .c-nav-line--1 {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.js--navIsOpen .c-nav-line--2 {
+    transform: rotate(45deg) translate(0.5px);
+}
+
+.c-nav-line--3 {
+    opacity: 0;
+}
+
+.js--navIsOpen .c-nav-line--3 {
+    opacity: 1;
+}
+
+.js--navIsOpen .c-nav-line--3 {
+    transform: rotate(-45deg) translate(-0.5px);
+}
+
+.js--navIsOpen .c-nav-line--4 {
+    opacity: 0;
+}
+
+
+
+
 /* GROUP ELEMENTS / FRAMEWORK / SVGs
 =================================================== */
 /* https://twitter.com/andybelldesign/status/1098915626050117633 */

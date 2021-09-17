@@ -15,9 +15,9 @@
         </a>
     </div>
 
-    <?php /* <button class="c-nav-mobile-button js__nav-mobile-button u-js-only">
-            // include 'img/svg/nav.php'; <-- you can find this in my framework
-    </button> */ ?>
+    <button class="c-nav-mobile-button js__nav-mobile-button u-js-only">
+        <?php include 'img/svg/nav.php'; ?>
+    </button>
 
     <nav aria-label="Main navigation" class="c-site-header__nav">
         <ul>

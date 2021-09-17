@@ -37,7 +37,16 @@
 
 
 
-
+/* GROUP FRAMEWORK / NAV
+=================================================== */
+Array.from(document.querySelectorAll('.js__nav-mobile-button') || []).forEach(element => {
+    element.onclick = function(){
+        document.querySelector('html').classList.toggle('js--navIsOpen');
+        /* This can be used to prevent animations from firing off before the nav is clicked e.g. a slide-down animation e.g. */
+        // .js:not(.js--navHasBeenOpened) /* nav*/.js__collapsedUntilNavOpened { display: none!important; }
+        document.querySelector('html').classList.add('js--navHasBeenOpened');
+    }
+});
 /* GROUP NAV / MEGA MENU
 =================================================== */
 /* Notes...
