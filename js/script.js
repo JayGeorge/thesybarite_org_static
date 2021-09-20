@@ -80,6 +80,8 @@ window.onresize = adjustMegaMenuFormFactor;
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
+        // Remove the closed class
+        document.querySelector('html').classList.remove('js--megaMenuHasBeenClosed');
         // Check if the nav has already been opened. If it has then fade instead of wiping on subsequent clicks
         if(document.querySelector('html').classList.contains('js--megaMenuHasBeenOpened')) {
             document.querySelector('html').classList.add('js--megaMenuHasBeenOpened-fadeFromNowOn');
