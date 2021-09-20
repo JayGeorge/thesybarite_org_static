@@ -1495,6 +1495,10 @@ nav .c-mega-menu__back-button svg {
 
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
+    .c-mega-menu-container {
+        padding-block-end: var(--spacing-l-4);
+    }
+
     .c-mega-menu {
         padding-block-start: var(--nav-top);
     }
