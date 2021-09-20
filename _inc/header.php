@@ -142,7 +142,7 @@
                 $nav_name = 'Clubs'; include '_inc/nav-links.php';
                 $nav_name = 'Shop'; include '_inc/nav-links.php';
             ?>
-            <li><?php include 'img/svg/search.php'; ?></li>
+            <li class="c-site-header__search"><?php include 'img/svg/search.php'; ?></li>
 
             <li>
                 <div class="btn">
