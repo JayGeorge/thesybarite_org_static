@@ -590,8 +590,11 @@ nav a {
 =================================================== */
 /* If we have JS then this is hidden until toggled open. The menu appears on larger screens */
 /* for nav.js__collapsedUntilNavOpened */
-.js:not(.js--navHasBeenOpened) .js__collapsedUntilNavOpened {
-    display: none;
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .js:not(.js--navHasBeenOpened) .js__collapsedUntilNavOpened {
+        display: none;
+    }
 }
 /* Using animation rather than transitions means we're not affected by the parent element going from display: none; to display: block; (transitions are affected by this though) */
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / OPEN STATE
