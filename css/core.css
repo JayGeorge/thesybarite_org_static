@@ -1579,14 +1579,20 @@ nav .c-mega-menu__back-button svg {
 .c-mega-menu-container {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
-
 .c-mega-menu-container:not(.js--megaMenuActive) {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-out-right both;
 }
+
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     .js:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
         animation-duration: 0s;
+    }
+}
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .js--megaMenuHasBeenOpened-fadeFromNowOn .c-mega-menu-container {
+        animation: initial;
     }
 }
 

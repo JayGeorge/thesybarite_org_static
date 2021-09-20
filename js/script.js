@@ -69,9 +69,22 @@ function megaMenuClose() {
     });
 }
 
+function adjustMegaMenuFormFactor() {
+    let width = window.innerWidth
+    if ((width > 1200)) {
+        document.querySelector('html').classList.remove('js--navHasBeenOpened');
+    }
+}
+window.onresize = adjustMegaMenuFormFactor;
+
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
+        // Check if the nav has already been opened. If it has then fade instead of wiping on subsequent clicks
+        if(document.querySelector('html').classList.contains('js--megaMenuHasBeenOpened')) {
+            document.querySelector('html').classList.add('js--megaMenuHasBeenOpened-fadeFromNowOn');
+        }
+
         // [1] Prevent the click
         event.preventDefault();
 
@@ -79,7 +92,6 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         megaMenuClose();
 
         document.querySelector('.js__megaMenuInitiate').focus();
-
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
 
         // [3] Add active states
@@ -118,6 +130,7 @@ document.addEventListener('click', function (event) {
     if (event.target.closest('.c-site-header__nav')) return;
     // Otherwise, run our code...
     megaMenuClose();
+    document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
 }, false);
 
 
