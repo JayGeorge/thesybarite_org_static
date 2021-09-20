@@ -77,6 +77,8 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         // [2] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
         megaMenuClose();
 
+        document.querySelector('.js__megaMenuInitiate').focus();
+
         // [3] Add active states
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
@@ -90,7 +92,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
 =================================================== */
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element => {
-    element.addEventListener('click', function(event) {
+    element.addEventListener('click', function() {
         // [2] Remove any existing active states
         megaMenuClose();
     });
