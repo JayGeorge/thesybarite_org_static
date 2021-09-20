@@ -1498,7 +1498,7 @@ nav .c-mega-menu__back-button svg {
     .c-mega-menu {
         padding-block-start: var(--nav-top);
         /* Increase for bottom bar on Safari mobile */
-        padding-block-end: calc(var(--spacing-l-4) * 2);
+        padding-block-end: calc(var(--spacing-l-4) * 3);
     }
 }
 
