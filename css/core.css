@@ -1160,7 +1160,7 @@ h2 + .o-hero-buttons {
     .c-site-header__nav {
         position: absolute;
         top: 6.5rem;
-        right: var(--spacing-s-2);
+        right: 0;
         width: 50%;
     }
 
@@ -1320,16 +1320,13 @@ h2 + .o-hero-buttons {
 @media (max-width: 1199px) {
     .c-site-header__nav {
         background: white;
-        border-radius: var(--border-radius-l);
-    }
-
-    .c-site-header__search {
-        font-weight: var(--font-family-main-weight-strong);
+        border-radius: var(--border-radius-l) 0 0 var(--border-radius-l);
     }
 
     .c-site-header .btn a {
         /* Same as nav */
         font-size: var(--font-size-s-x-x-custom);
+        font-weight: initial;
     }
 }
 
