@@ -658,6 +658,14 @@ nav a {
     display: block;
 }
 
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .js--navIsOpen .js__collapsedUntilNavOpened {
+        /* No animation-fill-mode (none), with a sped up animation */
+        animation: 0.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left none;
+    }
+}
+
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
     .js .js__collapsedUntilNavOpened {
@@ -2004,15 +2012,6 @@ nav .c-mega-menu__back-button svg {
     padding-block-end: 0;
 }
 
-@keyframes wipe-in-left {
-    from {
-        clip-path: inset(0 0 0 100%);
-    }
-    to {
-        clip-path: inset(0 0 0 0);
-    }
-}
-
 .image-with-text__cta-box {
     padding: var(--spacing-s-2)!important;
 }
@@ -2286,6 +2285,20 @@ img:not([alt]) {
 /* .u-width-max--uncentered {
     margin-left: 0;
 } */
+/* GROUP UTILITIES / FRAMEWORK / ANIMATIONS / ANIMATION / WIPE IN LEFT
+=================================================== */
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.o-wipe-in-left {
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
 /* GROUP UTILTIES / FRAMEWORK / (NON CORE) / ICONS / SIZING
 =================================================== */
 /* These is explicit, so override any automatic rules above with !important */
