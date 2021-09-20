@@ -590,7 +590,7 @@ nav a {
 =================================================== */
 /* If we have JS then this is hidden until toggled open. The menu appears on larger screens */
 /* for nav.js__collapsedUntilNavOpened */
-.js .js__collapsedUntilNavOpened {
+.js:not(.js--navHasBeenOpened) .js__collapsedUntilNavOpened {
     display: none;
 }
 /* Using animation rather than transitions means we're not affected by the parent element going from display: none; to display: block; (transitions are affected by this though) */
@@ -663,6 +663,10 @@ nav a {
     .js--navIsOpen .js__collapsedUntilNavOpened {
         /* No animation-fill-mode (none), with a sped up animation */
         animation: 0.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left none;
+    }
+
+    .js--navHasBeenOpened:not(.js--navIsOpen) .js__collapsedUntilNavOpened {
+        animation: 0.2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
     }
 }
 
@@ -2288,16 +2292,25 @@ img:not([alt]) {
 /* GROUP UTILITIES / FRAMEWORK / ANIMATIONS / ANIMATION / WIPE IN LEFT
 =================================================== */
 @keyframes wipe-in-left {
-  from {
-    clip-path: inset(0 0 0 100%);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .o-wipe-in-left {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 0 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 100%);
+    }
 }
 /* GROUP UTILTIES / FRAMEWORK / (NON CORE) / ICONS / SIZING
 =================================================== */
