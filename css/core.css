@@ -1492,7 +1492,7 @@ nav {
 .c-mega-menu__back-button {
     padding-block-start: 0;
     padding-inline-start: 0;
-    margin-block-end: var(--spacing-s);
+    margin-block-end: var(--spacing-s-x);
 }
 
 nav .c-mega-menu__back-button svg {
