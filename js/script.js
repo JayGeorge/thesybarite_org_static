@@ -61,6 +61,7 @@ function megaMenuClose() {
         element.classList.remove('js--megaMenuActive');
     });
     Array.from(document.querySelectorAll('.c-mega-menu-container') || []).forEach(element => {
+        element.classList.add('js--megaMenuClosed');
         element.classList.remove('js--megaMenuActive');
     });
     Array.from(document.querySelectorAll('.js--megaMenuActiveCurrentMenu') || []).forEach(element => {
@@ -78,6 +79,8 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         megaMenuClose();
 
         document.querySelector('.js__megaMenuInitiate').focus();
+
+        document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
 
         // [3] Add active states
         element.nextElementSibling.classList.toggle('js--megaMenuActive');

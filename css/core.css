@@ -669,7 +669,7 @@ nav a {
     }
 
     .js--navHasBeenOpened:not(.js--navIsOpen) .js__collapsedUntilNavOpened {
-        animation: 0.2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+        animation: 0.2s cubic-bezier(.25, 1, .30, 1) wipe-out-right both;
     }
 }
 
@@ -1581,11 +1581,14 @@ nav .c-mega-menu__back-button svg {
 }
 
 .c-mega-menu-container:not(.js--megaMenuActive) {
-    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-out-right both;
 }
-/* .js--megaMenuActive .c-mega-menu-container {
-    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
-} */
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .js:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
+        animation-duration: 0s;
+    }
+}
 
 
 
@@ -2316,7 +2319,7 @@ img:not([alt]) {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
 
-@keyframes wipe-in-right {
+@keyframes wipe-out-right {
     from {
         clip-path: inset(0 0 0 0);
     }
