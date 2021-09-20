@@ -1407,7 +1407,7 @@ h2 + .o-hero-buttons {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT
 =================================================== */
 /* Mega Menu */
-.c-mega-menu-container:not(.js--megaMenuActive) {
+.js:not(.js--navHasBeenOpened) .c-mega-menu-container:not(.js--megaMenuActive) {
     display: none;
 }
 
