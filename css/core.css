@@ -1575,6 +1575,13 @@ nav .c-mega-menu__back-button svg {
     animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
 }
 
+.c-mega-menu-container:not(.js--megaMenuActive) {
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+/* .js--megaMenuActive .c-mega-menu-container {
+    animation: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+} */
+
 
 
 
