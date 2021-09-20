@@ -31,6 +31,7 @@
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
+                        <button class="c-mega-menu__back-button"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                         <h3><?php include 'img/svg/hot.php'; ?> What’s Hot Now</h3>
                         <div class="c-mega-menu__grid">
                             <ul class="c-mega-menu__full-width">
