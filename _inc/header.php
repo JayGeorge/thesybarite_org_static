@@ -145,9 +145,8 @@
                 $nav_name = 'Clubs'; include '_inc/nav-links.php';
                 $nav_name = 'Shop'; include '_inc/nav-links.php';
             ?>
-            <li class="c-site-header__search"><span>Search</span> <?php include 'img/svg/search.php'; ?></li>
-
-            <li>
+            <li class="c-site-header__animate-staggered c-site-header__search"><span>Search</span> <?php include 'img/svg/search.php'; ?></li>
+            <li class="c-site-header__animate-staggered">
                 <div class="btn">
                     <a href="/champagne-club-logged-in.php">
                         Login

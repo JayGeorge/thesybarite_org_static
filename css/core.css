@@ -609,35 +609,47 @@ nav a {
 @supports (animation-name: fade-in) {
     /* --mq-nav-opens-before */
     @media (max-width: 1199px) {
-        .c-site-header__animate-staggered a {
+        .c-site-header__animate-staggered > *:first-child {
             opacity: 0;
         }
 
-        .js--navIsOpen .c-site-header__animate-staggered a {
+        .js--navIsOpen .c-site-header__animate-staggered > *:first-child {
             animation-name: fade-in;
             animation-duration: 0.9s;
             animation-fill-mode: forwards;
         }
         /* Staggered animation */
-        .c-site-header__animate-staggered a {
+        .c-site-header__animate-staggered > *:first-child {
             /* Default i.e. after 4th */
             animation-delay: calc(0.025s * 8);
         }
         /* li*/
-        .c-site-header__animate-staggered:nth-child(1) a {
+        .c-site-header__animate-staggered:nth-child(1) > *:first-child {
             animation-delay: 0s;
         }
         /* li*/
-        .c-site-header__animate-staggered:nth-child(2) a {
+        .c-site-header__animate-staggered:nth-child(2) > *:first-child {
             animation-delay: calc(0.025s * 2);
         }
         /* li*/
-        .c-site-header__animate-staggered:nth-child(3) a {
+        .c-site-header__animate-staggered:nth-child(3) > *:first-child {
             animation-delay: calc(0.025s * 4);
         }
         /* li*/
-        .c-site-header__animate-staggered:nth-child(4) a {
+        .c-site-header__animate-staggered:nth-child(4) > *:first-child {
             animation-delay: calc(0.025s * 6);
+        }
+
+        .c-site-header__animate-staggered:nth-child(5) > *:first-child {
+            animation-delay: calc(0.025s * 8);
+        }
+
+        .c-site-header__animate-staggered:nth-child(6) > *:first-child {
+            animation-delay: calc(0.025s * 10);
+        }
+
+        .c-site-header__animate-staggered:nth-child(7) > *:first-child {
+            animation-delay: calc(0.025s * 12);
         }
     }
 }
@@ -1322,7 +1334,6 @@ h2 + .o-hero-buttons {
 @media (max-width: 1199px) {
     .c-site-header__nav {
         background: white;
-        border-radius: var(--border-radius-m) 0 0 var(--border-radius-m);
     }
 
     .c-site-header .btn a {
