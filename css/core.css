@@ -1160,8 +1160,22 @@ h2 + .o-hero-buttons {
     .c-site-header__nav {
         position: absolute;
         top: 6.5rem;
-        right: 0;
+        right: var(--spacing-s-2);
         width: 50%;
+    }
+
+     /* Hide the search icon on lower screens because it looks too cluttered */
+     .c-site-header__search svg {
+        /* START SCREEN READER TEXT
+        --------------------------- */
+        clip: rect(1px, 1px, 1px, 1px);
+
+        position: absolute!important;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        /* END SCREEN READER TEXT
+        ------------------------- */
     }
 }
 
@@ -1174,6 +1188,20 @@ h2 + .o-hero-buttons {
     .c-site-header__nav ul {
         flex-direction: row;
         align-items: center;
+    }
+
+    /* Hide the search text on higher screens */
+    .c-site-header__search span {
+        /* START SCREEN READER TEXT
+        --------------------------- */
+        clip: rect(1px, 1px, 1px, 1px);
+
+        position: absolute!important;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        /* END SCREEN READER TEXT
+        ------------------------- */
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
@@ -1210,12 +1238,11 @@ h2 + .o-hero-buttons {
 @media (max-width: 1199px) {
     /* Not the mega nav */
     .c-site-header__nav > ul:first-child {
-        padding-inline-start: var(--spacing-s);
-        padding-block-end: var(--spacing-s);
+        padding: var(--spacing-m) var(--spacing-s);
     }
 
     .c-site-header__search {
-        margin-block-start: var(--spacing-m);
+        padding-inline-start: var(--spacing-s);
     }
 
     .c-site-header .btn {
@@ -1224,6 +1251,8 @@ h2 + .o-hero-buttons {
     }
     .c-site-header .btn a {
         padding-inline-start: var(--spacing-s);
+        padding-block-start: 0;
+        padding-block-end: 0;
     }
 }
 
@@ -1236,13 +1265,6 @@ h2 + .o-hero-buttons {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
-/* --mq-nav-opens-before */
-@media (max-width: 1199px) {
-    .c-site-header__nav {
-        background: white;
-    }
-}
-
 .c-site-header .btn {
     font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
@@ -1261,8 +1283,7 @@ h2 + .o-hero-buttons {
     position: relative;
     top: -0.1em;
     /* Increase */
-    /* font-size: 1.4em; */
-    font-size: 18px;
+    font-size: 1rem;
     margin-inline-start: var(--spacing-s);
 }
 /* purgecss end ignore */
@@ -1293,6 +1314,23 @@ h2 + .o-hero-buttons {
     z-index: 1;
     animation: 0.5s ease background-fade-in both;
     animation-delay: 0.5s;
+}
+
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .c-site-header__nav {
+        background: white;
+        border-radius: var(--border-radius-l);
+    }
+
+    .c-site-header__search {
+        font-weight: var(--font-family-main-weight-strong);
+    }
+
+    .c-site-header .btn a {
+        /* Same as nav */
+        font-size: var(--font-size-s-x-x-custom);
+    }
 }
 
 
