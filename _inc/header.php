@@ -27,7 +27,7 @@
                 include '_inc/header.php';
             */ ?>
             <?php $nav_name = 'Experiences'; ?>
-            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+            <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
@@ -71,7 +71,7 @@
             </li>
 
             <?php $nav_name = 'Magazine'; ?>
-            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+            <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
@@ -113,7 +113,7 @@
             </li>
 
             <?php $nav_name = 'International'; ?>
-            <li<?php if ($current_nav === $nav_name) { echo ' class="current-menu-item"'; } ?>>
+            <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
                 <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
