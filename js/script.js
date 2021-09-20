@@ -120,6 +120,8 @@ Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element
 document.addEventListener('keydown', (event) => {
     if (!event.repeat && event.key === 'Escape') {
         megaMenuClose();
+        document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
+        document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasBeenOpened');
     }
 });
 /* GROUP NAV / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
