@@ -131,6 +131,7 @@ document.addEventListener('click', function (event) {
     // Otherwise, run our code...
     megaMenuClose();
     document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
+    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasBeenOpened');
 }, false);
 
 
