@@ -77,7 +77,7 @@
                 <div class="c-mega-menu-container">
                     <div class="c-mega-menu">
                         <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                        <h3>The Sybarite Life</h3>
+                        <h3><?php include 'img/svg/sybarite-life.php'; ?> The Sybarite Life</h3>
                         <div class="c-mega-menu__grid">
                             <ul class="c-mega-menu__full-width">
                                 <li>
