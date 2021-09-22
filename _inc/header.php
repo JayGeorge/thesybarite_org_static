@@ -8,11 +8,6 @@
 
 <div class="c-site-header-wrapper" x-data="{ open: false }">
 
-    <!-- Alpine Plugins -->
-    <script defer src="https://unpkg.com/@alpinejs/trap@3.x.x/dist/cdn.min.js"></script>
-    <!-- Alpine Core -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
     <header class="c-site-header c-site-header--light-background">
         <div class="c-site-header__logo">
             <a href="/" class="site-logo">
