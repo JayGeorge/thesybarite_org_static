@@ -1415,7 +1415,7 @@ h2 + .o-hero-buttons {
     top: 0;
     left: calc(0% - var(--spacing-m));
     width: calc(100% + var(--spacing-m));
-    height: 100vh;
+    height: 100%;
 }
 
 .c-mega-menu__grid,
@@ -1600,7 +1600,7 @@ nav .c-mega-menu__back-button svg {
 
 /* purgecss start ignore */
 .c-mega-menu-container {
-/*     animation: var(--mega-menu-wipe-in-left); */
+    animation: var(--mega-menu-wipe-in-left);
 }
 .js:not(.js--navHasBeenOpened):not(.js--megaMenuHasBeenClosed) .c-mega-menu-container:not(.js--megaMenuActive),
 .c-mega-menu-container:not(.js--megaMenuActive) {
