@@ -6,8 +6,7 @@
     Skip to footer navigation
 </a>
 
-<div class="c-site-header-wrapper" x-data="{ open: false }">
-
+<div class="c-site-header-wrapper">
     <header class="c-site-header c-site-header--light-background">
         <div class="c-site-header__logo">
             <a href="/" class="site-logo">
@@ -29,8 +28,8 @@
                 */ ?>
                 <?php $nav_name = 'Experiences'; ?>
                 <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
-                    <a @click="open = true" class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div x-trap="open" class="c-mega-menu-container">
+                    <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3><?php include 'img/svg/hot.php'; ?> What’s Hot Now</h3>
