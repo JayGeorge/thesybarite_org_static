@@ -1415,7 +1415,6 @@ h2 + .o-hero-buttons {
     top: 0;
     left: calc(0% - var(--spacing-m));
     width: calc(100% + var(--spacing-m));
-    height: 100%;
 }
 
 .c-mega-menu__grid,
@@ -1463,6 +1462,12 @@ nav {
         /* Above nav */
         z-index: 2;
         width: 100%;
+        height: 100%;
+    }
+
+    .c-mega-menu {
+        height: 100%;
+        overflow: scroll;
     }
 }
 
@@ -1474,32 +1479,10 @@ nav {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT / SCROLL BEHAVIOUR
 =================================================== */
-@supports (overscroll-behavior-y: contain) {
-    .c-mega-menu-container {
-        overflow: scroll;
-        /* Don't continue scrolling the page when you get to the end of the container */
-        overscroll-behavior-y: contain;
-    }
-}
-
-@supports not (overscroll-behavior-y: contain) {
-    .c-mega-menu-container,
-    .c-mega-menu {
-        /* Needed for scrolling within the modal box */
-        height: 100%;
-    }
-
-    .c-mega-menu {
-        overflow: scroll;
-        /* Set the initial scroll lock on this container when initially focused */
-        overscroll-behavior-y: contain;
-    }
-
-/*     .js--modalActive .js__modal,
-    .js--modalActive .js__modalBox {
-        display: inline-block;
-    } */
-}
+/* .c-mega-menu-container {
+    overflow: scroll;
+    overscroll-behavior-y: contain;
+} */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
 =================================================== */
 .c-mega-menu {
