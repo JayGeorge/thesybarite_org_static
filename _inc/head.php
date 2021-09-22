@@ -40,8 +40,6 @@
         document.querySelector('html').classList.add('js');
     </script>
 
-    <script crossorigin src="https://polyfill.app/api/polyfill?features=scroll-behavior"></script>
-
     <?php /*
     - Place all async JS at the top of the head - https://csswizardry.com/2018/11/css-and-network-performance
     - All JS should use either async or defer so we can call it before CSS for best performance - https://twitter.com/csswizardry/status/1078374711044788224

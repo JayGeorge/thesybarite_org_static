@@ -57,6 +57,7 @@ Array.from(document.querySelectorAll('.js__nav-mobile-button') || []).forEach(el
 */
 function megaMenuStateClose() {
     // Remove any active states
+    document.querySelector('html').classList.remove('js--megaMenuIsOpen');
     Array.from(document.querySelectorAll('nav') || []).forEach(element => {
         element.classList.remove('js--megaMenuActive');
     });
@@ -101,6 +102,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
 
         // [4] Add active states
+        document.querySelector('html').classList.add('js--megaMenuIsOpen');
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
         // Reactivate the nav class after a short time so the animation has a chance to reset
