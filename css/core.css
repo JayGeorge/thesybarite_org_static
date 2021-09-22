@@ -1483,6 +1483,12 @@ nav {
 }
 
 @supports not (overscroll-behavior-y: contain) {
+    .c-mega-menu-container,
+    .c-mega-menu {
+        /* Needed for scrolling within the modal box */
+        height: 100%;
+    }
+
     .c-mega-menu {
         overflow: scroll;
     }
