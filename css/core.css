@@ -1409,6 +1409,11 @@ h2 + .o-hero-buttons {
 */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT
 =================================================== */
+/* Mega Menu */
+.c-mega-menu-container:not(.js--megaMenuActive) {
+    display: none;
+}
+
 /* ul*/
 .c-site-header__nav .c-mega-menu-container {
     position: absolute;
