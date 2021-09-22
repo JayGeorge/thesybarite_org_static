@@ -1592,12 +1592,8 @@ nav .c-mega-menu__back-button svg {
 }
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .js--megaMenuHasFinishedAnimatingIn .c-mega-menu-container {
-        animation-duration: 0s!important;
-    }
-
     .js--megaMenuHasBeenOpened-fadeFromNowOn .c-mega-menu-container {
-        animation: initial;
+        animation-duration: 0s!important;
     }
 
     .js--megaMenuHasBeenClosed.c-mega-menu-container {

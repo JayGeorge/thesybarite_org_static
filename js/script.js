@@ -84,8 +84,6 @@ window.onresize = adjustMegaMenuFormFactor;
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
-        const megaMenuSlideAnimationTime = 1200; // 1.2s
-
         // [1] Prevent the click
         event.preventDefault();
 
@@ -101,10 +99,6 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
 
         document.querySelector('.js__megaMenuInitiate').focus();
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
-
-        setTimeout(function() {
-            document.querySelector('html').classList.add('js--megaMenuHasFinishedAnimatingIn');
-        }, megaMenuSlideAnimationTime);
 
         // [4] Add active states
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
