@@ -1600,7 +1600,7 @@ nav .c-mega-menu__back-button svg {
 
 /* purgecss start ignore */
 .c-mega-menu-container {
-    animation: var(--mega-menu-wipe-in-left);
+/*     animation: var(--mega-menu-wipe-in-left); */
 }
 .js:not(.js--navHasBeenOpened):not(.js--megaMenuHasBeenClosed) .c-mega-menu-container:not(.js--megaMenuActive),
 .c-mega-menu-container:not(.js--megaMenuActive) {
