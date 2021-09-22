@@ -98,7 +98,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         // [3] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
         megaMenuStateClose();
 
-        element.nextElementSibling.classList.focus();
+        element.nextElementSibling.focus();
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
 
         // [4] Add active states
