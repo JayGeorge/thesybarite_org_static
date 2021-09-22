@@ -55,7 +55,7 @@ Array.from(document.querySelectorAll('.js__nav-mobile-button') || []).forEach(el
 /* HTML Example...
 
 */
-function megaMenuClose() {
+function megaMenuStateClose() {
     // Remove any active states
     Array.from(document.querySelectorAll('nav') || []).forEach(element => {
         element.classList.remove('js--megaMenuActive');
@@ -67,6 +67,10 @@ function megaMenuClose() {
     Array.from(document.querySelectorAll('.js--megaMenuActiveCurrentMenu') || []).forEach(element => {
         element.classList.remove('js--megaMenuActiveCurrentMenu');
     });
+}
+function megaMenuClose() {
+    document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
+    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
 }
 
 function adjustMegaMenuFormFactor() {
@@ -93,7 +97,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         }
 
         // [3] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
-        megaMenuClose();
+        megaMenuStateClose();
 
         document.querySelector('.js__megaMenuInitiate').focus();
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
@@ -117,7 +121,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
 Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element => {
     element.addEventListener('click', function() {
         // [2] Remove any existing active states
-        megaMenuClose();
+        megaMenuStateClose();
     });
 });
 /* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON ESCAPE
@@ -125,9 +129,8 @@ Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element
 // e.g. Give the Escape Key as an option to exit too
 document.addEventListener('keydown', (event) => {
     if (!event.repeat && event.key === 'Escape') {
+        megaMenuStateClose();
         megaMenuClose();
-        document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
-        document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
     }
 });
 /* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
@@ -139,9 +142,8 @@ document.addEventListener('click', function (event) {
     // If the click happened inside the the container, bail
     if (event.target.closest('.c-site-header__nav')) return;
     // Otherwise, run our code...
+    megaMenuStateClose();
     megaMenuClose();
-    document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
-    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
 }, false);
 
 
