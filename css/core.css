@@ -1468,11 +1468,6 @@ nav {
         z-index: 2;
         width: 100%;
     }
-
-    .js--megaMenuIsOpen main,
-    .js--megaMenuIsOpen footer {
-        display: none;
-    }
 }
 
 /* --mq-nav-opens-after */
