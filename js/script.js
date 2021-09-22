@@ -80,23 +80,29 @@ window.onresize = adjustMegaMenuFormFactor;
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
-        // Remove the closed class
+        const megaMenuSlideAnimationTime = 1200; // 1.2s
+
+        // [1] Prevent the click
+        event.preventDefault();
+
+        // [2] Remove the closed class
         document.querySelector('html').classList.remove('js--megaMenuHasBeenClosed');
         // Check if the nav has already been opened. If it has then fade instead of wiping on subsequent clicks
         if(document.querySelector('html').classList.contains('js--megaMenuHasBeenOpened')) {
             document.querySelector('html').classList.add('js--megaMenuHasBeenOpened-fadeFromNowOn');
         }
 
-        // [1] Prevent the click
-        event.preventDefault();
-
-        // [2] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
+        // [3] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
         megaMenuClose();
 
         document.querySelector('.js__megaMenuInitiate').focus();
         document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
 
-        // [3] Add active states
+        setTimeout(function() {
+            document.querySelector('html').classList.add('js--megaMenuHasFinishedAnimatingIn');
+        }, megaMenuSlideAnimationTime);
+
+        // [4] Add active states
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
         // Reactivate the nav class after a short time so the animation has a chance to reset
@@ -105,7 +111,7 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         }, 50);
     });
 });
-/* GROUP NAV / BACK BUTTON
+/* GROUP NAV / MEGA MENU / BACK BUTTON
 =================================================== */
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element => {
@@ -114,17 +120,17 @@ Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element
         megaMenuClose();
     });
 });
-/* GROUP NAV / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON ESCAPE
+/* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON ESCAPE
 =================================================== */
 // e.g. Give the Escape Key as an option to exit too
 document.addEventListener('keydown', (event) => {
     if (!event.repeat && event.key === 'Escape') {
         megaMenuClose();
         document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
-        document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasBeenOpened');
+        document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
     }
 });
-/* GROUP NAV / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
+/* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
 =================================================== */
 // e.g. Give clicking outside as an option to exit too
 // Based on https://gomakethings.com/detecting-clicks-outside-of-an-element-with-vanilla-javascript/
@@ -135,7 +141,7 @@ document.addEventListener('click', function (event) {
     // Otherwise, run our code...
     megaMenuClose();
     document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
-    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasBeenOpened');
+    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
 }, false);
 
 
