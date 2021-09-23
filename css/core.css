@@ -1617,9 +1617,55 @@ nav .c-mega-menu__back-button svg {
         animation-duration: 0s!important;
     }
 
-    .js--megaMenuHasBeenClosed.c-mega-menu-container {
-        animation: var(--mega-menu-wipe-out-right);
+    .js--megaMenuHasBeenOpened-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li {
+        /* border: 3px solid red!important; */
+        animation-name: fade-in;
+        animation-duration: 0.9s;
+        animation-fill-mode: forwards;
     }
+
+    .js--megaMenuHasBeenOpened-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li:nth-child(2n) {
+        animation-delay: calc(0.025s * 1);
+    }
+
+    .js--navIsOpen .c-site-header__animate-staggered > *:first-child {
+            animation-name: fade-in;
+            animation-duration: 0.9s;
+            animation-fill-mode: forwards;
+        }
+        /* Staggered animation */
+        .c-site-header__animate-staggered > *:first-child {
+            /* Default i.e. after 4th */
+            animation-delay: calc(0.025s * 8);
+        }
+        /* li*/
+        .c-site-header__animate-staggered:nth-child(1) > *:first-child {
+            animation-delay: 0s;
+        }
+        /* li*/
+        .c-site-header__animate-staggered:nth-child(2) > *:first-child {
+            animation-delay: calc(0.025s * 2);
+        }
+        /* li*/
+        .c-site-header__animate-staggered:nth-child(3) > *:first-child {
+            animation-delay: calc(0.025s * 4);
+        }
+        /* li*/
+        .c-site-header__animate-staggered:nth-child(4) > *:first-child {
+            animation-delay: calc(0.025s * 6);
+        }
+
+        .c-site-header__animate-staggered:nth-child(5) > *:first-child {
+            animation-delay: calc(0.025s * 8);
+        }
+
+        .c-site-header__animate-staggered:nth-child(6) > *:first-child {
+            animation-delay: calc(0.025s * 10);
+        }
+
+        .c-site-header__animate-staggered:nth-child(7) > *:first-child {
+            animation-delay: calc(0.025s * 12);
+        }
 }
 /* purgecss end ignore */
 
