@@ -43,18 +43,19 @@ Array.from(document.querySelectorAll('.js__nav-mobile-button') || []).forEach(el
     element.onclick = function(){
         document.querySelector('html').classList.toggle('js--navIsOpen');
         /* This can be used to prevent animations from firing off before the nav is clicked e.g. a slide-down animation e.g. */
-        // .js:not(.js--navHasBeenOpened) /* nav*/.js__collapsedUntilNavOpened { display: none!important; }
-        document.querySelector('html').classList.add('js--navHasBeenOpened');
+        // .js:not(.js--navIsOpen) /* nav*/.js__collapsedUntilNavOpened { display: none!important; }
+        document.querySelector('html').classList.add('js--navIsOpen');
     }
 });
 /* GROUP NAV / MEGA MENU
 =================================================== */
 /* Notes...
 
-*/
-/* HTML Example...
+    - See mega-menu.css for HTML example
 
 */
+/* GROUP NAV / MEGA MENU / FUNCTIONS
+=================================================== */
 function megaMenuStateClose() {
     // Remove any active states
     document.querySelector('html').classList.remove('js--megaMenuIsOpen');
@@ -71,17 +72,18 @@ function megaMenuStateClose() {
 }
 function megaMenuClose() {
     document.querySelector('html').classList.add('js--megaMenuHasBeenClosed');
-    document.querySelector('html').classList.remove('js--megaMenuHasBeenOpened-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuHasBeenOpened');
+    document.querySelector('html').classList.remove('js--megaMenuIsOpen-fadeFromNowOn', 'js--megaMenuHasFinishedAnimatingIn', 'js--megaMenuIsOpen');
 }
 
 function adjustMegaMenuFormFactor() {
     let width = window.innerWidth
     if ((width > 1200)) {
-        document.querySelector('html').classList.remove('js--navHasBeenOpened');
+        document.querySelector('html').classList.remove('js--navIsOpen');
     }
 }
 window.onresize = adjustMegaMenuFormFactor;
-
+/* GROUP NAV / MEGA MENU / INITIATE
+=================================================== */
 // If there is a click in the on a mega menu link
 Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element => {
     element.addEventListener('click', function(event) {
@@ -91,18 +93,18 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         // [2] Remove the closed class
         document.querySelector('html').classList.remove('js--megaMenuHasBeenClosed');
         // Check if the nav has already been opened. If it has then fade instead of wiping on subsequent clicks
-        if(document.querySelector('html').classList.contains('js--megaMenuHasBeenOpened')) {
-            document.querySelector('html').classList.add('js--megaMenuHasBeenOpened-fadeFromNowOn');
+        if(document.querySelector('html').classList.contains('js--megaMenuIsOpen')) {
+            document.querySelector('html').classList.add('js--megaMenuIsOpen-fadeFromNowOn');
         }
 
         // [3] Remove any existing active states e.g. remove the active state of the first menu if we're clicking on second menu
         megaMenuStateClose();
 
         element.nextElementSibling.focus();
-        document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
+        document.querySelector('html').classList.add('js--megaMenuIsOpen');
 
         // [4] Add active states
-        document.querySelector('html').classList.add('js--megaMenuIsOpen');
+        document.querySelector('html').classList.add('js--megaMenuIsOpen', 'js--megaMenuHasBeenOpened');
         element.nextElementSibling.classList.toggle('js--megaMenuActive');
         element.classList.toggle('js--megaMenuActiveCurrentMenu');
         // Reactivate the nav class after a short time so the animation has a chance to reset

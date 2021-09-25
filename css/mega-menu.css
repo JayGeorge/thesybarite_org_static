@@ -244,24 +244,26 @@ nav .c-mega-menu__back-button svg {
 
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
-    .js:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
+    .js:not(.js--megaMenuIsOpen) .c-mega-menu-container {
         animation-duration: 0s;
     }
 }
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .js--megaMenuHasBeenOpened-fadeFromNowOn .c-mega-menu-container {
+    .js--megaMenuIsOpen-fadeFromNowOn .c-mega-menu-container,
+    /* Disable The Wipe-Out-Right Animation From Initially Happening When The Page Loads Up */
+    html:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
         animation-duration: 0s!important;
     }
 
-    .js--megaMenuHasBeenOpened-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li {
+    .js--megaMenuIsOpen-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li {
         /* border: 3px solid red!important; */
         animation-name: fade-in;
         animation-duration: 0.9s;
         animation-fill-mode: forwards;
     }
 
-    .js--megaMenuHasBeenOpened-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li:nth-child(2n) {
+    .js--megaMenuIsOpen-fadeFromNowOn .js--megaMenuActive .c-mega-menu__grid li:nth-child(2n) {
         animation-delay: calc(0.025s * 1);
     }
 
