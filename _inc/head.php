@@ -19,6 +19,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <?php $filename = 'core'; include '_inc/_stylesheet.php'; ?>
+    <?php $filename = 'mega-menu'; include '_inc/_stylesheet.php'; ?>
 
     <meta name="theme-color" content="#fafafa">
     <?php if(($GLOBALS['production']) !== true) {
