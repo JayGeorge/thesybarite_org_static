@@ -37,11 +37,11 @@
                                 <ul class="c-mega-menu__full-width">
                                     <li>
                                         <img class="c-mega-menu__feature-image" src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/england.svg" alt="South Africa Flag" /></span> Formula 1 Luxury Stay At Silverstone</a>
+                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/england.svg" alt="English Flag" /></span> Formula 1 Luxury Stay At Silverstone</a>
                                     </li>
                                     <li>
                                         <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/spain.svg" alt="South Africa Flag" /></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
+                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/spain.svg" alt="Spanish Flag" /></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                     </li>
                                 </ul>
                                 <ul>
