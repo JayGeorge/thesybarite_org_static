@@ -723,7 +723,7 @@ nav a {
 /* https://twitter.com/andybelldesign/status/1098915626050117633 */
 /* purgecss start ignore */
 svg,
-img[src*=".svg"] {
+[src*=".svg"] {
     width: 1em;
     height: 1em;
     fill: currentColor;
@@ -745,7 +745,7 @@ p svg {
 
     - use a span to ensure first-child/last-child selector works e.g.
 
-    <div class="btn">
+    <div class="c-btn">
         <a href="">
             <span>Some text</span>
             <svg />
@@ -762,16 +762,16 @@ a > svg:last-child:not(:first-child) {
     margin-right: 0;
 }
 
-.btn a > svg:first-child:not(:last-child) {
+.c-btn a > svg:first-child:not(:last-child) {
     margin-right: var(--spacing-s);
 }
 
-.btn a > svg:last-child:not(:first-child) {
+.c-btn a > svg:last-child:not(:first-child) {
     margin-left: var(--spacing-s);
     margin-right: 0;
 }
 
-.btn svg {
+.c-btn svg {
     font-size: 1.1em;
 }
 
@@ -833,7 +833,7 @@ body > div > header > nav > ul > li:nth-child(1) > a {
 a:focus,
 .c-nav-mobile-button:focus svg,
 summary:focus,
-.btn a:focus,
+.c-btn a:focus,
 button:focus,
 [type="submit"]:focus,
 /* Elements > Framework > Forms */
@@ -926,20 +926,20 @@ a:hover {
 =================================================== */
 /* Notes...
 
-    Wrap the .btn around the a href instead of the other way around because this is the most valid HTML.
+    Wrap the .c-btn around the a href instead of the other way around because this is the most valid HTML.
     http://stackoverflow.com/questions/5320404/wrap-link-a-around-div
 
-    <div class="btn">
+    <div class="c-btn">
         <a href>
         </a>
     </div>
 
 */
 
-/* anchor instead of just .btn because the browser focusses on the a element, which is the background color we want to change 
+/* anchor instead of just .c-btn because the browser focusses on the a element, which is the background color we want to change 
 should be...
 */
-.btn a,
+.c-btn a,
 /* Components > Framework > Nav */
 button,
 /* Override form background default */
@@ -968,24 +968,24 @@ button,
     background: red;
 }
 
-/* Not .btn + .btn in case a button is next to a different tag such as <p/> */
-.btn,
+/* Not .c-btn + .c-btn in case a button is next to a different tag such as <p/> */
+.c-btn,
 button {
     margin-right: 1rem;
 }
 
-.btn:last-child {
+.c-btn:last-child {
     margin-right: 0;
 }
 
-.btn {
+.c-btn {
     position: relative;
     display: inline-block;
     /* Components > Framework > Forms > Layout */
     margin-block-end: 1.25rem;
 }
 
-.btn a {
+.c-btn a {
     /* e.g. icons in buttons */
     display: flex;
     gap: var(--spacing-s);
@@ -1012,15 +1012,15 @@ button svg {
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / TYPES
 =================================================== */
 /* 1 */
-.btn--1 a {
+.c-btn--1 a {
     border: none;
     background: var(--colour-black);
     color: var(--colour-pale);
 }
 
 /* 2 */
-summary.btn--2,
-.btn--2 a {
+summary.c-btn--2,
+.c-btn--2 a {
     border: 2px solid black;
     font-size: var(--font-size-s-x);
 }
@@ -1033,18 +1033,18 @@ summary.btn--2,
     https://material-components.github.io/material-components-web-catalog/#/component/button
 
 */
-.btn a:hover {
+.c-btn a:hover {
     /* Cancel link hover effect */
     border-bottom: 0;
 }
 
 /* 1 */
-/* .btn--background-transition-example a:hover {
+/* .c-btn--background-transition-example a:hover {
     background-color: var(--colour-brown-dark);
 } */
 
 /* 2 */
-/* .btn--2 a:hover {
+/* .c-btn--2 a:hover {
     
 } */
 
@@ -1068,7 +1068,7 @@ summary.btn--2,
 /* HTML Example...
 
     <div class="o-hero-buttons">
-        <div class="btn">
+        <div class="c-btn">
             <a href="">
                 Some button
             </a>
@@ -1254,7 +1254,7 @@ h2 + .o-hero-buttons {
     padding-block-start: var(--spacing-s-2);
 }
 
-.c-site-header .btn a {
+.c-site-header .c-btn a {
     padding: var(--button-spacing);
 }
 
@@ -1283,11 +1283,11 @@ h2 + .o-hero-buttons {
         padding-inline-start: var(--spacing-s);
     }
 
-    .c-site-header .btn {
+    .c-site-header .c-btn {
         /* Get rid of button-y stuff */
         margin-block-end: 0;
     }
-    .c-site-header .btn a {
+    .c-site-header .c-btn a {
         padding-inline-start: var(--spacing-s);
         padding-block-start: 0;
         padding-block-end: 0;
@@ -1296,21 +1296,21 @@ h2 + .o-hero-buttons {
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-site-header .btn {
+    .c-site-header .c-btn {
         margin-block-end: 0;
         margin-inline-start: var(--spacing-m);
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
-.c-site-header .btn {
+.c-site-header .c-btn {
     font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
 }
 
-.c-site-header--light-background .btn {
+.c-site-header--light-background .c-btn {
     background: white;
 }
 
@@ -1360,11 +1360,26 @@ h2 + .o-hero-buttons {
         background: white;
     }
 
-    .c-site-header .btn a {
+    .c-site-header .c-btn a {
         /* Same as nav */
         font-size: var(--font-size-s-x-x-custom);
         font-weight: initial;
     }
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
+=================================================== */
+.c-site-header__nav svg {
+    color: white;
+}
+
+.c-site-header__nav a {
+    text-transform: uppercase;
+    font-size: var(--font-size-s-x-x-custom);
+    color: white;
+}
+
+.c-site-header__nav a:hover {
+    color: white;
 }
 
 

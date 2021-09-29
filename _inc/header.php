@@ -147,7 +147,7 @@
                 ?>
                 <li class="c-site-header__animate-staggered c-site-header__search"><span>Search</span> <?php include 'img/svg/search.php'; ?></li>
                 <li class="c-site-header__animate-staggered">
-                    <div class="btn">
+                    <div class="c-btn">
                         <a href="/champagne-club-logged-in.php">
                             Login
                         </a>

@@ -147,17 +147,17 @@
                 <div class="feature-columns__column">
                     <h3 class="feature-columns__title">Le Débutant <span class="feature-columns__title-motif">£1000</span></h3>
                     <p class="feature-columns__description">Paid quarterly for 4 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                    <div class="btn btn--1"><a href="">Subscribed <span>✔</span></a></div>
+                    <div class="c-btn c-btn--1"><a href="">Subscribed <span>✔</span></a></div>
                 </div>
                 <div class="feature-columns__column">
                     <h3 class="feature-columns__title">Le Connoisseur <span class="feature-columns__title-motif">£1850</span></h3>
                     <p class="feature-columns__description">Paid quarterly for 8 cases of champagne. Each case contains 6 bottles of champagne.</p>
-                    <div class="btn btn--2"><a href="">Upgrade</a></div>
+                    <div class="c-btn c-btn--2"><a href="">Upgrade</a></div>
                 </div>
                 <div class="feature-columns__column">
                     <h3 class="feature-columns__title">La Suprême <span class="feature-columns__title-motif">on request</span></h3>
                     <p class="feature-columns__description">Corporate bespoke collection. <a href="">Get in touch</a> with us for more details.</p>
-                    <div class="btn btn--2"><a href="">Enquire</a></div>
+                    <div class="c-btn c-btn--2"><a href="">Enquire</a></div>
                 </div>
             </div>
         </article>
