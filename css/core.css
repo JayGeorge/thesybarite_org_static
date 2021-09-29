@@ -1399,6 +1399,7 @@ h2 + .o-hero-buttons {
 .c-site-header__nav a {
     text-transform: uppercase;
     font-size: var(--font-size-s-x-x-custom);
+    line-height: unset;
 }
 
 .c-site-header__nav .c-btn a {
