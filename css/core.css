@@ -68,6 +68,7 @@
     =================================================== */
     --z-index-above-body: 1;
     --z-index-nav: 2;
+    --z-index-modal: 3;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     /* Dark to light */
@@ -1409,7 +1410,8 @@ body .site-logo {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / LAYOUT
 =================================================== */
-.c-site-header__nav .c-btn {
+.c-site-header__nav .c-btn,
+.js--navIsOpen .c-site-header__nav {
     z-index: var(--z-index-nav);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
