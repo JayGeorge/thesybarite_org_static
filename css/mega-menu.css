@@ -246,7 +246,7 @@ nav .c-mega-menu__back-button svg {
 
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
-    .js:not(.js--megaMenuIsOpen) .c-mega-menu-container {
+    .js:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
         animation-duration: 0s;
     }
 }
