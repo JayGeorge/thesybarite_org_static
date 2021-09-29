@@ -590,6 +590,12 @@ nav a {
     line-height: 0;
     padding: 0;
 }
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .c-nav-mobile-button {
+        display: none;
+    }
+}
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / CLOSED STATE
 =================================================== */
 /* If we have JS then this is hidden until toggled open. The menu appears on larger screens */
@@ -1366,6 +1372,28 @@ h2 + .o-hero-buttons {
         font-weight: initial;
     }
 }
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION / DARK COVER IMAGE
+=================================================== */
+.s-dark-cover-image .c-site-header__nav a,
+.s-dark-cover-image .c-site-header__nav a:hover,
+.s-dark-cover-image .c-site-header__nav svg {
+    color: white;
+}
+
+/* Reverse for the grid */
+.s-dark-cover-image .c-mega-menu__grid a {
+    color: var(--colour-black);
+}
+
+.s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
+.s-dark-cover-image .c-site-header__nav svg {
+    mix-blend-mode: difference;
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / LAYOUT
+=================================================== */
+.c-site-header__nav .c-btn {
+    z-index: var(--z-index-nav);
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
 .c-site-header__nav a {
@@ -1373,10 +1401,13 @@ h2 + .o-hero-buttons {
     font-size: var(--font-size-s-x-x-custom);
 }
 
-.s-light-cover-image .c-site-header__nav a,
-.s-light-cover-image .c-site-header__nav a:hover,
-.s-light-cover-image .c-site-header__nav svg {
-    color: white;
+.c-site-header__nav .c-btn a {
+    line-height: inherit;
+}
+
+.c-site-header__nav .c-btn a,
+.c-site-header__nav .c-btn a:hover {
+    color: var(--colour-black);
 }
 
 
