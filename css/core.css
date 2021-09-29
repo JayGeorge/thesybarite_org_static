@@ -149,6 +149,7 @@
     --font-size-m-line-height: 1.4;
 
     --font-size-l: 2.618em;
+    --font-size-l-rem: 2.618rem;
 
     --font-size-l-1: clamp(calc(4.236em * 0.6), 12vw, 4.236em);
     --font-size-l-1-line-height: 1;
@@ -573,7 +574,7 @@ nav a {
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON
 =================================================== */
 /* button*/
-.c-nav-mobile-button {
+body .c-nav-mobile-button {
     position: absolute;
     z-index: 1;
     /* Custom to align with the bottom of the Sybarite logo */
@@ -719,6 +720,17 @@ nav a {
 
 .js--navIsOpen .c-nav-line--4 {
     opacity: 0;
+}
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON / DARK COVER IMAGE
+=================================================== */
+.s-dark-cover-image .c-nav-mobile-button {
+    color: white;
+}
+/* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON / ELEMENTOR OVERRIDES
+=================================================== */
+body .c-nav-mobile-button,
+body .c-nav-mobile-button:hover {
+    background-color: transparent;
 }
 
 
@@ -1136,13 +1148,19 @@ h2 + .o-hero-buttons {
 =================================================== */
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / DECORATION
 =================================================== */
-.site-logo {
+body .site-logo {
     font-family: var(--font-family-headline);
     /* color: white; */
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-l-rem);
     line-height: 0.9;
     text-decoration: none;
-/*     color: #8e5b1c; */
+    /* color: #8e5b1c; */
+    color: var(--colour-black);
+    z-index: var(--z-index-nav);
+}
+
+.s-dark-cover-image .site-logo {
+    color: white;
 }
 
 .site-logo div {
