@@ -1368,17 +1368,14 @@ h2 + .o-hero-buttons {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
-.c-site-header__nav svg {
-    color: white;
-}
-
 .c-site-header__nav a {
     text-transform: uppercase;
     font-size: var(--font-size-s-x-x-custom);
-    color: white;
 }
 
-.c-site-header__nav a:hover {
+.s-light-cover-image .c-site-header__nav a,
+.s-light-cover-image .c-site-header__nav a:hover,
+.s-light-cover-image .c-site-header__nav svg {
     color: white;
 }
 
