@@ -145,7 +145,33 @@
                     $nav_name = 'Clubs'; include '_inc/nav-links.php';
                     $nav_name = 'Shop'; include '_inc/nav-links.php';
                 ?>
-                <li class="c-site-header__animate-staggered c-site-header__search"><span>Search</span> <?php include 'img/svg/search.php'; ?></li>
+
+                <?php $nav_name = 'Search'; ?>
+                <li class="c-site-header__animate-staggered c-site-header__search">
+                    <a class="js__megaMenuInitiate c-site-header__search-link" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><span class="u-screen-reader-text">Search</span> <svg style="margin-inline-start: 0;" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m57.926 55.098 10.488 10.488-2.828 2.828-10.488-10.488c-2.524 1.93-5.676 3.074-9.098 3.074-8.285 0-15-6.714-15-15 0-8.285 6.715-15 15-15s15 6.715 15 15c0 3.422-1.144 6.575-3.074 9.098zm-11.926 1.902c6.074 0 11-4.926 11-11s-4.926-11-11-11-11 4.926-11 11 4.926 11 11 11z" fill-rule="nonzero" transform="matrix(2.64992 0 0 2.64992 -82.0129 -82.013)"/></svg></a>
+                    <div class="c-mega-menu-container">
+                        <div class="c-mega-menu">
+                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/arrow-left.svg" alt="Left arrow." /> Menu</button>
+                            <h3>The Best of Africa</h3>
+                            <div class="c-mega-menu__grid">
+                                <ul class="c-mega-menu__full-width">
+                                    <form role="search" action="https://experienceluxury.co" method="get">
+                                        <div>
+                                            <i aria-hidden="true" class="fas fa-search"></i><span class="elementor-screen-only">Search</span>
+                                        </div>
+                                        <div>
+                                            <input placeholder="Search..." class="elementor-search-form__input" type="search" name="s" title="Search" value="">
+                                        </div>
+                                    </form>
+                                </ul>
+                                <ul class="c-mega-menu__full-width">
+                                    <li><a href="">View All African Adventures <span class="u-icon-right-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
                 <li class="c-site-header__animate-staggered">
                     <div class="c-btn">
                         <a href="/champagne-club-logged-in.php">

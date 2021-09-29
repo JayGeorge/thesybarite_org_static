@@ -1299,6 +1299,10 @@ body .site-logo {
     padding: var(--spacing-s);
 }
 
+.c-site-header__search-link {
+    padding: 0;
+}
+
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     /* Not the mega nav */
