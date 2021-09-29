@@ -106,7 +106,7 @@ nav {
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-mega-menu__back-button {
+    body .c-mega-menu__back-button {
         display: none;
     }
 }
@@ -141,13 +141,13 @@ nav {
     padding: var(--spacing-l-4) var(--spacing-l-horizontal);
 }
 
-.c-mega-menu__back-button {
+body .c-mega-menu__back-button {
     padding-block-start: 0;
     padding-inline-start: 0;
     margin-block-end: var(--spacing-s-x);
 }
 
-nav .c-mega-menu__back-button svg {
+nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
     margin-inline-start: 0;
     margin-inline-end: var(--spacing-s);
 }
@@ -202,8 +202,9 @@ nav .c-mega-menu__back-button svg {
     font-feature-settings: initial;
 }
 
-.c-mega-menu__back-button {
+body .c-mega-menu__back-button {
     font-weight: var(--font-family-main-weight-normal);
+    background: none;
 }
 
 .c-mega-menu h3 {
