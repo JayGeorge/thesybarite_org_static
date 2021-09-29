@@ -1321,9 +1321,9 @@ h2 + .o-hero-buttons {
 }
 
 /* purgecss start ignore */
-.c-site-header nav svg,
+.c-site-header nav :is(svg, [src*=".svg"]),
 /* e.g. flags */
-.c-site-header__nav img[src*=".svg"] {
+.c-mega-menu__grid [src*=".svg"] {
     position: relative;
     top: -0.1em;
     /* Increase */
@@ -1332,9 +1332,9 @@ h2 + .o-hero-buttons {
 }
 /* purgecss end ignore */
 
-.c-mega-menu :is(h2, h3) svg {
-    top: 0.15em;
+.c-mega-menu :is(h2, h3) :is(svg, [src*=".svg"]) {
     margin-inline-start: initial;
+    margin-inline-end: var(--spacing-s-x-x);
 }
 
 @keyframes background-fade-in {
