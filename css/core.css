@@ -1181,6 +1181,11 @@ body .site-logo {
     text-transform: uppercase;
     font-size: var(--font-size-s-x-x-rem);
 }
+/* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / ELEMENTOR OVERRIDES
+=================================================== */
+.elementor-kit-4 .c-nav-mobile-button:focus {
+    background: none;
+}
 
 
 
