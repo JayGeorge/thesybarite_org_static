@@ -115,25 +115,38 @@
                 </li>
 
                 <?php $nav_name = 'International'; ?>
-                <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
+                <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>The Best of Africa</h3>
+                            <h3><img src="/img/svg/africa.svg" alt="Passport." /> The Best of Africa</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Reconnect at Tswalu Private Reserve</a>
+                                        <img class="c-mega-menu__feature-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Reconnect at Tswalu Private Reserve</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Experience South Africa Aboard the Blue Train</a>
+                                        <img class="c-mega-menu__feature-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Experience South Africa Aboard the Blue Train</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3><img src="/img/svg/passport.svg" alt="Passport." /> Other Adventures</h3>
+                            <div class="c-mega-menu__grid">
+                                <ul class="c-mega-menu__full-width">
+                                    <li class="c-mega-menu__title">
+                                        <img class="c-mega-menu__feature-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/international/dar-el-sadaka.jpg" alt="Dar El Sadaka Giraffe room." loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/flags/morocco.svg" alt="Morocco Flag" /></span> Escape to Morocco at Dar El Sadaka</a>
+                                    </li>
+                                    <li class="c-mega-menu__title">
+                                        <img class="c-mega-menu__feature-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/international/the-train-on-the-bridge.jpg" alt="The Train on The Bridge South Africa" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> The Train on The Bridge</a>
                                     </li>
                                 </ul>
                                 <ul class="c-mega-menu__full-width">
-                                    <li><a href="">View All African Adventures <?php include 'img/svg/arrow-right.php'; ?></a></li>
+                                    <li><a href="">View All African Adventures <span class="u-icon-right-m"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -145,8 +158,9 @@
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
-                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/arrow-left.svg" alt="Left arrow." /> Menu</button>
+                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3>Exclusive Communities</h3>
+                            <h3><img src="/img/svg/club.svg" alt="Club." /> Exclusive Communities</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -168,7 +182,7 @@
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
-                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/svg/arrow-left.svg" alt="Left arrow." /> Menu</button>
+                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
