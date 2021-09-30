@@ -164,6 +164,11 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
     padding-block-end: var(--spacing-s-1);
 }
 
+.c-mega-menu__grid + :is(h2, h3) {
+    /* e.g. International second part of grid > "Other African Adventures" */
+    margin-block-start: var(--spacing-m);
+}
+
 .c-mega-menu__full-width li {
     /* Because we're using grid instead */
     padding-block-end: 0;
@@ -214,13 +219,19 @@ body .c-mega-menu__back-button {
     line-height: var(--font-size-m-line-height);
 }
 
+.c-mega-menu__title,
+.c-mega-menu__category {
+    font-family: var(--font-family-headline);
+}
+
 .c-mega-menu ul:nth-child(odd):not(.c-mega-menu__full-width) {
     position: relative;
 }
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-mega-menu ul:nth-child(odd):not(.c-mega-menu__full-width)::before {
+    /* e.g. make sure it doesn't contain c-mega-menu__full-width or c-mega-menu__three-quarters */
+    .c-mega-menu ul:nth-child(odd):not([class*="c-mega-menu__"])::before {
         content: "";
         position: absolute;
         height: 100%;
