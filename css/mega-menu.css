@@ -106,8 +106,8 @@ nav {
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    body .c-mega-menu__back-button {
-        display: none;
+    .c-mega-menu__back-button {
+        display: none!important;
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / LAYOUT / SCROLL BEHAVIOUR
