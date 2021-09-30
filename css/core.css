@@ -2150,10 +2150,10 @@ details summary::-webkit-details-marker {
 }
 
 /* Images without alt tags */
-img[alt=""],
+/* img[alt=""],
 img:not([alt]) {
     border: 5px dashed red;
-}
+} */
 
 /* Components > Framework > Nav */
 .no-js .u-js-only {
@@ -2296,11 +2296,6 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 =================================================== */
 /* GROUP SCOPE / ELEMENTOR OVERRIDES / LAYOUT
 =================================================== */
-.elementor-14 .elementor-element.elementor-element-ff35c49 {
-    /* Absolutely no idea why this is needed */
-    /* e.g. >> Home > initial cover video */
-    margin-top: -83px;
-}
 /* GROUP SCOPE / ELEMENTOR OVERRIDES / SPACING
 =================================================== */
 /* GROUP SCOPE / ELEMENTOR OVERRIDES / DECORATION
