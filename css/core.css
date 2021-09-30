@@ -974,7 +974,7 @@ button,
 /* e.g. Components > Framework > Comments */
 [type="submit"],
 /* Override .elementor-kit-4 button but not the nav mobile button */
-main .page button {
+.elementor-kit-4 button:not(.c-nav-mobile-button) {
     display: inline-block;
     /* I've found it more stable to use pxls rather than ems. */
     padding: var(--button-spacing);
@@ -988,6 +988,7 @@ main .page button {
     letter-spacing: var(--letter-spacing-s);
     font-weight: var(--font-family-main-weight-strong);
     font-size: 0.8rem;
+    font-family: var(--font-family-main);
 }
 
 .c-site-header__cta--fixed {
@@ -1319,10 +1320,6 @@ body .site-logo {
         padding: var(--spacing-m) var(--spacing-s);
     }
 
-    .c-site-header__search {
-        padding-inline-start: var(--spacing-s);
-    }
-
     .c-site-header .c-btn {
         /* Get rid of button-y stuff */
         margin-block-end: 0;
@@ -1404,6 +1401,12 @@ body .site-logo {
         background: white;
     }
 
+    .s-dark-cover-image .c-site-header__nav a,
+    .s-dark-cover-image .c-site-header__nav a:hover,
+    .s-dark-cover-image .c-site-header__nav svg {
+        color: var(--colour-black);
+    }
+
     .c-site-header .c-btn a {
         /* Same as nav */
         font-size: var(--font-size-s-x-x-custom);
@@ -1412,21 +1415,24 @@ body .site-logo {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION / DARK COVER IMAGE
 =================================================== */
-.s-dark-cover-image .c-site-header__nav a,
-.s-dark-cover-image .c-site-header__nav a:hover,
-.s-dark-cover-image .c-site-header__nav svg {
-    color: white;
-}
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .s-dark-cover-image .c-site-header__nav a,
+    .s-dark-cover-image .c-site-header__nav a:hover,
+    .s-dark-cover-image .c-site-header__nav svg {
+        color: white;
+    }
 
-/* Reverse for the grid */
-.s-dark-cover-image .c-mega-menu__grid a,
-.s-dark-cover-image .c-mega-menu__grid a:hover {
-    color: var(--colour-black);
-}
+    /* Reverse for the grid */
+    .s-dark-cover-image .c-mega-menu__grid a,
+    .s-dark-cover-image .c-mega-menu__grid a:hover {
+        color: var(--colour-black);
+    }
 
-.js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
-.js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav svg {
-    mix-blend-mode: difference;
+    .js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
+    .js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav svg {
+        mix-blend-mode: difference;
+    }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / LAYOUT
 =================================================== */
@@ -2163,8 +2169,25 @@ img:not([alt]) {
     ------------------------- */
 }
 
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .u-screen-reader-text--mq-nav-opens-after {
+        /* START SCREEN READER TEXT
+        --------------------------- */
+        clip: rect(1px, 1px, 1px, 1px);
+
+        position: absolute!important;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        /* END SCREEN READER TEXT
+        ------------------------- */
+    }
+}
+
 /* Needed if the text should be visible on keyboard focus */
-.u-screen-reader-text:focus {
+.u-screen-reader-text:focus,
+u-screen-reader-text--mq-nav-opens-after:focus {
     clip: auto!important;
 
     z-index: 100000; /* Above WP toolbar. */

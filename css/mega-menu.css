@@ -141,9 +141,9 @@ nav {
     padding: var(--spacing-l-4) var(--spacing-l-horizontal);
 }
 
-body .c-mega-menu__back-button {
-    padding-block-start: 0;
-    padding-inline-start: 0;
+.c-mega-menu__back-button {
+    padding-block-start: 0!important;
+    padding-inline-start: 0!important;
     margin-block-end: var(--spacing-s-x);
 }
 
@@ -203,7 +203,7 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
 }
 
 body .c-mega-menu__back-button {
-    font-weight: var(--font-family-main-weight-normal);
+    font-weight: var(--font-family-main-weight-normal)!important;
     background: none;
 }
 
@@ -308,5 +308,11 @@ body .c-mega-menu__back-button {
     .c-site-header__animate-staggered:nth-child(7) > *:first-child {
         animation-delay: calc(0.025s * 12);
     }
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION / ELEMENTOR OVERRIDES
+=================================================== */
+.elementor-kit-4 .c-mega-menu__back-button:hover {
+    background: none;
+    color: black;
 }
 /* purgecss end ignore */
