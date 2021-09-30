@@ -36,11 +36,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/experiences/silverstone/silverstone.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/england.svg" alt="English Flag" /></span> Formula 1 Luxury Stay At Silverstone</a>
+                                        <img class="c-mega-menu__feature-image" src="/img/experiences/james-bond-matera/james-bond-matera.jpg" alt="Matera Italy" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/italy.svg" alt="Italian Flag" /></span> Experience James Bond in Matera</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Silverstone" loading="lazy" width="800" height="448" />
+                                        <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Six Senses in Ibiza" loading="lazy" width="800" height="448" />
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/spain.svg" alt="Spanish Flag" /></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                     </li>
                                 </ul>
@@ -64,7 +64,7 @@
                                     <li class="c-mega-menu__category"><a href="">Yachts, Cars & Jets</a></li>
                                 </ul>
                                 <ul class="c-mega-menu__full-width">
-                                    <li><a href="">View All Experiences <?php include 'img/svg/arrow-right.php'; ?></a></li>
+                                    <li><a href="">View All Experiences <span class="u-icon-right-m"><img src="/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -81,12 +81,12 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/magazine/ajarb-bernard-ategwa.jpg" alt="Artist Ajarb Bernard Ategwa" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/cameroon.svg" alt="South Africa Flag" /></span> Interview with Artist Ajarb Bernard Ategwa</a>
+                                        <img class="c-mega-menu__feature-image" src="/img/magazine/vesper-martini.jpg" alt="Sipsmith Gin Vesper Martini" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="UK Flag" /></span> Make your own 007 Vesper Martini</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/magazine/magenta-london-restaurant.jpg" alt="London’s New Restaurant, Magenta" loading="lazy" width="800" height="448" />
-                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="South Africa Flag" /></span> Review of London’s New Restaurant, Magenta</a>
+                                        <img class="c-mega-menu__feature-image" src="/img/magazine/suite.jpg" alt="Suite" loading="lazy" width="800" height="448" />
+                                        <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="UK Flag" /></span> Your favourite James Bond spots</a>
                                     </li>
                                 </ul>
                                 <ul>
@@ -107,7 +107,7 @@
                                     <li class="c-mega-menu__category"><a href="">Africa</a></li>
                                 </ul>
                                 <ul class="c-mega-menu__full-width">
-                                    <li><a href="">View All Magazine Articles <?php include 'img/svg/arrow-right.php'; ?></a></li>
+                                    <li><a href="">View All Magazine Articles <span class="u-icon-right-m"><img src="/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
                                 </ul>
                             </div>
                         </div>
