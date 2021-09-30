@@ -167,11 +167,20 @@
     --letter-spacing-s-x: 1.9px;
     --letter-spacing-s: 2px;
     --letter-spacing-m: 3px;
+    /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BORDERS - ordered from light to dark variants
+    =================================================== */
+    --border-grey-s: 1px solid var(--colour-grey-light-2);
     /* GROUP VARIABLES -- DECORATION -- BORDER RADIUS
     =================================================== */
     --border-radius-s: 3px;
     --border-radius-m: 5px;
     --border-radius-l: 7px;
+    /* GROUP VARIABLES -- DECORATION -- BOX SHADOWS
+    =================================================== */
+    --box-shadow-clean:
+        0 5px 5px rgb(0 0 0 / 0%), 
+        0 2px 3px rgb(0 0 0 / 5%), 
+        0 1px 0 rgb(0 0 0 / 6%);
     /* GROUP VARIABLES -- ANIMATIONS -- TRANSITIONS
     =================================================== */
     /* Molecules > Pagination > Perch > (Cross Pollinated) */
@@ -964,8 +973,8 @@ button,
 /* Override form background default */
 /* e.g. Components > Framework > Comments */
 [type="submit"],
-/* Override .elementor-kit-4 button */
-.page button {
+/* Override .elementor-kit-4 button but not the nav mobile button */
+main .page button {
     display: inline-block;
     /* I've found it more stable to use pxls rather than ems. */
     padding: var(--button-spacing);
@@ -1415,8 +1424,8 @@ body .site-logo {
     color: var(--colour-black);
 }
 
-.s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
-.s-dark-cover-image .c-site-header__nav svg {
+.js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
+.js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav svg {
     mix-blend-mode: difference;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / LAYOUT
@@ -2082,6 +2091,44 @@ details summary::-webkit-details-marker {
 
 
 
+/* GROUP COMPONENTS / SEARCH FORM
+=================================================== */
+/* Notes...
+
+	- Used in the mega menu
+
+*/
+/* HTML Example...
+
+    <form class="c-search" role="search" action="https://experienceluxury.co" method="get">
+        <input placeholder="Search..." type="search" name="s" title="Search" value="">
+    </form>
+
+*/
+/* GROUP COMPONENTS / SEARCH FORM / LAYOUT
+=================================================== */
+.c-search [type="search"] {
+    max-width: var(--max-width-reading);
+}
+/* GROUP COMPONENTS / SEARCH FORM / SPACING
+=================================================== */
+.c-search [type="search"] {
+    padding: 1.3rem var(--spacing-s-2);
+}
+/* GROUP COMPONENTS / SEARCH FORM / DECORATION
+=================================================== */
+.c-search [type="search"] {
+    border: var(--border-grey-s);
+    box-shadow: var(--box-shadow-clean);
+    border-radius: 0;
+}
+
+.c-search [type="search"]::placeholder {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-s);
+}
+
+
 
 
 /* GROUP UTILITIES / FRAMEWORK
@@ -2211,4 +2258,26 @@ img:not([alt]) {
     opacity: 0.2;
     padding-block-start: var(--spacing-m);
     padding-inline-start: var(--spacing-l);
+}
+
+
+
+
+/* GROUP SCOPE / ELEMENTOR OVERRIDES
+=================================================== */
+/* GROUP SCOPE / ELEMENTOR OVERRIDES / LAYOUT
+=================================================== */
+.elementor-14 .elementor-element.elementor-element-ff35c49 {
+    /* Absolutely no idea why this is needed */
+    /* e.g. >> Home > initial cover video */
+    margin-top: -83px;
+}
+/* GROUP SCOPE / ELEMENTOR OVERRIDES / SPACING
+=================================================== */
+/* GROUP SCOPE / ELEMENTOR OVERRIDES / DECORATION
+=================================================== */
+/* e.g. >> Home > main title "Curators of Exclusive Luxury Experiences" */
+header .elementor-heading-title {
+    /* font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "swsh"; */
+    font-feature-settings: "kern", "liga", "clig", "calt";
 }

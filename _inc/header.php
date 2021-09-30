@@ -157,15 +157,9 @@
                                 <ul class="c-mega-menu__full-width">
                                     <form role="search" action="https://experienceluxury.co" method="get">
                                         <div>
-                                            <i aria-hidden="true" class="fas fa-search"></i><span class="elementor-screen-only">Search</span>
-                                        </div>
-                                        <div>
-                                            <input placeholder="Search..." class="elementor-search-form__input" type="search" name="s" title="Search" value="">
+                                            <input placeholder="Search..." type="search" name="s" title="Search" value="">
                                         </div>
                                     </form>
-                                </ul>
-                                <ul class="c-mega-menu__full-width">
-                                    <li><a href="">View All African Adventures <?php include 'img/svg/arrow-right.php'; ?></a></li>
                                 </ul>
                             </div>
                         </div>
