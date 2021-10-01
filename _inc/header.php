@@ -36,11 +36,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/experiences/james-bond-matera/james-bond-matera.jpg" alt="Matera Italy" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/experiences/james-bond-matera/james-bond-matera.jpg" alt="Matera Italy" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/italy.svg" alt="Italian Flag" /></span> Experience James Bond in Matera</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Six Senses in Ibiza" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/experiences/six-senses-ibiza/six-senses-ibiza.jpg" alt="Six Senses in Ibiza" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/spain.svg" alt="Spanish Flag" /></span> Europe’s Hottest New Hotel — Six Senses Ibiza</a>
                                     </li>
                                 </ul>
@@ -81,11 +81,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/magazine/vesper-martini.jpg" alt="Sipsmith Gin Vesper Martini" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/magazine/vesper-martini.jpg" alt="Sipsmith Gin Vesper Martini" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="UK Flag" /></span> Make your own 007 Vesper Martini</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/magazine/suite.jpg" alt="Suite" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/magazine/suite.jpg" alt="Suite" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/uk.svg" alt="UK Flag" /></span> Your favourite James Bond spots</a>
                                     </li>
                                 </ul>
@@ -124,11 +124,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/international/tswalu-private-reserve.jpg" alt="Tswalu Private Reserve" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Reconnect at Tswalu Private Reserve</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/international/blue-train-south-africa.jpg" alt="Experience South Africa Aboard the Blue Train" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> Experience South Africa Aboard the Blue Train</a>
                                     </li>
                                 </ul>
@@ -137,11 +137,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/dar-el-sadaka.jpg" alt="Dar El Sadaka Giraffe room." loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/international/dar-el-sadaka.jpg" alt="Dar El Sadaka Giraffe room." loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/morocco.svg" alt="Morocco Flag" /></span> Escape to Morocco at Dar El Sadaka</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/international/the-train-on-the-bridge.jpg" alt="The Train on The Bridge South Africa" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/international/the-train-on-the-bridge.jpg" alt="The Train on The Bridge South Africa" loading="lazy" width="800" height="448" /></a>
                                         <a href=""><span class="u-icon-left-m"><img src="/img/svg/flags/south-africa.svg" alt="South Africa Flag" /></span> The Train on The Bridge</a>
                                     </li>
                                 </ul>
@@ -163,11 +163,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
                                         <a href="">The Champagne Club</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <img class="c-mega-menu__feature-image" src="/img/clubs/art-club.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" />
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
                                         <a href="">The Art Club (Coming Soon)</a>
                                     </li>
                                 </ul>
