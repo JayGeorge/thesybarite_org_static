@@ -79,6 +79,8 @@
     --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
     --colour-grey-light-2: hsl(0deg 0% 90%);
+    /* e.g. Modal field focuss */
+    --colour-grey-light-3: hsl(0deg 0% 95%);
     /* Jo malone */
     /* --colour-pale: hsl(51deg 62% 96%); */
     /* Tweaked */
@@ -866,20 +868,17 @@ a:focus,
 summary:focus,
 .c-btn a:focus,
 button:focus,
-[type="submit"]:focus,
 /* Elements > Framework > Forms */
-[type="text"]:focus,
-[type="email"]:focus,
+input:focus,
 textarea:focus {
-    outline: 4px solid var(--colour-blue);
+    outline: 4px solid var(--colour-black);
 }
 
 /* Elements > Framework > Forms */
-[type="text"]:focus,
-[type="email"]:focus,
+input:focus,
 textarea:focus {
     /* Light colour here */
-    background: seashell;
+    background: var(--colour-grey-light-3);
 }
 
 p a:focus {
@@ -896,9 +895,6 @@ nav a:focus {
 /* Notes...
 
     Remove Focus Styles for Mouse Users
-    -----------------------------------
-    - You can use https://github.com/WICG/focus-visible to cancel focus styles for mouse users
-    [1] Add it like this - <script src="js/focus-visible.js" async></script>
 
 */
 /* Native for browsers that support it - https://caniuse.com/#search=focus-visible
@@ -906,13 +902,6 @@ https://twitter.com/LeaVerou/status/1045836563505188867 */
 :focus:not(:focus-visible),
 :focus:not(:focus-visible) * {
     outline: none!important;
-}
-/*
-  This will hide the focus indicator if the element receives focus via the mouse,
-  but it will still show up on keyboard focus.
-*/
-.js-focus-visible :focus:not(.focus-visible) {
-    outline: none;
 }
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / HOVER
 =================================================== */
