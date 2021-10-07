@@ -45,8 +45,7 @@ textarea {
 
 label {
     /* Fixed */
-    font-size: 16px;
-    font-weight: var(--font-family-main-weight-strong);
+    font-size: 15px;
     /* Override line-height set on body */
     line-height: 1;
 }
@@ -120,6 +119,12 @@ input + .c-form__notes {
     /* e.g. 'Login' button followed by 'Forgotten your password?' */
     padding-block-end: 0;
     padding-block-start: var(--spacing-l);
+}
+
+.c-form__notes {
+    font-family: var(--font-family-headline);
+    font-size: var(--font-size-m-rem);
+    line-height: var(--font-size-m-line-height);
 }
 
 .c-form__notes p {
@@ -226,9 +231,7 @@ input + .c-form__notes {
 }
 
 .c-form__notes {
-    padding-inline-start: var(--spacing-l);
     padding-block-end: var(--spacing-m);
-    padding-inline-end: var(--spacing-l);
 }
 
 .c-form-cols .c-form__notes p {
@@ -257,7 +260,7 @@ label {
 
 [type="checkbox"],
 [type="radio"] {
-    margin-right: var(--spacing-s);
+    margin-right: var(--spacing-s-x);
 }
 
 /* Checkbox and Radio labels */
@@ -326,10 +329,6 @@ input::placeholder {
     opacity: 0.54;
 }
 
-.c-form__notes {
-    font-family: var(--font-family-system);
-}
-
 .c-form-cols .c-form__notes {
     font-size: var(--font-size-s-x-x);
 }
@@ -393,4 +392,41 @@ textarea {
 /* e.g. do not affect hubspot comment, which is the last field. We do not want to create a big gap between the Hubspot comment and the submit button */
 .comment-form-comment textarea {
     margin-bottom: 2.4rem;
+}
+
+
+
+
+/* GROUP SCOPE / MODAL THEME
+=================================================== */
+/* Notes...
+
+    - Used for modals
+
+*/
+/* GROUP SCOPE / MODAL THEME / LAYOUT
+=================================================== */
+/* GROUP SCOPE / MODAL THEME / SPACING
+=================================================== */
+.s-forms-modal-theme [type="checkbox"],
+.s-forms-modal-theme [type="radio"] {
+    margin-right: var(--spacing-s);
+}
+
+.s-forms-modal-theme .c-form__notes {
+    padding-block-end: var(--spacing-m);
+    padding-block-end: 0;
+}
+/* GROUP SCOPE / MODAL THEME / DECORATION
+=================================================== */
+.s-forms-modal-theme label {
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+.s-forms-modal-theme label {
+    font-size: 16px;
+}
+
+.s-forms-modal-theme .c-form__notes {
+    font-family: var(--font-family-system);
 }

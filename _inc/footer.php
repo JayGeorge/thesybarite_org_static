@@ -41,7 +41,7 @@
             </svg>
         </button>
         <div class="js__modalBox__inner-scroll">
-            <div class="c-form-wrapper">
+            <div class="c-form-wrapper s-forms-modal-theme">
                 <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
                     <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
                     <input type="hidden" name="_wp_http_referer" value="/login/">
