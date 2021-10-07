@@ -13,6 +13,11 @@
     the selector for WordPress so rules do not affect wp-admin bar
 
 */
+/* Modifiers...
+    
+    .c-form--hidden-labels <-- labels hidden with screen reader text except labels with .form-label-show
+
+*/
 /* purgecss start ignore */
 [type="text"],
 [type="email"],
@@ -32,6 +37,12 @@ textarea {
     /* =JFG. Need line height; IE9 bug. Source http://stackoverflow.com/questions/7797103/text-indent-for-a-text-box-in-ie */
     line-height: 1.45;
     border-radius: 2px;
+    background: transparent;
+}
+
+.site-footer input {
+    /* Decrease */
+    padding: 13px;
 }
 /* purgecss end ignore */
 
@@ -41,6 +52,15 @@ textarea {
     because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
     We don't want the placeholder font size getting too big. */
     font-size: 0.95rem;
+}
+
+.site-footer [placeholder],
+.site-footer ::-webkit-input-placeholder,
+.site-footer ::placeholder {
+    color: white;
+    opacity: 1;
+    /* Decrease */
+    font-size: 0.85rem;
 }
 
 label {
@@ -108,7 +128,8 @@ body [type="checkbox"] {
 .c-form {
     width: 100%;
     max-width: 50rem;
-    margin: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
 }
 
 .js__modal .c-form {
@@ -131,7 +152,8 @@ input + .c-form__notes {
     color: var(--colour-grey-reading);
 }
 
-.c-form legend {
+.c-form legend,
+.c-form--hidden-labels label:not(.c-form-label-show) {
     /* START SCREEN READER TEXT
     --------------------------- */
     clip: rect(1px, 1px, 1px, 1px);
@@ -334,10 +356,10 @@ input::placeholder {
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
-/* There are some hacks here because of bad selector specificity from the plugin maker so we have to go outside the linting rules */
 input:not([type="submit"]) {
-    border: 1px solid hsl(0deg 0% 90%);
-    border-radius: 4px;
+    border: 0;
+    border-block-end: 1px solid rgb(250, 250, 250);
+    border-radius: 0;
 }
 
 [type="text"],
@@ -429,4 +451,9 @@ textarea {
 
 .s-forms-modal-theme .c-form__notes {
     font-family: var(--font-family-system);
+}
+
+.s-forms-modal-theme input:not([type="submit"]) {
+    border: 1px solid hsl(0deg 0% 90%);
+    border-radius: 4px;
 }
