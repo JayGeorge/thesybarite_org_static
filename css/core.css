@@ -1220,6 +1220,7 @@ body .site-logo {
     display: flex;
     gap: var(--spacing-l-2);
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .c-site-header__logo {
@@ -1291,6 +1292,7 @@ body .site-logo {
     /* padding-block-start: var(--spacing-s-2); */
     padding-inline-start: var(--spacing-l-horizontal);
     /* padding-inline-end: var(--spacing-l); */
+    /* padding-block-end: var(--spacing-l); */
 }
 
 .c-site-header__logo {
