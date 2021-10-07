@@ -214,11 +214,9 @@
                 </li>
 
                 <li class="c-site-header__animate-staggered">
-                    <div class="c-btn">
-                        <a href="/champagne-club-logged-in.php">
-                            Login
-                        </a>
-                    </div>
+                    <button class="js__showModal c-btn">
+                        Login
+                    </button>
                 </li>
             </ul>
         </nav>

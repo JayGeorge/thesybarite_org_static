@@ -20,6 +20,7 @@
 
     <?php $filename = 'core'; include '_inc/_stylesheet.php'; ?>
     <?php $filename = 'mega-menu'; include '_inc/_stylesheet.php'; ?>
+    <?php $filename = 'modal'; include '_inc/_stylesheet.php'; ?>
 
     <meta name="theme-color" content="#fafafa">
     <?php if(($GLOBALS['production']) !== true) {
@@ -47,5 +48,6 @@
     - For any other JS, load it inline using defer so we can keep 'modules' together. */ ?>
     <?php
         $filename = 'script'; include '_inc/_script.php';
+        $filename = 'modal'; include '_inc/_script.php';
     ?>
 </head>
