@@ -3,14 +3,7 @@
     Author: Jay George
     Author URI: https://jaygeorge.co.uk
 
-    ABOUT THIS CSS
-    ===================================================
-    - Only edit filename.css, then process with Codekit to output into prod/
-
 */
-
-
-
 
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / (CROSS POLLINATED)
 =================================================== */
@@ -20,12 +13,7 @@
     the selector for WordPress so rules do not affect wp-admin bar
 
 */
-
-/* Modifiers...
-    
-    .c-form--hidden-labels <-- labels hidden with screen reader text except labels with .c-form-label-show
-
-*/
+/* purgecss start ignore */
 [type="text"],
 [type="email"],
 [type="tel"],
@@ -37,42 +25,39 @@ textarea {
     vertical-align: top;
     /* box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1); */
     /* =JFG. e.g. search box >> blog or newsletter signup email address */
-    padding: 12px;
+    padding: 15px;
     margin-bottom: 2rem;
     /* e.g. fields next to each other */
     margin-right: 0.5rem;
     /* =JFG. Need line height; IE9 bug. Source http://stackoverflow.com/questions/7797103/text-indent-for-a-text-box-in-ie */
     line-height: 1.45;
-    border: none;
-    border-block-end: 1px solid #fafafa;
-    background: transparent;
-    border-radius: 0;
+    border-radius: 2px;
 }
+/* purgecss end ignore */
 
 [placeholder],
-::-webkit-input-placeholder,
-input::placeholder {
+::-webkit-input-placeholder {
     /* =JFG. "search this website". This needs to be rem
     because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
     We don't want the placeholder font size getting too big. */
-    font-size: 0.85rem;
-    color: white;
-    opacity: 1;
+    font-size: 0.95rem;
 }
 
 label {
     /* Fixed */
     font-size: 16px;
+    font-weight: var(--font-family-main-weight-strong);
     /* Override line-height set on body */
-    /* e.g. >> footer privacy policy checkbox */
-    line-height: 1.1;
+    line-height: 1;
 }
 
+/* purgecss start ignore */
 textarea {
     width: 100%;
     /* e.g. something like Hubspot might be a bit short */
     min-height: 200px;
 }
+/* purgecss end ignore */
 
 body [type="checkbox"] {
     /* Override any input styles */
@@ -86,24 +71,19 @@ body [type="checkbox"] {
     max-width: 275px;
 }
 
-.c-form--hidden-labels label:not(.c-form-label-show) {
-    /* START SCREEN READER TEXT
-    --------------------------- */
-    clip: rect(1px, 1px, 1px, 1px);
-
-    position: absolute!important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    /* END SCREEN READER TEXT
-    ------------------------- */
+/* Exceptions */
+/* =JFG. Need high specificity e.g. "Preferred Appointment Time" xx HH, xx MM */
+[type="text"] + label {
+    position: relative;
+    /* =JFG. Counter margin-bottom */
+    top: -0.25rem;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (CROSS POLLINATED)
 =================================================== */
 /* HTML Example...
 
-    <form class="form">
-        <div class="form__notes">
+    <form class="c-form">
+        <div class="c-form__notes">
             Your email address will not be published
         </div>
 
@@ -119,9 +99,31 @@ body [type="checkbox"] {
 .c-form {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
-    /* e.g. footer form at lower MQs */
-    width: 100%;
     max-width: 50rem;
+    margin: auto;
+}
+
+input + .c-form__notes {
+    /* e.g. 'Login' button followed by 'Forgotten your password?' */
+    padding-block-end: 0;
+    padding-block-start: var(--spacing-l);
+}
+
+.c-form__notes p {
+    color: var(--colour-grey-reading);
+}
+
+.c-form legend {
+    /* START SCREEN READER TEXT
+    --------------------------- */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    position: absolute!important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    /* END SCREEN READER TEXT
+    ------------------------- */
 }
 
 /* We use a class of fieldset since the `fieldset` element is not always present */
@@ -133,36 +135,55 @@ body [type="checkbox"] {
 /* Exceptions */
 .c-form [type="checkbox"],
 .c-form [type="radio"] {
-    margin-block-end: 0;
+    margin-bottom: 0;
+}
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / (MODIFIERS)
+=================================================== */
+.c-form--wide {
+    max-width: 80rem;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / COLUMNS
 =================================================== */
 /* HTML Example...
 
-    <div class="form-wrapper"> <-- (Optional). Used to adding padding on smaller MQs
+    <div class="c-form-wrapper"> <-- (Optional). Used to adding padding on smaller MQs
         <form>
-            <div class="form-cols form-cols--2">
-                <div class="form-cols__col">
+            <div class="c-form-cols">
+                <div class="c-form-cols__col">
                     <input/>
                 </div>
-                <div class="form-cols__col">
+                <div class="c-form-cols__col">
                     <input/>
+                </div>
+                <div class="c-form-cols__col c-form-cols__col--full-width">
+                    <textarea/>
                 </div>
             </div>
         </form>
     </div>
 
 */
+/* Modifiers...
+
+    .c-form-cols__col--full-width <-- span the whole column e.g. Message
+
+*/
 
 .c-form-cols {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 1em;
 }
 
 .c-form-cols--1 {
     grid-template-columns: 1fr;
 }
+
+/* purgecss start ignore */
+.c-form-cols__col--full-width {
+    grid-column: 1 / -1;
+}
+/* purgecss end ignore */
 
 /* Custom */
 @media (min-width: 500px) {
@@ -186,15 +207,23 @@ body [type="checkbox"] {
     padding-inline-end: var(--spacing-s);
 }
 
+.c-form__notes {
+    padding-inline-start: var(--spacing-l);
+    padding-block-end: var(--spacing-m);
+    padding-inline-end: var(--spacing-l);
+}
+
+/* fieldset*/
+.c-form__fieldset {
+    /* Override default */
+    margin: 0;
+}
+
 /* form */
 label {
     /* Make padding effective */
     display: inline-block;
-    padding-block-end: 0.2em;
-}
-
-.c-form__notes {
-    padding-block-end: var(--spacing-m);
+    padding-block-end: 1rem;
 }
 
 [type="checkbox"],
@@ -206,7 +235,6 @@ label {
 [type="checkbox"] + label,
 [type="radio"] + label {
     padding-block-end: var(--spacing-s-2);
-    font-size: var(--font-size-s-x);
 }
 
 [type="submit"] {
@@ -224,33 +252,57 @@ label {
 [type="submit"] {
     /* Always on a separate line */
     display: block!important;
+    /* Organisms > Forms > Plugins > Mailchimp */
+    /* =JFG. e.g. Subscribe button for Mailchimp. This needs to be rem
+    because sometimes the form gets embedded in .s-entry-content which could be 1.1em.
+    We don't want the button size getting too big. */
+    font-size: 0.85rem;
     /* Same as HTML, overriding the default of 1 in the reset */
     line-height: 1.5;
-    background: var(--colour-pale);
+    /* Remove user agent style */
+    background: transparent;
 }
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
+=================================================== */
+/* Notes...
 
+    Where we want labels to always be on a separate line e.g. Comment forms
+
+*/
+
+/* HTML Example...
+
+    <div class="s-forms-block">
+        <form/>
+    </div>
+
+*/
+
+/* Need to disable because selector group includes a plugin selector */
+.s-forms-block label,
+/* Organisms > Comments > Perch */
 .c-form label {
     display: block;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
 =================================================== */
 /* Override normalize */
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+input::placeholder {
     color: inherit;
     opacity: 0.54;
 }
-
-.c-form__notes {
-    font-family: var(--font-family-headline);
-    font-size: var(--font-size-m-rem);
-    line-height: var(--font-size-m-line-height);
-}
+/* Optional override of normalize button reset */
+/*button {
+    @apply --t-text-style-1;
+}*/
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
 /* There are some hacks here because of bad selector specificity from the plugin maker so we have to go outside the linting rules */
-/* input:not([type="submit"]) { */
-    /* border-radius: 4px; */
-/* } */
+input:not([type="submit"]) {
+    border: 1px solid hsl(0deg 0% 90%);
+    border-radius: 4px;
+}
 
 [type="text"],
 [type="email"],
@@ -278,14 +330,30 @@ textarea {
     float: left;
 }
 
+/* The \9 is correct apparently. https://www.google.co.uk/search?q=input%5Btype%3Dradio%5D%2C+input%5Btype%3Dcheckbox%5D+%7B+margin%3A+4px+0+0%3B+margin-top%3A+1px+%5C9%3B+line-height%3A+normal%3B+%7D&oq=input%5Btype%3Dradio%5D%2C+input%5Btype%3Dcheckbox%5D+%7B+margin%3A+4px+0+0%3B+margin-top%3A+1px+%5C9%3B+line-height%3A+normal%3B+%7D&aqs=chrome..69i57.552j0j7&sourceid=chrome&es_sm=91&ie=UTF-8 */
 [type="radio"],
 [type="checkbox"] {
-    /* e.g. >> footer privacy policy checkbox */
-    margin: 0.15rem 0 0;
-    margin-inline-end: 0.6rem;
+    /* margin: 4px 0 0; */
+    margin-top: 1px \9;
+    line-height: normal;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / INPUT TYPES / DECORATION
 =================================================== */
 [type="search"] {
     border-radius: 5px;
+}
+
+
+/* purgecss start ignore */
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / TEXT FIELDS / DECORATION
+=================================================== */
+textarea {
+    border: 1px solid hsl(0deg 0% 73%);
+}
+/* purgecss end ignore */
+/* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / WORDPRESS
+=================================================== */
+/* e.g. do not affect hubspot comment, which is the last field. We do not want to create a big gap between the Hubspot comment and the submit button */
+.comment-form-comment textarea {
+    margin-bottom: 2.4rem;
 }
