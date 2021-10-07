@@ -64,11 +64,21 @@ body [type="checkbox"] {
     box-shadow: none;
 }
 
+/* Don't carpet bomb since we don't want a checkbox 100% width */
 [type="email"],
 [type="text"],
-[type="url"] {
+[type="url"],
+[type="password"] {
     width: 100%;
     max-width: 275px;
+}
+
+.c-form-cols__col--full-width [type="email"],
+.c-form-cols__col--full-width [type="text"],
+.c-form-cols__col--full-width [type="url"],
+.c-form-cols__col--full-width [type="password"] {
+    /* e.g. Login modal */
+    max-width: unset;
 }
 
 /* Exceptions */

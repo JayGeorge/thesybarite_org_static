@@ -49,11 +49,11 @@
                     <div class="c-form-cols">
                         <div class="c-form-cols__col c-form-cols__col--full-width">
                             <label for="user" class="elementor-field-label">Username or Email Address</label>
-                            <input size="1" type="text" name="log" id="user" placeholder=" Username or Email Address">
+                            <input type="text" name="log" id="user" placeholder=" Username or Email Address">
                         </div>
                         <div class="c-form-cols__col c-form-cols__col--full-width">
                             <label for="password" class="elementor-field-label">Password</label>
-                            <input size="1" type="password" name="pwd" id="password" placeholder="Password">
+                            <input type="password" name="pwd" id="password" placeholder="Password">
                         </div>
                         <div class="c-form-cols__col c-form-cols__col--full-width">
                             <label for="pp-login-remember-me">

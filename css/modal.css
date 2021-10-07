@@ -90,10 +90,6 @@
     .js__modalBox {
         max-width: var(--max-width-reading);
     }
-
-    .js__modal--short .js__modalBox {
-        max-width: 26rem;
-    }
 }
 
 .js__modal--short .js__modalBox {
@@ -101,6 +97,7 @@
 
     top: 50vh;
     transform: translate(0%, -50%);
+    max-width: min(26rem, 95%);
 }
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / SPACING
 =================================================== */
