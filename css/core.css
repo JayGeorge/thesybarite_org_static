@@ -1299,10 +1299,6 @@ body .site-logo {
     padding-block-start: var(--spacing-s-2);
 }
 
-.c-site-header .c-btn a {
-    padding: var(--button-spacing);
-}
-
 .c-site-header__nav li {
     padding-block-end: 0;
 }
@@ -1355,10 +1351,13 @@ body .site-logo {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
 .c-site-header .c-btn {
-    font-size: var(--font-size-s-x);
     background: var(--colour-black-transparent);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
+}
+
+.c-site-header .c-btn {
+    font-size: var(--font-size-s-x-x-custom);
 }
 
 .c-site-header--light-background .c-btn {
@@ -1463,7 +1462,7 @@ body .site-logo {
     line-height: unset;
 }
 
-.c-site-header__nav .c-btn a {
+.c-site-header__nav button {
     line-height: inherit;
 }
 
