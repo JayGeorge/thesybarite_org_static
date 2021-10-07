@@ -293,7 +293,7 @@ label {
     /* Same as HTML, overriding the default of 1 in the reset */
     line-height: 1.5;
     /* Remove user agent style */
-    background: transparent;
+    background: white;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
 =================================================== */
