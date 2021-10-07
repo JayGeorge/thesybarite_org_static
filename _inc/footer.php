@@ -33,3 +33,13 @@
         <?php include '_inc/sign-up-form.php'; ?>
     </div>
 </footer>
+<div class="js__modal">
+    <div class="js__modalBox">
+        <button class="js__closeModal">
+            <svg aria-labelledby="title-modal-cancel" role="img" class="c-modal-close" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
+            </svg>
+        </button>
+        <div class="js__modalBox__inner-scroll">Content that needs to be scrollable</div>
+    </div>
+</div>

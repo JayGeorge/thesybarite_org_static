@@ -119,8 +119,7 @@
 .js__modalBox {
     background: white;
     border-radius: 5px;
-    color: white;
-    color: var(--colour-black-off);
+    color: black;
 }
 
 /* Pseudo fade out content as you scroll */
