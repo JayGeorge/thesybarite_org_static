@@ -23,7 +23,7 @@
 
 /* Modifiers...
     
-    .form--hidden-labels <-- labels hidden with screen reader text except labels with .form-label-show
+    .c-form--hidden-labels <-- labels hidden with screen reader text except labels with .c-form-label-show
 
 */
 [type="text"],
@@ -86,7 +86,7 @@ body [type="checkbox"] {
     max-width: 275px;
 }
 
-.form--hidden-labels label:not(.form-label-show) {
+.c-form--hidden-labels label:not(.c-form-label-show) {
     /* START SCREEN READER TEXT
     --------------------------- */
     clip: rect(1px, 1px, 1px, 1px);
@@ -116,7 +116,7 @@ body [type="checkbox"] {
     </form>
 
 */
-.form {
+.c-form {
     /* From lowest to highest value */
     max-width: var(--max-width-reading);
     /* e.g. footer form at lower MQs */
@@ -125,14 +125,14 @@ body [type="checkbox"] {
 }
 
 /* We use a class of fieldset since the `fieldset` element is not always present */
-.form__fieldset {
+.c-form__fieldset {
     padding: 0 var(--spacing-l);
     border: 0;
 }
 
 /* Exceptions */
-.form [type="checkbox"],
-.form [type="radio"] {
+.c-form [type="checkbox"],
+.c-form [type="radio"] {
     margin-block-end: 0;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / COLUMNS
@@ -154,34 +154,34 @@ body [type="checkbox"] {
 
 */
 
-.form-cols {
+.c-form-cols {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-column-gap: 1em;
 }
 
-.form-cols--1 {
+.c-form-cols--1 {
     grid-template-columns: 1fr;
 }
 
 /* Custom */
 @media (min-width: 500px) {
-    .form-cols__col input {
+    .c-form-cols__col input {
         /* e.g. if we have a shorter form field like a password */
         width: 100%;
         max-width: none;
     }
 
     /* Exceptions */
-    .form-cols__col [type="checkbox"],
-    .form-cols__col [type="radio"] {
+    .c-form-cols__col [type="checkbox"],
+    .c-form-cols__col [type="radio"] {
         width: initial;
     }
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / SPACING
 =================================================== */
 /* (Optional). Used to adding padding on smaller MQs */
-.form-wrapper {
+.c-form-wrapper {
     padding-inline-start: var(--spacing-s);
     padding-inline-end: var(--spacing-s);
 }
@@ -193,7 +193,7 @@ label {
     padding-block-end: 0.2em;
 }
 
-.form__notes {
+.c-form__notes {
     padding-block-end: var(--spacing-m);
 }
 
@@ -229,7 +229,7 @@ label {
     background: var(--colour-pale);
 }
 
-.form label {
+.c-form label {
     display: block;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION
@@ -240,7 +240,7 @@ label {
     opacity: 0.54;
 }
 
-.form__notes {
+.c-form__notes {
     font-family: var(--font-family-headline);
     font-size: var(--font-size-m-rem);
     line-height: var(--font-size-m-line-height);
