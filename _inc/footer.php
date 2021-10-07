@@ -40,6 +40,34 @@
                 <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
             </svg>
         </button>
-        <div class="js__modalBox__inner-scroll">Content that needs to be scrollable</div>
+        <div class="js__modalBox__inner-scroll">
+            <form id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
+                <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
+                <input type="hidden" name="_wp_http_referer" value="/login/">
+                <input type="hidden" name="redirect_to" value="/login/">
+                <div class="elementor-form-fields-wrapper">
+                        <label for="user" class="elementor-field-label">Username or Email Address</label>
+                        <input size="1" type="text" name="log" id="user" placeholder=" Username or Email Address">
+
+                        <label for="password" class="elementor-field-label">Password</label>
+                        <input size="1" type="password" name="pwd" id="password" placeholder="Password">
+
+                        <label for="pp-login-remember-me">
+                            <input type="checkbox" id="elementor-login-remember-me" name="rememberme" value="forever">
+                            <span>Remember Me</span>
+                        </label>
+
+                        <button type="submit" name="wp-submit">
+                            Log In
+                        </button>
+                    </div>
+                    <div>
+                        <a href="/login/?lost_pass=1">
+                            Lost your password?
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

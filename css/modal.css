@@ -60,6 +60,9 @@
 .js__modalBox__inner-scroll {
     /* Needed for scrolling within the modal box */
     height: 100%;
+
+    display: grid;
+    align-items: center;
 }
 
 .js__modalBox__inner-scroll {
@@ -120,16 +123,6 @@
     background: white;
     border-radius: 5px;
     color: black;
-}
-
-/* Pseudo fade out content as you scroll */
-.js__modalBox::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: calc(var(--spacing-l) * 3);
-    background: linear-gradient(to bottom, white 25%,transparent 100%);
 }
 
 .c-modal-close {
