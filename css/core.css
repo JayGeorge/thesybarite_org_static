@@ -92,6 +92,8 @@
     =================================================== */
     --font-family-main: futura-pt, sans-serif;
     --font-family-headline: orpheuspro, serif;
+    /* https://css-tricks.com/snippets/css/system-font-stack/ */
+    --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /* GROUP VARIABLES -- DECORATION -- TEXT -- STYLES
     =================================================== */
     --font-family-main-style-1: normal;
@@ -1044,7 +1046,8 @@ button svg {
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / TYPES
 =================================================== */
 /* 1 */
-.c-btn--1 a {
+.c-btn--1 a,
+button.c-btn--1 {
     border: none;
     background: var(--colour-black);
     color: var(--colour-pale);
@@ -1052,7 +1055,8 @@ button svg {
 
 /* 2 */
 summary.c-btn--2,
-.c-btn--2 a {
+.c-btn--2 a,
+button.c-btn--2 {
     border: 2px solid black;
     font-size: var(--font-size-s-x);
 }

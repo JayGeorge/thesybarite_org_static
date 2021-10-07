@@ -22,6 +22,11 @@
     Modal content genrated by JS
 
 */
+/* Modifiers...
+
+    .js__modal--short <-- e.g. login where 100% height is _not_ set
+
+*/
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / LAYOUT
 =================================================== */
 .js__modal {
@@ -50,7 +55,6 @@
     /* max-width: 90%; */
 }
 
-
 .js--modalActive .js__modal,
 .js--modalActive .js__modalBox {
     display: inline-block;
@@ -58,8 +62,9 @@
 
 .js__modalBox,
 .js__modalBox__inner-scroll {
+    --modal-height: 100%;
     /* Needed for scrolling within the modal box */
-    height: 100%;
+    height: var(--modal-height);
 
     display: grid;
     align-items: center;
@@ -75,14 +80,27 @@
     position: absolute;
     /* Needed for iOS */
     z-index: 3;
-    top: var(--spacing-s-x);
-    right: var(--spacing-s-x);
+    top: var(--spacing-s-x-x);
+    right: var(--spacing-s-x-x);
+    width: 50px;
+    height: 50px;
 }
 
 @media (min-width: 880px) {
     .js__modalBox {
         max-width: var(--max-width-reading);
     }
+
+    .js__modal--short .js__modalBox {
+        max-width: 26rem;
+    }
+}
+
+.js__modal--short .js__modalBox {
+    --modal-height: unset;
+
+    top: 50vh;
+    transform: translate(0%, -50%);
 }
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / SPACING
 =================================================== */
@@ -96,9 +114,16 @@
     padding-block-end: var(--spacing-l);
 }
 
+.js__modal--short .js__modalBox__inner-scroll > *:first-child {
+    padding-block-start: var(--spacing-m);
+    padding-block-end: var(--spacing-m);
+}
+
 .js__closeModal {
     /* Cancel default button */
     margin-inline-end: 0;
+    padding: var(--spacing-s) var(--spacing-s);
+    border-radius: 50px;
 }
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / DECORATION
 =================================================== */
@@ -142,7 +167,7 @@
 .js__modalBox {
     /* Zoom-in doesn't work well on iOS devices */
     animation-name: wipe-in-up;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 /* Custom */
