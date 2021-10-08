@@ -96,6 +96,18 @@ Array.from(document.querySelectorAll('.js__megaMenuInitiate')).forEach(element =
         }, 50);
     });
 });
+/* GROUP NAV / MEGA MENU / SEARCH BUTTON
+=================================================== */
+// If there is a click in the on the mega menu search link
+Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => {
+    element.addEventListener('click', function(event) {
+        // [1] Prevent the click
+        event.preventDefault();
+
+        // [4] Toggle active states
+        document.querySelector('html').classList.add('js--megaMenuSearchIsOpen', 'js--megaMenuSearchHasBeenOpened');
+    });
+});
 /* GROUP NAV / MEGA MENU / BACK BUTTON
 =================================================== */
 // If there is a click in the on a mega menu link
