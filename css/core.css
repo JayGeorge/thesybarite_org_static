@@ -74,7 +74,9 @@
     =================================================== */
     /* Dark to light */
     --colour-black: black;
-    --colour-black-transparent: hsl(0deg 0% 0% / 40%);
+    --colour-black-transparent-1: hsl(0deg 0% 0% / 40%);
+    /* e.g. Search in the mega menu */
+    --colour-black-transparent-2: hsl(0deg 0% 0% / 75%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
@@ -1342,7 +1344,7 @@ body .site-logo {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
 .c-site-header .c-btn {
-    background: var(--colour-black-transparent);
+    background: var(--colour-black-transparent-1);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
 }
@@ -2250,10 +2252,6 @@ u-screen-reader-text--mq-nav-opens-after:focus {
     to {
         clip-path: inset(0 0 100% 0);
     }
-}
-
-[transition-style="out:wipe:up"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-up both;
 }
 /* GROUP UTILITIES / FRAMEWORK / ANIMATIONS / ANIMATION / WIPE IN LEFT
 =================================================== */

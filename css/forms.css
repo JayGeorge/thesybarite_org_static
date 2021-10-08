@@ -63,6 +63,11 @@ textarea {
     font-size: 0.85rem;
 }
 
+.site-footer input:focus,
+.site-footer textarea:focus {
+    background: transparent;
+}
+
 label {
     /* Fixed */
     font-size: 15px;

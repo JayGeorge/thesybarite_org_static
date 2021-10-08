@@ -59,10 +59,8 @@
 .c-site-header__nav .c-mega-menu-container--search {
     position: fixed;
     z-index: var(--z-index-modal);
-    top: 0;
-    left: calc(0% - var(--spacing-m));
-    width: calc(100% + var(--spacing-m));
-    height: 100vh;
+    left: 0;
+    width: 100%;
 }
 /* html*/
 .js--megaMenuSearchIsOpen {
@@ -343,11 +341,65 @@ body .c-mega-menu__back-button {
         animation-delay: calc(0.025s * 12);
     }
 }
+
+
+
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / LAYOUT
+=================================================== */
+.c-mega-menu-full-search {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.c-mega-menu-full-search form {
+    width: 90vw;
+    max-width: 30rem;
+}
+
+.c-mega-menu-full-search [type="search"] {
+    width: 100%;
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / SPACING
+=================================================== */
+.c-mega-menu-full-search [type="search"] {
+    margin: 0;
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / DECORATION
+=================================================== */
+.c-mega-menu-container--search {
+    background: var(--colour-black-transparent-2);
+}
+
+.c-mega-menu-full-search [type="search"]::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: var(--font-size-m);
+}
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ACCESSIBILITY / FOCUS
+=================================================== */
+.c-mega-menu-full-search {
+    caret-color: white;
+}
+
+.c-mega-menu-full-search input:focus,
+.c-mega-menu-full-search:focus {
+    background: transparent;
+    outline: none;
+}
+
+.c-mega-menu-full-search [type="search"]:focus {
+    border-bottom: 2px solid white;
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ANIMATIONS
 =================================================== */
 .js--megaMenuSearchIsOpen .c-site-header__search .c-mega-menu-container--search {
     animation: var(--mega-menu-wipe-in-down);
 }
+
+
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / DECORATION / ELEMENTOR OVERRIDES
 =================================================== */
 .elementor-kit-4 .c-mega-menu__back-button:hover {

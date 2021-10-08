@@ -109,6 +109,9 @@ Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => 
 
         // [3] Toggle active states
         document.querySelector('html').classList.add('js--megaMenuSearchIsOpen', 'js--megaMenuSearchHasBeenOpened');
+
+        // [4] Focus on the search box
+        document.querySelector('.c-mega-menu-full-search [type="search"]').focus();
     });
 });
 /* GROUP NAV / MEGA MENU / BACK BUTTON
