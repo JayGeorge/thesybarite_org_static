@@ -104,7 +104,10 @@ Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => 
         // [1] Prevent the click
         event.preventDefault();
 
-        // [4] Toggle active states
+        // [2] Add active states
+        document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
+
+        // [3] Toggle active states
         document.querySelector('html').classList.add('js--megaMenuSearchIsOpen', 'js--megaMenuSearchHasBeenOpened');
     });
 });

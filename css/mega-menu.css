@@ -269,11 +269,15 @@ body .c-mega-menu__back-button {
 .c-mega-menu-container--search {
     animation: var(--mega-menu-wipe-in-down);
 }
-.js:not(.js--navHasBeenOpened):not(.js--megaMenuHasBeenClosed) .c-mega-menu-container:not(.js--megaMenuActive),
+.js:not(.js--navHasBeenOpened):not(.js--megaMenuHasBeenClosed) .c-mega-menu-container:not(.js--megaMenuActive):not(.c-mega-menu-container--search),
 .c-mega-menu-container:not(.js--megaMenuActive) {
     /* This controls the wipe-out-right when the menu is closed */
     animation: var(--mega-menu-wipe-out-right);
 }
+/* .js .c-mega-menu-container--search:not(.js--megaMenuActive) { */
+    /* This controls the wipe-out-right when the menu is closed */
+/*     animation: var(--mega-menu-wipe-out-up); */
+/* } */
 
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
