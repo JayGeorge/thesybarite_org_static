@@ -114,7 +114,7 @@
                     </div>
                 </li>
 
-                <?php $nav_name = 'International'; ?>
+                <?php $nav_name = 'Africa'; ?>
                 <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
                     <div class="c-mega-menu-container">
