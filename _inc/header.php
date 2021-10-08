@@ -29,7 +29,7 @@
                 <?php $nav_name = 'Experiences'; ?>
                 <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div class="js__mega-menu-container c-mega-menu-container">
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3><img src="/img/svg/hot.svg" alt="Flame." /> What’s Hot Now</h3>
@@ -74,7 +74,7 @@
                 <?php $nav_name = 'Magazine'; ?>
                 <li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div class="js__mega-menu-container c-mega-menu-container">
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3><img src="/img/svg/sybarite-life.svg" alt="Flame." /> The Sybarite Life</h3>
@@ -117,7 +117,7 @@
                 <?php $nav_name = 'Africa'; ?>
                 <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div class="js__mega-menu-container c-mega-menu-container">
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3><img src="/img/svg/africa.svg" alt="Passport." /> The Best of Africa</h3>
@@ -156,7 +156,7 @@
                 <?php $nav_name = 'Clubs'; ?>
                 <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div class="js__mega-menu-container c-mega-menu-container">
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <h3><img src="/img/svg/club.svg" alt="Club." /> Exclusive Communities</h3>
@@ -179,7 +179,7 @@
                 <?php $nav_name = 'Shop'; ?>
                 <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
-                    <div class="js__mega-menu-container c-mega-menu-container">
+                    <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <div class="c-mega-menu__grid">
