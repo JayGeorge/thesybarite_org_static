@@ -373,10 +373,22 @@ body .c-mega-menu__back-button {
     background: var(--colour-black-transparent-2);
 }
 
-.c-mega-menu-full-search [type="search"]::placeholder {
+.c-mega-menu-full-search [type="search"]::placeholder,
+.c-mega-menu-full-search [type="search"][placeholder] {
     color: white;
     opacity: 1;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-m-rem);
+}
+
+/* The 'cancel' cross */
+::-webkit-search-cancel-button {
+    /* Make it white */
+    filter: grayscale(100%) contrast(500%) invert(1);
+}
+
+.c-mega-menu-full-search .c-close-button svg {
+    color: white;
+    font-size: var(--icon-size-m);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ACCESSIBILITY / FOCUS
 =================================================== */
@@ -392,6 +404,12 @@ body .c-mega-menu__back-button {
 
 .c-mega-menu-full-search [type="search"]:focus {
     border-bottom: 2px solid white;
+}
+
+.c-mega-menu-full-search .c-close-button {
+    /* Increase */
+    top: var(--spacing-s);
+    right: var(--spacing-s-1);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ANIMATIONS
 =================================================== */

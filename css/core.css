@@ -168,6 +168,9 @@
     --font-size-l-2-line-height: 0.95;
 
     --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);
+    /* GROUP VARIABLES -- DECORATION -- ICONS -- SIZES
+    =================================================== */
+    --icon-size-m: 1.5rem;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
     =================================================== */
     /* Reduce a touch e.g. Mega Menu > bold text headlines in uppercase */
@@ -748,6 +751,49 @@ body .c-nav-mobile-button {
 body .c-nav-mobile-button,
 body .c-nav-mobile-button:hover {
     background-color: transparent;
+}
+
+
+
+
+/* GROUP COMPONENTS / CLOSE BUTTON
+=================================================== */
+/* Notes...
+
+	- Used to close modals e.g. login modal and search overlay
+
+*/
+/* HTML Example...
+
+    <button class="js__closeModal c-close-button">
+        <svg aria-labelledby="title-modal-cancel" role="img" class="c-modal-close" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
+        </svg>
+    </button>
+
+*/
+/* GROUP COMPONENTS / CLOSE BUTTON / LAYOUT
+=================================================== */
+.c-close-button {
+    position: absolute;
+    /* Needed for iOS */
+    z-index: 3;
+    top: var(--spacing-s-x-x);
+    right: var(--spacing-s-x-x);
+    width: 50px;
+    height: 50px;
+}
+/* GROUP COMPONENTS / CLOSE BUTTON / SPACING
+=================================================== */
+.c-close-button {
+    /* Cancel default button */
+    margin-inline-end: 0;
+    padding: var(--spacing-s) var(--spacing-s);
+}
+/* GROUP COMPONENTS / CLOSE BUTTON / DECORATION
+=================================================== */
+.c-close-button {
+    border-radius: 50px;
 }
 
 
@@ -2140,7 +2186,6 @@ details summary::-webkit-details-marker {
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-s);
 }
-
 
 
 

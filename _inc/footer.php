@@ -35,7 +35,7 @@
 </footer>
 <div class="js__modal js__modal--short">
     <div class="js__modalBox">
-        <button class="js__closeModal">
+        <button class="js__closeModal c-close-button">
             <svg aria-labelledby="title-modal-cancel" role="img" class="c-modal-close" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
             </svg>

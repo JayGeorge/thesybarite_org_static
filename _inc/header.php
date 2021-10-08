@@ -198,6 +198,11 @@
                     <a class="js__searchInitiate c-site-header__search-link" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><span class="u-screen-reader-text--mq-nav-opens-after">Search</span> <svg style="margin-inline-start: 0;" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m57.926 55.098 10.488 10.488-2.828 2.828-10.488-10.488c-2.524 1.93-5.676 3.074-9.098 3.074-8.285 0-15-6.714-15-15 0-8.285 6.715-15 15-15s15 6.715 15 15c0 3.422-1.144 6.575-3.074 9.098zm-11.926 1.902c6.074 0 11-4.926 11-11s-4.926-11-11-11-11 4.926-11 11 4.926 11 11 11z" fill-rule="nonzero" transform="matrix(2.64992 0 0 2.64992 -82.0129 -82.013)"/></svg></a>
                     <div class="c-mega-menu-container c-mega-menu-container--search">
                         <div class="c-mega-menu-full-search">
+                            <button class="js__closeModal c-close-button">
+                                <svg aria-labelledby="title-modal-cancel" role="img" class="c-modal-close" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
+                                </svg>
+                            </button>
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <form role="search" action="https://experienceluxury.co" method="get">
                                 <input placeholder="Search..." type="search" name="s" title="Search" value="">
