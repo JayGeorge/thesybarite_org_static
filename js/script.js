@@ -65,6 +65,11 @@ function adjustMegaMenuFormFactor() {
     }
 }
 window.onresize = adjustMegaMenuFormFactor;
+/* GROUP NAV / MEGA MENU / SEARCH / FUNCTIONS
+=================================================== */
+function searchStateClose() {
+    document.querySelector('html').classList.remove('js--megaMenuSearchIsOpen');
+}
 /* GROUP NAV / MEGA MENU / INITIATE
 =================================================== */
 // If there is a click in the on a mega menu link
@@ -116,8 +121,8 @@ Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => 
 });
 Array.from(document.querySelectorAll('.js__closeSearchModal')).forEach(element => {
     element.addEventListener('click', function(event) {
-        // [1] Remove active states
-        document.querySelector('html').classList.remove('js--megaMenuSearchIsOpen');
+        // [1] Remove any existing active states
+        searchStateClose();
     });
 });
 /* GROUP NAV / MEGA MENU / BACK BUTTON
