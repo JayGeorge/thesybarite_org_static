@@ -32,7 +32,7 @@
     =================================================== */ ?>
     <?php /* Highest priority because render blocking. If we put the stylesheet at the very top we do not need to use preload. */ ?>
     <?php /* Typekit */ ?>
-    <?php /* <link rel="stylesheet" href="https://use.typekit.net/qus4mxt.css"> */?>
+    <link rel="stylesheet" href="https://use.typekit.net/qus4mxt.css">
 
     <?php /* GROUP JAVASCRIPT
     =================================================== */ ?>
