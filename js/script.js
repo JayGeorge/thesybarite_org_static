@@ -105,13 +105,19 @@ Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => 
         event.preventDefault();
 
         // [2] Add active states
-        document.querySelector('html').classList.add('js--megaMenuHasBeenOpened');
+        document.querySelector('html').classList.add('js--megaMenuSearchIsOpen', 'js--megaMenuHasBeenOpened', 'js--megaMenuSearchHasBeenOpened');
 
         // [3] Toggle active states
-        document.querySelector('html').classList.add('js--megaMenuSearchIsOpen', 'js--megaMenuSearchHasBeenOpened');
+        // document.querySelector('html').classList.toggle('js--megaMenuSearchIsOpen');
 
         // [4] Focus on the search box
         document.querySelector('.c-mega-menu-full-search [type="search"]').focus();
+    });
+});
+Array.from(document.querySelectorAll('.js__closeSearchModal')).forEach(element => {
+    element.addEventListener('click', function(event) {
+        // [1] Remove active states
+        document.querySelector('html').classList.remove('js--megaMenuSearchIsOpen');
     });
 });
 /* GROUP NAV / MEGA MENU / BACK BUTTON

@@ -264,6 +264,7 @@ body .c-mega-menu__back-button {
 .c-mega-menu-container {
     animation: var(--mega-menu-wipe-in-left);
 }
+/* Components > Framework > Site Header > Mega Menu > Search > Animations */
 .c-mega-menu-container--search {
     animation: var(--mega-menu-wipe-in-down);
 }
@@ -272,10 +273,11 @@ body .c-mega-menu__back-button {
     /* This controls the wipe-out-right when the menu is closed */
     animation: var(--mega-menu-wipe-out-right);
 }
-/* .js .c-mega-menu-container--search:not(.js--megaMenuActive) { */
-    /* This controls the wipe-out-right when the menu is closed */
-/*     animation: var(--mega-menu-wipe-out-up); */
-/* } */
+/* Components > Framework > Site Header > Mega Menu > Search > Animations */
+.js .c-mega-menu-container--search:not(.js--megaMenuActive) {
+    /* This controls the wipe-out-up when the search menu is closed */
+    animation: var(--mega-menu-wipe-out-up);
+}
 
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
@@ -411,7 +413,7 @@ body .c-mega-menu__back-button {
     top: var(--spacing-s);
     right: var(--spacing-s-1);
 }
-/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ANIMATIONS
+/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ANIMATIONS / (CROSS POLLINATED)
 =================================================== */
 .js--megaMenuSearchIsOpen .c-site-header__search .c-mega-menu-container--search {
     animation: var(--mega-menu-wipe-in-down);

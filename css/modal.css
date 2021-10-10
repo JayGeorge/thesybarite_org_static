@@ -129,10 +129,6 @@
     border-radius: 5px;
     color: black;
 }
-
-.c-modal-close {
-    font-size: var(--icon-size-m);
-}
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / ANIMATIONS
 =================================================== */
 @keyframes wipe-in-up {
