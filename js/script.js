@@ -141,6 +141,7 @@ document.addEventListener('keydown', (event) => {
     if (!event.repeat && event.key === 'Escape') {
         megaMenuStateClose();
         megaMenuClose();
+        searchStateClose();
     }
 });
 /* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
