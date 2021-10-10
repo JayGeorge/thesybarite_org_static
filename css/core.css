@@ -94,7 +94,7 @@
 
     /* GROUP VARIABLES -- DECORATION -- TEXT -- FONTS
     =================================================== */
-    --font-family-main: futura-pt, sans-serif;
+    --font-family-main: futura-pt, futura, sans-serif;
     --font-family-headline: orpheuspro, serif;
     /* https://css-tricks.com/snippets/css/system-font-stack/ */
     --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
