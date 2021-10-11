@@ -120,7 +120,7 @@ Array.from(document.querySelectorAll('.js__searchInitiate')).forEach(element => 
     });
 });
 Array.from(document.querySelectorAll('.js__closeSearchModal')).forEach(element => {
-    element.addEventListener('click', function(event) {
+    element.addEventListener('click', function() {
         // [1] Remove any existing active states
         searchStateClose();
     });

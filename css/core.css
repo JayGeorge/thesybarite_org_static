@@ -1967,8 +1967,8 @@ body .site-logo {
     left: 0;
     height: 100%;
     width: 100%;
-/*     background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%); */
-/*     background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%); */
+    /* background: linear-gradient(35deg, hsl(0deg 0% 0% / 55%) 0%, transparent 100%); */
+    /* background: linear-gradient(15deg, hsl(0deg 0% 0% / 20%) 0%, transparent 50%); */
     background: linear-gradient(15deg, hsl(0deg 10% 8% / 40%) 0%, transparent 60%);
 }
 
