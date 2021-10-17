@@ -1089,14 +1089,17 @@ button,
 }
 
 button {
+    /* To combat -apple-system-blueinput on iOS 15 */
+    color: initial;
+}
+
+button {
     /* =JFG. Cancel default button appearance */
     background: none;
 }
 
 button svg {
     font-size: 1.3em;
-    /* To combat -apple-system-blueinput on iOS 15 */
-    color: initial;
 }
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / TYPES
 =================================================== */
