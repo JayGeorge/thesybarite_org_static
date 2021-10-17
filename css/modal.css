@@ -150,3 +150,10 @@
     animation-name: zoom-in;
     animation-duration: 0.8s;
 }
+
+/* Custom */
+@media (min-width: 1025px) {
+    .js__modalBox {
+        animation-duration: 0.4s;
+    }
+}
