@@ -142,7 +142,7 @@ nav {
         overflow: scroll;
     }
 
-    .c-mega-menu-container:not(.js--megaMenuActive) {
+    .c-mega-menu-container:not(.js--megaMenuActive):not(.c-mega-menu-container--search) {
         display: none;
     }
 }
