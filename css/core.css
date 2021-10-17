@@ -1089,13 +1089,10 @@ button,
 }
 
 button {
-    /* To combat -apple-system-blueinput on iOS 15 */
-    color: initial;
-}
-
-button {
     /* =JFG. Cancel default button appearance */
     background: none;
+    /* To combat -apple-system-blueinput on iOS 15 */
+    color: initial;
 }
 
 button svg {
