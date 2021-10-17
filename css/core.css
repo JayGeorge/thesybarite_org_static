@@ -74,9 +74,9 @@
     =================================================== */
     /* Dark to light */
     --colour-black: black;
-    --colour-black-transparent-1: hsl(0deg 0% 0% / 40%);
-    /* e.g. Search in the mega menu */
-    --colour-black-transparent-2: hsl(0deg 0% 0% / 75%);
+    /* e.g. Search in the mega menu. Made lighter at later media query */
+    --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
+    --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
@@ -224,6 +224,8 @@
     :root {
         --spacing-l-3-horizontal: var(--spacing-l-3);
         --spacing-l-horizontal: var(--spacing-l);
+        /* Lighter */
+        --colour-black-transparent-1: hsl(0deg 0% 0% / 75%);
     }
 }
 /* --mq-text-bump-reduce-for-lower-resolution-displays */
@@ -792,8 +794,13 @@ body .c-nav-mobile-button:hover {
 }
 /* GROUP COMPONENTS / CLOSE BUTTON / DECORATION
 =================================================== */
-.c-close-button {
-    border-radius: 50px;
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .c-close-button {
+        border-radius: 50px;
+        /* To stop it from visually clashing with the mobile menu */
+        background: var(--colour-black-transparent-1);
+    }
 }
 
 
@@ -1288,7 +1295,7 @@ body .site-logo {
     }
 
      /* Hide the search icon on lower screens because it looks too cluttered */
-     .c-site-header__search svg {
+     .c-site-header__search-link svg {
         /* START SCREEN READER TEXT
         --------------------------- */
         clip: rect(1px, 1px, 1px, 1px);
@@ -1355,10 +1362,6 @@ body .site-logo {
     padding: var(--spacing-s);
 }
 
-.c-site-header__nav .c-site-header__search-link {
-    padding: 0;
-}
-
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     /* Not the mega nav */
@@ -1386,11 +1389,15 @@ body .site-logo {
         /* Increase */
         margin-inline-start: var(--spacing-s);
     }
+
+    .c-site-header__nav .c-site-header__search-link {
+        padding: 0;
+    }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION
 =================================================== */
 .c-site-header .c-btn {
-    background: var(--colour-black-transparent-1);
+    background: var(--colour-black-transparent-2);
     /* border-radius: 50px; */
     backdrop-filter: blur(10px);
 }
@@ -1411,6 +1418,12 @@ body .site-logo {
     top: -0.1em;
     /* Increase */
     font-size: 1rem;
+}
+
+/* Exceptions */
+/* Close button */
+.c-site-header nav button :is(svg, [src*=".svg"]) {
+    top: unset;
 }
 /* purgecss end ignore */
 

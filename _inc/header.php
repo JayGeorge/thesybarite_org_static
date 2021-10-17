@@ -203,7 +203,6 @@
                                     <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
                                 </svg>
                             </button>
-                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
                             <form role="search" action="https://experienceluxury.co" method="get">
                                 <input placeholder="Search..." type="search" name="s" title="Search" value="">
                             </form>

@@ -253,11 +253,12 @@ body .c-mega-menu__back-button {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / ANIMATIONS
 =================================================== */
 :root {
-    --mega-menu-wipe-in-left: 1.2s cubic-bezier(.25, 1, .30, 1)  wipe-in-left both;
-    --mega-menu-wipe-out-right: 1.2s cubic-bezier(.25, 1, .30, 1)  wipe-out-right both;
+    --mega-menu-wipe-in-left: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+    --mega-menu-wipe-out-right: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-out-right both;
 
-    --mega-menu-wipe-in-down: 1.2s cubic-bezier(.25, 1, .30, 1)  wipe-in-down both;
-    --mega-menu-wipe-out-up: 1.2s cubic-bezier(.25, 1, .30, 1)  wipe-out-up both;
+    --mega-menu-wipe-in-down: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+    --mega-menu-wipe-out-up: 1.2s cubic-bezier(.25, 1, .30, 1) wipe-out-up both;
+
 }
 
 /* purgecss start ignore */
@@ -372,7 +373,7 @@ body .c-mega-menu__back-button {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / DECORATION
 =================================================== */
 .c-mega-menu-container--search {
-    background: var(--colour-black-transparent-2);
+    background: var(--colour-black-transparent-1);
 }
 
 .c-mega-menu-full-search [type="search"]::placeholder,
@@ -409,9 +410,17 @@ body .c-mega-menu__back-button {
 }
 
 .c-mega-menu-full-search .c-close-button {
-    /* Increase */
-    top: var(--spacing-s);
-    right: var(--spacing-s-1);
+    top: var(--spacing-s-2);
+    right: var(--spacing-s-2);
+}
+
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .c-mega-menu-full-search .c-close-button {
+        /* Increase */
+        top: var(--spacing-s);
+        right: var(--spacing-s-1);
+    }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SEARCH / ANIMATIONS / (CROSS POLLINATED)
 =================================================== */

@@ -129,6 +129,10 @@
     border-radius: 5px;
     color: black;
 }
+
+.js__modalBox .c-close-button {
+    background: unset;
+}
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / ANIMATIONS
 =================================================== */
 @keyframes wipe-in-up {
