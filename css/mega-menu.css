@@ -290,7 +290,7 @@ body .c-mega-menu__back-button {
 @media (min-width: 1200px) {
     .js--megaMenuIsOpen-fadeFromNowOn .c-mega-menu-container:not(.c-mega-menu-container--search),
     /* Disable The Wipe-Out-Right Animation From Initially Happening When The Page Loads Up */
-    html:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container:not(.c-mega-menu-container--search) {
+    html:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
         animation-duration: 0s!important;
     }
 
