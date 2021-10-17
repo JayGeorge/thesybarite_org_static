@@ -135,35 +135,18 @@
 }
 /* GROUP FRAMEWORK / (NON CORE) / MODAL / ANIMATIONS
 =================================================== */
-@keyframes wipe-in-up {
+@keyframes zoom-in {
     from {
-        clip-path: inset(100% 0 0 0);
+        opacity: 0;
+        transform: scale3d(0.55, 0.55, 0.55);
     }
-    to {
-        clip-path: inset(0 0 0 0);
+
+    50% {
+        opacity: 1;
     }
 }
 
 .js__modalBox {
-    /* Zoom-in doesn't work well on iOS devices */
-    animation-name: wipe-in-up;
+    animation-name: zoom-in;
     animation-duration: 0.8s;
-}
-
-/* Custom */
-@media (min-width: 1025px) {
-    @keyframes zoom-in {
-        from {
-            opacity: 0;
-            transform: scale3d(0.55, 0.55, 0.55);
-        }
-
-        50% {
-            opacity: 1;
-        }
-    }
-
-    .js__modalBox {
-        animation-name: zoom-in;
-    }
 }
