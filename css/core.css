@@ -81,7 +81,7 @@
     --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
     --colour-grey-light-2: hsl(0deg 0% 90%);
-    /* e.g. Modal field focuss */
+    /* e.g. Modal field focus */
     --colour-grey-light-3: hsl(0deg 0% 95%);
     /* Jo malone */
     /* --colour-pale: hsl(51deg 62% 96%); */
@@ -958,6 +958,15 @@ https://twitter.com/LeaVerou/status/1045836563505188867 */
 :focus:not(:focus-visible) * {
     outline: none!important;
 }
+
+/* purgecss start ignore */
+/* Temp until Safari supports focus-visible */
+@media (hover: none) {
+    :focus {
+        outline: none!important;
+    }
+}
+/* purgecss end ignore */
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / HOVER
 =================================================== */
 a:hover {
