@@ -147,7 +147,7 @@
 .js__modalBox {
     /* Zoom-in doesn't work well on iOS devices */
     animation-name: wipe-in-up;
-    animation-duration: 0.4s;
+    animation-duration: 0.8s;
 }
 
 /* Custom */
