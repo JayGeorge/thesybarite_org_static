@@ -1267,7 +1267,7 @@ h2 + .o-hero-buttons {
 
 .o-article-grid__column-2 {
     position: relative;
-    top: var(--spacing-l-1);
+    top: var(--spacing-l-2);
     display: grid;
     align-items: end;
 }
