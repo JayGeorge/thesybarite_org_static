@@ -64,7 +64,8 @@
     /* e.g. >> /art-club */
     --max-width-columns: 57rem;
     --max-width-1: 77rem;
-    --max-width-2: 93rem;
+    /* e.g. >> /art-club overlay text at the top of the page on a 5k screen */
+    --max-width-2: 91rem;
     /* GROUP VARIABLES -- LAYOUT -- Z-INDEX
     =================================================== */
     --z-index-above-body: 1;
@@ -267,7 +268,15 @@
         --spacing-vh-m: 22vh;
         /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- BUMPS
         =================================================== */
-        --font-bump: 0.15vw;
+        --font-bump: 0.2vw;
+    }
+}
+/* --mq-text-bump-3-after */
+@media (min-width: 2300px) {
+    :root {
+        /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES -- BUMPS
+        =================================================== */
+        --font-bump: 0.25vw;
     }
 }
 
@@ -2129,6 +2138,14 @@ body .site-logo {
 @media (min-width: 1024px) and (max-height: 930px) {
     .image-with-text__text {
         --font-size-l-3: 9.5em;
+    }
+}
+
+/* --mq-text-bump-3-after */
+@media (min-width: 2300px) {
+    .image-with-text__text {
+        /* Increase */
+        max-width: var(--max-width-2);
     }
 }
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
