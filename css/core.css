@@ -79,6 +79,8 @@
     --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
     --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
+    /* AA */
+    --colour-grey-reading: hsl(0deg 0% 46%);
     --colour-grey-light-1: hsl(0deg 0% 75%);
     /* e.g. >> mega menu border */
     --colour-grey-light-2: hsl(0deg 0% 90%);
@@ -356,6 +358,7 @@ figure img {
 
 figcaption {
     font-size: var(--font-size-s-x);
+    color: hsl(0deg 0% 46%);
 }
 
 ul {

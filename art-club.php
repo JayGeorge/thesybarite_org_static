@@ -86,6 +86,7 @@
                     <figcaption>Brousses imaginaires</figcaption>
                 </figure>
             </div>
+            <h2 class="c-eyebrow-heading">Rising Star</h2>
             <div class="c-gallery">
                 <div class="c-gallery__item">
                     <h3 class="c-gallery__hero-title">Sungi Mlengeya</h3>
@@ -119,7 +120,7 @@
                     <div class="o-article-grid o-article-grid--with-form">
                         <div class="o-article-grid__column-1">
                             <h2>Book an Appointment with an Artist or Advisor</h2>
-                            <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                            <p class="c-entry-lead"><em>Contact us</em> and view art in person. Meet the artist as well as art experts. Ask them about their work along with the opportunity to buy one of their exclusive pieces of art.</p>
                             <img class="u-decorative-arrow u-decorative-arrow--right" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                         </div>
                         <div class="o-article-grid__column-2">
