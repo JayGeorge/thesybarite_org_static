@@ -36,7 +36,7 @@
     --spacing-l-1: 2.5rem;
     --spacing-l-1-static: 2.5em;
 
-    --spacing-l-2: 4.2rem;
+    --spacing-l-2: min(11.5vw, 4.2rem);
     --spacing-l-2-horizontal: min(7vw, 4.2rem);
     --spacing-l-3: 4.8rem;
     /* Smaller value for mobile */
@@ -903,6 +903,9 @@ a {
 .c-link-button {
     /* e.g. >> /art-club > Learn more link */
     text-underline-offset: 0.5em;
+    display: inline-block;
+    padding-block-end: var(--spacing-l);
+    padding-block-start: var(--spacing-s);
 }
 
 html {
@@ -1265,13 +1268,6 @@ h2 + .o-hero-buttons {
     max-width: var(--max-width-reading);
 }
 
-.o-article-grid__column-2 {
-    position: relative;
-    top: var(--spacing-l-2);
-    display: grid;
-    align-items: end;
-}
-
 .o-article-grid--with-form {
     --max-width-columns: 66rem;
 }
@@ -1286,6 +1282,13 @@ h2 + .o-hero-buttons {
         display: grid;
         gap: var(--spacing-l-4);
         grid-template-columns: 55fr 45fr;
+    }
+
+    .o-article-grid__column-2 {
+        position: relative;
+        top: var(--spacing-l-2);
+        display: grid;
+        align-items: end;
     }
 }
 /* GROUP OBJECTS / ARTICLE GRID / SPACING
@@ -1844,8 +1847,14 @@ body .site-logo {
 /* GROUP COMPONENTS / EYEBROW HEADING / SPACING
 =================================================== */
 .c-eyebrow-heading {
-/*     padding-inline: var(--spacing-l); */
     padding-block: 0 var(--spacing-m);
+}
+
+/* --mq-nav-opens-before */
+@media (max-width: 1199px) {
+    .c-eyebrow-heading {
+        padding-inline: var(--spacing-l);
+    }
 }
 /* GROUP COMPONENTS / EYEBROW HEADING / DECORATION
 =================================================== */
@@ -2524,6 +2533,14 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 =================================================== */
 .u-decorative-arrow {
     font-size: var(--icon-size-l);
+}
+
+/* --mq-article-breakpoint-1 */
+@media (max-width: 1023px) {
+    .u-decorative-arrow {
+        /* e.g. >> /art-club */
+        margin-block-end: var(--spacing-l-2);
+    }   
 }
 
 .u-decorative-arrow--right {

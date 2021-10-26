@@ -514,6 +514,16 @@ textarea {
 .s-forms-main-theme .c-form {
     padding: var(--spacing-m);
 }
+
+/* Custom */
+@media (max-width: 599px) {
+    /* When nested pull out a bit wider on mobile to make form more usable e.g. >> /art-club */
+    .c-article .c-form {
+        position: relative;
+        width: calc(100% + var(--spacing-m));
+        left: calc(0% - var(--spacing-m) / 2)
+    }
+}
 /* GROUP SCOPE / MAIN THEME / DECORATION
 =================================================== */
 .s-forms-main-theme label {
