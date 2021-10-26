@@ -56,7 +56,7 @@
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
-    /* e.g. Champagne Club > .c-article__grid__image */
+    /* e.g. Champagne Club > .o-article-grid__image */
     --max-width-reading-short: 22rem;
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
@@ -85,8 +85,10 @@
     --colour-grey-light-3: hsl(0deg 0% 95%);
     /* Jo malone */
     /* --colour-pale: hsl(51deg 62% 96%); */
+    /* --colour-pale: hsl(51deg 40% 96%); */
     /* Tweaked */
-    --colour-pale: hsl(51deg 40% 96%);
+    /* --colour-pale: hsl(51deg 40% 98%); */
+    --colour-pale: white;
     --colour-pale-hsl: 51deg 62% 96%;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME -- GRADIENTS
     =================================================== */
@@ -154,7 +156,7 @@
     /* e.g. >> /champagne-club. */
     /* Increase */
     --font-size-m-custom: clamp(calc(1.9em * 0.6), 6.25vw, 1.9em);
-    --font-size-m-line-height: 1.4;
+    --font-size-m-line-height: 1.325;
 
     --font-size-l: 2.618em;
     --font-size-l-rem: 2.618rem;
@@ -171,6 +173,8 @@
     /* GROUP VARIABLES -- DECORATION -- ICONS -- SIZES
     =================================================== */
     --icon-size-m: 1.5rem;
+    /* e.g. >> /art-club decorational icon */
+    --icon-size-l: 5.5rem;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- OTHER
     =================================================== */
     /* Reduce a touch e.g. Mega Menu > bold text headlines in uppercase */
@@ -287,6 +291,12 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
     /* Don't do *::before, *::after - this has caused me performance problems before with flickering images */
     box-sizing: border-box;
+}
+
+/* https://twitter.com/bramus/status/1452572001697153029 */
+html,
+body {
+    background: var(--colour-pale);
 }
 
 /* =JFG. HTML default e.g. when we are separating lines with <br> like addresses in proposals */
@@ -463,7 +473,7 @@ h1,
 .h1,
 h2,
 .h2 {
-    padding-block-end: var(--spacing-l);
+    padding-block-end: var(--spacing-l-2);
 }
 
 * + h1,
@@ -887,7 +897,7 @@ html {
 }
 
 /* .u-link-style-1 a, */
-.entry-lead a,
+.c-entry-lead a,
 /* Components > Framework > Entry > Entry Content */
 .s-entry-content a {
     text-underline-offset: 0.05em;
@@ -912,7 +922,7 @@ body > div > header > nav > ul > li:nth-child(1) > a {
     text-decoration-color: var(--colour-grey-light-1);
 }
 
-.entry-lead a {
+.c-entry-lead a {
     text-underline-offset: 0.08em;
 }
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
@@ -1206,6 +1216,70 @@ button.c-btn--2 {
 
 h2 + .o-hero-buttons {
     padding-block-start: var(--spacing-s-1);
+}
+
+
+
+
+/* GROUP OBJECTS / ARTICLE GRID
+=================================================== */
+/* Notes...
+
+	- 
+
+*/
+/* HTML Example...
+
+    <div class="c-article">
+        <div class="o-article-grid">
+            <div class="o-article-grid__text">
+                <h2>Undiscovered emerging artists</h2>
+                <p class="c-entry-lead"><em>Florentine</em>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages,</p>
+            </div>
+            <div class="o-article-grid__image">
+                <figure>
+                    <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
+                    <!-- <figcaption>Edward, our expert wine curator</figcaption> -->
+                </figure>
+            </div>
+        </div>
+    </div>
+
+*/
+/* GROUP OBJECTS / ARTICLE GRID / LAYOUT
+=================================================== */
+.o-article-grid {
+    max-width: var(--max-width-columns);
+}
+
+.o-article-grid__text {
+    max-width: var(--max-width-reading);
+}
+
+.o-article-grid__image {
+    max-width: var(--max-width-reading-short);
+}
+
+.o-article-grid__image {
+    position: relative;
+    top: var(--spacing-l-1);
+    display: grid;
+    align-items: end;
+}
+
+/* --mq-article-breakpoint-1 */
+@media (min-width: 1024px) {
+    .o-article-grid {
+        display: grid;
+        gap: var(--spacing-l-4);
+        grid-template-columns: 55fr 45fr;
+    }
+}
+/* GROUP OBJECTS / ARTICLE GRID / SPACING
+=================================================== */
+.o-article-grid p {
+    /* e.g. .c-entry-lead */
+    padding-inline: 0;
 }
 
 
@@ -1660,6 +1734,44 @@ body .site-logo {
 
 
 
+/* GROUP COMPONENTS / ARTICLE
+=================================================== */
+/* Notes...
+
+	- 
+
+*/
+/* HTML Example...
+
+*/
+/* GROUP COMPONENTS / ARTICLE / LAYOUT
+=================================================== */
+.c-article {
+    max-width: var(--max-width-1);
+    margin: auto;
+}
+/* GROUP COMPONENTS / ARTICLE / SPACING
+=================================================== */
+.c-article {
+    padding-inline-start: var(--spacing-l);
+    padding-inline-end: var(--spacing-l);
+    padding-block-end: calc(var(--spacing-l-4) + var(--spacing-l));
+}
+
+.c-article--compressed-b {
+    padding-block-end: var(--spacing-l-4);
+}
+/* GROUP COMPONENTS / ARTICLE / DECORATION
+=================================================== */
+.c-article h2 {
+    font-size: var(--font-size-l-1);
+    line-height: var(--font-size-l-1-line-height);
+    /* text-indent: 4rem; */
+}
+
+
+
+
 /* GROUP COMPONENTS / ENTRY LEAD
 =================================================== */
 /* Notes...
@@ -1669,7 +1781,7 @@ body .site-logo {
 */
 /* HTML Example...
 
-    .entry-lead
+    .c-entry-lead
         p
 
 */
@@ -1678,23 +1790,59 @@ body .site-logo {
 */
 /* GROUP COMPONENTS / ENTRY LEAD / LAYOUT
 =================================================== */
-.entry-lead {
+.c-entry-lead {
     max-width: var(--max-width-title);
 }
 /* GROUP COMPONENTS / ENTRY LEAD / SPACING
 =================================================== */
-.entry-lead {
+.c-entry-lead {
     padding-block-end: var(--spacing-l-1);
-    padding-inline-start: var(--spacing-l);
-    padding-inline-end: var(--spacing-l);
+    padding-inline: var(--spacing-l);
 }
 /* GROUP COMPONENTS / ENTRY LEAD / DECORATION
 =================================================== */
-.entry-lead {
+.c-entry-lead {
     font-size: var(--font-size-m-custom);
     line-height: var(--font-size-m-line-height);
     font-family: var(--font-family-headline);
 }
+
+
+
+
+/* GROUP COMPONENTS / EYEBROW HEADING
+=================================================== */
+/* Notes...
+
+	- e.g. /art-club 'featured' heading. Inspired by the mega menu headings
+
+*/
+/* HTML Example...
+
+    <h2 class="c-eyebrow-heading">Featured</h2>
+
+*/
+/* GROUP COMPONENTS / EYEBROW HEADING / LAYOUT
+=================================================== */
+.c-eyebrow-heading {
+    max-width: var(--max-width-1);
+    margin-inline: auto;
+}
+/* GROUP COMPONENTS / EYEBROW HEADING / SPACING
+=================================================== */
+.c-eyebrow-heading {
+/*     padding-inline: var(--spacing-l); */
+    padding-block: 0 var(--spacing-m);
+}
+/* GROUP COMPONENTS / EYEBROW HEADING / DECORATION
+=================================================== */
+.c-eyebrow-heading {
+    font-size: var(--font-size-s);
+    font-family: var(--font-family-main);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-m);
+}
+
 
 
 
@@ -2031,10 +2179,6 @@ body .site-logo {
     padding-block-end: 0.1em;
 }
 
-body {
-    background: var(--colour-pale);
-}
-
 /* Custom */
 @media (max-width: 1024px) {
     .image-with-text__cta-box {
@@ -2363,6 +2507,11 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 /* purgecss end ignore */
 /* GROUP UTILITIES / DECORATION
 =================================================== */
+.u-decorative-arrow {
+    font-size: var(--icon-size-l);
+    transform: rotate(-45deg);
+}
+
 .u-separator-t {
     position: relative;
     margin-block-start: var(--spacing-l-2);
@@ -2378,6 +2527,18 @@ u-screen-reader-text--mq-nav-opens-after:focus {
     opacity: 0.2;
     padding-block-start: var(--spacing-m);
     padding-inline-start: var(--spacing-l);
+}
+
+/* GROUP UTILITIES / DECORATION / PANELS
+=================================================== */
+[class*="panel"] {
+    position: relative;
+}
+
+.u-panel-white {
+    background: white;
+    /* Pseudo fade out the CTA */
+    /* background: linear-gradient(to bottom, transparent 0%,white 15%); */
 }
 
 

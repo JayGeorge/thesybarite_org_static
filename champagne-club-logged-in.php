@@ -42,7 +42,7 @@
                 </div>
             </header>
             <div class="u-width-max-1">
-                <p class="entry-lead">
+                <p class="c-entry-lead">
                     <em>Florentine</em>, welcome to The Champagne Club, an <em>exclusive</em> community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                 </p>
                 <div class="s-entry-content s-entry-content--columns">
@@ -54,8 +54,8 @@
                 </div>
             </div>
             <div class="c-article">
-                <div class="c-article__grid">
-                    <div class="c-article__grid__text">
+                <div class="o-article-grid">
+                    <div class="o-article-grid__text">
                         <h2>Meet Edward, your bespoke wine curator</h2>
                         <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
 
@@ -63,7 +63,7 @@
         
                         <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
                     </div>
-                    <div class="c-article__grid__image">
+                    <div class="o-article-grid__image">
                         <figure>
                             <img src="/img/edward.jpg" alt="Edward" />
                             <figcaption>Edward, our expert wine curator</figcaption>
@@ -74,7 +74,7 @@
 
             <div class="u-width-max-1">
                 <h2 class="large-title">A Year in Champagne</h2>
-                <p class="entry-lead"><em>Florentine</em>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
+                <p class="c-entry-lead"><em>Florentine</em>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages of Ambonnay, where Krug has its' Clos d'Ambonnay Avize and Tours-Sur-Marne the home of Laurent-Perrier.</p>
 
                 <div class="feature-image">
                     <img src="/img/vineyard-with-people.jpg" alt="test">
@@ -109,7 +109,7 @@
                 <h2 class="large-title">Champagnes</h2>
             </div>
             <!-- <div class="u-width-max-1">
-                <p class="entry-lead">We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p>
+                <p class="c-entry-lead">We recommend that this vintage be drunk within the year as beyond that it will not continue to improve. The remaining stock is limited and as soon as it is finished we will be looking at the 2015, another top year but not quite so appealing....yet!</p>
             </div> -->
             <div class="feature-columns">
                 <div class="feature-columns__column">

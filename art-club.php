@@ -40,6 +40,39 @@
                 <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
             </div>
         </header>
+        <div class="c-article c-article--compressed-b">
+            <div class="o-article-grid">
+                <div class="o-article-grid__text">
+                    <!-- <h2>Meet Edward, your bespoke wine curator</h2> -->
+                    <h2>Undiscovered emerging artists</h2>
+                    <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                    <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                </div>
+                <div class="o-article-grid__image">
+                    <figure>
+                        <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
+                        <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <?php $filename = 'gallery'; include '_inc/_stylesheet.php'; ?>
+        <div class="u-panel-white">
+            <h2 class="c-eyebrow-heading">Featured</h2>
+            <div class="c-gallery">
+                <h3 class="c-gallery__hero-title">Moussa <br/>Traoré</h3>
+                <div class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/moussa-traore/1.jpg" alt="t" />
+                </div>
+                <div class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/moussa-traore/2.jpg" alt="t" />
+                </div>
+                <div class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/moussa-traore/3.jpg" alt="t" />
+                </div>
+            </div>
+        </div>
+        <div></div>
     </main>
 
     <?php include '_inc/footer.php'; ?>

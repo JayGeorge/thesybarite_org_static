@@ -1,0 +1,67 @@
+/*! Notes...
+
+    Author: Jay George
+    Author URI: https://jaygeorge.co.uk
+
+    ABOUT THIS CSS
+    ===================================================
+    - Only edit filename.css, then process with Codekit to output into prod/
+
+*/
+
+
+/* GROUP COMPONENTS / GALLERY
+=================================================== */
+/* Notes...
+
+	- e.g. /art-gallery
+
+*/
+/* HTML Example...
+
+*/
+/* GROUP COMPONENTS / GALLERY / LAYOUT
+=================================================== */
+.c-gallery {
+    max-width: var(--max-width-1);
+    margin-inline: auto;
+
+    display: grid;
+    /* Prevent overflow on screens less than px value */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: var(--spacing-m);
+}
+
+.c-gallery__hero-title {
+    position: absolute;
+    top: var(--spacing-l-1);
+    left: var(--spacing-l-2);
+}
+/* GROUP COMPONENTS / GALLERY / SPACING
+=================================================== */
+.c-gallery {
+    padding-inline: var(--spacing-l);
+    padding-block-start: var(--spacing-l);
+}
+/* GROUP COMPONENTS / GALLERY / DECORATION
+=================================================== */
+.c-gallery {
+    position: relative;
+}
+
+.c-gallery::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: var(--spacing-l);
+    width: calc(100% - var(--spacing-l) * 2);
+    border-block-start: 1px solid var(--colour-grey-light-2);
+}
+
+.c-gallery__hero-title {
+    font-size: var(--font-size-l-2);
+    line-height: var(--font-size-l-2-line-height);
+    /* mix-blend-mode: soft-light; */
+    mix-blend-mode: overlay;
+    opacity: 0.75;
+}

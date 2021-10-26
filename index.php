@@ -42,7 +42,7 @@
                 </div>
             </header>
                 <div class="u-width-max-1">
-                    <p class="entry-lead">
+                    <p class="c-entry-lead">
                         <a href="#form">Sign up</a> to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
                     <div class="s-entry-content s-entry-content--columns">
@@ -54,8 +54,8 @@
                     </div>
                 </div>
                 <div class="c-article">
-                    <div class="c-article__grid">
-                        <div class="c-article__grid__text">
+                    <div class="o-article-grid">
+                        <div class="o-article-grid__text">
                             <h2>Meet Edward, your bespoke wine curator</h2>
                             <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
             
@@ -63,7 +63,7 @@
             
                             <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
                         </div>
-                        <div class="c-article__grid__image">
+                        <div class="o-article-grid__image">
                             <figure>
                                 <img src="/img/edward.jpg" alt="Edward" />
                                 <figcaption>Edward, our expert wine curator</figcaption>
@@ -93,7 +93,7 @@
 
                 <div id="form" class="u-width-max-1">
                     <h2 class="medium-title">Sign up for Free</h2>
-                    <p class="entry-lead">@Cedric form goes here</p>
+                    <p class="c-entry-lead">@Cedric form goes here</p>
                 </div>
         </article>
     </main>
