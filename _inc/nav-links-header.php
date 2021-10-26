@@ -9,6 +9,6 @@
 
 */
 ?>
-<li class="<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
-    <a href="/<?php echo strtolower(str_replace(' ', '-', $nav_name)); if(($GLOBALS['using_laravel']) === true && ($GLOBALS['local']) === true) { echo '.php'; } ?>"><?php echo $nav_name; ?></a>
+<li class="c-site-header__animate-staggered<?php if ($current_nav === $nav_name) { echo ' current-menu-item'; } ?>">
+    <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name)); if(($GLOBALS['using_laravel']) === true && ($GLOBALS['local']) === true) { echo '.php'; } ?>"><?php echo $nav_name; ?></a>
 </li>
