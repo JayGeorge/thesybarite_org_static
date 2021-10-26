@@ -19,6 +19,38 @@
 */
 /* HTML Example...
 
+    <div class="u-panel-white">
+        <h2 class="c-eyebrow-heading">Featured</h2>
+        <div class="c-gallery">
+            <div class="c-gallery__item">
+                <h3 class="c-gallery__hero-title">Moussa Traoré</h3>
+                <p>Moussa Traoré’s bold paintings feature otherworldly figures that appear to possess both human and alien characteristics. Set on canvas doused in rich color or inky black, his striking protagonists are carefully portrayed in neutral colors and camouflage-like patterns, with a level of detail that captivates the viewer and calls for close looking.</p>
+                <p>Traoré was recently featured in a three-person exhibition at <a href="">Galerie Atiss Dakar in Senegal</a>, as well as the gallery’s virtual presentation for 1-54 Contemporary African Art Fair New York 2020.</p>
+                <p><a href="" class="c-link-button">Learn more</a></p>
+            </div>
+            <figure class="c-gallery__item">
+                <img src="/img/clubs/art-club/gallery/moussa-traore/1.jpg" alt="t" />
+                <figcaption>Sans Titre</figcaption>
+            </figure>
+            <figure class="c-gallery__item">
+                <img src="/img/clubs/art-club/gallery/moussa-traore/2.jpg" alt="t" />
+                <figcaption>Mon Combat</figcaption>
+            </figure>
+            <figure class="c-gallery__item">
+                <img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" />
+                <figcaption>Brousses imaginaires</figcaption>
+            </figure>
+            <figure class="c-gallery__item">
+                <img src="/img/clubs/art-club/gallery/moussa-traore/5.jpg" alt="t" />
+                <figcaption>Sans tête</figcaption>
+            </figure>
+            <figure class="c-gallery__item">
+                <img src="/img/clubs/art-club/gallery/moussa-traore/3.jpg" alt="t" />
+                <figcaption>Brousses imaginaires</figcaption>
+            </figure>
+        </div>
+    </div>
+
 */
 /* GROUP COMPONENTS / GALLERY / LAYOUT
 =================================================== */
@@ -31,17 +63,11 @@
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
     gap: var(--spacing-m);
 }
-
-.c-gallery__hero-title {
-    position: absolute;
-    top: var(--spacing-l-1);
-    left: var(--spacing-l-2);
-}
 /* GROUP COMPONENTS / GALLERY / SPACING
 =================================================== */
 .c-gallery {
     padding-inline: var(--spacing-l);
-    padding-block-start: var(--spacing-l);
+    padding-block: var(--spacing-l) var(--spacing-l-4);
 }
 /* GROUP COMPONENTS / GALLERY / DECORATION
 =================================================== */
@@ -59,9 +85,11 @@
 }
 
 .c-gallery__hero-title {
-    font-size: var(--font-size-l-2);
+    font-size: var(--font-size-l-1);
     line-height: var(--font-size-l-2-line-height);
-    /* mix-blend-mode: soft-light; */
-    mix-blend-mode: overlay;
-    opacity: 0.75;
+    text-indent: 2.5rem;
+}
+
+.c-gallery p {
+    padding-inline-end: var(--spacing-s-2);
 }

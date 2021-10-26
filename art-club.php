@@ -60,16 +60,60 @@
         <div class="u-panel-white">
             <h2 class="c-eyebrow-heading">Featured</h2>
             <div class="c-gallery">
-                <h3 class="c-gallery__hero-title">Moussa <br/>Traoré</h3>
                 <div class="c-gallery__item">
+                    <h3 class="c-gallery__hero-title">Moussa Traoré</h3>
+                    <p>Moussa Traoré’s bold paintings feature otherworldly figures that appear to possess both human and alien characteristics. Set on canvas doused in rich color or inky black, his striking protagonists are carefully portrayed in neutral colors and camouflage-like patterns, with a level of detail that captivates the viewer and calls for close looking.</p>
+                    <p>Traoré was recently featured in a three-person exhibition at <a href="">Galerie Atiss Dakar in Senegal</a>, as well as the gallery’s virtual presentation for 1-54 Contemporary African Art Fair New York 2020.</p>
+                    <p><a href="" class="c-link-button">Learn more</a></p>
+                </div>
+                <figure class="c-gallery__item">
                     <img src="/img/clubs/art-club/gallery/moussa-traore/1.jpg" alt="t" />
-                </div>
-                <div class="c-gallery__item">
+                    <figcaption>Sans Titre</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
                     <img src="/img/clubs/art-club/gallery/moussa-traore/2.jpg" alt="t" />
-                </div>
-                <div class="c-gallery__item">
+                    <figcaption>Mon Combat</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" />
+                    <figcaption>Brousses imaginaires</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/moussa-traore/5.jpg" alt="t" />
+                    <figcaption>Sans tête</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
                     <img src="/img/clubs/art-club/gallery/moussa-traore/3.jpg" alt="t" />
+                    <figcaption>Brousses imaginaires</figcaption>
+                </figure>
+            </div>
+            <div class="c-gallery">
+                <div class="c-gallery__item">
+                    <h3 class="c-gallery__hero-title">Sungi Mlengeya</h3>
+                    <p>Sungi Mlengeya’s spare, monochromatic acrylic portraits depict Black subjects, mostly women, dressed in white clothing and positioned against white backgrounds. The self-taught artist’s detailed renderings and unusual use of negative space cohere into beguiling portraits of Blackness and womanhood.</p>
+                    <p>studied finance in college and worked in banking until 2018, when she left her job to pursue painting full-time. She has exhibited in New York, London, Cape Town, and Kampala. Through her portraiture, Mlengeya thematizes self-discovery and empowerment</p>
+                    <p><a href="">Learn more</a></p>
                 </div>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/sungi-mlengeya/1.jpg" alt="t" />
+                    <figcaption>Kyomu</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/sungi-mlengeya/2.jpg" alt="t" />
+                    <figcaption>Congressman John Lewis</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/sungi-mlengeya/4.jpg" alt="t" />
+                    <figcaption>Unclench</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/sungi-mlengeya/3.jpg" alt="t" />
+                    <figcaption>Kaa</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img src="/img/clubs/art-club/gallery/sungi-mlengeya/5.jpg" alt="t" />
+                    <figcaption>At the end of the evening</figcaption>
+                </figure>
             </div>
         </div>
         <div></div>

@@ -889,19 +889,19 @@ a > svg:last-child:not(:first-child) {
 a {
     text-decoration-skip-ink: auto;
     color: inherit;
-    text-decoration-color: hsl(0deg 0% 0% / 40%);
+    /* e.g. >> /art-club */
+    text-decoration-color: hsl(0deg 0% 0% / 25%);
+    /* e.g. >> /art-club */
+    text-underline-offset: 0.2em;
+}
+
+.c-link-button {
+    /* e.g. >> /art-club > Learn more link */
+    text-underline-offset: 0.5em;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-/* .u-link-style-1 a, */
-.c-entry-lead a,
-/* Components > Framework > Entry > Entry Content */
-.s-entry-content a {
-    text-underline-offset: 0.05em;
-    text-decoration-thickness: 0.1rem;
 }
 
 /* Components > Framework > Nav > Current Page */
@@ -920,10 +920,6 @@ body > div > header > nav > ul > li:nth-child(1) > a {
     text-underline-offset: 0.3em;
     text-decoration-thickness: 1px;
     text-decoration-color: var(--colour-grey-light-1);
-}
-
-.c-entry-lead a {
-    text-underline-offset: 0.08em;
 }
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
 =================================================== */
