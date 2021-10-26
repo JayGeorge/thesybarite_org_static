@@ -54,8 +54,8 @@
                 </div>
             </div>
             <div class="c-article">
-                <div class="o-article-grid">
-                    <div class="o-article-grid__text">
+                <div class="o-article-grid o-article-grid--with-image">
+                    <div class="o-article-grid__column-1">
                         <h2>Meet Edward, your bespoke wine curator</h2>
                         <p>Edward was born in London and raised in Chelsea in the ‘Swinging Sixties’. After prep school in Oxford and a north London grammar school, headed into the booming City of London of the 1980’s. By the turn of the millennium and after spells in New York City and Monte Carlo he turned to the wine business.</p>
 
@@ -63,7 +63,7 @@
         
                         <p>By the age of 50 it was time for a change and Edward left his base in Mayfair and headed to his family home in a mountain village in Granada for a supposedly quieter life.</p>
                     </div>
-                    <div class="o-article-grid__image">
+                    <div class="o-article-grid__column-2">
                         <figure>
                             <img src="/img/edward.jpg" alt="Edward" />
                             <figcaption>Edward, our expert wine curator</figcaption>

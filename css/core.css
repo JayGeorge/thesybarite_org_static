@@ -56,12 +56,13 @@
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
-    /* e.g. Champagne Club > .o-article-grid__image */
+    /* e.g. Champagne Club > .o-article-grid__column-2 */
     --max-width-reading-short: 22rem;
     --max-width-reading: 36rem;
     --max-width-title: 53rem;
     /* e.g. >> Champagne Club > columns */
-    --max-width-columns: 56rem;
+    /* e.g. >> /art-club */
+    --max-width-columns: 57rem;
     --max-width-1: 77rem;
     --max-width-2: 93rem;
     /* GROUP VARIABLES -- LAYOUT -- Z-INDEX
@@ -1228,13 +1229,13 @@ h2 + .o-hero-buttons {
 /* HTML Example...
 
     <div class="c-article c-article--compressed-b">
-        <div class="o-article-grid">
-            <div class="o-article-grid__text">
+        <div class="o-article-grid o-article-grid--with-image">
+            <div class="o-article-grid__column-1">
                 <h2>Undiscovered emerging artists</h2>
                 <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
                 <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
             </div>
-            <div class="o-article-grid__image">
+            <div class="o-article-grid__column-2">
                 <figure>
                     <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
                     <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
@@ -1244,25 +1245,36 @@ h2 + .o-hero-buttons {
     </div>
 
 */
+
+/* Modifiers...
+
+    .o-article-grid--with-image <-- the second column contains an image
+    .o-article-grid--with-form <-- the second column contains a form
+
+*/
 /* GROUP OBJECTS / ARTICLE GRID / LAYOUT
 =================================================== */
 .o-article-grid {
     max-width: var(--max-width-columns);
 }
 
-.o-article-grid__text {
+.o-article-grid__column-1 {
     max-width: var(--max-width-reading);
 }
 
-.o-article-grid__image {
-    max-width: var(--max-width-reading-short);
-}
-
-.o-article-grid__image {
+.o-article-grid__column-2 {
     position: relative;
     top: var(--spacing-l-1);
     display: grid;
     align-items: end;
+}
+
+.o-article-grid--with-form {
+    --max-width-columns: 66rem;
+}
+
+.o-article-grid--with-image .o-article-grid__column-2 {
+    max-width: var(--max-width-reading-short);
 }
 
 /* --mq-article-breakpoint-1 */
@@ -2509,6 +2521,13 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 =================================================== */
 .u-decorative-arrow {
     font-size: var(--icon-size-l);
+}
+
+.u-decorative-arrow--right {
+    transform: rotate(-90deg);
+}
+
+.u-decorative-arrow--diagonal {
     transform: rotate(-45deg);
 }
 

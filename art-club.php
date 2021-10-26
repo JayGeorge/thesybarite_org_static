@@ -41,13 +41,13 @@
             </div>
         </header>
         <div class="c-article c-article--compressed-b">
-            <div class="o-article-grid">
-                <div class="o-article-grid__text">
+            <div class="o-article-grid o-article-grid--with-image">
+                <div class="o-article-grid__column-1">
                     <h2>Undiscovered emerging artists</h2>
                     <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
-                    <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                    <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                 </div>
-                <div class="o-article-grid__image">
+                <div class="o-article-grid__column-2">
                     <figure>
                         <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
                         <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
@@ -116,13 +116,13 @@
             </div>
             <div class="u-width-max-1">
                 <div class="c-article c-article--compressed-b">
-                    <div class="o-article-grid">
-                        <div class="o-article-grid__text">
+                    <div class="o-article-grid o-article-grid--with-form">
+                        <div class="o-article-grid__column-1">
                             <h2>Book an Appointment with an Artist or Advisor</h2>
                             <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
-                            <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                            <img class="u-decorative-arrow u-decorative-arrow--right" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                         </div>
-                        <div class="o-article-grid__image">
+                        <div class="o-article-grid__column-2">
                             <div class="s-forms-main-theme">
                                 <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
                                     <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">

@@ -132,7 +132,7 @@ body [type="checkbox"] {
 */
 .c-form {
     width: 100%;
-/*     max-width: 50rem; */
+    max-width: 50rem;
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
