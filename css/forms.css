@@ -497,7 +497,7 @@ textarea {
 /* GROUP SCOPE / MAIN THEME / LAYOUT
 =================================================== */
 .s-forms-main-theme {
-/*     max-width: var(--max-width-reading); */
+    max-width: var(--max-width-reading);
 }
 /* GROUP SCOPE / MAIN THEME / SPACING
 =================================================== */
