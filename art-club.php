@@ -43,7 +43,6 @@
         <div class="c-article c-article--compressed-b">
             <div class="o-article-grid">
                 <div class="o-article-grid__text">
-                    <!-- <h2>Meet Edward, your bespoke wine curator</h2> -->
                     <h2>Undiscovered emerging artists</h2>
                     <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
                     <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
@@ -91,7 +90,7 @@
                 <div class="c-gallery__item">
                     <h3 class="c-gallery__hero-title">Sungi Mlengeya</h3>
                     <p>Sungi Mlengeya’s spare, monochromatic acrylic portraits depict Black subjects, mostly women, dressed in white clothing and positioned against white backgrounds. The self-taught artist’s detailed renderings and unusual use of negative space cohere into beguiling portraits of Blackness and womanhood.</p>
-                    <p>studied finance in college and worked in banking until 2018, when she left her job to pursue painting full-time. She has exhibited in New York, London, Cape Town, and Kampala. Through her portraiture, Mlengeya thematizes self-discovery and empowerment</p>
+                    <p>Sungi has exhibited in New York, London, Cape Town, and Kampala.</p>
                     <p><a href="">Learn more</a></p>
                 </div>
                 <figure class="c-gallery__item">
@@ -114,6 +113,48 @@
                     <img src="/img/clubs/art-club/gallery/sungi-mlengeya/5.jpg" alt="t" />
                     <figcaption>At the end of the evening</figcaption>
                 </figure>
+            </div>
+            <div class="u-width-max-1">
+                <div class="c-article c-article--compressed-b">
+                    <div class="o-article-grid">
+                        <div class="o-article-grid__text">
+                            <h2>Book an Appointment with an Artist or Advisor</h2>
+                            <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                            <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                        </div>
+                        <div class="o-article-grid__image">
+                            <div class="s-forms-main-theme">
+                                <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
+                                    <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
+                                    <input type="hidden" name="_wp_http_referer" value="/login/">
+                                    <input type="hidden" name="redirect_to" value="/login/">
+                                    <div class="c-form-cols">
+                                        <div class="c-form-cols__col">
+                                            <label for="name" class="elementor-field-label">Name</label>
+                                            <input type="text" name="log" id="name" placeholder="Name">
+                                        </div>
+                                        <div class="c-form-cols__col">
+                                            <label for="user" class="elementor-field-label">Email Address</label>
+                                            <input type="text" name="log" id="user" placeholder="Email Address">
+                                        </div>
+                                        <div class="c-form-cols__col c-form-cols__col--full-width">
+                                            <label for="message" class="elementor-field-label">Message</label>
+                                            <textarea id="message"></textarea>
+                                        </div>
+                                        <div class="c-form-cols__col c-form-cols__col--full-width">
+                                            <button type="submit" name="wp-submit" class="c-btn c-btn--1">
+                                                Submit
+                                            </button>
+                                        </div>
+                                        <div class="c-form__notes c-form-cols__col c-form-cols__col--full-width">
+                                            <p>We'll get back to you in 24 hours</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div></div>

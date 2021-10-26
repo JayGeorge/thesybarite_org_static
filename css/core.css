@@ -195,6 +195,7 @@
         0 5px 5px rgb(0 0 0 / 0%), 
         0 2px 3px rgb(0 0 0 / 5%), 
         0 1px 0 rgb(0 0 0 / 6%);
+    --box-shadow-b: 0 10px 9px -2px hsla(0, 0%, 0%, 0.05);
     /* GROUP VARIABLES -- ANIMATIONS -- TRANSITIONS
     =================================================== */
     /* Molecules > Pagination > Perch > (Cross Pollinated) */
@@ -1226,16 +1227,17 @@ h2 + .o-hero-buttons {
 */
 /* HTML Example...
 
-    <div class="c-article">
+    <div class="c-article c-article--compressed-b">
         <div class="o-article-grid">
             <div class="o-article-grid__text">
                 <h2>Undiscovered emerging artists</h2>
-                <p class="c-entry-lead"><em>Florentine</em>, start your Champagne journey with a Premier Cru from Rilly-la-Montagne and progress to the Grand Cru villages,</p>
+                <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
             </div>
             <div class="o-article-grid__image">
                 <figure>
                     <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
-                    <!-- <figcaption>Edward, our expert wine curator</figcaption> -->
+                    <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
                 </figure>
             </div>
         </div>
@@ -1848,7 +1850,8 @@ body .site-logo {
 .small-title,
 .medium-title,
 .large-title {
-    max-width: var(--max-width-1);
+    /* e.g. >> /art-club */
+    max-width: var(--max-width-title);
     font-family: var(--font-family-headline);
     font-size: var(--font-size-l-2);
     line-height: var(--font-size-l-2-line-height);
@@ -1860,7 +1863,6 @@ body .site-logo {
 .large-title {
     /* Increase */
     padding-block-end: var(--spacing-l-1);
-    max-width: var(--max-width-title);
 }
 
 .medium-title {
@@ -2075,7 +2077,9 @@ body .site-logo {
     position: fixed;
     /* Don't pull above the mega menu */
     /* z-index: 1; */
-    top: 11em;
+    /* Not 11em otherwise it peaks out of the bottom of the page on e.g. >> /art-club */
+    /* top: 11em; */
+    top: 10em;
     right: 0;
     width: var(--cta-box-width);
 }

@@ -126,7 +126,7 @@
 
 .js__modalBox {
     background: white;
-    border-radius: 5px;
+    border-radius: var(--border-radius-m);
     color: black;
 }
 
