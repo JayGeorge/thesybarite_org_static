@@ -33,14 +33,14 @@
                 <h1><span>the</span>art <br/>club</h1>
             </div>
             <img src="/img/clubs/art-club.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
-            <button class="image-with-text__arrow">
+            <a href="#arrow-target" class="image-with-text__arrow">
                 <?php include 'img/svg/down-arrow.php'; ?>
-            </button>
+            </a>
             <div class="image-with-text__cta-box">
                 <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
             </div>
         </header>
-        <div class="c-article c-article--compressed-b">
+        <div id="arrow-target" class="c-article c-article--compressed-b">
             <div class="o-article-grid o-article-grid--with-image">
                 <div class="o-article-grid__column-1">
                     <h2>Undiscovered emerging artists</h2>

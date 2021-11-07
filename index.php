@@ -34,14 +34,14 @@
                     <h1><span>the</span> champagne <br/>club</h1>
                 </div>
                 <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
-                <button class="image-with-text__arrow">
+                <a href="arrow-target" class="image-with-text__arrow">
                     <?php include 'img/svg/down-arrow.php'; ?>
-                </button>
+                </a>
                 <div class="image-with-text__cta-box">
                     <p>Access unique bottles from exclusive vineyards—delivered to your door every quarter.</p>
                 </div>
             </header>
-                <div class="u-width-max-1">
+                <div id="arrow-target" class="u-width-max-1">
                     <p class="c-entry-lead">
                         <a href="#form">Sign up</a> to The Champagne Club, an exclusive community of champagne lovers, looking to expand their champagne portfolio and knowledge beyond the familiar.
                     </p>
