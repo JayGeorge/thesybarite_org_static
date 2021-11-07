@@ -51,7 +51,7 @@ textarea {
     /* =JFG. "search this website". This needs to be rem
     because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
     We don't want the placeholder font size getting too big. */
-    font-size: 0.95rem;
+    font-size: 0.93rem;
 }
 
 .site-footer [placeholder],
@@ -71,8 +71,8 @@ textarea {
 label {
     /* Fixed */
     font-size: 15px;
-    /* Override line-height set on body */
-    line-height: 1;
+    /* Override line-height set on body e.g. footer label */
+    line-height: 1.4;
 }
 
 /* purgecss start ignore */
@@ -392,11 +392,10 @@ textarea {
     float: left;
 }
 
-/* The \9 is correct apparently. https://www.google.co.uk/search?q=input%5Btype%3Dradio%5D%2C+input%5Btype%3Dcheckbox%5D+%7B+margin%3A+4px+0+0%3B+margin-top%3A+1px+%5C9%3B+line-height%3A+normal%3B+%7D&oq=input%5Btype%3Dradio%5D%2C+input%5Btype%3Dcheckbox%5D+%7B+margin%3A+4px+0+0%3B+margin-top%3A+1px+%5C9%3B+line-height%3A+normal%3B+%7D&aqs=chrome..69i57.552j0j7&sourceid=chrome&es_sm=91&ie=UTF-8 */
 [type="radio"],
 [type="checkbox"] {
-    /* margin: 4px 0 0; */
-    margin-top: 1px \9;
+    /* e.g. footer */
+    margin-block-start: 0.25rem;
     line-height: normal;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / INPUT TYPES / DECORATION
@@ -531,7 +530,7 @@ textarea {
 }
 
 .s-forms-main-theme label {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .s-forms-main-theme .c-form__notes {

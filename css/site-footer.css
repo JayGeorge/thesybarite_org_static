@@ -46,7 +46,7 @@
 }
 
 .site-footer nav ul {
-    gap: var(--spacing-s-x);
+    gap: var(--spacing-s-x-x);
 }
 
 .site-footer__heading {

@@ -76,6 +76,8 @@
     =================================================== */
     /* Dark to light */
     --colour-black: black;
+    /* Just take the edge off for neue-haas-unica because its strokes contrast slightly too much against Orpheus */
+    --colour-black-off: hsl(0deg 0% 10%);
     /* e.g. Search in the mega menu. Made lighter at later media query */
     --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
     --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
@@ -120,37 +122,15 @@
     --font-size-reading-line-height: 1.5;
     /* Where you may want to space the line-height slightly e.g. You may want to use -spaced because a paragraph contains short information and links, so you'd like to make it breathe a bit more. Use _sparingly_ since it exceeds the max recommended line-height of 1.5 */
     --font-size-spaced-line-height: 1.6;
-
-    --font-size-s-x-x: 0.707em;
-
-    /* e.g. Outside scale. Sometimes I go outside scales because of my font-bump adjustmemts */
-    /* Decreased at a later root breakpoint */
-    /* --font-size-s-x: 0.9em; */
-    /* -- */
-    --font-size-s-x: 1em;
-    --font-size-s-x-line-height: 1.3;
-    --font-size-s-x-1: 1rem;
-    --font-size-s: 1.1em;
-    --font-size-s-line-height: 1.35;
-    /* --font-size-s-2: clamp(1.3em, 7vw, 1.5em); */
-    /* --font-size-s-2-line-height: 1.3; */
-    /* -- */
-
-    /* Augmented Fourth */
-    --font-size-s-1: clamp(1.35em, 4vw, 1.414em);
-    --font-size-s-1-line-height: 1.3;
  
-
     /* Golden Ratio */
-    --font-size-s-x-x-x: 0.382em;
-    /* Custom e.g. >> /champagne-club > .feature-columns__stats */
     /* e.g. Mega Menu */
-    --font-size-s-x-x-custom: 0.75rem;
-    --font-size-s-x-x-rem: 0.618rem;
+    --font-size-s-x-x: 0.75rem;
 
     /* Custom, 0.8rem is too small */
-    --font-size-s-x: 0.85em;
-    --font-size-s-x-rem: 0.85rem;
+    --font-size-s-x: 0.93em;
+    --font-size-s-x-line-height: 1.3;
+    --font-size-s-x-rem: 0.93rem;
 
     /* Custom */
     --font-size-s: 1.1em;
@@ -367,7 +347,7 @@ figure img {
 }
 
 figcaption {
-    font-size: var(--font-size-s-x);
+    font-size: var(--font-size-s-x-x);
     color: hsl(0deg 0% 46%);
 }
 
@@ -394,7 +374,7 @@ p,
 ol,
 ul {
     line-height: var(--font-size-reading-line-height);
-/*     font-size: 0.9em; */
+    font-size: var(--font-size-s-x);
 }
 
 /* Nested lists */
@@ -583,7 +563,7 @@ nav {
     width: 100%;
     letter-spacing: var(--letter-spacing-s);
     text-transform: uppercase;
-    font-size: var(--font-size-s-x-x-custom);
+    font-size: var(--font-size-s-x-x);
 }
 
 /* e.g. mega menu */
@@ -1070,6 +1050,8 @@ button,
     font-weight: var(--font-family-main-weight-strong);
     font-size: 0.8rem;
     font-family: var(--font-family-main);
+    /* Override user-agent styling */
+    border-radius: 0;
 }
 
 .c-site-header__cta--fixed {
@@ -1340,7 +1322,7 @@ body .site-logo {
 .site-logo div {
     font-family: var(--font-family-main);
     text-transform: uppercase;
-    font-size: var(--font-size-s-x-x-rem);
+    font-size: 0.58rem;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / ELEMENTOR OVERRIDES
 =================================================== */
@@ -1515,7 +1497,7 @@ body .site-logo {
 }
 
 .c-site-header .c-btn {
-    font-size: var(--font-size-s-x-x-custom);
+    font-size: var(--font-size-s-x-x);
 }
 
 .c-site-header--light-background .c-btn {
@@ -1581,7 +1563,7 @@ body .site-logo {
 
     .c-site-header .c-btn {
         /* Same as nav */
-        font-size: var(--font-size-s-x-x-custom);
+        font-size: var(--font-size-s-x-x);
         font-weight: initial;
     }
 }
@@ -1622,7 +1604,7 @@ body .site-logo {
 =================================================== */
 .c-site-header__nav a {
     text-transform: uppercase;
-    font-size: var(--font-size-s-x-x-custom);
+    font-size: var(--font-size-s-x-x);
     line-height: unset;
 }
 
@@ -1871,6 +1853,7 @@ body .site-logo {
 =================================================== */
 .c-eyebrow-heading {
     font-size: var(--font-size-s);
+    font-size: var(--font-size-s-x);
     font-family: var(--font-family-main);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-m);
@@ -1997,7 +1980,7 @@ body .site-logo {
 }
 
 .feature-columns__stats {
-    font-size: var(--font-size-s-x-x-custom);
+    font-size: var(--font-size-s-x-x);
     text-transform: uppercase;
     letter-spacing: 0.2px;
 }

@@ -225,7 +225,7 @@ body .c-mega-menu__back-button {
 
 .c-mega-menu h3 {
     font-family: var(--font-family-main);
-    font-size: var(--font-size-s-x-x-custom);
+    font-size: var(--font-size-s-x-x);
     font-weight: var(--font-family-main-weight-strong);
     line-height: var(--font-size-m-line-height);
 }

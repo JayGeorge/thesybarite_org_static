@@ -23,9 +23,9 @@
         <h2 class="c-eyebrow-heading">Featured</h2>
         <div class="c-gallery">
             <div class="c-gallery__item">
-                <h3 class="c-gallery__hero-title">Moussa Traoré</h3>
-                <p>Moussa Traoré’s bold paintings feature otherworldly figures that appear to possess both human and alien characteristics. Set on canvas doused in rich color or inky black, his striking protagonists are carefully portrayed in neutral colors and camouflage-like patterns, with a level of detail that captivates the viewer and calls for close looking.</p>
-                <p>Traoré was recently featured in a three-person exhibition at <a href="">Galerie Atiss Dakar in Senegal</a>, as well as the gallery’s virtual presentation for 1-54 Contemporary African Art Fair New York 2020.</p>
+                <h3 class="c-gallery__hero-title">Moussa TraorÃ©</h3>
+                <p>Moussa TraorÃ©â€™s bold paintings feature otherworldly figures that appear to possess both human and alien characteristics. Set on canvas doused in rich color or inky black, his striking protagonists are carefully portrayed in neutral colors and camouflage-like patterns, with a level of detail that captivates the viewer and calls for close looking.</p>
+                <p>TraorÃ© was recently featured in a three-person exhibition at <a href="">Galerie Atiss Dakar in Senegal</a>, as well as the galleryâ€™s virtual presentation for 1-54 Contemporary African Art Fair New York 2020.</p>
                 <p><a href="" class="c-link-button">Learn more</a></p>
             </div>
             <figure class="c-gallery__item">
@@ -42,7 +42,7 @@
             </figure>
             <figure class="c-gallery__item">
                 <img src="/img/clubs/art-club/gallery/moussa-traore/5.jpg" alt="t" />
-                <figcaption>Sans tête</figcaption>
+                <figcaption>Sans tÃªte</figcaption>
             </figure>
             <figure class="c-gallery__item">
                 <img src="/img/clubs/art-club/gallery/moussa-traore/3.jpg" alt="t" />
@@ -90,8 +90,7 @@
 }
 
 .c-gallery p {
-/*     font-size: var(--font-size-s-x); */
-    font-size: 0.93em;
+    color: var(--colour-black-off);
     padding-inline-end: var(--spacing-s-2);
 }
 
