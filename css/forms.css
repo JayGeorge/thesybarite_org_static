@@ -187,6 +187,11 @@ input + .c-form__notes {
 .c-form--wide {
     max-width: 80rem;
 }
+
+.c-form--hidden-labels input {
+    /* e.g. >> footer */
+    padding-inline-start: 0;
+}
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / LAYOUT / COLUMNS
 =================================================== */
 /* HTML Example...
@@ -216,7 +221,7 @@ input + .c-form__notes {
 
 .c-form-cols {
     display: grid;
-/*     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 1em;
 }
 
