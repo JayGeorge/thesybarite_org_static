@@ -90,6 +90,8 @@
 }
 
 .c-gallery p {
+/*     font-size: var(--font-size-s-x); */
+    font-size: 0.93em;
     padding-inline-end: var(--spacing-s-2);
 }
 

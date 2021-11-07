@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js s-dark-cover-image" lang="en">
 
 <?php 
     // "Include from root" so that we can use includes subfolders
@@ -32,7 +32,7 @@
             <div class="image-with-text__text">
                 <h1><span>the</span>art <br/>club</h1>
             </div>
-            <img src="/img/2.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+            <img src="/img/clubs/art-club.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
             <button class="image-with-text__arrow">
                 <?php include 'img/svg/down-arrow.php'; ?>
             </button>

@@ -101,6 +101,7 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- FONTS
     =================================================== */
     --font-family-main: futura-pt, futura, sans-serif;
+    --font-family-main: neue-haas-unica, sans-serif;
     --font-family-headline: orpheuspro, serif;
     /* https://css-tricks.com/snippets/css/system-font-stack/ */
     --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -206,7 +207,7 @@
     --animation-transition-fast: all 0.15s ease-in-out 0s;
     /* GROUP VARIABLES -- OTHER
     =================================================== */
-    --cta-box-width: 17rem;
+    --cta-box-width: 18.5rem;
     /* Custom to align with the bottom of the Sybarite logo */
     --nav-top: 2.2rem;
 }
@@ -393,6 +394,7 @@ p,
 ol,
 ul {
     line-height: var(--font-size-reading-line-height);
+/*     font-size: 0.9em; */
 }
 
 /* Nested lists */
