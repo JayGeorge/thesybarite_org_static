@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js s-dark-cover-image" lang="en">
+<html class="no-js" lang="en">
 
 <?php 
     // "Include from root" so that we can use includes subfolders
@@ -20,7 +20,7 @@
 <?php /* for modules, use the below to link to your stylesheet */ ?>
 <?php /* <link rel="stylesheet" href="style.css"> */?>
 
-<body>
+<body class="s-dark-cover-image">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->

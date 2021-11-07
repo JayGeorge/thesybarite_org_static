@@ -1569,6 +1569,12 @@ body .site-logo {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION / DARK COVER IMAGE
 =================================================== */
+/* Notes...
+
+    This class needs to be added below the HTML element e.g. the body element — because the state changes depending on the HTML js--megaMenuIsOpen state 
+
+*/
+
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
     .c-site-header__nav a,
