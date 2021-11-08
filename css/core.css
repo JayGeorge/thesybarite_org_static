@@ -1320,9 +1320,8 @@ body .site-logo {
 }
 
 .site-logo div {
-    font-family: var(--font-family-main);
     text-transform: uppercase;
-    font-size: 0.58rem;
+    font-size: 0.65rem;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / ELEMENTOR OVERRIDES
 =================================================== */
