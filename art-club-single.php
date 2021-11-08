@@ -12,6 +12,7 @@
 <?php
     $page_title = "Art Club";
     $current_nav = 'home';
+    $header_light_background = 'yes';
     $some_variable_to_pass_into_the_include = 'aaaaaaaaaaaaaaaaaaaa';
     // then you just echo $some_variable_to_pass_into_the_include inside the include
     include '_inc/head.php';
@@ -20,41 +21,33 @@
 <?php /* for modules, use the below to link to your stylesheet */ ?>
 <?php /* <link rel="stylesheet" href="style.css"> */?>
 
-<body class="s-dark-cover-image">
+<body>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <?php include '_inc/header.php'; ?>
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
-    <main tabindex="-1" id="main">
-        <header class="image-with-text">
-            <div class="image-with-text__text">
-                <h1><span>the</span>art <br/>club</h1>
-            </div>
-            <img src="/img/clubs/art-club.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
-            <a href="#arrow-target" class="image-with-text__arrow">
-                <?php include 'img/svg/down-arrow.php'; ?>
-            </a>
-            <div class="c-cta-box">
-                <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
-            </div>
-        </header>
-        <div id="arrow-target" class="c-article c-article--compressed-b">
-            <div class="o-article-grid o-article-grid--with-image">
+    <main tabindex="-1" id="main" class="c-main-with-no-header">
+        <header class="c-article c-article--compressed-b">
+            <div class="o-article-grid o-article-grid--with-image o-article-grid--with-image-intro">
                 <div class="o-article-grid__column-1">
-                    <h2>Undiscovered emerging artists</h2>
+                    <h2>Undiscovered artists gallery</h2>
                     <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
                     <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                 </div>
                 <div class="o-article-grid__column-2">
-                    <figure>
-                        <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
-                        <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
+                    <figure class="c-image-with-price c-image-with-price--right">
+                        <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="Something" />
+                        <figcaption>Build an empire, leave a legacy by Hamid Nortey</figcaption>
                     </figure>
+                    <div class="c-image-with-price__price">£30,000</div>
+                    <div class="test">
+                    <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
         <?php $filename = 'gallery'; include '_inc/_stylesheet.php'; ?>
         <?php $filename = 'plugins/fancybox'; include '_inc/_stylesheet.php'; ?>
         <?php $filename = 'plugins/fancybox-custom'; include '_inc/_stylesheet.php'; ?>
