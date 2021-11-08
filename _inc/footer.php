@@ -37,7 +37,7 @@
     <div class="js__modalBox">
         <button class="js__closeModal c-close-button">
             <svg aria-labelledby="title-modal-cancel" role="img" class="c-modal-close" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path>
+                <g fill-rule="nonzero"><path d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 .707107 -1.332 1.332 81.2407 -51.9469)"/><path d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 -.707107 1.332 1.332 -51.9584 18.7468)"/></g>
             </svg>
         </button>
         <div class="js__modalBox__inner-scroll">

@@ -1,0 +1,11 @@
+:root {
+    --fancybox-bg: var(--colour-black-transparent-1);
+}
+
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after {
+    border-color: white;
+}
+
+[data-fancybox] {
+    cursor: pointer;
+}

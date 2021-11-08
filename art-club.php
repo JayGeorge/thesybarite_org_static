@@ -57,23 +57,25 @@
         </div>
         <?php $filename = 'gallery'; include '_inc/_stylesheet.php'; ?>
         <?php $filename = 'plugins/fancybox'; include '_inc/_stylesheet.php'; ?>
+        <?php $filename = 'plugins/fancybox-custom'; include '_inc/_stylesheet.php'; ?>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script>
-            Fancybox.bind('[data-fancybox="gallery"]', {
-                animated: false,
-                showClass: false,
-                hideClass: false,
-                
-                click: false,
-
+            Fancybox.bind('#gallery-1', {
                 dragToClose: false,
-
                 Image: {
                     zoom: true,
                 },
-
                 Toolbar: {
-                    display: [{ id: "counter", position: "center" }, { id: "close", html: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" tabindex="-1"><path fill="#fff" d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path></svg>' }],
+                    display: [{ id: "counter", position: "center" }, { id: "close", html: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" tabindex="-1"><g fill-rule="nonzero"><path fill="#fff" d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 .707107 -1.332 1.332 81.2407 -51.9469)"/><path fill="#fff" d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 -.707107 1.332 1.332 -51.9584 18.7468)"/></g></svg>' }],
+                },
+            });
+            Fancybox.bind('#gallery-2', {
+                dragToClose: false,
+                Image: {
+                    zoom: true,
+                },
+                Toolbar: {
+                    display: [{ id: "counter", position: "center" }, { id: "close", html: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" tabindex="-1"><g fill-rule="nonzero"><path fill="#fff" d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 .707107 -1.332 1.332 81.2407 -51.9469)"/><path fill="#fff" d="m1.832 46.562h96.312v6.875h-96.312z" transform="matrix(.707107 -.707107 1.332 1.332 -51.9584 18.7468)"/></g></svg>' }],
                 },
             });
         </script>
@@ -86,23 +88,23 @@
                     <p><a href="" class="c-link-button">Learn more</a></p>
                 </div>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
                     <figcaption>Early morning selfie</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Am I looking good" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
                     <figcaption>Am I looking good</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Am almost done" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
                     <figcaption>Am almost done</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/yaounde.png" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Yaounde" src="/img/clubs/art-club/gallery/ajarb-ategwa/yaounde.png" alt="t" />
                     <figcaption>Yaounde</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Douala" src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
                     <figcaption>Douala</figcaption>
                 </figure>
             </div>
@@ -115,11 +117,11 @@
                     <p><a href="">Learn more</a></p>
                 </div>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="2" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                    <img id="gallery-2" data-fancybox="gallery" data-caption="Build an empire, leave a legacy" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
                     <figcaption>Build an empire, leave a legacy</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img data-fancybox="gallery" rel="2" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
+                    <img id="gallery-2" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
                     <figcaption>Deep Summer is when laziness finds respectability</figcaption>
                 </figure>
             </div>
