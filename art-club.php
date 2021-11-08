@@ -56,6 +56,27 @@
             </div>
         </div>
         <?php $filename = 'gallery'; include '_inc/_stylesheet.php'; ?>
+        <?php $filename = 'plugins/fancybox'; include '_inc/_stylesheet.php'; ?>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script>
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                animated: false,
+                showClass: false,
+                hideClass: false,
+                
+                click: false,
+
+                dragToClose: false,
+
+                Image: {
+                    zoom: true,
+                },
+
+                Toolbar: {
+                    display: [{ id: "counter", position: "center" }, { id: "close", html: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" tabindex="-1"><path fill="#fff" d="m91.668 19.172l-10.844-10.832-30.828 30.82-30.824-30.82-10.84 10.836 30.824 30.824-30.824 30.824 10.84 10.836 30.824-30.82 30.828 30.82 10.844-10.836-30.828-30.824z"></path></svg>' }],
+                },
+            });
+        </script>
         <div class="u-panel-white">
             <h2 class="c-eyebrow-heading">Featured</h2>
             <div class="c-gallery">
@@ -65,23 +86,23 @@
                     <p><a href="" class="c-link-button">Learn more</a></p>
                 </div>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
+                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
                     <figcaption>Early morning selfie</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
+                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
                     <figcaption>Am I looking good</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
+                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
                     <figcaption>Am almost done</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/ajarb-ategwa/yaounde.png" alt="t" />
+                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/yaounde.png" alt="t" />
                     <figcaption>Yaounde</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
+                    <img data-fancybox="gallery" rel="1" src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
                     <figcaption>Douala</figcaption>
                 </figure>
             </div>
@@ -94,64 +115,15 @@
                     <p><a href="">Learn more</a></p>
                 </div>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                    <img data-fancybox="gallery" rel="2" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
                     <figcaption>Build an empire, leave a legacy</figcaption>
                 </figure>
                 <figure class="c-gallery__item">
-                    <img src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
+                    <img data-fancybox="gallery" rel="2" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
                     <figcaption>Deep Summer is when laziness finds respectability</figcaption>
                 </figure>
             </div>
             <div class="u-width-max-1">
-            <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
-      //  JavaScript will go here
-      Fancybox.bind('[data-fancybox="gallery"]', {
-  animated: false,
-  showClass: false,
-  hideClass: false,
-
-  click: false,
-
-  dragToClose: false,
-
-  Image: {
-    zoom: false,
-  },
-
-  Toolbar: {
-    display: [{ id: "counter", position: "center" }, "close"],
-  },
-});
-    </script>
-    <h1 class="mt-12 mb-8 px-6 text-center text-lg md:text-2xl font-semibold">
-  Product gallery with video, customized top bar and thumbnails
-</h1>
-
-<div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-  <a data-fancybox="gallery" href="/static/product_2_1.jpg">
-    <img width="200" src="/static/product_2_1.jpg" />
-  </a>
-  <a data-fancybox="gallery" href="/static/product_2_2.jpg">
-    <img width="200" src="/static/product_2_2.jpg" />
-  </a>
-  <a data-fancybox="gallery" href="/static/product_2_3.jpg">
-    <img width="200" src="/static/product_2_3.jpg" />
-  </a>
-  <a data-fancybox="gallery" href="/static/product_2_4.jpg">
-    <img width="200" src="/static/product_2_4.jpg" />
-  </a>
-
-  <a
-    class="hidden"
-    data-fancybox="gallery"
-    href="https://www.youtube.com/watch?v=5AwdkGKmZ0I"
-  ></a>
-</div>
                 <div class="c-article c-article--compressed-b">
                     <div class="o-article-grid o-article-grid--with-form">
                         <div class="o-article-grid__column-1">

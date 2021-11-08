@@ -2089,6 +2089,10 @@ body .site-logo {
 /*     text-shadow: 1px 1px 10px hsl(60deg 5% 8%); */
 }
 
+[data-gallery="gallery"][rel="2"] {
+    border: 3px solid red!important;
+}
+
 /* .image-with-text__text :is(h1, h2) {
     max-width: var(--max-width-title);
 } */
