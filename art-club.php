@@ -103,7 +103,55 @@
                 </figure>
             </div>
             <div class="u-width-max-1">
-                
+            <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      //  JavaScript will go here
+      Fancybox.bind('[data-fancybox="gallery"]', {
+  animated: false,
+  showClass: false,
+  hideClass: false,
+
+  click: false,
+
+  dragToClose: false,
+
+  Image: {
+    zoom: false,
+  },
+
+  Toolbar: {
+    display: [{ id: "counter", position: "center" }, "close"],
+  },
+});
+    </script>
+    <h1 class="mt-12 mb-8 px-6 text-center text-lg md:text-2xl font-semibold">
+  Product gallery with video, customized top bar and thumbnails
+</h1>
+
+<div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+  <a data-fancybox="gallery" href="/static/product_2_1.jpg">
+    <img width="200" src="/static/product_2_1.jpg" />
+  </a>
+  <a data-fancybox="gallery" href="/static/product_2_2.jpg">
+    <img width="200" src="/static/product_2_2.jpg" />
+  </a>
+  <a data-fancybox="gallery" href="/static/product_2_3.jpg">
+    <img width="200" src="/static/product_2_3.jpg" />
+  </a>
+  <a data-fancybox="gallery" href="/static/product_2_4.jpg">
+    <img width="200" src="/static/product_2_4.jpg" />
+  </a>
+
+  <a
+    class="hidden"
+    data-fancybox="gallery"
+    href="https://www.youtube.com/watch?v=5AwdkGKmZ0I"
+  ></a>
+</div>
                 <div class="c-article c-article--compressed-b">
                     <div class="o-article-grid o-article-grid--with-form">
                         <div class="o-article-grid__column-1">
