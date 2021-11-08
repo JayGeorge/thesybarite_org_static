@@ -1271,11 +1271,11 @@ h2 + .o-hero-buttons {
     max-width: var(--max-width-reading-short);
 }
 
-/* --mq-article-breakpoint-1 */
+/* --mq-article-breakpoint-1-after */
 @media (min-width: 1024px) {
     .o-intro-grid__inner {
         display: grid;
-        gap: var(--spacing-l-4);
+        gap: var(--spacing-l) var(--spacing-l-4);
         grid-template-columns: 55fr 45fr;
     }
 
@@ -1286,24 +1286,37 @@ h2 + .o-hero-buttons {
         align-items: end;
     }
 
+    .c-main-with-no-header .o-intro-grid__column-2 {
+        top: 0;
+    }
+}
+
+/* --mq-intro-grid-breakpoint-1 */
+@media (min-width: 1150px) {
     .o-intro-grid .o-intro-grid__column-3 {
         position: absolute;
         right: 0;
         bottom: var(--spacing-l);
         width: 17%;
     }
-
-    .c-main-with-no-header .o-intro-grid__column-2 {
-        top: 0;
-    }
 }
 .o-intro-grid p {
     /* e.g. .c-entry-lead */
     padding-inline: 0;
 }
-
-.o-intro-grid__column-3 {
-    font-size: var(--font-size-s-x-x);
+/* GROUP OBJECTS / INTRO GRID / DECORATION
+=================================================== */
+/* --mq-article-breakpoint-1-before */
+@media (max-width: 1023px) {
+    .o-intro-grid__column-3 {
+        padding-block-start: var(--spacing-l);
+    }
+}
+/* --mq-intro-grid-breakpoint-1 */
+@media (min-width: 1150px) {
+    .o-intro-grid__column-3 {
+        font-size: var(--font-size-s-x-x);
+    }
 }
 
 
@@ -2380,7 +2393,7 @@ body .site-logo {
 /* GROUP COMPONENTS / IMAGE WITH PRICE / DECORATION
 =================================================== */
 .c-image-with-price__price {
-    font-size: var(--font-size-s-x-x);
+    font-size: var(--font-size-s-x);
 }
 
 
