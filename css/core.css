@@ -1218,6 +1218,97 @@ h2 + .o-hero-buttons {
 
 
 
+/* GROUP OBJECTS / INTRO GRID
+=================================================== */
+/* Notes...
+
+	- Similar to .o-article-grid but specifically for an intro with an image e.g. /art-club single
+
+*/
+/* HTML Example...
+
+    <div class="c-article">
+        <div class="o-intro-grid o-intro-grid--with-image">
+            <div class="o-intro-grid__column-1">
+                <h2>Undiscovered emerging artists</h2>
+                <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+            </div>
+            <div class="o-intro-grid__column-2">
+                <figure>
+                    <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
+                    <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+*/
+
+/* Modifiers...
+
+    .o-intro-grid--with-image <-- the second column contains an image
+    .o-intro-grid--with-form <-- the second column contains a form
+
+*/
+/* GROUP OBJECTS / INTRO GRID / LAYOUT
+=================================================== */
+.o-intro-grid {
+    position: relative;
+    max-width: var(--max-width-1);
+    margin-inline: auto;
+}
+
+.o-intro-grid__inner {
+    max-width: var(--max-width-columns);
+}
+
+.o-intro-grid__column-1 {
+    max-width: var(--max-width-reading);
+}
+
+.o-intro-grid--with-image .o-intro-grid__column-2 {
+    max-width: var(--max-width-reading-short);
+}
+
+/* --mq-article-breakpoint-1 */
+@media (min-width: 1024px) {
+    .o-intro-grid__inner {
+        display: grid;
+        gap: var(--spacing-l-4);
+        grid-template-columns: 55fr 45fr;
+    }
+
+    .o-intro-grid .o-intro-grid__column-2 {
+        position: relative;
+        top: var(--spacing-l-2);
+        display: grid;
+        align-items: end;
+    }
+
+    .o-intro-grid .o-intro-grid__column-3 {
+        position: absolute;
+        right: 0;
+        bottom: var(--spacing-l);
+        width: 17%;
+    }
+
+    .c-main-with-no-header .o-intro-grid__column-2 {
+        top: 0;
+    }
+}
+.o-intro-grid p {
+    /* e.g. .c-entry-lead */
+    padding-inline: 0;
+}
+
+.o-intro-grid__column-3 {
+    font-size: var(--font-size-s-x-x);
+}
+
+
+
+
 /* GROUP OBJECTS / ARTICLE GRID
 =================================================== */
 /* Notes...
@@ -1293,18 +1384,6 @@ h2 + .o-hero-buttons {
 .o-article-grid p {
     /* e.g. .c-entry-lead */
     padding-inline: 0;
-}
-
-.test {
-    position: absolute;
-    width: 18em;
-    left: 37em;
-    bottom: 3em;
-    font-size: var(--font-size-s-x-x);
-}
-
-.test p {
-    padding-block-end: 0;
 }
 
 

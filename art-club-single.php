@@ -30,20 +30,22 @@
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main" class="c-main-with-no-header">
         <header class="c-article c-article--compressed-b">
-            <div class="o-article-grid o-article-grid--with-image o-article-grid--with-image-intro">
-                <div class="o-article-grid__column-1">
-                    <h2>Undiscovered artists gallery</h2>
-                    <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
-                    <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
-                </div>
-                <div class="o-article-grid__column-2">
-                    <figure class="c-image-with-price c-image-with-price--right">
-                        <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="Something" />
-                        <figcaption>Build an empire, leave a legacy by Hamid Nortey</figcaption>
-                    </figure>
-                    <div class="c-image-with-price__price">£30,000</div>
-                    <div class="test">
-                    <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
+            <div class="o-intro-grid o-intro-grid--with-image">
+                <div class="o-intro-grid__inner">
+                    <div class="o-intro-grid__column-1">
+                        <h2>Undiscovered artists gallery</h2>
+                        <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                        <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                    </div>
+                    <div class="o-intro-grid__column-2">
+                        <figure class="c-image-with-price c-image-with-price--right">
+                            <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="Something" />
+                            <figcaption>Build an empire, leave a legacy by Hamid Nortey</figcaption>
+                        </figure>
+                        <div class="c-image-with-price__price">£30,000</div>
+                    </div>
+                    <div class="o-intro-grid__column-3">
+                        <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                     </div>
                 </div>
             </div>
