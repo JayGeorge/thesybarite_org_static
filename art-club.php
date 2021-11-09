@@ -40,7 +40,7 @@
                 <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
             </div>
         </header>
-        <div id="arrow-target" class="c-article c-article--compressed-b">
+        <div id="arrow-target" class="c-article c-article--compressed-b-1">
             <div class="o-article-grid o-article-grid--with-image">
                 <div class="o-article-grid__column-1">
                     <h2>Undiscovered emerging artists</h2>
@@ -48,10 +48,12 @@
                     <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                 </div>
                 <div class="o-article-grid__column-2">
+                    <a href="/art-club-single.php">
                     <figure>
                         <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
                         <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
                     </figure>
+                    </a>
                 </div>
             </div>
         </div>
@@ -126,7 +128,7 @@
                 </figure>
             </div>
             <div class="u-width-max-1">
-                <div class="c-article c-article--compressed-b">
+                <div class="c-article c-article--compressed-b-1">
                     <div class="o-article-grid o-article-grid--with-form">
                         <div class="o-article-grid__column-1">
                             <h2>Book an Appointment with an Artist or Advisor</h2>

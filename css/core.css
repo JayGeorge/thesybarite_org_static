@@ -52,7 +52,7 @@
     /* GROUP VARIABLES -- SPACING -- ICONS
     =================================================== */
     --spacing-icon-s: 0.2rem;
-    --spacing-icon-m: 0.5rem;
+    --spacing-icon-m: 0.6rem;
     /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
     =================================================== */
     /* From lowest to highest value */
@@ -339,6 +339,8 @@ blockquote {
 figure {
     margin-inline-start: 0;
     margin-inline-end: 0;
+    /* e.g. >> /art-club-single */
+    margin-block-end: var(--spacing-s);
 }
 
 figure img {
@@ -346,7 +348,8 @@ figure img {
     margin-block-end: var(--spacing-s);
 }
 
-figcaption {
+figcaption,
+.c-figcaption {
     font-size: var(--font-size-s-x-x);
     color: hsl(0deg 0% 46%);
 }
@@ -888,7 +891,7 @@ a {
     /* e.g. >> /art-club */
     text-decoration-color: hsl(0deg 0% 0% / 25%);
     /* e.g. >> /art-club */
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.25em;
 }
 
 .c-link-button {
@@ -1119,8 +1122,20 @@ button.c-btn--1 {
 summary.c-btn--2,
 .c-btn--2 a,
 button.c-btn--2 {
-    border: 2px solid black;
+    /* e.g. >> /art-club-single .c-btn--s */
+    border: 3px solid black;
     font-size: var(--font-size-s-x);
+}
+
+.c-btn-text {
+    margin-inline-end: var(--spacing-l);
+    /* e.g. >> /art-club-single */
+    font-size: var(--font-size-s-x);
+}
+
+.c-btn--s a {
+    padding: 8px 24px;
+    font-size: var(--font-size-s-x-x);
 }
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / ACCESSIBILITY / HOVER
 =================================================== */
@@ -1271,6 +1286,11 @@ h2 + .o-hero-buttons {
     max-width: var(--max-width-reading-short);
 }
 
+.o-intro-grid .o-icon-row {
+    /* e.g. >> /art-club-single */
+    align-items: flex-end;
+}
+
 /* --mq-article-breakpoint-1-after */
 @media (min-width: 1024px) {
     .o-intro-grid__inner {
@@ -1331,7 +1351,7 @@ h2 + .o-hero-buttons {
 */
 /* HTML Example...
 
-    <div class="c-article c-article--compressed-b">
+    <div class="c-article c-article--compressed-b-1">
         <div class="o-article-grid o-article-grid--with-image">
             <div class="o-article-grid__column-1">
                 <h2>Undiscovered emerging artists</h2>
@@ -1387,16 +1407,25 @@ h2 + .o-hero-buttons {
         display: grid;
         align-items: end;
     }
-
-    .c-main-with-no-header .o-article-grid__column-2 {
-        top: 0;
-    }
 }
 /* GROUP OBJECTS / ARTICLE GRID / SPACING
 =================================================== */
 .o-article-grid p {
     /* e.g. .c-entry-lead */
     padding-inline: 0;
+}
+
+
+
+
+/* GROUP OBJECTS / ICON ROW
+=================================================== */
+/* Tiny object e.g. e.g. >> /art-club-single */
+.o-icon-row {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-s-1);
+   font-family: var(--font-family-headline);
 }
 
 
@@ -1615,10 +1644,14 @@ body .site-logo {
 .c-site-header nav :is(svg, [src*=".svg"]),
 /* e.g. flags */
 .c-mega-menu__grid [src*=".svg"] {
-    position: relative;
-    top: -0.1em;
     /* Increase */
     font-size: 1rem;
+}
+
+.c-mega-menu__grid [src*=".svg"] {
+    position: relative;
+    /* e.g. flags */
+    top: -0.1em;
 }
 
 /* Exceptions */
@@ -1880,8 +1913,12 @@ body .site-logo {
     padding-block-end: calc(var(--spacing-l-4) + var(--spacing-l));
 }
 
-.c-article--compressed-b {
+.c-article--compressed-b-1 {
     padding-block-end: var(--spacing-l-4);
+}
+
+.c-article--compressed-b-2 {
+    padding-block-end: var(--spacing-l-3);
 }
 /* GROUP COMPONENTS / ARTICLE / DECORATION
 =================================================== */
@@ -2373,26 +2410,16 @@ body .site-logo {
 
 
 
-/* GROUP COMPONENTS / IMAGE WITH PRICE
+/* GROUP COMPONENTS / PRICE
 =================================================== */
 /* Notes...
 
 	- Used on art gallery
 
 */
-/* HTML Example...
-
-*/
-/* GROUP COMPONENTS / IMAGE WITH PRICE / LAYOUT
-=================================================== */
-/* GROUP COMPONENTS / IMAGE WITH PRICE / SPACING
-=================================================== */
-.c-image-with-price figcaption {
-    padding-block-end: var(--spacing-s);
-}
 /* GROUP COMPONENTS / IMAGE WITH PRICE / DECORATION
 =================================================== */
-.c-image-with-price__price {
+.c-price {
     font-size: var(--font-size-s-x);
 }
 

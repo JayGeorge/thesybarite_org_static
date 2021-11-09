@@ -69,6 +69,10 @@
     padding-inline: var(--spacing-l);
     padding-block: var(--spacing-l) var(--spacing-l-4);
 }
+
+.c-gallery__item .o-icon-row {
+    padding-block-start: var(--spacing-s);
+}
 /* GROUP COMPONENTS / GALLERY / DECORATION
 =================================================== */
 .c-gallery {
@@ -82,6 +86,12 @@
     left: var(--spacing-l);
     width: calc(100% - var(--spacing-l) * 2);
     border-block-start: 1px solid var(--colour-grey-light-2);
+}
+
+.c-gallery__title {
+    font-size: var(--font-size-s);
+    color: var(--colour-black-off);
+    font-family: var(--font-family-headline);
 }
 
 .c-gallery__hero-title {
