@@ -271,6 +271,25 @@
 audio,canvas,iframe,img,svg,video {
     vertical-align: middle;
 }
+/* GROUP RESET / ELEMENTOR
+=================================================== */
+body {
+    -webkit-font-smoothing:unset;
+    -moz-osx-font-smoothing:unset;
+}
+/* GROUP ELEMENTS
+=================================================== */
+body,
+body p,
+/* e.g. >> Home */
+.elementor-text-editor {
+    font-family: var(--font-family-main)!important;
+}
+
+/* e.g. >> Home */
+.elementor-element-3af9d35a {
+    font-weight: var(--font-family-main-weight-strong);
+}
 /* GROUP RESET / FRAMEWORK / NORMALISE - 2020-03-09 - https://necolas.github.io/normalize.css
 =================================================== */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -481,8 +500,10 @@ h2,
 * > h1,
 * > .h1,
 * + h2,
-* + .h2,
-article + article {
+* + .h2
+/* Affects homepage Elementor */
+/* , article + article */
+ {
     padding-block-start: var(--spacing-l);
 }
 /* GROUP ELEMENTS / FRAMEWORK / HEADINGS / LOW PRIORITY / VERTICAL SPACING
@@ -1486,10 +1507,19 @@ body .site-logo {
 */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
-.c-site-header-wrapper {
+.c-site-header-wrapper,
+.home.elementor-page .c-site-header-wrapper {
     position: absolute;
     z-index: 1;
     width: 100%;
+}
+
+/* Exceptions */
+/* e.g. >> /experiences/exclusive-reopening-offer-at-haritha-villas-spa/. */
+.single-experiences .c-site-header-wrapper,
+/* e.g. >> /international/ */
+.elementor-page .c-site-header-wrapper {
+    position: relative;
 }
 
 .c-site-header {
