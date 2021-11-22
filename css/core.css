@@ -279,13 +279,6 @@ body {
 }
 /* GROUP ELEMENTS
 =================================================== */
-body,
-body p,
-/* e.g. >> Home */
-.elementor-text-editor {
-    font-family: var(--font-family-main)!important;
-}
-
 /* e.g. >> Home */
 .elementor-element-3af9d35a {
     font-weight: var(--font-family-main-weight-strong);
@@ -1057,9 +1050,7 @@ should be...
 button,
 /* Override form background default */
 /* e.g. Components > Framework > Comments */
-[type="submit"],
-/* Override .elementor-kit-4 button but not the nav mobile button */
-.elementor-kit-4 button:not(.c-nav-mobile-button) {
+[type="submit"] {
     display: inline-block;
     /* I've found it more stable to use pxls rather than ems. */
     padding: var(--button-spacing);
