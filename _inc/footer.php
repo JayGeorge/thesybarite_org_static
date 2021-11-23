@@ -68,7 +68,7 @@
                         </div>
                         <div class="c-form__notes c-form-cols__col c-form-cols__col--full-width">
                             <p><a href="/login/?lost_pass=1">Lost your password?</a></p>
-                            <p>Not regisetered yet? <a href="https://experienceluxury.co/membership/">Create an account</a></p>
+                            <p>Not registered yet? <a href="https://experienceluxury.co/membership/">Create an account</a></p>
                         </div>
                     </div>
                 </form>

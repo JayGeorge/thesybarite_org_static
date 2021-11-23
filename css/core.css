@@ -122,6 +122,9 @@
     --font-size-reading-line-height: 1.5;
     /* Where you may want to space the line-height slightly e.g. You may want to use -spaced because a paragraph contains short information and links, so you'd like to make it breathe a bit more. Use _sparingly_ since it exceeds the max recommended line-height of 1.5 */
     --font-size-spaced-line-height: 1.6;
+
+    /* Small print e.g. login form "Lost your password?" */
+    --font-size-s-x-x-x: 0.63rem;
  
     /* Golden Ratio */
     /* e.g. Mega Menu */
@@ -1087,7 +1090,9 @@ button {
     margin-right: 0;
 }
 
-.c-btn {
+.c-btn,
+/* WordPress login form */
+[type="submit"] {
     position: relative;
     display: inline-block;
     /* Components > Framework > Forms > Layout */
@@ -1124,7 +1129,9 @@ button svg {
 =================================================== */
 /* 1 */
 .c-btn--1 a,
-button.c-btn--1 {
+button.c-btn--1,
+.elementor-button-wrapper a,
+[type="submit"] {
     border: none;
     background: var(--colour-black);
     color: var(--colour-pale);

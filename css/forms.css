@@ -47,7 +47,9 @@ textarea {
 /* purgecss end ignore */
 
 [placeholder],
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+/* WordPress */
+[name="loginform"] input {
     /* =JFG. "search this website". This needs to be rem
     because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
     We don't want the placeholder font size getting too big. */
@@ -153,7 +155,10 @@ input + .c-form__notes {
     line-height: var(--font-size-m-line-height);
 }
 
-.c-form__notes p {
+.c-form__notes p,
+/* WordPress e.g. "Lost your password?", "Not registered yet?" */
+[name="loginform"] ~ p,
+[name="loginform"] ~ p a {
     color: var(--colour-grey-reading);
 }
 
@@ -242,7 +247,9 @@ input + .c-form__notes {
 
 /* Custom */
 @media (min-width: 500px) {
-    .c-form-cols__col input {
+    .c-form-cols__col input,
+    /* Wordpress */
+    [name="loginform"] input {
         /* e.g. if we have a shorter form field like a password */
         width: 100%;
         max-width: none;
@@ -250,7 +257,10 @@ input + .c-form__notes {
 
     /* Exceptions */
     .c-form-cols__col [type="checkbox"],
-    .c-form-cols__col [type="radio"] {
+    .c-form-cols__col [type="radio"],
+    /* WordPress */
+    [name="loginform"] [type="checkbox"],
+    [name="loginform"] [type="radio"] {
         width: initial;
     }
 }
@@ -265,9 +275,12 @@ input + .c-form__notes {
     padding-block-end: var(--spacing-m);
 }
 
-.c-form-cols .c-form__notes p {
+.c-form-cols .c-form__notes p,
+/* WordPress e.g. "Lost your password?", "Not registered yet?" */
+[name="loginform"] ~ p {
     /* e.g. Modal */
     padding-block-end: var(--spacing-s-x-x);
+    margin-block-end: 0;
 }
 
 .c-form-cols .c-form__notes,
@@ -308,6 +321,12 @@ label {
     padding-block-start: var(--padding-vertical);
     padding-block-end: var(--padding-vertical);
 }
+
+/* WordPress */
+[name="loginform"] p {
+    padding-block-end: 0;
+    margin-block-end: 0;
+}
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / BUTTONS
 =================================================== */
 /* Notes...
@@ -327,7 +346,8 @@ label {
     /* Same as HTML, overriding the default of 1 in the reset */
     line-height: 1.5;
     /* Remove user agent style */
-    background: white;
+    /* e.g. not Login modal form */
+    /* background: white; */
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
 =================================================== */
@@ -360,8 +380,11 @@ input::placeholder {
     opacity: 0.54;
 }
 
-.c-form-cols .c-form__notes {
-    font-size: var(--font-size-s-x-x);
+.c-form-cols .c-form__notes *,
+/* WordPress e.g. "Lost your password?", "Not registered yet?" */
+[name="loginform"] ~ p,
+[name="loginform"] ~ p a {
+    font-size: var(--font-size-s-x-x-x);
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
@@ -470,7 +493,10 @@ textarea {
     font-size: 16px;
 }
 
-.s-forms-modal-theme .c-form__notes {
+.s-forms-modal-theme .c-form__notes,
+/* WordPress e.g. "Lost your password?", "Not registered yet?" */
+[name="loginform"] ~ p,
+[name="loginform"] ~ p a {
     font-family: var(--font-family-system);
 }
 
