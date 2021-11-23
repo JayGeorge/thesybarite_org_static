@@ -909,6 +909,7 @@ a {
     text-decoration-color: hsl(0deg 0% 0% / 25%);
     /* e.g. >> /art-club */
     text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
 }
 
 .c-link-button {
@@ -1051,6 +1052,7 @@ should be...
 .c-btn a,
 /* Components > Framework > Nav */
 button,
+.elementor-button,
 /* Override form background default */
 /* e.g. Components > Framework > Comments */
 [type="submit"] {
@@ -1506,7 +1508,9 @@ body .site-logo {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
 .c-site-header-wrapper,
-.home.elementor-page .c-site-header-wrapper {
+.home.elementor-page .c-site-header-wrapper,
+/* e.g. >> /art-club/ */
+body.page-id-37600 .c-site-header-wrapper {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -1516,7 +1520,9 @@ body .site-logo {
 /* e.g. >> /experiences/exclusive-reopening-offer-at-haritha-villas-spa/. */
 .single-experiences .c-site-header-wrapper,
 /* e.g. >> /international/ */
-.elementor-page .c-site-header-wrapper {
+.elementor-page .c-site-header-wrapper,
+/* e.g. >> /win-an-eight-lands-exceptional-spirit-with-the-sybarite/ */
+.post-template-default .c-site-header-wrapper {
     position: relative;
 }
 
