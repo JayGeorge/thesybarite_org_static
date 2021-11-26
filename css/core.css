@@ -1534,6 +1534,7 @@ body .site-logo {
 
 
 
+/* purgecss start ignore */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER
 =================================================== */
 /* HTML Example...
@@ -1897,6 +1898,7 @@ body.page-id-37600 .c-site-header-wrapper {
 .c-site-header__nav .c-btn a:hover {
     color: var(--colour-black);
 }
+/* purgecss end ignore */
 
 
 
