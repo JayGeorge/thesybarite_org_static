@@ -1543,15 +1543,12 @@ body .site-logo {
         .c-site-header__nav
             ul
                 <li>something</li>
-                <li class="c-site-header__dropdown-menu">
-                    <ul>
-                        <li>
-                            <a>Log Out</a>
-                        <li>
-                            <a>Something else</a>
-                        </li>
-                    </ul>
-                 </li>
+                 <button class="js__openDropdown c-btn">
+                    Name of User
+                </button>
+                <ul class="c-site-header__dropdown-menu__menu">
+                    <li><a href="">Log Out</a></li>
+                </ul>
 
 */
 /* Modifiers...
@@ -1621,6 +1618,18 @@ body.page-id-37600 .c-site-header-wrapper {
 .c-site-header__dropdown-menu__menu li a {
     display: block;
 }
+
+.js .c-site-header__dropdown-menu__menu:not(.js--openedDropdown) {
+    display: none;
+}
+
+.js .js--openedDropdown {
+    opacity: 1;
+    animation-name: wipe-in-down;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     .c-site-header__nav {

@@ -161,6 +161,18 @@ document.addEventListener('click', function (event) {
 
 
 
+Array.from(document.querySelectorAll('.js__openDropdown') || []).forEach(element => {
+    element.onclick = function(){
+        // Or maybe this
+        // element.closest('.c-site-header__dropdown-menu__menu').classList.toggle('qa-test');
+        element.nextElementSibling.classList.toggle('js--openedDropdown');
+    }
+});
+
+
+
+
+
 
 /* GROUP FRAMEWORK / CLICK
 =================================================== */
