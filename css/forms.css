@@ -26,7 +26,15 @@
 [type="url"],
 [type="tel"],
 [type="search"],
-textarea {
+textarea,
+.elementor-kit-4 [type="text"],
+.elementor-kit-4 [type="email"],
+.elementor-kit-4 [type="tel"],
+.elementor-kit-4 [type="password"],
+.elementor-kit-4 [type="url"],
+.elementor-kit-4 [type="tel"],
+.elementor-kit-4 [type="search"],
+.elementor-kit-4 textarea {
     vertical-align: top;
     /* box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1); */
     /* =JFG. e.g. search box >> blog or newsletter signup email address */
@@ -49,7 +57,7 @@ textarea {
 [placeholder],
 ::-webkit-input-placeholder,
 /* WordPress */
-[name="loginform"] input {
+[name="loginform"] input:not([type="submit"]) {
     /* =JFG. "search this website". This needs to be rem
     because sometimes the search form gets embedded in .s-entry-content which could be 1.1em.
     We don't want the placeholder font size getting too big. */
@@ -132,7 +140,8 @@ body [type="checkbox"] {
     </form>
 
 */
-.c-form {
+.c-form,
+.hbspt-form {
     width: 100%;
     max-width: 50rem;
     margin-inline-start: auto;
@@ -385,6 +394,8 @@ input::placeholder {
 [name="loginform"] ~ p,
 [name="loginform"] ~ p a {
     font-size: var(--font-size-s-x-x-x);
+    /* Elementor override */
+    line-height: 1.5;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
@@ -503,6 +514,7 @@ textarea {
 .s-forms-modal-theme input:not([type="submit"]) {
     border: 1px solid hsl(0deg 0% 90%);
     border-radius: 4px;
+    max-width: none;
 }
 
 
@@ -557,6 +569,8 @@ textarea {
 /* GROUP SCOPE / MAIN THEME / DECORATION
 =================================================== */
 .s-forms-main-theme label {
+    /* Elementor override */
+    font-family: var(--font-family-main);
     font-weight: var(--font-family-main-weight-strong);
 }
 
@@ -572,9 +586,40 @@ textarea {
     border: 1px solid hsl(0deg 0% 90%);
     border-radius: 4px;
 }
+.hs-input:not([type=file]) {
+    /* Hubspot override */
+    border: 1px solid hsl(0deg 0% 90%)!important;
+}
 
 .s-forms-main-theme .c-form {
     border: 1px solid var(--colour-grey-light-2);
     box-shadow: var(--box-shadow-b);
     border-radius: var(--border-radius-m);
+}
+
+
+
+/* GROUP HUBSPOT SPECIFIC
+=================================================== */
+/* GROUP HUBSPOT SPECIFIC / LAYOUT
+=================================================== */
+/* Because otherwise bottom-margin on inputs pushes them down */
+.hs-error-msgs {
+    position: relative;
+    top: -1.4em;
+}
+/* GROUP HUBSPOT SPECIFIC / SPACING
+=================================================== */
+.hs-form-required {
+    padding-inline-start: var(--spacing-s-x-x);
+}
+/* GROUP HUBSPOT SPECIFIC / DECORATION
+=================================================== */
+.hs-error-msgs {
+    list-style: none;
+}
+
+body .hs-error-msg {
+    color: orangered;
+    font-family: var(--font-family-system);
 }

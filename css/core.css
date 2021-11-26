@@ -76,8 +76,6 @@
     =================================================== */
     /* Dark to light */
     --colour-black: black;
-    /* Just take the edge off for neue-haas-unica because its strokes contrast slightly too much against Orpheus */
-    --colour-black-off: hsl(0deg 0% 10%);
     /* e.g. Search in the mega menu. Made lighter at later media query */
     --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
     --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
@@ -103,7 +101,6 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- FONTS
     =================================================== */
     --font-family-main: futura-pt, futura, sans-serif;
-    --font-family-main: neue-haas-unica, sans-serif;
     --font-family-headline: orpheuspro, serif;
     /* https://css-tricks.com/snippets/css/system-font-stack/ */
     --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -119,7 +116,8 @@
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES
     =================================================== */
     /* Optimise line-height for reading */
-    --font-size-reading-line-height: 1.5;
+    /* e.g. >> /art-club/ paragraph text */
+    --font-size-reading-line-height: 1.4;
     /* Where you may want to space the line-height slightly e.g. You may want to use -spaced because a paragraph contains short information and links, so you'd like to make it breathe a bit more. Use _sparingly_ since it exceeds the max recommended line-height of 1.5 */
     --font-size-spaced-line-height: 1.6;
 
@@ -128,7 +126,7 @@
  
     /* Golden Ratio */
     /* e.g. Mega Menu */
-    --font-size-s-x-x: 0.68rem;
+    --font-size-s-x-x: 0.8rem;
 
     /* Custom, 0.8rem is too small */
     --font-size-s-x: 0.93em;
@@ -190,7 +188,7 @@
     --animation-transition-fast: all 0.15s ease-in-out 0s;
     /* GROUP VARIABLES -- OTHER
     =================================================== */
-    --cta-box-width: 18.5rem;
+    --cta-box-width: 17rem;
     /* Custom to align with the bottom of the Sybarite logo */
     --nav-top: 2.2rem;
 }
@@ -367,6 +365,7 @@ figcaption,
 .c-figcaption {
     font-size: var(--font-size-s-x-x);
     color: hsl(0deg 0% 46%);
+    font-style: unset;
 }
 
 ul {
@@ -392,7 +391,6 @@ p,
 ol,
 ul {
     line-height: var(--font-size-reading-line-height);
-    font-size: var(--font-size-s-x);
 }
 
 /* Nested lists */
@@ -427,7 +425,19 @@ h2 a,
 h3,
 .h3,
 h3 a,
-.h3 a {
+.h3 a,
+.elementor-kit-4 h1,
+.elementor-kit-4 .h1,
+.elementor-kit-4 h1 a,
+.elementor-kit-4 .h1 a,
+.elementor-kit-4 h2,
+.elementor-kit-4 .h2,
+.elementor-kit-4 h2 a,
+.elementor-kit-4 .h2 a,
+.elementor-kit-4 h3,
+.elementor-kit-4 .h3,
+.elementor-kit-4 h3 a,
+.elementor-kit-4 .h3 a {
     font-family: var(--font-family-headline);
     font-style: var(--font-family-headline-style-1);
     font-weight: var(--font-family-headline-weight-normal);
@@ -447,37 +457,49 @@ h4 a,
 /* --- */
 
 h1,
-.h1 {
+.h1,
+.elementor-kit-4 h1,
+.elementor-kit-4 .h1 {
     font-size: var(--font-size-l);
     line-height: var(--font-size-l-line-height);
 }
 
 h2,
-.h2 {
+.h2,
+.elementor-kit-4 h2,
+.elementor-kit-4 .h2 {
     font-size: var(--font-size-m);
     line-height: var(--font-size-m-line-height);
 }
 
 h3,
-.h3 {
+.h3,
+.elementor-kit-4 h3,
+.elementor-kit-4 .h3 {
     font-size: var(--font-size-m);
     line-height: var(--font-size-m-line-height);
 }
 
 h4,
-.h4 {
+.h4,
+.elementor-kit-4 h4,
+.elementor-kit-4 .h4 {
     font-size: var(--font-size-s-1);
     line-height: var(--font-size-s-1-line-height);
 }
 
 h5,
-.h5 {
+.h5,
+.elementor-kit-4 h5,
+.elementor-kit-4 .h5 {
     font-size: var(--font-size-s);
     line-height: var(--font-size-s-line-height);
 }
 
 h6,
-.h6 {
+.h6,
+.elementor-kit-4 h6,
+.elementor-kit-4 .h6 {
     font-size: var(--font-size-s-x-1);
     line-height: var(--font-size-s-x-1-line-height);
 }
@@ -600,7 +622,8 @@ nav ul {
     padding-inline: 0;
 }
 
-nav a {
+nav a,
+.elementor-kit-4 nav a {
     text-decoration: none;
 }
 
@@ -622,7 +645,8 @@ nav a {
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON
 =================================================== */
 /* button*/
-body .c-nav-mobile-button {
+body .c-nav-mobile-button,
+.elementor-kit-4 .c-nav-mobile-button {
     position: absolute;
     z-index: 1;
     /* Custom to align with the bottom of the Sybarite logo */
@@ -816,10 +840,16 @@ body .c-nav-mobile-button:hover {
 .c-close-button {
     /* Cancel default button */
     margin-inline-end: 0;
-    padding: var(--spacing-s) var(--spacing-s);
+    padding: var(--spacing-s) var(--spacing-s)!important;
 }
 /* GROUP COMPONENTS / CLOSE BUTTON / DECORATION
 =================================================== */
+.elementor-kit-4 .c-close-button,
+.elementor-kit-4 .c-close-button:hover,
+.elementor-kit-4 .c-close-button:focus {
+    background: unset;
+    color: unset;
+}
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     .c-close-button {
@@ -902,8 +932,11 @@ a > svg:last-child:not(:first-child) {
 */
 
 /* Default */
-a {
+a,
+.elementor-kit-4 a {
     text-decoration-skip-ink: auto;
+    /* e.g. login-form for elementor */
+    text-decoration-line: underline;
     color: inherit;
     /* e.g. >> /art-club */
     text-decoration-color: hsl(0deg 0% 0% / 25%);
@@ -912,7 +945,9 @@ a {
     text-decoration-thickness: 1px;
 }
 
-.c-link-button {
+.c-link-button,
+.elementor-kit-4 .c-link-button {
+    text-decoration-line: underline;
     /* e.g. >> /art-club > Learn more link */
     text-underline-offset: 0.5em;
     display: inline-block;
@@ -925,8 +960,7 @@ html {
 }
 
 /* Components > Framework > Nav > Current Page */
-.current-menu-item > a span,
-body > div > header > nav > ul > li:nth-child(1) > a {
+.current-menu-item > a span {
     text-decoration: underline;
     text-underline-position: under;
     text-underline-offset: 0.3em;
@@ -1053,9 +1087,11 @@ should be...
 /* Components > Framework > Nav */
 button,
 .elementor-button,
+.elementor-kit-4 button,
 /* Override form background default */
 /* e.g. Components > Framework > Comments */
-[type="submit"] {
+[type="submit"],
+.elementor-kit-4 input[type="submit"] {
     display: inline-block;
     /* I've found it more stable to use pxls rather than ems. */
     padding: var(--button-spacing);
@@ -1066,9 +1102,11 @@ button,
     /* =JFG. Hover states with a slight delay, but focus without any because keyboard users want quick feedback. Do not use 'all' because it resizes slowly when resizing the browser window */
     transition: background-color 0.2s ease 0s;
     text-transform: uppercase;
+    /* For elementor */
+    line-height: 1.5;
     letter-spacing: var(--letter-spacing-s);
     font-weight: var(--font-family-main-weight-strong);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: var(--font-family-main);
     /* Override user-agent styling */
     border-radius: 0;
@@ -1133,7 +1171,8 @@ button svg {
 .c-btn--1 a,
 button.c-btn--1,
 .elementor-button-wrapper a,
-[type="submit"] {
+[type="submit"],
+.elementor-kit-4 input[type="submit"] {
     border: none;
     background: var(--colour-black);
     color: var(--colour-pale);
@@ -1473,7 +1512,8 @@ body .site-logo {
     z-index: var(--z-index-nav);
 }
 
-.s-dark-cover-image .site-logo {
+.s-dark-cover-image .site-logo,
+.elementor-kit-4 .site-logo:hover {
     color: white;
 }
 
@@ -1517,6 +1557,8 @@ body.page-id-37600 .c-site-header-wrapper {
 }
 
 /* Exceptions */
+/* e.g. >> /?s=maldives */
+.search-results .c-site-header-wrapper,
 /* e.g. >> /experiences/exclusive-reopening-offer-at-haritha-villas-spa/. */
 .single-experiences .c-site-header-wrapper,
 /* e.g. >> /international/ */
@@ -1609,6 +1651,7 @@ body.page-id-37600 .c-site-header-wrapper {
 
 .c-site-header__logo {
     padding-block-start: var(--spacing-s-2);
+    padding-block-end: var(--spacing-s-2);
 }
 
 .c-site-header__nav li {
@@ -2037,7 +2080,8 @@ body.page-id-37600 .c-site-header-wrapper {
 }
 /* GROUP COMPONENTS / EYEBROW HEADING / DECORATION
 =================================================== */
-.c-eyebrow-heading {
+.c-eyebrow-heading,
+.elementor-kit-4 .c-eyebrow-heading {
     /* font-size: var(--font-size-s-x); */
     font-size: var(--font-size-s-x-x);
     font-family: var(--font-family-main);
@@ -2414,6 +2458,8 @@ body.page-id-37600 .c-site-header-wrapper {
     padding-block-end: 0;
     padding-inline-start: var(--spacing-s-x);
     padding-block-end: 0.1em;
+    /* Elementor override */
+    margin-block-end: 0;
 }
 
 /* Custom */
@@ -2821,6 +2867,12 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 =================================================== */
 /* GROUP SCOPE / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
+.elementor-kit-4 button:hover {
+    /* Login button in mobile header menu */
+    background: unset;
+    color: unset;
+}
+
 /* e.g. >> Home > main title "Curators of Exclusive Luxury Experiences" */
 header .elementor-heading-title {
     /* font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "swsh"; */
