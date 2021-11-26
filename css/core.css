@@ -1513,7 +1513,7 @@ body .site-logo {
 }
 
 .s-dark-cover-image .site-logo,
-.elementor-kit-4 .site-logo:hover {
+.s-dark-cover-image.elementor-kit-4 .site-logo:hover {
     color: white;
 }
 
@@ -2867,10 +2867,12 @@ u-screen-reader-text--mq-nav-opens-after:focus {
 =================================================== */
 /* GROUP SCOPE / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
-.elementor-kit-4 button:hover {
-    /* Login button in mobile header menu */
-    background: unset;
-    color: unset;
+button.js__showModal:hover,
+/* e.g. 'Login' text in mobile nav on focus */
+button.js__showModal:focus {
+    /* Login button in header menu, but not the nav button on mobile */
+    background: white;
+    color: black;
 }
 
 /* e.g. >> Home > main title "Curators of Exclusive Luxury Experiences" */
