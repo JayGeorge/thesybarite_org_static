@@ -7,5 +7,14 @@ Array.from(document.querySelectorAll('.js__staticOnlyFakeLoggedInState') || []).
 });
 if (localStorage.getItem('logged-in') === 'yes') {
     /* Add a current page class to the nav item */
-    document.getElementById('js__staticOnlyLoginText').textContent = 'John Cofie';
+    document.querySelector('#js__loggedOut').remove();
+} else {
+    document.querySelector('#js__loggedIn').remove();
 }
+
+// Log Out button will fake logging out
+Array.from(document.querySelectorAll('.js__staticOnlyFakeLoggedOutState') || []).forEach(element => {
+    element.onclick = function(){
+        localStorage.removeItem('logged-in');
+    }
+});

@@ -211,14 +211,15 @@
                 </li>
 
                 <li class="c-site-header__animate-staggered c-site-header__dropdown-menu">
-                    <!-- <button id="js__staticOnlyLoginText" class="js__showModal c-btn">
+                    <!-- <button id="js__staticOnlyLoginText" class="js__showModal c-btn"> -->
+                    <button id="js__loggedOut" class="js__showModal c-btn">
                         Login
-                    </button> -->
-                    <button class="js__openDropdown c-btn">
+                    </button>
+                    <button id="js__loggedIn" class="js__openDropdown c-btn">
                         John Cofie
                     </button>
                     <ul class="c-site-header__dropdown-menu__menu">
-                        <li><a href="">Log Out</a></li>
+                        <li><a href="" class="js__staticOnlyFakeLoggedOutState">Log Out</a></li>
                     </ul>
                 </li>
             </ul>

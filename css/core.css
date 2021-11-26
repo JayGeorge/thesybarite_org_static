@@ -1607,6 +1607,10 @@ body.page-id-37600 .c-site-header-wrapper {
     position: relative;
 }
 
+.c-site-header__dropdown-menu .c-btn {
+    min-width: 8.8rem;
+}
+
 /* ul*/
 .c-site-header__dropdown-menu__menu {
     position: absolute;
