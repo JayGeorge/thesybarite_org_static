@@ -160,7 +160,8 @@ document.addEventListener('click', function (event) {
 
 
 
-
+/* GROUP NAV / DROP DOWNS
+=================================================== */
 Array.from(document.querySelectorAll('.js__openDropdown') || []).forEach(element => {
     element.onclick = function(){
         // Or maybe this

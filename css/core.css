@@ -1770,6 +1770,7 @@ body.page-id-37600 .c-site-header-wrapper {
 /* The Default */
 .c-site-header .c-btn {
     background: white;
+    color: var(--colour-black);
 }
 
 .c-site-header .c-btn {
