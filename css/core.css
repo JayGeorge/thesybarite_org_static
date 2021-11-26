@@ -47,8 +47,9 @@
     --spacing-vh-s: 12vh;
     --spacing-vh-m: 25vh;
 
-    --button-spacing-horizontal: 18px;
-    --button-spacing: var(--button-spacing-horizontal) 42px;
+    --button-spacing-horizontal: 42px;
+    --button-spacing-vertical: 18px;
+    --button-spacing: var(--button-spacing-vertical) var(--button-spacing-horizontal);
     /* GROUP VARIABLES -- SPACING -- ICONS
     =================================================== */
     --spacing-icon-s: 0.2rem;
@@ -1120,9 +1121,12 @@ button,
     background: red;
 }
 
-/* Not .c-btn + .c-btn in case a button is next to a different tag such as <p/> */
-.c-btn,
-button {
+/*
+    - Don't affect the header
+    - Not .c-btn + .c-btn in case a button is next to a different tag such as <p/>
+*/
+main .c-btn,
+main button {
     margin-right: 1rem;
 }
 
@@ -1537,6 +1541,17 @@ body .site-logo {
     .c-site-header
         .c-site-header__logo
         .c-site-header__nav
+            ul
+                <li>something</li>
+                <li class="c-site-header__dropdown-menu">
+                    <ul>
+                        <li>
+                            <a>Log Out</a>
+                        <li>
+                            <a>Something else</a>
+                        </li>
+                    </ul>
+                 </li>
 
 */
 /* Modifiers...
@@ -1591,6 +1606,21 @@ body.page-id-37600 .c-site-header-wrapper {
     z-index: var(--z-index-nav-higher);
 }
 
+.c-site-header__dropdown-menu {
+    position: relative;
+}
+
+/* ul*/
+.c-site-header__dropdown-menu__menu {
+    position: absolute;
+    right: 0;
+    width: calc(100% - var(--spacing-m));
+    display: block;
+}
+
+.c-site-header__dropdown-menu__menu li a {
+    display: block;
+}
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     .c-site-header__nav {
@@ -1667,6 +1697,10 @@ body.page-id-37600 .c-site-header-wrapper {
 
 .c-site-header__nav a {
     padding: var(--spacing-s);
+}
+
+.c-site-header__dropdown-menu__menu li a {
+    padding: var(--button-spacing);
 }
 
 /* --mq-nav-opens-before */
@@ -1764,6 +1798,17 @@ body.page-id-37600 .c-site-header-wrapper {
     z-index: var(--z-index-nav);
     animation: 0.5s ease background-fade-in both;
     animation-delay: 0.5s;
+}
+
+.c-site-header__dropdown-menu__menu {
+    position: absolute;
+    background: var(--colour-white-transparent);
+    background: white;
+}
+
+.c-site-header .c-site-header__dropdown-menu__menu li a,
+.c-site-header .c-site-header__dropdown-menu__menu li a:hover {
+    color: black;
 }
 
 /* --mq-nav-opens-before */

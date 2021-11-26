@@ -210,10 +210,16 @@
                     </div>
                 </li>
 
-                <li class="c-site-header__animate-staggered">
-                    <button id="js__staticOnlyLoginText" class="js__showModal c-btn">
+                <li class="c-site-header__animate-staggered c-site-header__dropdown-menu">
+                    <!-- <button id="js__staticOnlyLoginText" class="js__showModal c-btn">
                         Login
+                    </button> -->
+                    <button class="js__openDropdown c-btn">
+                        John Cofie
                     </button>
+                    <ul class="c-site-header__dropdown-menu__menu">
+                        <li><a href="">Log Out</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
