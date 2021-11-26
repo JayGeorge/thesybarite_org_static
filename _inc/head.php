@@ -50,5 +50,6 @@
     <?php
         $filename = 'script'; include '_inc/_script.php';
         $filename = 'modal'; include '_inc/_script.php';
+        $filename = 'static-only'; include '_inc/_script.php';
     ?>
 </head>

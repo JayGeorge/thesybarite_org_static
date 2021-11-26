@@ -211,7 +211,7 @@
                 </li>
 
                 <li class="c-site-header__animate-staggered">
-                    <button class="js__showModal c-btn">
+                    <button id="js__staticOnlyLoginText" class="js__showModal c-btn">
                         Login
                     </button>
                 </li>

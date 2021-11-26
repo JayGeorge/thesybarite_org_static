@@ -71,7 +71,7 @@
 /* Override */
 .c-mega-menu__grid .c-mega-menu__full-width {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     gap: var(--spacing-l-1) var(--spacing-s-2);
 }
 
@@ -84,7 +84,7 @@
     grid-column: 1 / -1;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     align-items: start;
 }
 
@@ -215,7 +215,7 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
 }
 
 .c-mega-menu * {
-    font-feature-settings: initial;
+    font-feature-settings: initial!important;
 }
 
 body .c-mega-menu__back-button {

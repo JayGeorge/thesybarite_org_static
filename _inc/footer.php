@@ -42,7 +42,7 @@
         </button>
         <div class="js__modalBox__inner-scroll">
             <div class="c-form-wrapper s-forms-modal-theme">
-                <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
+                <form class="c-form" id="pp-form-456b1b1">
                     <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
                     <input type="hidden" name="_wp_http_referer" value="/login/">
                     <input type="hidden" name="redirect_to" value="/login/">
@@ -62,7 +62,7 @@
                             </label>
                         </div>
                         <div class="c-form-cols__col c-form-cols__col--full-width">
-                            <button type="submit" name="wp-submit" class="c-btn c-btn--1">
+                            <button class="js__staticOnlyFakeLoggedInState c-btn c-btn--1">
                                 Log In
                             </button>
                         </div>
