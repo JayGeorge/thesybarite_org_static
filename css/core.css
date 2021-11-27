@@ -1599,7 +1599,8 @@ body.page-id-37600 .c-site-header-wrapper {
     gap: 2.1em;
 }
 
-.c-site-header__nav a {
+.c-site-header__nav a,
+.c-site-header__dropdown-menu {
     position: relative;
     z-index: var(--z-index-nav-higher);
 }
@@ -1819,7 +1820,7 @@ body.page-id-37600 .c-site-header-wrapper {
 }
 
 /* White background behind the main nav in case of mega menu overflow scroll */
-.js--megaMenuActive.c-site-header__nav > ul::before {
+.js:not(.js--megaMenuHasBeenClosed) .c-site-header__nav > ul::before {
     position: absolute;
     top: 0;
     left: 0;
