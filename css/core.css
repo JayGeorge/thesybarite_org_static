@@ -1856,7 +1856,8 @@ body .site-logo {
     }
 
     /* Elementor override */
-    .c-site-header__dropdown-menu .c-btn:hover {
+    .c-site-header__dropdown-menu .c-btn:hover,
+    .c-site-header__dropdown-menu .c-btn:active {
         background: white;
         color: var(--colour-black);
     }
