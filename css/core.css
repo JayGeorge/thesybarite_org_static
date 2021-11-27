@@ -1840,6 +1840,10 @@ body.page-id-37600 .c-site-header-wrapper {
     color: black;
 }
 
+.page nav.c-site-header__nav .c-site-header__dropdown-menu li a {
+    color: black!important;
+}
+
 /* --mq-nav-opens-before */
 @media (max-width: 1199px) {
     .c-site-header__nav {
