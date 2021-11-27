@@ -1820,7 +1820,7 @@ body.page-id-37600 .c-site-header-wrapper {
 }
 
 /* White background behind the main nav in case of mega menu overflow scroll */
-.js:not(.js--megaMenuHasBeenClosed) .c-site-header__nav > ul::before {
+.js--megaMenuHasBeenOpened:not(.js--megaMenuHasBeenClosed) .c-site-header__nav > ul::before {
     position: absolute;
     top: 0;
     left: 0;
