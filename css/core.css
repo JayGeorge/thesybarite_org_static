@@ -1854,6 +1854,12 @@ body.page-id-37600 .c-site-header-wrapper {
         background: white;
     }
 
+    /* Elementor override */
+    .c-site-header__dropdown-menu:hover .c-btn {
+        background: white;
+        color: var(--colour-black);
+    }
+
     .s-dark-cover-image .c-site-header__nav a,
     .s-dark-cover-image .c-site-header__nav a:hover,
     .s-dark-cover-image .c-site-header__nav svg {
