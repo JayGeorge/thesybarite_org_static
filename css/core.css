@@ -803,8 +803,11 @@ body .c-nav-mobile-button,
 /* GROUP COMPONENTS / FRAMEWORK / (NON CORE) / NAV / MOBILE / BUTTON / ELEMENTOR OVERRIDES
 =================================================== */
 body .c-nav-mobile-button,
-body .c-nav-mobile-button:hover {
+body .c-nav-mobile-button:hover,
+body .c-nav-mobile-button:focus {
     background-color: transparent;
+    /* e.g. >> /login/ hover state for nav button on mobile */
+    color: var(--colour-black);
 }
 
 
@@ -1870,6 +1873,11 @@ body .site-logo {
     .s-dark-cover-image .c-site-header__nav a:hover,
     .s-dark-cover-image .c-site-header__nav svg {
         color: var(--colour-black);
+    }
+
+    .page nav.c-site-header__nav ul li a {
+        /* For elementor important is needed */
+        color: var(--colour-black)!important;
     }
 
     .c-site-header .c-btn {
