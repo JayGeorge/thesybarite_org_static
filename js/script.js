@@ -132,6 +132,7 @@ Array.from(document.querySelectorAll('.js__megaMenuBackButton')).forEach(element
     element.addEventListener('click', function() {
         // [2] Remove any existing active states
         megaMenuStateClose();
+        megaMenuClose();
     });
 });
 /* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON ESCAPE
