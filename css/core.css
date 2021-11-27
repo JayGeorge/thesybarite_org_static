@@ -1562,6 +1562,8 @@ body .site-logo {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
 /* .c-site-header-wrapper, */
+/* Used to position the site header absolutely on the static site demo which is designed to have clean headers unlike the main site */
+.c-site-header-wrapper--static-only,
 .home.elementor-page .c-site-header-wrapper,
 /* e.g. >> /art-club/ */
 body.page-id-37600 .c-site-header-wrapper {

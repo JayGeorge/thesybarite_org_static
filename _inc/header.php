@@ -6,7 +6,7 @@
     Skip to footer navigation
 </a>
 
-<div class="c-site-header-wrapper">
+<div class="c-site-header-wrapper c-site-header-wrapper--static-only">
     <header class="c-site-header<?php if (isset($header_light_background)) { echo ' c-site-header--light-background'; } ?>">
         <div class="c-site-header__logo">
             <a href="/" class="site-logo">
