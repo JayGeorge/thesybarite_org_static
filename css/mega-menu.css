@@ -142,8 +142,14 @@ nav {
         overflow: scroll;
     }
 
-    .c-mega-menu-container:not(.js--megaMenuActive):not(.c-mega-menu-container--search) {
+    /* Used to be like this but prevents scrolling at small MQs on Safari Version 15.1 */
+    /* .c-mega-menu-container:not(.js--megaMenuActive):not(.c-mega-menu-container--search) */
+    .c-mega-menu-container:not(.js--megaMenuActive) {
         display: none;
+    }
+
+    .js--megaMenuSearchIsOpen .c-mega-menu-container {
+        display: unset;
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
