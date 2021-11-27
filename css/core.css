@@ -1613,10 +1613,6 @@ body .site-logo {
     position: relative;
 }
 
-.c-site-header__dropdown-menu .c-btn {
-    min-width: 8.8rem;
-}
-
 /* ul*/
 .c-site-header__dropdown-menu__menu {
     position: absolute;
@@ -1697,6 +1693,10 @@ body .site-logo {
     /* ul*/
     .c-site-header__dropdown-menu__menu {
         right: 0;
+    }
+
+    .c-site-header__dropdown-menu .c-btn {
+        min-width: 8.8rem;
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / SPACING
