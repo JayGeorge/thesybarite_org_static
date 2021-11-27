@@ -1604,10 +1604,13 @@ body .site-logo {
 }
 
 .js--navIsOpen .c-site-header__nav,
-.c-site-header__nav a,
-.c-site-header__search {
+.c-site-header__nav a {
     position: relative;
     z-index: var(--z-index-nav-higher);
+}
+
+.c-site-header__search {
+    z-index: var(--z-index-modal);
 }
 
 .c-site-header__dropdown-menu {
@@ -1907,8 +1910,8 @@ body .site-logo {
         color: var(--colour-black);
     }
 
-    .js--megaMenuIsOpen .c-site-header__nav > ul:first-child > li > a,
-    .js--megaMenuIsOpen:not(.js--megaMenuSearchIsOpen) .c-site-header__search {
+    .js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
+    .js--megaMenuIsOpen:not(.js--megaMenuSearchIsOpen) .s-dark-cover-image .c-site-header__search {
         mix-blend-mode: difference;
     }
 }
