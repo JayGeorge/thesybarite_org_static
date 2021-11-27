@@ -1603,8 +1603,9 @@ body .site-logo {
     gap: 2.1em;
 }
 
+.js--navIsOpen .c-site-header__nav,
 .c-site-header__nav a,
-.c-site-header__dropdown-menu {
+.c-site-header__search {
     position: relative;
     z-index: var(--z-index-nav-higher);
 }
@@ -1674,6 +1675,10 @@ body .site-logo {
     .c-site-header__nav ul {
         flex-direction: row;
         align-items: center;
+    }
+
+    .c-site-header__dropdown-menu {
+        z-index: var(--z-index-nav-higher);
     }
 
     /* Hide the search text on higher screens */
@@ -1824,7 +1829,7 @@ body .site-logo {
 }
 
 /* White background behind the main nav in case of mega menu overflow scroll */
-.js--megaMenuHasBeenOpened:not(.js--megaMenuHasBeenClosed):not(.js--megaMenuSearchIsOpen):not(.js--megaMenuSearchHasBeenOpened) .c-site-header__nav > ul::before {
+.js--megaMenuHasBeenOpened:not(.js--megaMenuHasBeenClosed) .c-site-header__nav > ul::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1902,16 +1907,10 @@ body .site-logo {
         color: var(--colour-black);
     }
 
-    .js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav > ul:first-child > li > a,
-    .js--megaMenuIsOpen .s-dark-cover-image .c-site-header__nav svg {
+    .js--megaMenuIsOpen .c-site-header__nav > ul:first-child > li > a,
+    .js--megaMenuIsOpen:not(.js--megaMenuSearchIsOpen) .c-site-header__search {
         mix-blend-mode: difference;
     }
-}
-/* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / LAYOUT
-=================================================== */
-.c-site-header__nav .c-btn,
-.js--navIsOpen .c-site-header__nav {
-    z-index: var(--z-index-nav);
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
