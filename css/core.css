@@ -666,7 +666,8 @@ body .c-nav-mobile-button,
 }
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-nav-mobile-button {
+    .c-nav-mobile-button,
+    .elementor-kit-4 .c-nav-mobile-button {
         display: none;
     }
 }
@@ -1560,7 +1561,7 @@ body .site-logo {
 */
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / LAYOUT
 =================================================== */
-.c-site-header-wrapper,
+/* .c-site-header-wrapper, */
 .home.elementor-page .c-site-header-wrapper,
 /* e.g. >> /art-club/ */
 body.page-id-37600 .c-site-header-wrapper {
