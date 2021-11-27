@@ -1609,10 +1609,6 @@ body .site-logo {
     z-index: var(--z-index-nav-higher);
 }
 
-.c-site-header__search {
-    z-index: var(--z-index-modal);
-}
-
 .c-site-header__dropdown-menu {
     position: relative;
 }
