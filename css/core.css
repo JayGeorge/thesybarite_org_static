@@ -1555,6 +1555,7 @@ body .site-logo {
 */
 /* Modifiers...
 
+    .s-full-bleed-design <-- Set this option for each page in the WP admin under the side panel > body classes > `.s-full-bleed-design`
     .c-site-header--light-background <-- Used when there is a light image beneath e.g. a sky.
         This will change thigns like the CTA button lightness
 
@@ -1564,9 +1565,9 @@ body .site-logo {
 /* .c-site-header-wrapper, */
 /* Used to position the site header absolutely on the static site demo which is designed to have clean headers unlike the main site */
 .c-site-header-wrapper--static-only,
-.home.elementor-page .c-site-header-wrapper,
-/* e.g. >> /art-club/ */
-body.page-id-37600 .c-site-header-wrapper {
+/* E.g. newer designed pages like the art club - Set this option for each new page page in the WP admin under the side panel > body classes > `.s-full-bleed-design` */
+.page.s-full-bleed-design .c-site-header-wrapper,
+.home.elementor-page .c-site-header-wrapper {
     position: absolute;
     z-index: 1;
     width: 100%;
