@@ -1855,7 +1855,7 @@ body.page-id-37600 .c-site-header-wrapper {
     }
 
     /* Elementor override */
-    .c-site-header__dropdown-menu:hover .c-btn {
+    .c-site-header__dropdown-menu .c-btn:hover {
         background: white;
         color: var(--colour-black);
     }
