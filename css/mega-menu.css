@@ -150,6 +150,8 @@ nav {
 
     .js--megaMenuSearchIsOpen .c-mega-menu-container {
         display: unset;
+        /* When the search opens make sure we don't get a flash of white 'swipe-right' */
+        animation-duration: 0s!important;
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / MEGA MENU / SPACING
@@ -280,6 +282,7 @@ body .c-mega-menu__back-button {
     /* This controls the wipe-out-right when the menu is closed */
     animation: var(--mega-menu-wipe-out-right);
 }
+
 /* Components > Framework > Site Header > Mega Menu > Search > Animations */
 .js .c-mega-menu-container--search:not(.js--megaMenuActive) {
     /* This controls the wipe-out-up when the search menu is closed */
@@ -296,7 +299,7 @@ body .c-mega-menu__back-button {
 @media (min-width: 1200px) {
     .js--megaMenuIsOpen-fadeFromNowOn .c-mega-menu-container:not(.c-mega-menu-container--search),
     /* Disable The Wipe-Out-Right Animation From Initially Happening When The Page Loads Up */
-    html:not(.js--megaMenuHasBeenOpened) .c-mega-menu-container {
+    html:not(.js--megaMenuHasBeenOpened):not(.js--megaMenuSearchIsOpen):not(.js--megaMenuSearchHasBeenOpened) .c-mega-menu-container {
         animation-duration: 0s!important;
     }
 
