@@ -73,6 +73,10 @@
 .c-gallery__item .o-icon-row {
     padding-block-start: var(--spacing-s);
 }
+
+.c-gallery p {
+    padding-inline-end: var(--spacing-s-2);
+}
 /* GROUP COMPONENTS / GALLERY / DECORATION
 =================================================== */
 .c-gallery {
@@ -90,7 +94,6 @@
 
 .c-gallery__title {
     font-size: var(--font-size-s);
-    color: var(--colour-black-off);
     font-family: var(--font-family-headline);
 }
 
@@ -99,14 +102,112 @@
     line-height: var(--font-size-l-2-line-height);
 }
 
-.c-gallery p {
-    color: var(--colour-black-off);
-    padding-inline-end: var(--spacing-s-2);
-}
-
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
     .c-gallery__hero-title {
         text-indent: 2.5rem;
     }
+}
+
+
+
+
+/* GROUP COMPONENTS / GALLERY GROUPS
+=================================================== */
+/* Notes...
+
+	- e.g. /art-gallery
+	   - used for grouping artwork together e.g. artists
+
+*/
+/* HTML Example...
+
+    <div class="u-panel-white">
+        <h2 class="c-eyebrow-heading">Browse Other Artists</h2>
+        <div class="c-gallery-groups">
+            <div class="c-gallery-groups__item">
+                <h3 class="c-gallery-groups__hero-title">Phillip Humm</h3>
+                <p><a href="" class="c-link-button">Learn more</a></p>
+            </div>
+            
+            <figure class="c-gallery-groups__item">
+                <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                <figcaption>Early morning selfie</figcaption>
+            </figure>
+            <figure class="c-gallery-groups__item">
+                <img id="gallery-1" data-fancybox="gallery" data-caption="Am I looking good" src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
+                <figcaption>Am I looking good</figcaption>
+            </figure>
+            <figure class="c-gallery-groups__item">
+                <img id="gallery-1" data-fancybox="gallery" data-caption="Am almost done" src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
+                <figcaption>Am almost done</figcaption>
+            </figure>
+        </div>
+    </div>
+
+*/
+/* GROUP COMPONENTS / GALLERY / LAYOUT
+=================================================== */
+.c-gallery-groups {
+    max-width: var(--max-width-1);
+    margin-inline: auto;
+
+    display: grid;
+    /* Prevent overflow on screens less than px value */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18.75em), 1fr));
+    gap: var(--spacing-l) var(--spacing-m);
+}
+
+.c-gallery-groups__gallery:not(.c-gallery-groups__gallery--landscape) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-s);
+}
+/* GROUP COMPONENTS / GALLERY / SPACING
+=================================================== */
+.c-gallery-groups {
+    padding-inline: var(--spacing-l);
+    padding-block: var(--spacing-l) var(--spacing-l-4);
+}
+
+.c-gallery-groups__hero-title {
+    padding-block-end: var(--spacing-s-2);
+}
+
+.c-gallery-groups p {
+    padding-block-end: var(--spacing-l);
+    padding-inline-end: var(--spacing-s-2);
+}
+/* GROUP COMPONENTS / GALLERY / DECORATION
+=================================================== */
+.c-gallery-groups {
+    position: relative;
+}
+
+.c-gallery-groups::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: var(--spacing-l);
+    width: calc(100% - var(--spacing-l) * 2);
+    border-block-start: 1px solid var(--colour-grey-light-2);
+}
+
+.c-gallery-groups p {
+    font-size: var(--font-size-s-x);
+    color: var(--colour-grey-reading);
+    line-height: var(--font-size-s-x-line-height);
+}
+
+.c-gallery-groups__title {
+    font-size: var(--font-size-s);
+    color: var(--colour-black-off);
+    font-family: var(--font-family-headline);
+}
+
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+/*     .c-gallery-groups__hero-title {
+        text-indent: 2.5rem;
+    } */
 }
