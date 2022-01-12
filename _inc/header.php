@@ -32,7 +32,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3><img src="/img/svg/hot.svg" alt="Flame." /> What’s Hot Now</h3>
+                            <h3>What’s Hot Now</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -77,7 +77,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3><img src="/img/svg/sybarite-life.svg" alt="Flame." /> The Sybarite Life</h3>
+                            <h3>The Sybarite Life</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -120,7 +120,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3><img src="/img/svg/africa.svg" alt="Passport." /> The Best of Africa</h3>
+                            <h3>The Best of Africa</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -133,7 +133,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h3><img src="/img/svg/passport.svg" alt="Passport." /> Other Adventures</h3>
+                            <h3>Other Adventures</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -159,7 +159,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3><img src="/img/svg/club.svg" alt="Club." /> Exclusive Communities</h3>
+                            <h3>Exclusive Communities</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">

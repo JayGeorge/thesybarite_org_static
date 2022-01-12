@@ -82,7 +82,7 @@
             });
         </script>
         <div class="u-panel-white">
-            <h2 class="c-eyebrow-heading">Featured</h2>
+            <h2 class="c-eyebrow-heading">Featured Artist</h2>
             <div class="c-gallery">
                 <div class="c-gallery__item">
                     <h3 class="c-gallery__hero-title">Ajarb Bernard Ategwa</h3>
@@ -144,11 +144,11 @@
                                     <div class="c-form-cols">
                                         <div class="c-form-cols__col">
                                             <label for="name" class="elementor-field-label">Name</label>
-                                            <input type="text" name="log" id="name" placeholder="Name">
+                                            <input type="text" name="log" id="name">
                                         </div>
                                         <div class="c-form-cols__col">
                                             <label for="user" class="elementor-field-label">Email Address</label>
-                                            <input type="text" name="log" id="user" placeholder="Email Address">
+                                            <input type="text" name="log" id="user">
                                         </div>
                                         <div class="c-form-cols__col c-form-cols__col--full-width">
                                             <label for="message" class="elementor-field-label">Message</label>
