@@ -1499,6 +1499,17 @@ h2 + .o-hero-buttons {
 
 
 
+/* GROUP OBJECTS / ICON WITH TITLE
+=================================================== */
+/* e.g. flag with a title on the mega menu */
+.o-icon-with-title {
+    display: flex;
+    gap: var(--spacing-s);
+}
+
+
+
+
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / LAYOUT
 =================================================== */
 /* a*/
@@ -1800,12 +1811,6 @@ body .site-logo {
 .c-mega-menu__grid [src*=".svg"] {
     /* Increase */
     font-size: 1rem;
-}
-
-.c-mega-menu__grid [src*=".svg"] {
-    position: relative;
-    /* e.g. flags */
-    top: -0.1em;
 }
 
 /* Exceptions */
