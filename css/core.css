@@ -960,7 +960,6 @@ a,
     /* e.g. >> /art-club > Learn more link */
     text-underline-offset: 0.5em;
     display: inline-block;
-    margin-block-end: var(--spacing-l);
     margin-block-start: var(--spacing-s);
 }
 
