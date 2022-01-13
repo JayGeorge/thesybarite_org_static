@@ -159,7 +159,7 @@
     --font-size-l-2-line-height: 0.95;
 
     --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);
-    --font-size-l-3-art-club: clamp(calc(11.089em * 0.75), 16vw, 11.089em);
+    --font-size-l-3-art-club: clamp(calc(11.089em * 0.5), 16vw, 11.089em);
     /* GROUP VARIABLES -- DECORATION -- ICONS -- SIZES
     =================================================== */
     --icon-size-m: 1.5rem;
@@ -2499,17 +2499,14 @@ body .site-logo {
 .image-with-text__text span {
     position: absolute;
     top: 0.7em;
-    left: 1.8em;
+    top: 0;
+    left: 0;
     font-size: 0.146em;
+    font-size: 0.2em;
     /* font-family: var(--font-family-main); */
     /* font-size: 0.09em; */
     text-transform: uppercase;
 /*     text-shadow: 1px 1px 10px hsl(60deg 5% 8%); */
-}
-
-.image-with-text--art-club .image-with-text__text span {
-    top: 0.1em;
-    font-size: 0.236em;
 }
 
 [data-gallery="gallery"][rel="2"] {
@@ -2552,6 +2549,14 @@ body .site-logo {
     }
 }
 
+/* Custom */
+@media (min-width: 768px) {
+    .image-with-text__text span {
+        /* e.g. champagne club */
+        left: 0.6em;
+    }
+}
+
 /* Another tweak for Landscape-ish devices e.g. iPad landscape */
 @media (min-width: 1024px) and (max-height: 930px) {
     .image-with-text__text {
@@ -2565,6 +2570,11 @@ body .site-logo {
         /* Increase */
         max-width: var(--max-width-2);
     }
+}
+
+.image-with-text--art-club .image-with-text__text span {
+    top: 0.5em;
+    font-size: 0.146em;
 }
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
