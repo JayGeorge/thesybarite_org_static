@@ -2523,12 +2523,12 @@ body .site-logo {
 }
 
 .c-cta-box {
-    position: fixed;
+    position: absolute;
     /* Don't pull above the mega menu */
     /* z-index: 1; */
     /* Not 11em otherwise it peaks out of the bottom of the page on e.g. >> /art-club */
     /* top: 11em; */
-    top: 10em;
+    top: 8em;
     right: 0;
     width: var(--cta-box-width);
 }
@@ -2547,6 +2547,15 @@ body .site-logo {
     /* Unhide arrow */
     .image-with-text__arrow {
         display: initial;
+    }
+}
+
+/* Custom */
+@media (min-width: 600px) {
+    .c-cta-box {
+        position: fixed;
+        /* Increase */
+        top: 10em;
     }
 }
 
@@ -2640,7 +2649,7 @@ body .site-logo {
 }
 
 .c-cta-box {
-    color: var(--colour-pale);
+    color: white;
     border: 1px solid white;
     border-inline-end: 0;
     border-inline-start: 0;
@@ -2656,13 +2665,6 @@ body .site-logo {
     padding-block-end: 0.1em;
     /* Elementor override */
     margin-block-end: 0;
-}
-
-/* Custom */
-@media (max-width: 1024px) {
-    .c-cta-box {
-        display: none;
-    }
 }
 /* GROUP COMPONENTS / IMAGE WITH TEXT / ANIMATIONS
 =================================================== */
