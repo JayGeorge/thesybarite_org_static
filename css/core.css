@@ -158,7 +158,8 @@
     --font-size-l-2: clamp(calc(6.8em * 0.55), 13.5vw, 6.8em);
     --font-size-l-2-line-height: 0.95;
 
-    --font-size-l-3: clamp(calc(11.089em * 0.75), 16vw, 11.089em);
+    --font-size-l-3: clamp(calc(11.089em * 0.39), 16vw, 11.089em);
+    --font-size-l-3-art-club: clamp(calc(11.089em * 0.75), 16vw, 11.089em);
     /* GROUP VARIABLES -- DECORATION -- ICONS -- SIZES
     =================================================== */
     --icon-size-m: 1.5rem;
@@ -1590,6 +1591,8 @@ body .site-logo {
 .site-logo div {
     text-transform: uppercase;
     font-size: 0.65rem;
+    position: relative;
+    top: -0.2em;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / ELEMENTOR OVERRIDES
 =================================================== */
@@ -2496,13 +2499,17 @@ body .site-logo {
 .image-with-text__text span {
     position: absolute;
     top: 0.7em;
-    left: 1.6em;
-    /* font-family: var(--font-family-main); */
-    font-size: 0.236em;
+    left: 1.8em;
     font-size: 0.146em;
+    /* font-family: var(--font-family-main); */
     /* font-size: 0.09em; */
     text-transform: uppercase;
 /*     text-shadow: 1px 1px 10px hsl(60deg 5% 8%); */
+}
+
+.image-with-text--art-club .image-with-text__text span {
+    top: 0.1em;
+    font-size: 0.236em;
 }
 
 [data-gallery="gallery"][rel="2"] {
@@ -2601,6 +2608,10 @@ body .site-logo {
     font-size: var(--font-size-l-3);
     line-height: var(--font-size-l-3-line-height);
     line-height: 0.9;
+}
+
+.image-with-text--art-club .image-with-text__text :is(h1, h2, h3, p) {
+    font-size: var(--font-size-l-3-art-club);
 }
 
 .image-with-text__text::before {

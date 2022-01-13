@@ -28,7 +28,7 @@
 
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main">
-        <header class="image-with-text">
+        <header class="image-with-text image-with-text--art-club">
             <div class="image-with-text__text">
                 <h1 class="u-ligatures"><span>the</span>art <br/>club</h1>
             </div>
