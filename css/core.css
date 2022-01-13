@@ -958,8 +958,8 @@ a,
     /* e.g. >> /art-club > Learn more link */
     text-underline-offset: 0.5em;
     display: inline-block;
-    padding-block-end: var(--spacing-l);
-    padding-block-start: var(--spacing-s);
+    margin-block-end: var(--spacing-l);
+    margin-block-start: var(--spacing-s);
 }
 
 html {
@@ -1237,6 +1237,25 @@ button.c-btn--2 {
 .c-btn--s a {
     padding: 8px 24px;
     font-size: var(--font-size-s-x-x);
+}
+
+/* Link button */
+/* HTML Example...
+
+    <a href="/art-club-single" class="c-link-button">
+        <span>Learn more</span> </svg>
+    </a>
+
+*/
+.c-link-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.c-link-button svg {
+    position: relative;
+    top: 0.2em;
+    margin-inline-start: var(--spacing-s-1)!important;
 }
 /* GROUP COMPONENTS / FRAMEWORK / BUTTONS / ACCESSIBILITY / HOVER
 =================================================== */

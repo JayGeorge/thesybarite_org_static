@@ -48,12 +48,10 @@
                     <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                 </div>
                 <div class="o-article-grid__column-2">
-                    <a href="/art-club-single.php">
                     <figure>
                         <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
                         <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
                     </figure>
-                    </a>
                 </div>
             </div>
         </div>
@@ -87,7 +85,7 @@
                 <div class="c-gallery__item">
                     <h3 class="c-gallery__hero-title">Ajarb Bernard Ategwa</h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
-                    <p><a href="" class="c-link-button">Learn more</a></p>
+                    <p><a href="/art-club-single-artist.php" class="c-link-button"><span>Learn more</span> <?php include 'img/svg/arrow-right.php'; ?></a></p>
                 </div>
                 <figure class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
@@ -116,7 +114,7 @@
                     <h3 class="c-gallery__hero-title">Hamid Nortey / Modern<br/>Life</h3>
                     <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                     <p>An emerging artist based in Accra, Hamid Nii Nortey has stood witness to the city’s considerable transformation in recent decades – one that has materialized in its expansion and architectural development and in the social dynamics that have emanated from it.</p>
-                    <p><a href="">Learn more</a></p>
+                    <p><a href="/art-club-single.php" class="c-link-button"><span>Learn more</span> <?php include 'img/svg/arrow-right.php'; ?></a></p>
                 </div>
                 <figure class="c-gallery__item">
                     <img id="gallery-2" data-fancybox="gallery" data-caption="Build an empire, leave a legacy" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
