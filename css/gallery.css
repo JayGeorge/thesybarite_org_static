@@ -216,6 +216,7 @@
 @media (max-width: 729px) {
     .c-gallery-groups__hero-title {
         font-size: var(--font-size-l);
+        line-height: var(--font-size-l-line-height);
     }
 }
 
