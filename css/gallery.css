@@ -70,10 +70,6 @@
     padding-block: var(--spacing-l) var(--spacing-l-4);
 }
 
-.c-gallery__item {
-    display: grid;
-}
-
 .c-gallery__item .o-icon-row {
     padding-block-start: var(--spacing-s);
 }

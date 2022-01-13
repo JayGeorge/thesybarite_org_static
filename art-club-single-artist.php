@@ -87,14 +87,14 @@
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Am I looking good" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
                     <div class="o-icon-row">
                         <span class="c-gallery__title">Am I looking good (2019)</span>
-                        <a href="" class="c-price">£3,200</a>
+                        <a href="" class="c-price">Place Bid</a>
                     </div>
                 </div>
                 <div class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Am almost done" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
                     <div class="o-icon-row">
                         <span class="c-gallery__title">Am almost done (2018)</span>
-                        <a href="" class="c-price">£4,600</a>
+                        <a href="" class="c-price">Place Bid</a>
                     </div>
                 </div>
                 <div class="c-gallery__item">
@@ -108,7 +108,7 @@
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Douala" src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
                     <div class="o-icon-row">
                         <span class="c-gallery__title">Douala (2018)</span>
-                        <a href="" class="c-price">£11,000</a>
+                        <a href="" class="c-price">Place Bid</a>
                     </div>
                 </div>
             </div>

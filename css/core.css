@@ -1232,8 +1232,6 @@ button.c-btn--2 {
 
 .c-btn-text {
     margin-inline-end: var(--spacing-l);
-    /* e.g. >> /art-club-single */
-    font-size: var(--font-size-s-x);
 }
 
 .c-btn--s a {
@@ -2698,7 +2696,7 @@ body .site-logo {
 /* GROUP COMPONENTS / IMAGE WITH PRICE / DECORATION
 =================================================== */
 .c-price {
-    font-size: var(--font-size-s-x);
+    text-transform: uppercase;
 }
 
 
