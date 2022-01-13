@@ -148,6 +148,7 @@
     --font-size-m-line-height: 1.325;
 
     --font-size-l: 2.618em;
+    --font-size-l-line-height: 1.15;
     --font-size-l-rem: 2.618rem;
 
     --font-size-l-1: clamp(calc(4.236em * 0.6), 12vw, 4.236em);

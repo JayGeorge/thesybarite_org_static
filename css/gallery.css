@@ -99,7 +99,7 @@
 
 .c-gallery__hero-title {
     font-size: var(--font-size-l-1);
-    line-height: var(--font-size-l-2-line-height);
+    line-height: var(--font-size-l-1-line-height);
 }
 
 .c-gallery__hero-title a {
