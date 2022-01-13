@@ -39,16 +39,10 @@
                     </div>
                     <div class="o-intro-grid__column-2">
                         <div>
-                            <figure>
-                                <img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="Something" />
-                                <figcaption>Early morning selfie by Ajarb Bernard Ategwa</figcaption>
-                            </figure>
+                            <img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="Something" />
                             <div class="o-icon-row">
-                                <div class="c-price">£30,000</div>
-                                <a class="c-btn-text u-icon-right-m" href="">Buy <img src="/img/svg/arrow-right.svg" alt="right arrow" /></a>
-                                <img src="/img/svg/facebook.svg" alt="Facebook" />
-                                <img src="/img/svg/twitter.svg" alt="Twitter" />
-                                <img src="/img/svg/email.svg" alt="Email" />
+                                <span class="c-gallery__title">Early morning selfie (2019)</span>
+                                <a href="" class="c-price">£10,000</a>
                             </div>
                         </div>
                     </div>
@@ -74,8 +68,12 @@
             });
         </script>
         <div class="u-panel-white">
-            <h2 class="c-eyebrow-heading">Everyday Life</h2>
+            <h2 class="c-eyebrow-heading">December 2021</h2>
             <div class="c-gallery">
+                <div class="c-gallery__item">
+                    <h3 class="c-gallery__hero-title"><a href="/art-club-single-artist.php">Modern Day Life</a></h3>
+                    <p>Some info about this exhibition. Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                </div>
                 <div class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
                     <div class="o-icon-row">
@@ -112,8 +110,12 @@
                     </div>
                 </div>
             </div>
-            <h2 class="c-eyebrow-heading">Some Other Exhibition</h2>
+            <h2 class="c-eyebrow-heading">Summer 2021</h2>
             <div class="c-gallery">
+                <div class="c-gallery__item">
+                    <h3 class="c-gallery__hero-title"><a href="/art-club-single-artist.php">Some Other Exhibition</a></h3>
+                    <p>Some info about this exhibition. Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                </div>
                 <div class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
                     <div class="o-icon-row">

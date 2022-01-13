@@ -1406,6 +1406,10 @@ h2 + .o-hero-buttons {
     max-width: var(--max-width-reading-short);
 }
 
+.o-intro-grid img {
+    margin-block-end: var(--spacing-s);
+}
+
 .o-intro-grid .o-icon-row {
     /* e.g. >> /art-club-single */
     align-items: flex-end;
@@ -2236,13 +2240,7 @@ body .site-logo {
 =================================================== */
 .c-eyebrow-heading {
     padding-block: 0 var(--spacing-m);
-}
-
-/* --mq-nav-opens-before */
-@media (max-width: 1199px) {
-    .c-eyebrow-heading {
-        padding-inline: var(--spacing-l);
-    }
+    padding-inline: var(--spacing-l);
 }
 /* GROUP COMPONENTS / EYEBROW HEADING / DECORATION
 =================================================== */
