@@ -155,19 +155,28 @@
     display: grid;
     /* Prevent overflow on screens less than px value */
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 18.75em), 1fr));
-    gap: var(--spacing-l) var(--spacing-m);
+    gap: var(--spacing-l-1) var(--spacing-m);
 }
 
 .c-gallery-groups__gallery:not(.c-gallery-groups__gallery--landscape) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-s);
+    gap: var(--spacing-s-x);
+}
+
+.c-gallery-groups--compressed .c-gallery-groups__gallery {
+    grid-template-columns: repeat(3, 1fr);
 }
 /* GROUP COMPONENTS / GALLERY / SPACING
 =================================================== */
 .c-gallery-groups {
     padding-inline: var(--spacing-l);
     padding-block: var(--spacing-l) var(--spacing-l-4);
+}
+
+.c-gallery-groups + [class*="u-width"] {
+    /* e.g. >> /art-club */
+    padding-block-start: var(--spacing-l);
 }
 
 .c-gallery-groups__hero-title {
@@ -195,7 +204,7 @@
 
 .c-gallery-groups p {
     font-size: var(--font-size-s-x);
-    color: var(--colour-grey-reading);
+    color: var(--colour-black-off);
     line-height: var(--font-size-s-x-line-height);
 }
 
@@ -203,11 +212,4 @@
     font-size: var(--font-size-s);
     color: var(--colour-black-off);
     font-family: var(--font-family-headline);
-}
-
-/* --mq-nav-opens-after */
-@media (min-width: 1200px) {
-/*     .c-gallery-groups__hero-title {
-        text-indent: 2.5rem;
-    } */
 }

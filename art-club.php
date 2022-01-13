@@ -30,7 +30,7 @@
     <main tabindex="-1" id="main">
         <header class="image-with-text">
             <div class="image-with-text__text">
-                <h1><span>the</span>art <br/>club</h1>
+                <h1 class="u-ligatures"><span>the</span>art <br/>club</h1>
             </div>
             <img src="/img/clubs/art-club.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
             <a href="#arrow-target" class="image-with-text__arrow">
@@ -110,6 +110,23 @@
                     <figcaption>Douala</figcaption>
                 </figure>
             </div>
+            <h2 class="c-eyebrow-heading">Featured Exhibition</h2>
+            <div class="c-gallery">
+                <div class="c-gallery__item">
+                    <h3 class="c-gallery__hero-title">Hamid Nortey / Modern<br/>Life</h3>
+                    <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
+                    <p>An emerging artist based in Accra, Hamid Nii Nortey has stood witness to the city’s considerable transformation in recent decades – one that has materialized in its expansion and architectural development and in the social dynamics that have emanated from it.</p>
+                    <p><a href="">Learn more</a></p>
+                </div>
+                <figure class="c-gallery__item">
+                    <img id="gallery-2" data-fancybox="gallery" data-caption="Build an empire, leave a legacy" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                    <figcaption>Build an empire, leave a legacy</figcaption>
+                </figure>
+                <figure class="c-gallery__item">
+                    <img id="gallery-2" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
+                    <figcaption>Deep Summer is when laziness finds respectability</figcaption>
+                </figure>
+            </div>
             <h2 class="c-eyebrow-heading">Browse By Artist</h2>
             <?php /* This would pull in the latest works from the artist */ ?>
             <div class="c-gallery-groups">
@@ -153,22 +170,95 @@
                     </div>
                 </div>
             </div>
-            <h2 class="c-eyebrow-heading">Modern Life</h2>
-            <div class="c-gallery">
-                <div class="c-gallery__item">
-                    <h3 class="c-gallery__hero-title">Hamid Nortey</h3>
-                    <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
-                    <p>An emerging artist based in Accra, Hamid Nii Nortey has stood witness to the city’s considerable transformation in recent decades – one that has materialized in its expansion and architectural development and in the social dynamics that have emanated from it.</p>
-                    <p><a href="">Learn more</a></p>
+            <h2 class="c-eyebrow-heading">Browse By Exhibition</h2>
+            <div class="c-gallery-groups">
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Hamid Nortey / Modern Life</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
+                    </div>
                 </div>
-                <figure class="c-gallery__item">
-                    <img id="gallery-2" data-fancybox="gallery" data-caption="Build an empire, leave a legacy" src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
-                    <figcaption>Build an empire, leave a legacy</figcaption>
-                </figure>
-                <figure class="c-gallery__item">
-                    <img id="gallery-2" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
-                    <figcaption>Deep Summer is when laziness finds respectability</figcaption>
-                </figure>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Phillip Humm / Dialectic</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery c-gallery-groups__gallery--landscape">
+                        <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Ajarb Ategwa / Everyday Life</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
+                    </div>
+                </div>
+            </div>
+            <h2 class="c-eyebrow-heading">Browse By Theme</h2>
+            <?php /* This would pull in the latest works from the artist */ ?>
+            <div class="c-gallery-groups c-gallery-groups--compressed">
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">African Art</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/sungi-mlengeya/1.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Apocolypse</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Abstraction</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/5.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/1.jpg" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Abstraction</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/5.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/moussa-traore/1.jpg" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">African Art</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                        <img src="/img/clubs/art-club/gallery/sungi-mlengeya/1.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" />
+                        <img src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
+                    </div>
+                </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title">Apocolypse</h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery">
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                    <img src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
+                    </div>
+                </div>
             </div>
             <div class="u-width-max-1">
                 <div class="c-article c-article--compressed-b-1">

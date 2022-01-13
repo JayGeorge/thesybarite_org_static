@@ -20,7 +20,7 @@
 <?php /* for modules, use the below to link to your stylesheet */ ?>
 <?php /* <link rel="stylesheet" href="style.css"> */?>
 
-<body>
+<body class="s-dark-cover-image s-cover-image-with-sky">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -31,9 +31,9 @@
         <article>
             <header class="image-with-text">
                 <div class="image-with-text__text">
-                    <h1><span>the</span> champagne <br/>club</h1>
+                    <h1 class="u-ligatures"><span>the</span> champagne <br/>club</h1>
                 </div>
-                <img src="/img/1.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+                <img src="/img/clubs/champagne-club/hero.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
                 <a href="arrow-target" class="image-with-text__arrow">
                     <?php include 'img/svg/down-arrow.php'; ?>
                 </a>

@@ -77,6 +77,8 @@
     =================================================== */
     /* Dark to light */
     --colour-black: black;
+    /* Slightly lighter for busier sections e.g. >> /art-club */
+    --colour-black-off: hsl(0 0% 20%);
     /* e.g. Search in the mega menu. Made lighter at later media query */
     --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
     --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
@@ -1923,6 +1925,18 @@ body .site-logo {
         font-weight: initial;
     }
 }
+
+/* --mq-nav-opens-after */
+@media (min-width: 1200px) {
+    .s-cover-image-with-sky .c-site-header::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 10em;
+        background: radial-gradient(ellipse at top left, hsl(203deg 53% 67%) 0%,transparent 70%);
+    }
+}
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION / DARK COVER IMAGE
 =================================================== */
 /* Notes...
@@ -2451,6 +2465,8 @@ body .site-logo {
     height: 80vh;
     object-fit: cover;
     object-position: top;
+/*     object-position: 0% 33%; */
+    object-position: 0% 40%;
 }
 
 .image-with-text__text {
