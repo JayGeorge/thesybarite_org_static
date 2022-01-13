@@ -1411,6 +1411,10 @@ h2 + .o-hero-buttons {
     align-items: flex-end;
 }
 
+.o-intro-grid p:last-child {
+    padding-block-end: var(--spacing-l);
+}
+
 /* --mq-article-breakpoint-1-after */
 @media (min-width: 1024px) {
     .o-intro-grid__inner {
