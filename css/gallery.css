@@ -102,6 +102,10 @@
     line-height: var(--font-size-l-2-line-height);
 }
 
+.c-gallery__hero-title a {
+    text-decoration: none;
+}
+
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
     .c-gallery__hero-title {
@@ -212,4 +216,8 @@
     font-size: var(--font-size-s);
     color: var(--colour-black-off);
     font-family: var(--font-family-headline);
+}
+
+.c-gallery-groups__hero-title a {
+    text-decoration: none;
 }

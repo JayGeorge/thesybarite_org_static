@@ -1421,13 +1421,8 @@ h2 + .o-hero-buttons {
 
     .o-intro-grid .o-intro-grid__column-2 {
         position: relative;
-        top: var(--spacing-l-2);
         display: grid;
         align-items: end;
-    }
-
-    .c-main-with-no-header .o-intro-grid__column-2 {
-        top: 0;
     }
 }
 
@@ -2258,17 +2253,6 @@ body .site-logo {
     padding-block-start: var(--spacing-vh-m);
 }
 
-.c-main-with-no-header::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: var(--spacing-s);
-    background-image: url("/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg");
-    background-size: cover;
-}
-
 .price {
     position: absolute;
     right: -6em;
@@ -2631,9 +2615,12 @@ body .site-logo {
 
 .c-cta-box {
     color: var(--colour-pale);
-    background: black;
+    border: 1px solid white;
+    border-inline-end: 0;
+    border-inline-start: 0;
     padding: var(--spacing-s-2)!important;
     font-size: var(--font-size-s);
+    backdrop-filter: blur(10px);
 }
 
 .c-cta-box p {

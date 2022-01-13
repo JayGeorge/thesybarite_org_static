@@ -34,24 +34,26 @@
                 <div class="o-intro-grid__inner">
                     <div class="o-intro-grid__column-1">
                         <h2>Ajarb Bernard Ategwa</h2>
-                        <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
+                        <p class="c-entry-lead"><em>Ategwa</em> uses portrait formats and draws on subjects from a photo stuido in his neighbourhood.<br/>He offers a local perspective on modes of self representation in Cameroon today.</p>
                         <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                     </div>
                     <div class="o-intro-grid__column-2">
-                        <figure>
-                            <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="Something" />
-                            <figcaption>Build an empire, leave a legacy by Hamid Nortey</figcaption>
-                        </figure>
-                        <div class="o-icon-row">
-                            <div class="c-price">£30,000</div>
-                            <a class="c-btn-text u-icon-right-m" href="">Buy <img src="/img/svg/arrow-right.svg" alt="right arrow" /></a>
-                            <img src="/img/svg/facebook.svg" alt="Facebook" />
-                            <img src="/img/svg/twitter.svg" alt="Twitter" />
-                            <img src="/img/svg/email.svg" alt="Email" />
+                        <div>
+                            <figure>
+                                <img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="Something" />
+                                <figcaption>Early morning selfie by Ajarb Bernard Ategwa</figcaption>
+                            </figure>
+                            <div class="o-icon-row">
+                                <div class="c-price">£30,000</div>
+                                <a class="c-btn-text u-icon-right-m" href="">Buy <img src="/img/svg/arrow-right.svg" alt="right arrow" /></a>
+                                <img src="/img/svg/facebook.svg" alt="Facebook" />
+                                <img src="/img/svg/twitter.svg" alt="Twitter" />
+                                <img src="/img/svg/email.svg" alt="Email" />
+                            </div>
                         </div>
                     </div>
                     <div class="o-intro-grid__column-3">
-                        <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
+                        <p>Something about this portrait. glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                     </div>
                 </div>
             </div>
@@ -72,29 +74,8 @@
             });
         </script>
         <div class="u-panel-white">
-            <h2 class="c-eyebrow-heading">Undiscovered artists</h2>
+            <h2 class="c-eyebrow-heading">Everyday Life</h2>
             <div class="c-gallery">
-                <div class="c-gallery__item">
-                    <img id="gallery-1" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
-                    <div class="o-icon-row">
-                        <span class="c-gallery__title">Dialectic (2005)</span>
-                        <a href="" class="c-price">£17,000</a>
-                    </div>
-                </div>
-                <div class="c-gallery__item">
-                    <img id="gallery-1" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
-                    <div class="o-icon-row">
-                        <span class="c-gallery__title">No.1 (2015)</span>
-                        <a href="" class="c-price">£5,000</a>
-                    </div>
-                </div>
-                <div class="c-gallery__item">
-                    <img id="gallery-1" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/phillip-humm/dialectic.jpg" alt="t" />
-                    <div class="o-icon-row">
-                        <span class="c-gallery__title">No.2 (2016)</span>
-                        <a href="" class="c-price">£18,000</a>
-                    </div>
-                </div>
                 <div class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
                     <div class="o-icon-row">
@@ -117,10 +98,41 @@
                     </div>
                 </div>
                 <div class="c-gallery__item">
-                    <img id="gallery-1" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/hamid-nortey/deep-summer.jpg" alt="t" />
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Yaounde" src="/img/clubs/art-club/gallery/ajarb-ategwa/yaounde.png" alt="t" />
                     <div class="o-icon-row">
-                        <span class="c-gallery__title">Deep Summer (2021)</span>
-                        <a href="" class="c-price">£4,090</a>
+                        <span class="c-gallery__title">Yaounde (2021)</span>
+                        <a href="" class="c-price">£11,500</a>
+                    </div>
+                </div>
+                <div class="c-gallery__item">
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Douala" src="/img/clubs/art-club/gallery/ajarb-ategwa/douala.png" alt="t" />
+                    <div class="o-icon-row">
+                        <span class="c-gallery__title">Douala (2018)</span>
+                        <a href="" class="c-price">£11,000</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="c-eyebrow-heading">Some Other Exhibition</h2>
+            <div class="c-gallery">
+                <div class="c-gallery__item">
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Early morning selfie" src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" />
+                    <div class="o-icon-row">
+                        <span class="c-gallery__title">Early morning selfie (2019)</span>
+                        <a href="" class="c-price">£10,000</a>
+                    </div>
+                </div>
+                <div class="c-gallery__item">
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Am I looking good" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-i-looking-good.png" alt="t" />
+                    <div class="o-icon-row">
+                        <span class="c-gallery__title">Am I looking good (2019)</span>
+                        <a href="" class="c-price">£3,200</a>
+                    </div>
+                </div>
+                <div class="c-gallery__item">
+                    <img id="gallery-1" data-fancybox="gallery" data-caption="Am almost done" src="/img/clubs/art-club/gallery/ajarb-ategwa/am-almost-done.png" alt="t" />
+                    <div class="o-icon-row">
+                        <span class="c-gallery__title">Am almost done (2018)</span>
+                        <a href="" class="c-price">£4,600</a>
                     </div>
                 </div>
                 <div class="c-gallery__item">

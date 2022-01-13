@@ -33,7 +33,7 @@
             <div class="o-intro-grid o-intro-grid--with-image">
                 <div class="o-intro-grid__inner">
                     <div class="o-intro-grid__column-1">
-                        <h2>Hamid Nortey / Modern Life</h2>
+                        <h2>Apocolypse</h2>
                         <p class="c-entry-lead">A new series of <em>glamorous urban scenes</em> bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                         <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                     </div>
@@ -72,7 +72,7 @@
             });
         </script>
         <div class="u-panel-white">
-            <h2 class="c-eyebrow-heading">Modern Life</h2>
+            <h2 class="c-eyebrow-heading">Apocolypse</h2>
             <div class="c-gallery">
                 <div class="c-gallery__item">
                     <img id="gallery-1" data-fancybox="gallery" data-caption="Deep Summer is when laziness finds respectability" src="/img/clubs/art-club/gallery/phillip-humm/2.jpg" alt="t" />
