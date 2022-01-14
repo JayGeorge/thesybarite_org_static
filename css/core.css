@@ -386,6 +386,10 @@ p {
     padding-block-end: var(--spacing-s-1);
 }
 
+p:last-child {
+    padding-block-end: 0;
+}
+
 p,
 ol,
 ul {
@@ -1412,10 +1416,6 @@ h2 + .o-hero-buttons {
 .o-intro-grid .o-icon-row {
     /* e.g. >> /art-club-single */
     align-items: flex-end;
-}
-
-.o-intro-grid p:last-child {
-    padding-block-end: var(--spacing-l);
 }
 
 /* --mq-article-breakpoint-1-after */
