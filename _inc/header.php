@@ -168,7 +168,7 @@
                                     </li>
                                     <li class="c-mega-menu__title">
                                         <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
-                                        <a href="">The Art Club</a>
+                                        <a href="/art-club.php">The Art Club</a>
                                     </li>
                                 </ul>
                             </div>
@@ -177,11 +177,11 @@
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
                                         <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-artist.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
-                                        <a href="">Featured Artist</a>
+                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/cameroon.svg" alt="Cameroon Flag" /> Featured Artist — Ajarb Bernard Ategwa</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-exhibition.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
-                                        <a href="">Featured Exhibition</a>
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-exhibition.jpg" alt="" loading="lazy" width="800" height="448" /></a>
+                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/ghana.svg" alt="Ghanaian Flag" /> Featured Exhibition — Ajarb Bernard Ategwa</a>
                                     </li>
                                 </ul>
                                 <ul class="c-mega-menu__full-width">
