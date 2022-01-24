@@ -188,7 +188,7 @@
 }
 
 .c-gallery-groups p {
-    padding-block-end: var(--spacing-l);
+    padding-block-end: var(--spacing-m);
     padding-inline-end: var(--spacing-s-2);
 }
 /* GROUP COMPONENTS / GALLERY / DECORATION
