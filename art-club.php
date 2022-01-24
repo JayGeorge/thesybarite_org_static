@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="c-intro-grid__column-3">
-                            <p>Something about this portrait. glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
+                            <p>Something about this portrait. glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty.</p>
                         </div>
                     </div>
                 </div>
