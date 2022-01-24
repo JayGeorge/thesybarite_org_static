@@ -1391,12 +1391,6 @@ h2 + .o-hero-buttons {
 */
 /* GROUP OBJECTS / INTRO GRID / LAYOUT
 =================================================== */
-.c-intro-grid {
-    position: relative;
-    max-width: var(--max-width-1);
-    margin-inline: auto;
-}
-
 .c-intro-grid__column-1 {
     max-width: var(--max-width-reading);
 }
@@ -2501,8 +2495,6 @@ body .site-logo {
     height: 80vh;
     object-fit: cover;
     object-position: top;
-/*     object-position: 0% 33%; */
-    object-position: 0% 40%;
 }
 
 .image-with-text__text {
