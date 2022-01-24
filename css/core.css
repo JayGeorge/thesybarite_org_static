@@ -1430,6 +1430,7 @@ h2 + .o-hero-buttons {
 /* --mq-article-breakpoint-1-after */
 @media (min-width: 1024px) {
     .c-intro-grid__inner {
+        grid-template-columns: 1fr 1fr;
         gap: var(--spacing-s) var(--spacing-l);
     }
 

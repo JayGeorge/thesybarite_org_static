@@ -176,6 +176,15 @@
                         <a href="/art-club-single-artist.php"><img src="/img/clubs/art-club/gallery/sungi-mlengeya/2.jpg" alt="t" /></a>
                     </div>
                 </div>
+                <div class="c-gallery-groups__item">
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-artist.php">Phillip Humm</a></h3>
+                    <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
+                    <div class="c-gallery-groups__gallery c-gallery-groups__gallery--landscape">
+                        <a href="/art-club-single-artist.php">
+                            <img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" />
+                        </a>
+                    </div>
+                </div>
             </div>
             <h2 class="c-eyebrow-heading">Browse By Exhibition</h2>
             <div class="c-gallery-groups">
