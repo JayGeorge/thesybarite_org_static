@@ -1366,13 +1366,13 @@ h2 + .o-hero-buttons {
 /* HTML Example...
 
     <div class="c-article">
-        <div class="o-intro-grid o-intro-grid--with-image">
-            <div class="o-intro-grid__column-1">
+        <div class="c-intro-grid c-intro-grid--with-image">
+            <div class="c-intro-grid__column-1">
                 <h2>Undiscovered emerging artists</h2>
                 <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
                 <img class="u-decorative-arrow" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
             </div>
-            <div class="o-intro-grid__column-2">
+            <div class="c-intro-grid__column-2">
                 <figure>
                     <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
                     <figcaption>Both physical and digital art—A Phy(gital) Art Club</figcaption>
@@ -1385,48 +1385,48 @@ h2 + .o-hero-buttons {
 
 /* Modifiers...
 
-    .o-intro-grid--with-image <-- the second column contains an image
-    .o-intro-grid--with-form <-- the second column contains a form
+    .c-intro-grid--with-image <-- the second column contains an image
+    .c-intro-grid--with-form <-- the second column contains a form
 
 */
 /* GROUP OBJECTS / INTRO GRID / LAYOUT
 =================================================== */
-.o-intro-grid {
+.c-intro-grid {
     position: relative;
     max-width: var(--max-width-1);
     margin-inline: auto;
 }
 
-.o-intro-grid__inner {
+.c-intro-grid__inner {
     max-width: var(--max-width-columns);
 }
 
-.o-intro-grid__column-1 {
+.c-intro-grid__column-1 {
     max-width: var(--max-width-reading);
 }
 
-.o-intro-grid--with-image .o-intro-grid__column-2 {
+.c-intro-grid--with-image .c-intro-grid__column-2 {
     max-width: var(--max-width-reading-short);
 }
 
-.o-intro-grid img {
+.c-intro-grid img {
     margin-block-end: var(--spacing-s);
 }
 
-.o-intro-grid .o-icon-row {
+.c-intro-grid .o-icon-row {
     /* e.g. >> /art-club-single */
     align-items: flex-end;
 }
 
 /* --mq-article-breakpoint-1-after */
 @media (min-width: 1024px) {
-    .o-intro-grid__inner {
+    .c-intro-grid__inner {
         display: grid;
         gap: var(--spacing-l) var(--spacing-l-4);
         grid-template-columns: 55fr 45fr;
     }
 
-    .o-intro-grid .o-intro-grid__column-2 {
+    .c-intro-grid .c-intro-grid__column-2 {
         position: relative;
         display: grid;
         align-items: end;
@@ -1435,14 +1435,14 @@ h2 + .o-hero-buttons {
 
 /* --mq-intro-grid-breakpoint-1 */
 @media (min-width: 1150px) {
-    .o-intro-grid .o-intro-grid__column-3 {
+    .c-intro-grid .c-intro-grid__column-3 {
         position: absolute;
         right: 0;
         bottom: var(--spacing-l);
         width: 17%;
     }
 }
-.o-intro-grid p {
+.c-intro-grid p {
     /* e.g. .c-entry-lead */
     padding-inline: 0;
 }
@@ -1450,13 +1450,13 @@ h2 + .o-hero-buttons {
 =================================================== */
 /* --mq-article-breakpoint-1-before */
 @media (max-width: 1023px) {
-    .o-intro-grid__column-3 {
+    .c-intro-grid__column-3 {
         padding-block-start: var(--spacing-l);
     }
 }
 /* --mq-intro-grid-breakpoint-1 */
 @media (min-width: 1150px) {
-    .o-intro-grid__column-3 {
+    .c-intro-grid__column-3 {
         font-size: var(--font-size-s-x-x);
     }
 }
