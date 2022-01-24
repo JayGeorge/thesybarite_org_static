@@ -163,11 +163,11 @@
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club-mega-menu.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
                                         <a href="">The Champagne Club</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
                                         <a href="">The Art Club (Coming Soon)</a>
                                     </li>
                                 </ul>
