@@ -106,13 +106,6 @@
     text-decoration: none;
 }
 
-/* --mq-nav-opens-after */
-@media (min-width: 1200px) {
-    .c-gallery__hero-title {
-        text-indent: 2.5rem;
-    }
-}
-
 
 
 
