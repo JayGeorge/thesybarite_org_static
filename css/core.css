@@ -1419,9 +1419,25 @@ h2 + .o-hero-buttons {
 }
 
 /* --mq-article-breakpoint-1-after */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .c-intro-grid__inner {
         display: grid;
+        grid-template-columns: 55fr 45fr;
+        gap: var(--spacing-l) var(--spacing-l);
+    }
+
+    .c-intro-grid__column-1 {
+        grid-column: -1 / 1;
+    }
+
+    .c-intro-grid__column-2 {
+        grid-column: -1 / 0;
+    }
+}
+
+/* --mq-article-breakpoint-1-after */
+@media (min-width: 1024px) {
+    .c-intro-grid__inner {
         gap: var(--spacing-l) var(--spacing-l-4);
         grid-template-columns: 55fr 45fr;
     }
