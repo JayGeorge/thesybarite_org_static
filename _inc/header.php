@@ -168,8 +168,24 @@
                                     </li>
                                     <li class="c-mega-menu__title">
                                         <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
-                                        <a href="">The Art Club (Coming Soon)</a>
+                                        <a href="">The Art Club</a>
                                     </li>
+                                </ul>
+                            </div>
+                            <h3>Art Club Features</h3>
+                            <div class="c-mega-menu__grid">
+                                <ul class="c-mega-menu__full-width">
+                                    <li class="c-mega-menu__title">
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-artist.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
+                                        <a href="">Featured Artist</a>
+                                    </li>
+                                    <li class="c-mega-menu__title">
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-exhibition.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
+                                        <a href="">Featured Exhibition</a>
+                                    </li>
+                                </ul>
+                                <ul class="c-mega-menu__full-width">
+                                    <li><a href="">View Art Club <span class="u-icon-right-m"><img src="/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
                                 </ul>
                             </div>
                         </div>
