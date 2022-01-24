@@ -30,14 +30,14 @@
     <?php /* Need tabindex="-1" to lock the tab focus here when using Skip to Content */?>
     <main tabindex="-1" id="main" class="c-main-with-no-header">
         <header class="c-article c-article--compressed-b-2">
-            <div class="o-intro-grid o-intro-grid--with-image">
-                <div class="o-intro-grid__inner">
-                    <div class="o-intro-grid__column-1">
+            <div class="c-intro-grid c-intro-grid--with-image">
+                <div class="c-intro-grid__inner">
+                    <div class="c-intro-grid__column-1">
                         <h2>Apocolypse</h2>
                         <p class="c-entry-lead">A new series of <em>glamorous urban scenes</em> bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                         <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                     </div>
-                    <div class="o-intro-grid__column-2">
+                    <div class="c-intro-grid__column-2">
                         <figure>
                             <img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="Something" />
                             <figcaption>Build an empire, leave a legacy by Hamid Nortey</figcaption>
@@ -50,7 +50,7 @@
                             <img src="/img/svg/email.svg" alt="Email" />
                         </div>
                     </div>
-                    <div class="o-intro-grid__column-3">
+                    <div class="c-intro-grid__column-3">
                         <p>Hamid Nii Nortey’s new series of glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                     </div>
                 </div>

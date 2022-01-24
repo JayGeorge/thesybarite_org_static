@@ -42,14 +42,14 @@
         </header>
         <div class="u-panel-white">
             <div id="arrow-target" class="c-article c-article--compressed-b-1">
-                <div class="o-intro-grid o-intro-grid--with-image">
-                    <div class="o-intro-grid__inner">
-                        <div class="o-intro-grid__column-1">
+                <div class="c-intro-grid c-intro-grid--with-image">
+                    <div class="c-intro-grid__inner">
+                        <div class="c-intro-grid__column-1">
                             <h2>Undiscovered emerging artists</h2>
                             <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
                             <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
                         </div>
-                        <div class="o-intro-grid__column-2">
+                        <div class="c-intro-grid__column-2">
                             <div>
                                 <figure>
                                     <img src="/img/clubs/art-club/undiscovered.jpg" alt="Something" />
@@ -57,7 +57,7 @@
                                 </figure>
                             </div>
                         </div>
-                        <div class="o-intro-grid__column-3">
+                        <div class="c-intro-grid__column-3">
                             <p>Something about this portrait. glamorous urban scenes bear witness to Africa’s transforming urban landscape and to its burgeoning middle classes, thereby reclaiming ownership over prevailing narratives of poverty and war.</p>
                         </div>
                     </div>
