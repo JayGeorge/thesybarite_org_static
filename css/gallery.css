@@ -71,7 +71,7 @@
 }
 
 .c-gallery__item .o-icon-row {
-    padding-block-start: var(--spacing-s);
+    padding-block-start: var(--spacing-s-1);
 }
 
 .c-gallery p {

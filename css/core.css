@@ -1398,7 +1398,7 @@ h2 + .o-hero-buttons {
 }
 
 .c-intro-grid img {
-    margin-block-end: var(--spacing-s);
+    margin-block-end: var(--spacing-s-1);
 }
 
 .c-intro-grid .o-icon-row {
@@ -1420,6 +1420,7 @@ h2 + .o-hero-buttons {
 
     .c-intro-grid__column-2 {
         grid-column: -1 / 0;
+        align-self: end;
     }
 }
 
@@ -1475,7 +1476,7 @@ h2 + .o-hero-buttons {
 /* --mq-intro-grid-breakpoint-1 */
 @media (min-width: 1150px) {
     .c-intro-grid__column-1 {
-        padding-inline-end: var(--spacing-l-2);
+        padding-inline-end: var(--spacing-l-1);
     }
 
     .c-intro-grid__column-3 {
