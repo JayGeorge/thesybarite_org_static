@@ -33,6 +33,7 @@
                 <h1 class="u-ligatures"><span>the</span>art <br/>club</h1>
             </div>
             <img src="/img/clubs/art-club.jpg" width="3456" height="2304" alt="Some alt text here" class="image-with-text__image">
+            <!-- wouldn't normally set a link but I saw someone try to click the arrow, so in case they do... -->
             <a href="#arrow-target" class="image-with-text__arrow">
                 <?php include 'img/svg/down-arrow.php'; ?>
             </a>
@@ -47,7 +48,7 @@
                         <div class="c-intro-grid__column-1">
                             <h2>Undiscovered emerging artists</h2>
                             <p class="c-entry-lead"><em>The Art Club</em> is an ecosystem we created to support artists. Our mission is to pioneer and support a showcase emerging talent in both traditional and NFT Art.</p>
-                            <img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                            <a href="#featured" style="cursor: unset"><img class="u-decorative-arrow u-decorative-arrow--diagonal" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" /></a>
                         </div>
                         <div class="c-intro-grid__column-2">
                             <div>
@@ -87,7 +88,7 @@
                     },
                 });
             </script>
-            <h2 class="c-eyebrow-heading">Featured Artist</h2>
+            <h2 id="featured" class="c-eyebrow-heading">Featured Artist</h2>
             <div class="c-gallery">
                 <div class="c-gallery__item">
                     <h3 class="c-gallery__hero-title"><a href="/art-club-single-artist.php">Ajarb Bernard Ategwa</a></h3>
@@ -282,7 +283,8 @@
                         <div class="o-article-grid__column-1">
                             <h2>Book an Appointment with an Artist or Advisor</h2>
                             <p class="c-entry-lead"><em>Contact us</em> and view art in person. Meet the artist as well as art experts. Ask them about their work along with the opportunity to buy one of their exclusive pieces of art.</p>
-                            <img class="u-decorative-arrow u-decorative-arrow--right" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" />
+                            <!-- wouldn't normally do this but I saw someone try to click the arrow, so in case they do... -->
+                            <button style="padding: 0; cursor: unset;" onclick="document.getElementById('name').focus();"><img class="u-decorative-arrow u-decorative-arrow--right" src="/img/svg/arrow-diagonal-2.svg" alt="Visual Arrow" /></button>
                         </div>
                         <div class="o-article-grid__column-2">
                             <div class="s-forms-main-theme">
