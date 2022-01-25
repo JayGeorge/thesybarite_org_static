@@ -167,7 +167,7 @@
                                         <a href="">The Champagne Club</a>
                                     </li>
                                     <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
+                                        <a href="/art-club.php"><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
                                         <a href="/art-club.php">The Art Club</a>
                                     </li>
                                 </ul>

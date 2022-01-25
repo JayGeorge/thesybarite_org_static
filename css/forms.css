@@ -83,6 +83,7 @@ label {
     font-size: 15px;
     /* Override line-height set on body e.g. footer label */
     line-height: 1.4;
+    font-family: var(--font-family-info);
 }
 
 /* purgecss start ignore */
@@ -105,6 +106,7 @@ body [type="checkbox"] {
 [type="password"] {
     width: 100%;
     max-width: 275px;
+    font-family: var(--font-family-info);
 }
 
 .c-form-cols__col--full-width [type="email"],
@@ -497,7 +499,7 @@ textarea {
 /* GROUP SCOPE / MODAL THEME / DECORATION
 =================================================== */
 .s-forms-modal-theme label {
-    font-weight: var(--font-family-main-weight-strong);
+    font-weight: var(--font-family-info-weight-strong);
 }
 
 .s-forms-modal-theme label {
@@ -570,8 +572,8 @@ textarea {
 =================================================== */
 .s-forms-main-theme label {
     /* Elementor override */
-    font-family: var(--font-family-main);
-    font-weight: var(--font-family-main-weight-strong);
+    font-family: var(--font-family-info);
+    font-weight: var(--font-family-info-weight-strong);
 }
 
 .s-forms-main-theme label {
