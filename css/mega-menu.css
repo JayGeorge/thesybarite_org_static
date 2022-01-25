@@ -227,7 +227,7 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
 }
 
 body .c-mega-menu__back-button {
-    font-weight: var(--font-family-main-weight-normal)!important;
+    font-weight: var(--font-family-info-weight-normal)!important;
     background: none;
 }
 
