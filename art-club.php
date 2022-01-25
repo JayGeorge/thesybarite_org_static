@@ -189,7 +189,7 @@
             <h2 class="c-eyebrow-heading">Browse By Exhibition</h2>
             <div class="c-gallery-groups">
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-exhibition.php">Hamid Nortey / Modern Life</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-exhibition.php">Hamid Nortey / Modern Life</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-exhibition.php"><img src="/img/clubs/art-club/gallery/hamid-nortey/build-an-empire-leave-a-legacy.jpg" alt="t" /></a>
@@ -197,14 +197,14 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-exhibition.php">Tate Modern / Dialectic</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-exhibition.php">Tate Modern / Dialectic</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery c-gallery-groups__gallery--landscape">
                         <a href="/art-club-single-exhibition.php"><img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" /></a>
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-exhibition.php">Ajarb Ategwa / Everyday Life</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-exhibition.php">Ajarb Ategwa / Everyday Life</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-exhibition.php"><img src="/img/clubs/art-club/gallery/ajarb-ategwa/early-morning-selfie.png" alt="t" /></a>
@@ -216,7 +216,7 @@
             <?php /* This would pull in the latest works from the artist */ ?>
             <div class="c-gallery-groups c-gallery-groups--compressed">
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">African Art</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">African Art</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/sungi-mlengeya/1.jpg" alt="t" /></a>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">Apocolypse</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">Apocolypse</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                     <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" /></a>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">Abstraction</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">Abstraction</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" /></a>
@@ -246,7 +246,7 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">Abstraction</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">Abstraction</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/moussa-traore/4.jpg" alt="t" /></a>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">African Art</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">African Art</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                         <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/sungi-mlengeya/1.jpg" alt="t" /></a>
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <div class="c-gallery-groups__item">
-                    <h3 class="c-gallery-groups__title"><a href="/art-club-single-theme.php">Apocolypse</a></h3>
+                    <h3 class="c-gallery-groups__hero-title"><a href="/art-club-single-theme.php">Apocolypse</a></h3>
                     <p>Ajarb Bernard Ategwa is a self-taught artist. He's inspired by daily life scenes and seeks to transcribe the bustle of Douala and the richness of the Cameroonian culture.</p>
                     <div class="c-gallery-groups__gallery">
                     <a href="/art-club-single-theme.php"><img src="/img/clubs/art-club/gallery/phillip-humm/1.jpg" alt="t" /></a>

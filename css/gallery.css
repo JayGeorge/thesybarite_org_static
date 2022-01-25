@@ -186,7 +186,6 @@
 
 .c-gallery-groups p {
     padding-block-end: var(--spacing-m);
-    padding-inline-end: var(--spacing-s-2);
 }
 /* GROUP COMPONENTS / GALLERY / DECORATION
 =================================================== */
@@ -209,13 +208,4 @@
         font-size: var(--font-size-l);
         line-height: var(--font-size-l-line-height);
     }
-}
-
-.c-gallery-groups__hero-title {
-    font-size: var(--font-size-l);
-}
-
-.c-gallery-groups__hero-title a,
-.c-gallery-groups__title a {
-    text-decoration: none;
 }
