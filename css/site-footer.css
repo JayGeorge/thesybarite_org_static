@@ -170,3 +170,7 @@ body .site-footer__cards ul {
     width: 2.5em;
     position: relative;
 }
+
+.site-footer .c-form__notes {
+    font-family: var(--font-family-headline);
+}

@@ -198,28 +198,32 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <div class="s-forms-mega-menu-theme">
-                                <form class="c-form" id="pp-form-456b1b1">
+                            <h2>Send our Concierge Team a Message</h2>
+                            <div class="s-forms-main-theme">
+                                <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
                                     <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
                                     <input type="hidden" name="_wp_http_referer" value="/login/">
                                     <input type="hidden" name="redirect_to" value="/login/">
                                     <div class="c-form-cols">
-                                        <div class="c-form-cols__col c-form-cols__col--full-width">
-                                            <label for="user" class="elementor-field-label">Username or Email Address</label>
-                                            <input type="text" name="log" id="user" placeholder=" Username or Email Address">
+                                        <div class="c-form-cols__col">
+                                            <label for="name" class="elementor-field-label">Name</label>
+                                            <input type="text" name="log" id="name">
+                                        </div>
+                                        <div class="c-form-cols__col">
+                                            <label for="user" class="elementor-field-label">Email Address</label>
+                                            <input type="text" name="log" id="user">
                                         </div>
                                         <div class="c-form-cols__col c-form-cols__col--full-width">
-                                            <label for="password" class="elementor-field-label">Password</label>
-                                            <input type="password" name="pwd" id="password" placeholder="Password">
+                                            <label for="message" class="elementor-field-label">Concierge Request</label>
+                                            <textarea id="message"></textarea>
                                         </div>
                                         <div class="c-form-cols__col c-form-cols__col--full-width">
-                                            <button class="js__staticOnlyFakeLoggedInState c-btn c-btn--1">
+                                            <button type="submit" name="wp-submit" class="c-btn c-btn--1">
                                                 Submit
                                             </button>
                                         </div>
                                         <div class="c-form__notes c-form-cols__col c-form-cols__col--full-width">
-                                            <p><a href="/login/?lost_pass=1">Lost your password?</a></p>
-                                            <p>Not registered yet? <a href="https://experienceluxury.co/membership/">Create an account</a></p>
+                                            <p>We'll get back to you in 24 hours</p>
                                         </div>
                                     </div>
                                 </form>

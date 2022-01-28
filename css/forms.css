@@ -365,12 +365,6 @@ label {
     /* e.g. not Login modal form */
     /* background: white; */
 }
-
-.c-form .c-btn {
-    /* e.g. mega menu Concierge form */
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
 =================================================== */
 /* Notes...

@@ -612,16 +612,14 @@ nav {
     clear: both;
     display: block;
     width: 100%;
-    letter-spacing: var(--letter-spacing-s);
-    text-transform: uppercase;
-    font-size: var(--font-size-s-x-x);
     font-family: var(--font-family-info);
 }
 
-/* e.g. mega menu */
-nav strong a,
-nav h3 {
-    letter-spacing: var(--letter-spacing-s-x);
+nav li > a {
+    /* Don't affect nav content like the Concierge tab */
+    letter-spacing: var(--letter-spacing-s);
+    text-transform: uppercase;
+    font-size: var(--font-size-s-x-x);
 }
 
 nav ul {
@@ -1863,7 +1861,7 @@ body .site-logo {
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-site-header .c-btn {
+    .c-site-header .c-btn:not([type="submit"]) {
         margin-block-end: 0;
         margin-inline-start: var(--spacing-m);
     }
@@ -2029,7 +2027,7 @@ body .site-logo {
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
 .c-site-header__nav a {
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
     font-size: var(--font-size-s-x-x);
     line-height: unset;
 }

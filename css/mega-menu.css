@@ -231,13 +231,6 @@ body .c-mega-menu__back-button {
     background: none;
 }
 
-.c-mega-menu h3 {
-    font-family: var(--font-family-info);
-    font-size: var(--font-size-s-x-x);
-    font-weight: var(--font-family-info-weight-strong);
-    line-height: var(--font-size-m-line-height);
-}
-
 .c-mega-menu__title,
 .c-mega-menu__category {
     font-family: var(--font-family-headline);
