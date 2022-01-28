@@ -2546,17 +2546,6 @@ body .site-logo {
     text-align: center;
 }
 
-.c-cta-box {
-    position: absolute;
-    /* Don't pull above the mega menu */
-    /* z-index: 1; */
-    /* Not 11em otherwise it peaks out of the bottom of the page on e.g. >> /art-club */
-    /* top: 11em; */
-    top: 8em;
-    right: 0;
-    width: var(--cta-box-width);
-}
-
 .image-with-text__text h1 {
     position: relative;
 }
@@ -2571,15 +2560,6 @@ body .site-logo {
     /* Unhide arrow */
     .image-with-text__arrow {
         display: initial;
-    }
-}
-
-/* Custom */
-@media (min-width: 600px) {
-    .c-cta-box {
-        position: fixed;
-        /* Increase */
-        top: 10em;
     }
 }
 
@@ -2612,6 +2592,11 @@ body .site-logo {
 }
 /* GROUP COMPONENTS / IMAGE WITH TEXT / SPACING
 =================================================== */
+.image-with-text + * {
+    /* Do this rather than padding-bottom so that we can add a white panElements straight after .image-with-text and have it cover the .c-cta-box */
+    padding-block-start: var(--spacing-l-4);
+}
+
 .image-with-text__text {
     padding-inline-start: var(--spacing-l-horizontal);
     padding-inline-end: var(--spacing-l-horizontal);
@@ -2625,15 +2610,10 @@ body .site-logo {
 .image-with-text__text > *:first-child {
     padding-block-end: 0;
 }
-
-.c-cta-box {
-    padding: var(--spacing-s-2)!important;
-}
 /* GROUP COMPONENTS / IMAGE WITH TEXT / DECORATION
 =================================================== */
 .image-with-text {
     position: relative;
-    margin-block-end: var(--spacing-l-4);
 }
 
 .image-with-text::before {
@@ -2671,26 +2651,6 @@ body .site-logo {
     font-size: var(--font-size-l-2);
     color: var(--colour-pale);
 }
-
-.c-cta-box {
-    color: white;
-    border: 1px solid white;
-    border-inline-end: 0;
-    border-inline-start: 0;
-    padding: var(--spacing-s-2)!important;
-    font-size: var(--font-size-s);
-    font-family: var(--font-family-info);
-    backdrop-filter: blur(10px);
-}
-
-.c-cta-box p {
-    line-height: 1.4;
-    padding-block-end: 0;
-    padding-inline-start: var(--spacing-s-x);
-    padding-block-end: 0.1em;
-    /* Elementor override */
-    margin-block-end: 0;
-}
 /* GROUP COMPONENTS / IMAGE WITH TEXT / ANIMATIONS
 =================================================== */
 @keyframes slide-in-up {
@@ -2705,9 +2665,128 @@ body .site-logo {
     }
 }
 
+
+
+/* GROUP COMPONENTS / CTA BOX
+=================================================== */
+/* Notes...
+
+	- e.g. at top of Champagne / Art Club pages
+
+*/
+/* HTML Example...
+
+    <div class="c-cta-box">
+        <button class="c-concierge-button">
+            <span>some text</span> <div></img /></div>
+        </button>
+    </div>
+
+*/
+/* GROUP COMPONENTS / CTA BOX / LAYOUT
+=================================================== */
+.c-cta-box {
+    position: absolute;
+    /* Don't pull above the mega menu */
+    /* z-index: 1; */
+    /* Not 11em otherwise it peaks out of the bottom of the page on e.g. >> /art-club */
+    /* top: 11em; */
+    top: 8em;
+    right: 0;
+    width: var(--cta-box-width);
+}
+
+/* Custom */
+@media (min-width: 600px) {
+    .c-cta-box {
+        position: fixed;
+        /* Increase */
+        top: 10em;
+    }
+}
+/* GROUP COMPONENTS / CTA BOX / SPACING
+=================================================== */
+.c-cta-box {
+    padding: var(--spacing-s-2);
+}
+
+.c-cta-box p {
+    padding-block-end: 0;
+    padding-inline-start: var(--spacing-s-x);
+    padding-block-end: 0.1em;
+    /* Elementor override */
+    margin-block-end: 0;
+}
+/* GROUP COMPONENTS / CTA BOX / DECORATION
+=================================================== */
+.c-cta-box {
+    color: white;
+    border: 1px solid white;
+    border-inline-end: 0;
+    border-inline-start: 0;
+    font-size: var(--font-size-s);
+    font-family: var(--font-family-info);
+    backdrop-filter: blur(10px);
+}
+
+.c-cta-box p {
+    line-height: 1.4;
+}
+/* GROUP COMPONENTS / CTA BOX / ANIMATIONS
+=================================================== */
 .c-cta-box {
     animation: 1.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
     animation-delay: 1.2s;
+}
+
+
+
+
+/* GROUP COMPONENTS / CTA BOX
+=================================================== */
+/* Notes...
+
+	- e.g. at top of Champagne / Art Club pages
+
+*/
+/* HTML Example...
+
+    <div class="c-cta-box">
+        <button class="c-concierge-button">
+            <span>some text</span> <div></img /></div>
+        </button>
+    </div>
+
+*/
+/* GROUP COMPONENTS / CTA BOX / LAYOUT
+=================================================== */
+.c-concierge-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+}
+
+.c-concierge-button__image {
+    flex-basis: 7em;
+}
+/* GROUP COMPONENTS / CTA BOX / SPACING
+=================================================== */
+.c-concierge-button {
+    margin-block-start: var(--spacing-s-x);
+    margin-inline-end: 0;
+    padding-inline-start: var(--spacing-s-x);
+    padding-inline-end: 0;
+    padding-block-end: 0;
+}
+/* GROUP COMPONENTS / CTA BOX / DECORATION
+=================================================== */
+.c-concierge-button {
+    color: white;
+    text-align: left;
+}
+
+.c-concierge-button__image img {
+    border-radius: 50px;
 }
 
 

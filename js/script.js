@@ -145,6 +145,19 @@ document.addEventListener('keydown', (event) => {
         searchStateClose();
     }
 });
+/* GROUP CONCIERGE / CTA BUTTON
+=================================================== */
+/* Notes...
+
+*/
+/* HTML Example...
+
+*/
+Array.from(document.querySelectorAll('[data-js="show-concierge"]') || []).forEach(element => {
+    element.addEventListener('click', function() {
+        document.querySelector('[data-js="menu-concierge"]').click();
+    });
+});
 /* GROUP NAV / MEGA MENU / (OPTIONAL FOR "ALWAYS CLOSED" NAV) / RESET STATE ON CLICK
 =================================================== */
 // e.g. Give clicking outside as an option to exit too
@@ -152,10 +165,16 @@ document.addEventListener('keydown', (event) => {
 // Listen for all clicks on the document
 document.addEventListener('click', function (event) {
     // If the click happened inside the the container, bail
-    if (event.target.closest('.c-site-header__nav')) return;
-    // Otherwise, run our code...
-    megaMenuStateClose();
-    megaMenuClose();
+    if (event.target.closest('.c-site-header__nav')) {
+        return;
+    } else {
+        // If the click is decended from a button also bail e.g. 'Speak to our Concierge' button
+        if (!event.target.closest('button')) {
+            // Otherwise, run our code...
+            megaMenuStateClose();
+            megaMenuClose();
+        }
+    }
 }, false);
 
 
@@ -170,9 +189,6 @@ Array.from(document.querySelectorAll('.js__openDropdown') || []).forEach(element
         element.nextElementSibling.classList.toggle('js--openedDropdown');
     }
 });
-
-
-
 
 
 

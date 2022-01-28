@@ -192,6 +192,45 @@
                     </div>
                 </li>
 
+                <?php $nav_name = 'Concierge'; ?>
+                <li class="c-site-header__animate-staggered">
+                    <a id="test" data-js="menu-concierge" class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
+                    <div class="c-mega-menu-container">
+                        <div class="c-mega-menu">
+                            <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
+                            <h3>Exclusive Communities</h3>
+                            <div class="c-mega-menu__grid">
+                                <ul class="c-mega-menu__full-width">
+                                    <li class="c-mega-menu__title">
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club-mega-menu.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
+                                        <a href="">The Champagne Club</a>
+                                    </li>
+                                    <li class="c-mega-menu__title">
+                                        <a href="/art-club.php"><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
+                                        <a href="/art-club.php">The Art Club</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3>Art Club Features</h3>
+                            <div class="c-mega-menu__grid">
+                                <ul class="c-mega-menu__full-width">
+                                    <li class="c-mega-menu__title">
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-artist.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
+                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/cameroon.svg" alt="Cameroon Flag" /> Featured Artist — Ajarb Bernard Ategwa</a>
+                                    </li>
+                                    <li class="c-mega-menu__title">
+                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-exhibition.jpg" alt="" loading="lazy" width="800" height="448" /></a>
+                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/ghana.svg" alt="Ghanaian Flag" /> Featured Exhibition — Ajarb Bernard Ategwa</a>
+                                    </li>
+                                </ul>
+                                <ul class="c-mega-menu__full-width">
+                                    <li><a href="">View Art Club <span class="u-icon-right-m"><img src="/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
                 <?php $nav_name = 'Shop'; ?>
                 <li class="c-site-header__animate-staggered">
                     <a class="js__megaMenuInitiate" href="/<?php echo strtolower(str_replace(' ', '-', $nav_name));?>.php"><?php echo $nav_name; ?></a>
