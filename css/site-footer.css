@@ -153,6 +153,15 @@ body .site-footer__cards ul {
     color: var(--colour-pale);
 }
 
+.site-footer [type="submit"] {
+    background: white;
+    color: black;
+}
+
+.site-footer label {
+    font-weight: var(--font-family-system-weight-normal);
+}
+
 .site-footer__cards svg {
     font-size: 2.5em;
 }

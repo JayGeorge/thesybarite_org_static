@@ -40,7 +40,7 @@
                 <div class="c-cta-box">
                     <p>Access unique bottles from exclusive vineyards—delivered to your door every quarter.</p>
                     <button class="c-concierge-button" data-js="show-concierge">
-                        <span>Speak to Our Concierge</span> <div class="c-concierge-button__image"><img src="/img/concierge/avatar.jpg" alt="Concierge Avatar" /></div>
+                        <span>Speak to Our Concierge</span> <span class="c-concierge-button__image"><img src="/img/concierge/avatar.jpg" alt="Concierge Avatar" /></span>
                     </button>
                 </div>
             </header>

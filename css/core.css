@@ -117,6 +117,8 @@
     =================================================== */
     --font-family-info-weight-normal: 400;
     --font-family-info-weight-strong: 700;
+    --font-family-system-weight-normal: 400;
+    --font-family-system-weight-strong: 700;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- SIZES
     =================================================== */
     /* Optimise line-height for reading */
@@ -2753,7 +2755,7 @@ body .site-logo {
 
     <div class="c-cta-box">
         <button class="c-concierge-button">
-            <span>some text</span> <div></img /></div>
+            <span>some text</span> <span></img /></span>
         </button>
     </div>
 

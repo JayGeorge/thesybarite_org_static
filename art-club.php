@@ -40,7 +40,7 @@
             <div class="c-cta-box">
                 <p>Unlimited access to the most exclusive London art galleries every month of the year.</p>
                 <button class="c-concierge-button">
-                    <span>Speak to Our Concierge</span> <div class="c-concierge-button__image"><img src="/img/concierge/avatar.jpg" alt="Concierge Avatar" /></div>
+                    <span>Speak to Our Concierge</span> <span class="c-concierge-button__image"><img src="/img/concierge/avatar.jpg" alt="Concierge Avatar" /></span>
                 </button>
             </div>
         </header>

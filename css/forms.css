@@ -36,7 +36,7 @@ textarea,
 .elementor-kit-4 [type="search"],
 .elementor-kit-4 textarea {
     vertical-align: top;
-    /* box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1); */
+/*     box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1); */
     /* =JFG. e.g. search box >> blog or newsletter signup email address */
     padding: 15px;
     margin-bottom: 2rem;
@@ -71,6 +71,7 @@ textarea,
     opacity: 1;
     /* Decrease */
     font-size: 0.85rem;
+    font-family: var(--font-family-system);
 }
 
 .site-footer input:focus,
@@ -80,10 +81,14 @@ textarea,
 
 label {
     /* Fixed */
-    font-size: 15px;
+    font-size: 16px;
     /* Override line-height set on body e.g. footer label */
     line-height: 1.4;
-    font-family: var(--font-family-info);
+    font-family: var(--font-family-system);
+    font-weight: var(--font-family-system-weight-strong);
+    /* e.g. mega menu Concierge form */
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 /* purgecss start ignore */
@@ -360,6 +365,12 @@ label {
     /* e.g. not Login modal form */
     /* background: white; */
 }
+
+.c-form .c-btn {
+    /* e.g. mega menu Concierge form */
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / EXPLICIT BLOCK
 =================================================== */
 /* Notes...
@@ -398,6 +409,12 @@ input::placeholder {
     font-size: var(--font-size-s-x-x-x);
     /* Elementor override */
     line-height: 1.5;
+}
+
+.c-form .c-btn {
+    /* e.g. mega menu Concierge form */
+    background: black;
+    color: white;
 }
 /* GROUP ELEMENTS / FRAMEWORK / (NON CORE) / FORMS / DECORATION / BORDERS
 =================================================== */
@@ -461,6 +478,13 @@ textarea {
     margin-bottom: 2.4rem;
 }
 
+.c-form__notes,
+/* WordPress e.g. "Lost your password?", "Not registered yet?" */
+[name="loginform"] ~ p,
+[name="loginform"] ~ p a {
+    font-family: var(--font-family-system);
+}
+
 
 
 
@@ -498,26 +522,56 @@ textarea {
 }
 /* GROUP SCOPE / MODAL THEME / DECORATION
 =================================================== */
-.s-forms-modal-theme label {
-    font-weight: var(--font-family-info-weight-strong);
-}
-
-.s-forms-modal-theme label {
-    font-size: 16px;
-}
-
-.s-forms-modal-theme .c-form__notes,
-/* WordPress e.g. "Lost your password?", "Not registered yet?" */
-[name="loginform"] ~ p,
-[name="loginform"] ~ p a {
-    font-family: var(--font-family-system);
-}
-
 .s-forms-modal-theme input:not([type="submit"]) {
     border: 1px solid hsl(0deg 0% 90%);
     border-radius: 4px;
     max-width: none;
 }
+
+
+
+/* GROUP SCOPE / MEGA MENU THEME
+=================================================== */
+/* Notes...
+
+    - Used for modals
+
+*/
+/* HTML Example...
+
+    <div class="c-form-wrapper s-forms-modal-theme">
+        <form/>
+    </div>
+
+*/
+/* GROUP SCOPE / MEGA MENU THEME / LAYOUT
+=================================================== */
+.s-forms-mega-menu-theme .c-form {
+    margin-inline-start: 0;
+}
+/* GROUP SCOPE / MEGA MENU THEME / SPACING
+=================================================== */
+.s-forms-mega-menu-theme [type="checkbox"],
+.s-forms-mega-menu-theme [type="radio"] {
+    margin-right: var(--spacing-s);
+}
+
+.s-forms-mega-menu-theme .c-form__notes {
+    padding-block-end: var(--spacing-m);
+    padding-block-end: 0;
+}
+/* GROUP SCOPE / MEGA MENU THEME / DECORATION
+=================================================== */
+.s-forms-mega-menu-theme label {
+    font-size: 16px;
+}
+
+.s-forms-mega-menu-theme input:not([type="submit"]) {
+    border: 1px solid hsl(0deg 0% 90%);
+    border-radius: 4px;
+    max-width: none;
+}
+
 
 
 
@@ -570,24 +624,11 @@ textarea {
 }
 /* GROUP SCOPE / MAIN THEME / DECORATION
 =================================================== */
-.s-forms-main-theme label {
-    /* Elementor override */
-    font-family: var(--font-family-info);
-    font-weight: var(--font-family-info-weight-strong);
-}
-
-.s-forms-main-theme label {
-    font-size: 15px;
-}
-
-.s-forms-main-theme .c-form__notes {
-    font-family: var(--font-family-system);
-}
-
 .s-forms-main-theme input:not([type="submit"]) {
     border: 1px solid hsl(0deg 0% 90%);
     border-radius: 4px;
 }
+
 .hs-input:not([type=file]) {
     /* Hubspot override */
     border: 1px solid hsl(0deg 0% 90%)!important;

@@ -198,34 +198,31 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>Exclusive Communities</h3>
-                            <div class="c-mega-menu__grid">
-                                <ul class="c-mega-menu__full-width">
-                                    <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/champagne-club-mega-menu.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
-                                        <a href="">The Champagne Club</a>
-                                    </li>
-                                    <li class="c-mega-menu__title">
-                                        <a href="/art-club.php"><img class="c-mega-menu__feature-image" src="/img/clubs/art-club-mega-menu.jpg" alt="Woman looking at art gallery" loading="lazy" width="800" height="448" /></a>
-                                        <a href="/art-club.php">The Art Club</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3>Art Club Features</h3>
-                            <div class="c-mega-menu__grid">
-                                <ul class="c-mega-menu__full-width">
-                                    <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-artist.jpg" alt="Champagne Vineyard" loading="lazy" width="800" height="448" /></a>
-                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/cameroon.svg" alt="Cameroon Flag" /> Featured Artist — Ajarb Bernard Ategwa</a>
-                                    </li>
-                                    <li class="c-mega-menu__title">
-                                        <a href=""><img class="c-mega-menu__feature-image" src="/img/clubs/featured-exhibition.jpg" alt="" loading="lazy" width="800" height="448" /></a>
-                                        <a href="" class="o-icon-with-title"><img src="/img/svg/flags/ghana.svg" alt="Ghanaian Flag" /> Featured Exhibition — Ajarb Bernard Ategwa</a>
-                                    </li>
-                                </ul>
-                                <ul class="c-mega-menu__full-width">
-                                    <li><a href="">View Art Club <span class="u-icon-right-m"><img src="/img/svg/arrow-right.svg" alt="Right arrow." /></span></a></li>
-                                </ul>
+                            <div class="s-forms-mega-menu-theme">
+                                <form class="c-form" id="pp-form-456b1b1">
+                                    <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
+                                    <input type="hidden" name="_wp_http_referer" value="/login/">
+                                    <input type="hidden" name="redirect_to" value="/login/">
+                                    <div class="c-form-cols">
+                                        <div class="c-form-cols__col c-form-cols__col--full-width">
+                                            <label for="user" class="elementor-field-label">Username or Email Address</label>
+                                            <input type="text" name="log" id="user" placeholder=" Username or Email Address">
+                                        </div>
+                                        <div class="c-form-cols__col c-form-cols__col--full-width">
+                                            <label for="password" class="elementor-field-label">Password</label>
+                                            <input type="password" name="pwd" id="password" placeholder="Password">
+                                        </div>
+                                        <div class="c-form-cols__col c-form-cols__col--full-width">
+                                            <button class="js__staticOnlyFakeLoggedInState c-btn c-btn--1">
+                                                Submit
+                                            </button>
+                                        </div>
+                                        <div class="c-form__notes c-form-cols__col c-form-cols__col--full-width">
+                                            <p><a href="/login/?lost_pass=1">Lost your password?</a></p>
+                                            <p>Not registered yet? <a href="https://experienceluxury.co/membership/">Create an account</a></p>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
