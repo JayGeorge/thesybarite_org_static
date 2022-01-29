@@ -175,7 +175,7 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
     padding-block-end: var(--spacing-s);
 }
 
-.c-mega-menu a {
+.c-mega-menu__grid a {
     padding: 0;
 }
 
@@ -191,6 +191,12 @@ nav .c-mega-menu__back-button :is(svg, [src*=".svg"]) {
 .c-mega-menu__full-width li {
     /* Because we're using grid instead */
     padding-block-end: 0;
+}
+
+.c-mega-menu h2 {
+    /* e.g. Concierge message heading */
+    padding-block-start: var(--spacing-s);
+    padding-block-end: var(--spacing-s-1);
 }
 
 .c-mega-menu h3 {
@@ -438,3 +444,97 @@ body .c-mega-menu__back-button {
     color: black;
 }
 /* purgecss end ignore */
+
+
+
+
+/* GROUP MEGA MENU / CONCIERGE
+=================================================== */
+/* Notes...
+
+	- 
+
+*/
+/* HTML Example...
+
+*/
+/* GROUP MEGA MENU / CONCIERGE / LAYOUT
+=================================================== */
+.c-mega-menu-concierge {
+    display: grid;
+    grid-template-columns: 61fr 30fr;
+}
+
+.c-mega-menu-concierge-services__avatar {
+    max-width: 5rem;
+}
+
+.c-mega-menu-concierge-services__text {
+    max-width: 15rem;   
+}
+
+.c-mega-menu .c-mega-menu-concierge-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
+}
+/* GROUP MEGA MENU / CONCIERGE / SPACING
+=================================================== */
+.c-mega-menu-concierge-services__avatar {
+    padding-block-start: var(--spacing-m);
+    padding-block-end: var(--spacing-s-1);
+}
+
+.c-mega-menu-concierge-services__text {
+    padding-block-end: var(--spacing-l-4);
+}
+
+.c-mega-menu .c-mega-menu-concierge-icons__icon {
+    padding-block-end: 0;
+}
+/* GROUP MEGA MENU / CONCIERGE / DECORATION
+=================================================== */
+.c-mega-menu-concierge {
+    font-family: var(--font-family-main);
+}
+
+.c-site-header__nav .c-mega-menu-concierge svg {
+    font-size: var(--icon-size-m);
+    color: black;
+}
+
+.c-mega-menu-concierge-services__avatar img {
+    border-radius: 50px;
+    border-radius: 110px;
+}
+
+.c-site-header__nav .c-mega-menu-concierge a,
+.c-site-header__nav .c-mega-menu-concierge a:hover {
+    color: black;
+}
+
+.c-mega-menu-concierge-services__text {
+    border-block-start: 1px solid var(--colour-grey-light-2);
+    margin-block-start: var(--spacing-s);
+    padding-block-start: var(--spacing-s-2);
+    font-family: var(--font-family-main);
+}
+
+.c-mega-menu-concierge-icons::before {
+    content: unset!important;
+}
+
+.c-mega-menu-concierge-icons::after {
+    content: "";
+    border-block-start: 1px solid var(--colour-black-transparent-3);
+    position: absolute;
+    top: -2.5em;
+    width: 2em;
+}
+
+.c-mega-menu-concierge-icons__icon {
+    text-transform: uppercase;
+    font-family: var(--font-family-headline);
+    letter-spacing: var(--letter-spacing-s);
+    font-size: var(--font-size-s-x-x);
+}

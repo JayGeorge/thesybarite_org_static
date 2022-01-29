@@ -82,6 +82,7 @@
     /* e.g. Search in the mega menu. Made lighter at later media query */
     --colour-black-transparent-1: hsl(0deg 0% 0% / 85%);
     --colour-black-transparent-2: hsl(0deg 0% 0% / 40%);
+    --colour-black-transparent-3: hsl(0deg 0% 0% / 25%);
     --colour-white-transparent: hsl(var(--colour-pale-hsl) / 50%);
     /* AA */
     --colour-grey-reading: hsl(0deg 0% 46%);
@@ -367,7 +368,6 @@ figcaption,
 .c-figcaption {
     font-size: var(--font-size-s-x);
     font-style: unset;
-    font-family: var(--font-family-info);
 }
 
 ul {
@@ -948,13 +948,14 @@ a > svg:last-child:not(:first-child) {
 
 /* Default */
 a,
-.elementor-kit-4 a {
+.elementor-kit-4 a,
+.c-mega-menu-concierge a {
     text-decoration-skip-ink: auto;
     /* e.g. login-form for elementor */
     text-decoration-line: underline;
     color: inherit;
     /* e.g. >> /art-club */
-    text-decoration-color: hsl(0deg 0% 0% / 25%);
+    text-decoration-color: --colour-black-transparent-3;
     /* e.g. >> /art-club */
     text-underline-offset: 0.25em;
     text-decoration-thickness: 1px;
@@ -1045,7 +1046,8 @@ https://twitter.com/LeaVerou/status/1045836563505188867 */
 /* purgecss end ignore */
 /* GROUP ELEMENTS / FRAMEWORK / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / HOVER
 =================================================== */
-a:hover {
+a:hover,
+.c-mega-menu-concierge a:hover {
     text-decoration-color: black;
 }
 
@@ -1701,7 +1703,7 @@ body .site-logo {
 }
 
 .c-site-header__nav ul {
-    gap: 2.1em;
+    gap: 1.8rem;
 }
 
 .js--navIsOpen .c-site-header__nav,
@@ -1829,7 +1831,7 @@ body .site-logo {
     padding-inline-end: var(--spacing-l);
 }
 
-.c-site-header__nav a {
+.c-site-header__nav li > a {
     padding: var(--spacing-s);
 }
 
@@ -1861,7 +1863,7 @@ body .site-logo {
 
 /* --mq-nav-opens-after */
 @media (min-width: 1200px) {
-    .c-site-header .c-btn:not([type="submit"]) {
+    .c-site-header li > .c-btn:not([type="submit"]) {
         margin-block-end: 0;
         margin-inline-start: var(--spacing-m);
     }
@@ -2026,12 +2028,6 @@ body .site-logo {
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / ELEMENTOR OVERRIDES / DECORATION
 =================================================== */
-.c-site-header__nav a {
-/*     text-transform: uppercase; */
-    font-size: var(--font-size-s-x-x);
-    line-height: unset;
-}
-
 .c-site-header__nav button {
     line-height: inherit;
 }

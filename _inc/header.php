@@ -32,7 +32,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>What’s Hot Now</h3>
+                            <h3>What’s hot now</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -77,7 +77,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>The Sybarite Life</h3>
+                            <h3>The Sybarite life</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -120,7 +120,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>The Best of Africa</h3>
+                            <h3>The best of Africa</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -133,7 +133,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h3>Other Adventures</h3>
+                            <h3>Other adventures</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -159,7 +159,7 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h3>Exclusive Communities</h3>
+                            <h3>Exclusive communities</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -172,7 +172,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h3>Art Club Features</h3>
+                            <h3>Art Club features</h3>
                             <div class="c-mega-menu__grid">
                                 <ul class="c-mega-menu__full-width">
                                     <li class="c-mega-menu__title">
@@ -198,35 +198,64 @@
                     <div class="c-mega-menu-container">
                         <div class="c-mega-menu">
                             <button class="c-mega-menu__back-button js__megaMenuBackButton"><?php include 'img/svg/arrow-left.php'; ?> Menu</button>
-                            <h2>Send our Concierge Team a Message</h2>
-                            <div class="s-forms-main-theme">
-                                <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
-                                    <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
-                                    <input type="hidden" name="_wp_http_referer" value="/login/">
-                                    <input type="hidden" name="redirect_to" value="/login/">
-                                    <div class="c-form-cols">
-                                        <div class="c-form-cols__col">
-                                            <label for="name" class="elementor-field-label">Name</label>
-                                            <input type="text" name="log" id="name">
-                                        </div>
-                                        <div class="c-form-cols__col">
-                                            <label for="user" class="elementor-field-label">Email Address</label>
-                                            <input type="text" name="log" id="user">
-                                        </div>
-                                        <div class="c-form-cols__col c-form-cols__col--full-width">
-                                            <label for="message" class="elementor-field-label">Concierge Request</label>
-                                            <textarea id="message"></textarea>
-                                        </div>
-                                        <div class="c-form-cols__col c-form-cols__col--full-width">
-                                            <button type="submit" name="wp-submit" class="c-btn c-btn--1">
-                                                Submit
-                                            </button>
-                                        </div>
-                                        <div class="c-form__notes c-form-cols__col c-form-cols__col--full-width">
-                                            <p>We'll get back to you in 24 hours</p>
-                                        </div>
+                            <div class="c-mega-menu-concierge">
+                                <div class="c-mega-menu-concierge__form">
+                                    <div class="s-forms-main-theme">
+                                        <form class="c-form" id="pp-form-456b1b1" method="post" action="https://experienceluxury.co/register/?wpe-login=true">
+                                            <input type="hidden" id="ppe-lf-login-nonce" name="ppe-lf-login-nonce" value="472c193598">
+                                            <input type="hidden" name="_wp_http_referer" value="/login/">
+                                            <input type="hidden" name="redirect_to" value="/login/">
+                                            <div class="c-form-cols">
+                                                <div class="c-form-cols__col c-form-cols__col--full-width">
+                                                    <label for="name" class="elementor-field-label">Full Name</label>
+                                                    <input type="text" name="log" id="name">
+                                                </div>
+                                                <div class="c-form-cols__col">
+                                                    <label for="user" class="elementor-field-label">Email Address</label>
+                                                    <input type="text" name="log" id="user">
+                                                </div>
+                                                <div class="c-form-cols__col">
+                                                    <label for="user" class="elementor-field-label">Phone Number</label>
+                                                    <input type="text" name="log" id="user">
+                                                </div>
+                                                <div class="c-form-cols__col c-form-cols__col--full-width">
+                                                    <label for="message" class="elementor-field-label">Concierge Request</label>
+                                                    <textarea id="message"></textarea>
+                                                </div>
+                                                <div class="c-form-cols__col c-form-cols__col--full-width">
+                                                    <button type="submit" name="wp-submit" class="c-btn c-btn--1">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="c-mega-menu-concierge__info">
+                                    <div class="c-mega-menu-concierge-services">
+                                        <div class="c-mega-menu-concierge-services__avatar">
+                                            <img src="/img/concierge/avatar.jpg" alt="Concierge Avatar" />
+                                        </div>
+                                        <div class="c-mega-menu-concierge-services__text">
+                                            <h2>Concierge</h2>
+                                            <p>Our concierge service is a real life, on-call genie that can fulfil all urgent requests. <a href="">Learn more about our Concierge service</a>.</p>
+                                        </div>
+                                        <ul class="c-mega-menu-concierge-icons">
+                                            <li class="c-mega-menu-concierge-icons__icon">
+                                                24 hour manager
+                                            </li>
+                                            <li class="c-mega-menu-concierge-icons__icon">
+                                                Tickets and reservations
+                                            </li>
+                                            <li class="c-mega-menu-concierge-icons__icon">
+                                                Advisors and Specialists
+                                            </li>
+                                            <li class="c-mega-menu-concierge-icons__icon">
+                                                Security
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
