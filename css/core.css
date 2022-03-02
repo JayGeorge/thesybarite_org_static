@@ -1703,7 +1703,7 @@ body .site-logo {
 }
 
 .c-site-header__nav ul {
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 
 .js--navIsOpen .c-site-header__nav,
@@ -1810,7 +1810,7 @@ body .site-logo {
 =================================================== */
 .c-site-header {
     /* padding-block-start: var(--spacing-s-2); */
-    padding-inline-start: var(--spacing-l-horizontal);
+    padding-inline-start: var(--spacing-m);
     /* padding-inline-end: var(--spacing-l); */
     /* padding-block-end: var(--spacing-l); */
 }
@@ -1828,7 +1828,7 @@ body .site-logo {
 .c-site-header__nav > ul:first-child {
     padding-block-start: var(--spacing-s-2);
     padding-block-end: var(--spacing-s-1);
-    padding-inline-end: var(--spacing-l);
+    padding-inline-end: var(--spacing-m);
 }
 
 .c-site-header__nav > ul > li > a {
