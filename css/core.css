@@ -2706,6 +2706,8 @@ body .site-logo {
 .c-cta-box {
     padding: var(--spacing-s-2);
     padding-inline: var(--spacing-s);
+    /* e.g. >> Home */
+    padding-inline-start: var(--spacing-s-2);
 }
 
 .c-cta-box p {
