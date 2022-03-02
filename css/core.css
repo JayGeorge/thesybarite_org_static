@@ -1989,9 +1989,9 @@ body .site-logo {
         content: "";
         position: absolute;
         left: 0;
-        width: 50%;
-        height: 10em;
-        background: radial-gradient(ellipse at top left, hsl(203deg 53% 67%) 0%,transparent 70%);
+        width: 55%;
+        height: 25em;
+        background: radial-gradient(ellipse at top left, hsl(203deg 53% 55%) 0%,transparent 70%);
     }
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE HEADER / DECORATION / DARK COVER IMAGE
