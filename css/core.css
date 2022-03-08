@@ -1610,12 +1610,16 @@ h2 + .o-hero-buttons {
 body .site-logo {
     font-family: var(--font-family-headline);
     /* color: white; */
-    font-size: var(--font-size-l-rem);
+    font-size: 3.15em;
     line-height: 0.9;
     text-decoration: none;
     /* color: #8e5b1c; */
     color: var(--colour-black);
     z-index: var(--z-index-nav);
+}
+
+body .site-logo--experience-luxury {
+    font-size: 3.15em;
 }
 
 .s-dark-cover-image .site-logo,
@@ -1625,9 +1629,11 @@ body .site-logo {
 
 .site-logo div {
     text-transform: uppercase;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     position: relative;
-    top: -0.2em;
+    letter-spacing: 3px;
+    top: 0.6em;
+    left: 2.5em;
 }
 /* GROUP COMPONENTS / FRAMEWORK / SITE LOGO / ELEMENTOR OVERRIDES
 =================================================== */
