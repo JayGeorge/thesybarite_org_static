@@ -10,9 +10,8 @@
     <header class="c-site-header<?php if (isset($header_light_background)) { echo ' c-site-header--light-background'; } ?>">
         <div class="c-site-header__logo">
             <a href="/" class="site-logo">
-                <?php /* <div>Experience&hairsp;•&hairsp;2022</div> #}} */ ?>
-                <div>Experience&hairsp;Est.&hairsp;'18</div>
-                Luxury
+                <div>The</div>
+                Sybarite
             </a>
         </div>
 
